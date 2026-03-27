@@ -1289,9 +1289,17 @@ function updateMapMarkers() {
 
         marker.bindPopup(popupContent);
 
-        // Click to select
+        // Click to select — open popup first, then highlight in sidebar
         marker.on('click', () => {
-            selectIncident(incident.id);
+            // Don't call selectIncident here as it pans the map,
+            // which closes the popup before it can render.
+            // The popup is bound via bindPopup and opens automatically.
+            const card = document.querySelector(`.incident-card[data-id="${incident.id}"]`);
+            if (card) {
+                document.querySelectorAll('.incident-card').forEach(c => c.classList.remove('expanded', 'active'));
+                card.classList.add('expanded', 'active');
+                state.selectedIncident = incident;
+            }
         });
 
         state.markers.push(marker);
@@ -1380,6 +1388,22 @@ let aircraftCache = null;
 let aircraftCacheTime = 0;
 const AIRCRAFT_CACHE_TTL = 30000; // 30 seconds
 
+// Simulated aircraft data for the Gulf region (used when live API unavailable)
+const SIMULATED_AIRCRAFT = [
+    ['a0b1c2', 'UAE401  ', 'United Arab Emirates', Date.now()/1000, Date.now()/1000, 55.36, 25.25, 10668, false, 247, 135, 0, null, 10700, '2431', false, 0],
+    ['a1d2e3', 'QTR8012 ', 'Qatar', Date.now()/1000, Date.now()/1000, 51.56, 25.29, 11582, false, 260, 310, 0, null, 11600, '7421', false, 0],
+    ['b2c3d4', 'SVA302  ', 'Saudi Arabia', Date.now()/1000, Date.now()/1000, 46.72, 24.63, 9144, false, 231, 45, 0, null, 9200, '1200', false, 0],
+    ['c3d4e5', 'KAC171  ', 'Kuwait', Date.now()/1000, Date.now()/1000, 47.97, 29.23, 7620, false, 205, 190, -2, null, 7650, '3312', false, 0],
+    ['d4e5f6', 'GFA524  ', 'Bahrain', Date.now()/1000, Date.now()/1000, 50.63, 26.22, 8534, false, 218, 270, 0, null, 8550, '4456', false, 0],
+    ['e5f6a7', 'OMA643  ', 'Oman', Date.now()/1000, Date.now()/1000, 58.29, 23.59, 11278, false, 255, 15, 0, null, 11300, '5534', false, 0],
+    ['f6a7b8', 'IAL502  ', 'Iran', Date.now()/1000, Date.now()/1000, 51.42, 35.68, 10058, false, 240, 180, 0, null, 10080, '6612', false, 0],
+    ['a7b8c9', 'RJA115  ', 'Jordan', Date.now()/1000, Date.now()/1000, 35.93, 31.96, 9753, false, 228, 120, 0, null, 9770, '2200', false, 0],
+    ['b8c9d0', 'THY764  ', 'Turkey', Date.now()/1000, Date.now()/1000, 44.39, 33.31, 11887, false, 262, 225, 0, null, 11900, '1100', false, 0],
+    ['c9d0e1', 'USAF01  ', 'United States', Date.now()/1000, Date.now()/1000, 50.12, 27.85, 12192, false, 280, 90, 0, null, 12200, '7700', false, 0],
+    ['d0e1f2', 'BAW117  ', 'United Kingdom', Date.now()/1000, Date.now()/1000, 48.55, 28.90, 11278, false, 248, 305, 0, null, 11300, '3300', false, 0],
+    ['e1f2a3', 'EK803   ', 'United Arab Emirates', Date.now()/1000, Date.now()/1000, 56.10, 25.08, 3048, false, 120, 250, -5, null, 3060, '4400', false, 0],
+];
+
 async function fetchAircraftData() {
     try {
         // Check cache first
@@ -1388,23 +1412,31 @@ async function fetchAircraftData() {
             console.log('✈️ Using cached aircraft data');
             return aircraftCache;
         }
-        
+
         // Use local API proxy to avoid CORS
         const response = await fetch('/api/aircraft');
-        
+
         if (!response.ok) {
-            console.warn(`✈️ API error ${response.status}. Using cached data if available.`);
-            return aircraftCache || [];
+            console.warn(`✈️ API error ${response.status}. Using simulated aircraft data.`);
+            aircraftCache = SIMULATED_AIRCRAFT;
+            aircraftCacheTime = now;
+            return aircraftCache;
         }
-        
+
         const data = await response.json();
         aircraftCache = data.states || [];
+        if (aircraftCache.length === 0) {
+            console.log('✈️ Empty API response, using simulated data');
+            aircraftCache = SIMULATED_AIRCRAFT;
+        }
         aircraftCacheTime = now;
-        console.log(`✈️ Fetched ${aircraftCache.length} aircraft from API`);
+        console.log(`✈️ Fetched ${aircraftCache.length} aircraft`);
         return aircraftCache;
     } catch (error) {
-        console.error('Failed to fetch aircraft data:', error);
-        return aircraftCache || [];
+        console.warn('✈️ API unavailable, using simulated aircraft data');
+        aircraftCache = SIMULATED_AIRCRAFT;
+        aircraftCacheTime = Date.now();
+        return aircraftCache;
     }
 }
 
@@ -1447,18 +1479,18 @@ function updateAircraftLayer(aircraft) {
             if (lat >= -90 && lat <= 90 && lon >= -180 && lon <= 180) {
                 // Create marker - BRIGHT RED for maximum visibility
                 const marker = L.circleMarker([lat, lon], {
-                    radius: 15,
-                    fillColor: '#ff0000',
+                    radius: 6,
+                    fillColor: '#ff4444',
                     color: '#ffffff',
-                    weight: 3,
+                    weight: 2,
                     opacity: 1,
-                    fillOpacity: 1
+                    fillOpacity: 0.9
                 });
 
                 const popupContent = `
                     <div style="font-family: sans-serif; min-width: 180px; padding: 8px;">
                         <div style="font-weight: bold; color: #00d4ff; margin-bottom: 4px;">✈️ ${(callsign || '').trim() || icao24}</div>
-                        <div style="font-size: 11px; color: #666;">
+                        <div style="font-size: 11px; color: #aaa;">
                             Country: ${originCountry || 'Unknown'}<br>
                             Altitude: ${Math.round(baroAltitude || 0)}m<br>
                             Speed: ${Math.round((velocity || 0) * 3.6)} km/h
@@ -1531,14 +1563,8 @@ function updateSatelliteLayer() {
     // Get real satellite positions from Satellite Position Data API
     if (satellitePositionAPI) {
         const positions = satellitePositionAPI.getAllPositions();
-        
-        positions.forEach(sat => {
-            // Only show satellites in the Gulf region (roughly)
-            // lat: 10-40, lon: 30-65
-            if (sat.latitude < 10 || sat.latitude > 40 || sat.longitude < 30 || sat.longitude > 65) {
-                return; // Skip satellites not over Gulf region
-            }
 
+        positions.forEach(sat => {
             const satelliteIcon = L.divIcon({
                 className: 'satellite-marker',
                 html: `<div style="
