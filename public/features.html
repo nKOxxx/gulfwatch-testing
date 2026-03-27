@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GulfWatch — Platform Features</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230a0a14' stroke='%2300d4ff' stroke-width='2'/%3E%3Cpath d='M16 6l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z' fill='%2300d4ff'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a14;
+            --bg-secondary: #0f0f1a;
+            --bg-card: #111122;
+            --bg-card-hover: #161630;
+            --border-subtle: rgba(255,255,255,0.08);
+            --border-hover: rgba(0,212,255,0.3);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255,255,255,0.6);
+            --text-muted: rgba(255,255,255,0.35);
+            --accent-cyan: #00d4ff;
+            --accent-green: #00ff88;
+            --accent-red: #ff4444;
+            --accent-orange: #ff8800;
+            --accent-purple: #a855f7;
+            --accent-yellow: #ffd700;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .page-header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header-logo {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #0a1628, #111936);
+            border: 2px solid var(--accent-cyan);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-logo svg { width: 20px; height: 20px; }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .header-title span { color: var(--accent-cyan); }
+
+        .header-badge {
+            background: rgba(0,212,255,0.1);
+            border: 1px solid rgba(0,212,255,0.3);
+            color: var(--accent-cyan);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+        }
+
+        .header-right a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 20px;
+            border: 1px solid rgba(0,212,255,0.3);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .header-right a:hover {
+            background: rgba(0,212,255,0.1);
+            border-color: var(--accent-cyan);
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 64px 32px 48px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 span { color: var(--accent-cyan); }
+
+        .hero p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .feature-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 24px;
+            background: rgba(0,255,136,0.08);
+            border: 1px solid rgba(0,255,136,0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-family: var(--font-mono);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+
+        /* CATEGORY SECTIONS */
+        .category {
+            max-width: 1200px;
+            margin: 0 auto 48px;
+            padding: 0 32px;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .category-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .category-name {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+        }
+
+        .category-count {
+            font-size: 11px;
+            font-family: var(--font-mono);
+            color: var(--text-muted);
+            margin-left: auto;
+        }
+
+        /* FEATURE GRID */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        /* FEATURE CARD */
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.25s ease;
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--card-accent);
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--border-hover);
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        .feature-card:hover::before { opacity: 1; }
+
+        .card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .card-badge {
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            text-transform: uppercase;
+        }
+
+        .badge-core {
+            background: rgba(0,212,255,0.12);
+            color: var(--accent-cyan);
+        }
+
+        .badge-intel {
+            background: rgba(0,255,136,0.1);
+            color: var(--accent-green);
+        }
+
+        .badge-new {
+            background: rgba(168,85,247,0.15);
+            color: var(--accent-purple);
+        }
+
+        .badge-defense {
+            background: rgba(255,68,68,0.12);
+            color: var(--accent-red);
+        }
+
+        .card-name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: 0.3px;
+        }
+
+        .card-codename {
+            font-size: 11px;
+            font-family: var(--font-mono);
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .card-capabilities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .cap-tag {
+            font-size: 10px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+            letter-spacing: 0.3px;
+        }
+
+        /* FOOTER */
+        .page-footer {
+            text-align: center;
+            padding: 48px 32px;
+            border-top: 1px solid var(--border-subtle);
+            margin-top: 32px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        .footer-text a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 26px; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .page-header { padding: 16px 20px; }
+            .hero { padding: 40px 20px 32px; }
+            .category { padding: 0 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="page-header">
+    <div class="header-left">
+        <div class="header-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2">
+                <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/>
+            </svg>
+        </div>
+        <div>
+            <div class="header-title">Gulf <span>Watch</span></div>
+        </div>
+        <div class="header-badge">INTELLIGENCE PLATFORM</div>
+    </div>
+    <div class="header-right">
+        <a href="/">Launch Dashboard</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Platform <span>Features</span></h1>
+    <p>
+        Full-spectrum geopolitical intelligence and defense analysis.
+        Real-time monitoring, predictive modeling, and multi-domain situational awareness
+        across the Gulf theater of operations.
+    </p>
+    <div class="feature-count">20 operational modules</div>
+</section>
+
+<!-- CORE INTELLIGENCE -->
+<section class="category">
+    <div class="category-header">
+        <div class="category-icon" style="background: rgba(0,212,255,0.1);">&#x1F4E1;</div>
+        <div class="category-name">Core Intelligence</div>
+        <div class="category-count">6 MODULES</div>
+    </div>
+    <div class="feature-grid">
+
+        <div class="feature-card" style="--card-accent: #00d4ff;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F4F1;</div>
+                <span class="card-badge badge-core">CORE</span>
+            </div>
+            <div class="card-name">Live Monitor</div>
+            <div class="card-codename">MONITOR</div>
+            <div class="card-desc">Real-time incident feed with severity classification, source attribution, and verification status. Auto-refreshing dashboard with casualty tracking and conflict intensity metrics.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">LIVE FEED</span>
+                <span class="cap-tag">SEVERITY</span>
+                <span class="cap-tag">VERIFICATION</span>
+                <span class="cap-tag">AUTO-REFRESH</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00d4ff;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F5FA;</div>
+                <span class="card-badge badge-core">CORE</span>
+            </div>
+            <div class="card-name">Theater Map</div>
+            <div class="card-codename">MAP</div>
+            <div class="card-desc">Interactive Leaflet map with multi-layer overlays: incident events, live aircraft tracking, satellite positions (TLE orbital mechanics), maritime AIS vessels, and airspace alert zones.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">EVENTS</span>
+                <span class="cap-tag">AIRCRAFT</span>
+                <span class="cap-tag">SATELLITES</span>
+                <span class="cap-tag">MARITIME</span>
+                <span class="cap-tag">AIRSPACE</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00d4ff;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F4CA;</div>
+                <span class="card-badge badge-core">CORE</span>
+            </div>
+            <div class="card-name">Analytical Dashboard</div>
+            <div class="card-codename">ANALYSIS</div>
+            <div class="card-desc">Statistical breakdown of incident patterns by type, severity, geography, and timeline. Trend visualization with rolling averages and anomaly detection.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">CHARTS</span>
+                <span class="cap-tag">TRENDS</span>
+                <span class="cap-tag">PATTERNS</span>
+                <span class="cap-tag">ANOMALIES</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00d4ff;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F52E;</div>
+                <span class="card-badge badge-core">CORE</span>
+            </div>
+            <div class="card-name">Prediction Engine</div>
+            <div class="card-codename">PREDICTION</div>
+            <div class="card-desc">Probabilistic forecasting of conflict escalation, regional instability, and incident likelihood. Time-horizon modeling with confidence intervals and scenario branching.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">FORECASTING</span>
+                <span class="cap-tag">PROBABILITY</span>
+                <span class="cap-tag">SCENARIOS</span>
+                <span class="cap-tag">CONFIDENCE</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00d4ff;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F4BE;</div>
+                <span class="card-badge badge-core">CORE</span>
+            </div>
+            <div class="card-name">Data Export &amp; API</div>
+            <div class="card-codename">DATA</div>
+            <div class="card-desc">Programmatic access to the full incident database. JSON, CSV, and GeoJSON export formats. REST API with structured query parameters and RSS feed integration.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">JSON</span>
+                <span class="cap-tag">CSV</span>
+                <span class="cap-tag">GEOJSON</span>
+                <span class="cap-tag">REST API</span>
+                <span class="cap-tag">RSS</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00d4ff;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F4DD;</div>
+                <span class="card-badge badge-core">CORE</span>
+            </div>
+            <div class="card-name">Intelligence Reports</div>
+            <div class="card-codename">REPORTS</div>
+            <div class="card-desc">Automated report generation with structured intelligence summaries. Exportable briefing documents with classification markings, source attribution, and distribution controls.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">AUTO-GEN</span>
+                <span class="cap-tag">CLASSIFIED</span>
+                <span class="cap-tag">EXPORT</span>
+                <span class="cap-tag">DISTRIBUTION</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- DEFENSE & THREAT -->
+<section class="category">
+    <div class="category-header">
+        <div class="category-icon" style="background: rgba(255,68,68,0.1);">&#x1F6E1;</div>
+        <div class="category-name">Defense &amp; Threat</div>
+        <div class="category-count">4 MODULES</div>
+    </div>
+    <div class="feature-grid">
+
+        <div class="feature-card" style="--card-accent: #ff4444;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F680;</div>
+                <span class="card-badge badge-defense">DEFENSE</span>
+            </div>
+            <div class="card-name">Missile Defense Dashboard</div>
+            <div class="card-codename">MISSILE DEFENSE</div>
+            <div class="card-desc">Country-by-country ballistic missile and air defense inventory. Capability assessments, range overlays, and threat radius visualization with real-time readiness indicators.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">INVENTORY</span>
+                <span class="cap-tag">RANGE</span>
+                <span class="cap-tag">READINESS</span>
+                <span class="cap-tag">THREAT RADIUS</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #ff4444;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F441;</div>
+                <span class="card-badge badge-defense">DEFENSE</span>
+            </div>
+            <div class="card-name">Entity Resolution</div>
+            <div class="card-codename">ARGUS</div>
+            <div class="card-desc">Multi-source entity deconfliction and identity resolution. Links actors, organizations, and assets across disparate intelligence feeds into unified threat profiles.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">ENTITY MATCHING</span>
+                <span class="cap-tag">DECONFLICTION</span>
+                <span class="cap-tag">PROFILES</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #ff4444;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F916;</div>
+                <span class="card-badge badge-defense">DEFENSE</span>
+            </div>
+            <div class="card-name">Counter-UAS Drone Layer</div>
+            <div class="card-codename">SENTINEL</div>
+            <div class="card-desc">Drone threat detection and classification system. Tracks UAS activity patterns, maps no-fly zones, and models counter-drone engagement envelopes with kill chain analysis.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">UAS DETECTION</span>
+                <span class="cap-tag">CLASSIFICATION</span>
+                <span class="cap-tag">KILL CHAIN</span>
+                <span class="cap-tag">NO-FLY ZONES</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #ff4444;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F47B;</div>
+                <span class="card-badge badge-defense">DEFENSE</span>
+            </div>
+            <div class="card-name">Cyber Threat Overlay</div>
+            <div class="card-codename">SPECTER</div>
+            <div class="card-desc">Cyber domain situational awareness. Maps APT campaigns, infrastructure targeting, and digital attack surfaces. Correlates cyber events with kinetic operations for full-spectrum threat picture.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">APT TRACKING</span>
+                <span class="cap-tag">INFRASTRUCTURE</span>
+                <span class="cap-tag">CORRELATION</span>
+                <span class="cap-tag">IOC FEEDS</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PREDICTIVE ANALYSIS -->
+<section class="category">
+    <div class="category-header">
+        <div class="category-icon" style="background: rgba(0,255,136,0.1);">&#x1F9E0;</div>
+        <div class="category-name">Predictive Analysis</div>
+        <div class="category-count">5 MODULES</div>
+    </div>
+    <div class="feature-grid">
+
+        <div class="feature-card" style="--card-accent: #00ff88;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F4A5;</div>
+                <span class="card-badge badge-intel">INTEL</span>
+            </div>
+            <div class="card-name">Escalation Probability Model</div>
+            <div class="card-codename">CASCADE</div>
+            <div class="card-desc">Branching decision trees modeling cascading geopolitical effects. Visualizes escalation pathways with probability-weighted nodes, time horizons (24h/48h/7d), and risk gauges per scenario.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">DECISION TREES</span>
+                <span class="cap-tag">PROBABILITY</span>
+                <span class="cap-tag">TIME HORIZONS</span>
+                <span class="cap-tag">RISK GAUGE</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00ff88;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F3AF;</div>
+                <span class="card-badge badge-intel">INTEL</span>
+            </div>
+            <div class="card-name">Adversary Intent Model</div>
+            <div class="card-codename">PHANTOM</div>
+            <div class="card-desc">Behavioral profiling of threat actors. Analyzes incident patterns to score adversary intent, predict tactical preferences, and map operational signatures across 11+ identified actors.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">ACTOR PROFILES</span>
+                <span class="cap-tag">INTENT SCORING</span>
+                <span class="cap-tag">TACTIC ANALYSIS</span>
+                <span class="cap-tag">SIGNATURES</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00ff88;">
+            <div class="card-top">
+                <div class="card-icon">&#x26A1;</div>
+                <span class="card-badge badge-intel">INTEL</span>
+            </div>
+            <div class="card-name">OODA Loop Visualization</div>
+            <div class="card-codename">RAGNAROK</div>
+            <div class="card-desc">Observe-Orient-Decide-Act decision cycle mapped to live incidents. Breaks down each event into OODA phases with timeline, decision points, and recommended actions.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">OODA CYCLE</span>
+                <span class="cap-tag">DECISION POINTS</span>
+                <span class="cap-tag">TIMELINE</span>
+                <span class="cap-tag">ACTIONS</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00ff88;">
+            <div class="card-top">
+                <div class="card-icon">&#x2694;</div>
+                <span class="card-badge badge-intel">INTEL</span>
+            </div>
+            <div class="card-name">Red Team Wargaming</div>
+            <div class="card-codename">HYDRA</div>
+            <div class="card-desc">Adversary simulation and defense gap analysis. Models IRGC, Houthi, Hezbollah, and hybrid threat capabilities. Runs red vs. blue wargame scenarios with force disposition and engagement modeling.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">WARGAMING</span>
+                <span class="cap-tag">RED/BLUE TEAMS</span>
+                <span class="cap-tag">CAPABILITIES</span>
+                <span class="cap-tag">GAP ANALYSIS</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #00ff88;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F4DC;</div>
+                <span class="card-badge badge-intel">INTEL</span>
+            </div>
+            <div class="card-name">Intelligence Briefing Generator</div>
+            <div class="card-codename">HERMES</div>
+            <div class="card-desc">Automated production of structured intelligence briefings. Generates classified-format documents (CDB, SITREP, INTSUM) with executive summary, key findings, and actionable recommendations.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">CDB</span>
+                <span class="cap-tag">SITREP</span>
+                <span class="cap-tag">INTSUM</span>
+                <span class="cap-tag">AUTO-GEN</span>
+                <span class="cap-tag">PRINT</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- MULTI-DOMAIN AWARENESS -->
+<section class="category">
+    <div class="category-header">
+        <div class="category-icon" style="background: rgba(168,85,247,0.1);">&#x1F310;</div>
+        <div class="category-name">Multi-Domain Awareness</div>
+        <div class="category-count">5 MODULES</div>
+    </div>
+    <div class="feature-grid">
+
+        <div class="feature-card" style="--card-accent: #a855f7;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F517;</div>
+                <span class="card-badge badge-new">NEW</span>
+            </div>
+            <div class="card-name">Supply Chain Vulnerability</div>
+            <div class="card-codename">LIFELINE</div>
+            <div class="card-desc">Maps critical supply chain dependencies across maritime chokepoints, energy corridors, and logistics networks. Identifies single points of failure and models disruption cascades.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">CHOKEPOINTS</span>
+                <span class="cap-tag">ENERGY</span>
+                <span class="cap-tag">LOGISTICS</span>
+                <span class="cap-tag">DISRUPTION</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #a855f7;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F578;</div>
+                <span class="card-badge badge-new">NEW</span>
+            </div>
+            <div class="card-name">Entity Resolution &amp; Link Analysis</div>
+            <div class="card-codename">NEXUS</div>
+            <div class="card-desc">Knowledge graph connecting people, organizations, locations, and events. Uncovers hidden relationships through network analysis, centrality scoring, and community detection algorithms.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">GRAPH</span>
+                <span class="cap-tag">CENTRALITY</span>
+                <span class="cap-tag">LINK ANALYSIS</span>
+                <span class="cap-tag">COMMUNITY</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #a855f7;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F4E1;</div>
+                <span class="card-badge badge-new">NEW</span>
+            </div>
+            <div class="card-name">Multi-INT Fusion Dashboard</div>
+            <div class="card-codename">PRISM</div>
+            <div class="card-desc">Fuses intelligence from multiple disciplines: SIGINT, HUMINT, OSINT, GEOINT, and MASINT into a single correlated picture. Confidence-weighted fusion with source reliability scoring.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">SIGINT</span>
+                <span class="cap-tag">HUMINT</span>
+                <span class="cap-tag">OSINT</span>
+                <span class="cap-tag">GEOINT</span>
+                <span class="cap-tag">FUSION</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #a855f7;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F6F0;</div>
+                <span class="card-badge badge-new">NEW</span>
+            </div>
+            <div class="card-name">Autonomous Sensor Tasking</div>
+            <div class="card-codename">OVERWATCH</div>
+            <div class="card-desc">Priority-based sensor allocation and collection management. Automatically tasks ISR assets based on intelligence gaps, threat priority, and coverage requirements across the AOR.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">ISR TASKING</span>
+                <span class="cap-tag">COLLECTION</span>
+                <span class="cap-tag">PRIORITY</span>
+                <span class="cap-tag">GAPS</span>
+            </div>
+        </div>
+
+        <div class="feature-card" style="--card-accent: #a855f7;">
+            <div class="card-top">
+                <div class="card-icon">&#x1F3DB;</div>
+                <span class="card-badge badge-new">NEW</span>
+            </div>
+            <div class="card-name">Collaborative Command Workspace</div>
+            <div class="card-codename">CITADEL</div>
+            <div class="card-desc">Multi-role command and control workspace. Role-based dashboards for analysts, commanders, and operators. Shared operational picture with tasking, annotations, and real-time collaboration.</div>
+            <div class="card-capabilities">
+                <span class="cap-tag">C2</span>
+                <span class="cap-tag">ROLE-BASED</span>
+                <span class="cap-tag">TASKING</span>
+                <span class="cap-tag">COLLABORATION</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+    <p class="footer-text">
+        GULF WATCH INTELLIGENCE PLATFORM &mdash; 20 OPERATIONAL MODULES<br>
+        <a href="/">Launch Dashboard</a>
+    </p>
+</footer>
+
+</body>
+</html>
