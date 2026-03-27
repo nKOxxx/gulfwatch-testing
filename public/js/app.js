@@ -413,33 +413,27 @@ function initializeNavigation() {
                 initializeHermes();
             } else if (section === 'cascade') {
                 initializeFeature('cascade', 'cascade-output', () => {
-                    const engine = new CascadeEngine(state.incidents || []);
-                    return renderCascade(engine);
+                    return renderCascade(state.incidents || []);
                 });
             } else if (section === 'phantom') {
                 initializeFeature('phantom', 'phantom-output', () => {
-                    const engine = new PhantomEngine(state.incidents || []);
-                    return renderPhantom(engine);
+                    return renderPhantom(state.incidents || []);
                 });
             } else if (section === 'lifeline') {
                 initializeFeature('lifeline', 'lifeline-output', () => {
-                    const engine = new LifelineEngine(state.incidents || []);
-                    return renderLifeline(engine);
+                    return renderLifeline(state.incidents || []);
                 });
             } else if (section === 'nexus') {
                 initializeFeature('nexus', 'nexus-output', () => {
-                    const engine = new NexusEngine(state.incidents || []);
-                    return renderNexus(engine);
+                    return renderNexus(state.incidents || []);
                 });
             } else if (section === 'prism') {
                 initializeFeature('prism', 'prism-output', () => {
-                    const engine = new PrismEngine(state.incidents || []);
-                    return renderPrism(engine);
+                    return renderPrism(state.incidents || []);
                 });
             } else if (section === 'overwatch') {
                 initializeFeature('overwatch', 'overwatch-output', () => {
-                    const engine = new OverwatchEngine(state.incidents || []);
-                    return renderOverwatch(engine);
+                    return renderOverwatch(state.incidents || []);
                 });
             } else if (section === 'citadel') {
                 initializeFeature('citadel', 'citadel-output', () => {
@@ -447,18 +441,15 @@ function initializeNavigation() {
                 });
             } else if (section === 'specter') {
                 initializeFeature('specter', 'specter-output', () => {
-                    const engine = new SpecterEngine(state.incidents || []);
-                    return renderSpecter(engine);
+                    return renderSpecter(state.incidents || []);
                 });
             } else if (section === 'hydra') {
                 initializeFeature('hydra', 'hydra-output', () => {
-                    const engine = new HydraEngine(state.incidents || []);
-                    return renderHydra(engine);
+                    return renderHydra();
                 });
             } else if (section === 'sentinel') {
                 initializeFeature('sentinel', 'sentinel-output', () => {
-                    const engine = new SentinelEngine(state.incidents || []);
-                    return renderSentinel(engine);
+                    return renderSentinel();
                 });
             } else if (section === 'ragnarok') {
                 initializeRagnarok();

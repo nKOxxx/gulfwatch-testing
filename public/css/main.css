@@ -234,6 +234,26 @@
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-subtle);
   padding: 0 var(--space-4);
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-subtle) transparent;
+  -ms-overflow-style: none;
+}
+
+.section-tabs::-webkit-scrollbar {
+  height: 3px;
+}
+
+.section-tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.section-tabs::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
 }
 
 .tab-btn {
@@ -249,6 +269,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-2);
+  flex-shrink: 0;
 }
 
 .tab-btn:hover {

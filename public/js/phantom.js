@@ -665,6 +665,10 @@ function phantomSelectActor(actorName) {
 // EXPORTS
 // =====================================================================
 
+window.PhantomEngine = PhantomEngine;
+window.renderPhantom = renderPhantom;
+window.phantomSelectActor = phantomSelectActor;
+
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { PhantomEngine, renderPhantom, phantomSelectActor };
 }

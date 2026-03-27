@@ -706,6 +706,10 @@ function cascadeSelectScenario(value) {
 // EXPORTS
 // =====================================================================
 
+window.CascadeEngine = CascadeEngine;
+window.renderCascade = renderCascade;
+window.cascadeSelectScenario = cascadeSelectScenario;
+
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { CascadeEngine, renderCascade, cascadeSelectScenario };
 }
