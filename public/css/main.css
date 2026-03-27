@@ -269,6 +269,20 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* All sections hidden by default; JS shows the active one */
+.section {
+  display: none;
+}
+
+.section[data-section="monitor"] {
+  display: block;
+}
+
+#ragnarok-section {
+  min-height: 600px;
+  overflow-y: auto;
+}
+
 /* ============================================================================
    INCIDENT FEED
    ============================================================================ */
@@ -2858,9 +2872,4 @@
   }
 }
 
-/* Desktop: Always show ragnarok section content */
-@media (min-width: 769px) {
-  #ragnarok-section {
-    display: block !important;
-  }
-}
+/* Desktop: Ragnarok section follows standard tab visibility */
