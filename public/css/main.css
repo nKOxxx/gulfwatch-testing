@@ -2857,3 +2857,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Desktop: Always show ragnarok section content */
+@media (min-width: 769px) {
+  #ragnarok-section {
+    display: block !important;
+  }
+}

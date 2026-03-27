@@ -412,16 +412,16 @@ function initializeNavigation() {
             } else if (section === 'ragnarok') {
                 // Initialize Ragnarok OODA engine
                 initializeRagnarok();
-                // Render a demo visualization immediately so something is visible
+                // Render immediately with first available incident
                 const output = document.getElementById('ragnarok-output');
+                const incidents = state.incidents || [];
+                console.log('Ragnarok tab opened, incidents count:', incidents.length);
                 if (output) {
-                    output.innerHTML = '';
-                    // Try to render with first available incident
-                    const incidents = state.incidents || [];
                     if (incidents.length > 0) {
+                        console.log('Rendering with incident:', incidents[0].title);
                         output.innerHTML = renderRagnarok(incidents[0]);
                     } else {
-                        // Show demo with mock data
+                        console.log('No incidents, rendering demo');
                         output.innerHTML = renderRagnarok({
                             id: 1,
                             title: 'Demo: Houthi ballistic missile intercepted over Red Sea',
@@ -2446,9 +2446,13 @@ function initializeRagnarok() {
     if (select) {
         select.addEventListener('change', (e) => {
             const idx = parseInt(e.target.value);
+            console.log('Selector changed, idx:', idx, 'incidents:', state.incidents?.length);
             if (!isNaN(idx) && state.incidents && state.incidents[idx]) {
+                console.log('Rendering incident:', state.incidents[idx].title);
                 const output = document.getElementById('ragnarok-output');
                 if (output) output.innerHTML = renderRagnarok(state.incidents[idx]);
+            } else {
+                console.log('No valid incident found for idx:', idx);
             }
         });
     }
@@ -2557,6 +2561,7 @@ window.closeTranslateModal = closeTranslateModal;
 window.containsArabic = containsArabic;
 window.setRagnarokMode = setRagnarokMode;
 window.showRagnarokModal = showRagnarokModal;
+window.renderRagnarok = renderRagnarok;
 
 // Close modals when clicking outside
 document.addEventListener('click', (e) => {
