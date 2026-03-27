@@ -1,0 +1,772 @@
+/**
+ * PHANTOM — Adversary Intent Modeling Styles
+ * Dark military theme with actor cards, gauges, timelines, and heatmaps
+ */
+
+/* =====================================================================
+   CONTAINER
+   ===================================================================== */
+
+.phantom-container {
+    padding: 24px;
+    min-height: 600px;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+}
+
+.phantom-header {
+    margin-bottom: 20px;
+}
+
+.phantom-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent, #00ff88);
+    letter-spacing: 1px;
+}
+
+.phantom-subtitle {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-muted, #64748b);
+    letter-spacing: 0;
+    margin-left: 4px;
+}
+
+/* =====================================================================
+   CONTROLS
+   ===================================================================== */
+
+.phantom-controls {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.phantom-selector-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 360px;
+}
+
+.phantom-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted, #64748b);
+    letter-spacing: 1.5px;
+    font-family: var(--font-mono, monospace);
+}
+
+.phantom-select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
+    color: var(--text-primary, #ffffff);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+}
+
+.phantom-select:focus {
+    border-color: var(--accent, #00ff88);
+    box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.15);
+}
+
+.phantom-select option {
+    background: #111936;
+    color: #ffffff;
+}
+
+.phantom-actor-count {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.phantom-count-value {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--accent-cyan, #00d4ff);
+    font-family: var(--font-mono, monospace);
+}
+
+.phantom-count-label {
+    font-size: 12px;
+    color: var(--text-muted, #64748b);
+}
+
+/* =====================================================================
+   MAIN LAYOUT
+   ===================================================================== */
+
+.phantom-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.phantom-section-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-muted, #64748b);
+    letter-spacing: 2px;
+    font-family: var(--font-mono, monospace);
+    margin-bottom: 12px;
+}
+
+.phantom-empty,
+.phantom-predictions-empty,
+.phantom-patterns-empty,
+.phantom-matrix-empty,
+.phantom-timeline-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+}
+
+/* =====================================================================
+   ACTOR PROFILE CARD
+   ===================================================================== */
+
+.phantom-actor-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
+    border-left: 3px solid var(--actor-color, #00ff88);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.phantom-actor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+}
+
+.phantom-actor-name-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.phantom-actor-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary, #ffffff);
+}
+
+.phantom-actor-faction {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-muted, #64748b);
+}
+
+.phantom-actor-faction svg {
+    stroke: var(--text-muted, #64748b);
+}
+
+.phantom-actor-threat {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-family: var(--font-mono, monospace);
+}
+
+/* Actor stats bar */
+.phantom-actor-stats {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+}
+
+.phantom-stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 8px;
+    border-right: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.06));
+}
+
+.phantom-stat:last-child {
+    border-right: none;
+}
+
+.phantom-stat-value {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-primary, #ffffff);
+    font-family: var(--font-mono, monospace);
+    line-height: 1;
+}
+
+.phantom-stat-label {
+    font-size: 9px;
+    font-weight: 600;
+    color: var(--text-muted, #64748b);
+    letter-spacing: 1.5px;
+    margin-top: 4px;
+    font-family: var(--font-mono, monospace);
+}
+
+/* Actor body — left/right split */
+.phantom-actor-body {
+    display: flex;
+    gap: 0;
+}
+
+.phantom-actor-left {
+    width: 280px;
+    flex-shrink: 0;
+    padding: 20px;
+    border-right: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.phantom-actor-right {
+    flex: 1;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* =====================================================================
+   AGGRESSION GAUGE (conic-gradient)
+   ===================================================================== */
+
+.phantom-gauge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phantom-gauge {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--gauge-color, #00ff88) 0%,
+        var(--gauge-color, #00ff88) var(--gauge-pct, 0%),
+        rgba(255, 255, 255, 0.06) var(--gauge-pct, 0%),
+        rgba(255, 255, 255, 0.06) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phantom-gauge-fill {
+    display: none; /* conic-gradient handles fill */
+}
+
+.phantom-gauge-cover {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: var(--bg-primary, #0a0e27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.phantom-gauge-value {
+    font-size: 32px;
+    font-weight: 800;
+    font-family: var(--font-mono, monospace);
+    line-height: 1;
+}
+
+.phantom-gauge-unit {
+    font-size: 12px;
+    color: var(--text-muted, #64748b);
+    font-family: var(--font-mono, monospace);
+}
+
+.phantom-gauge-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+.phantom-gauge-sublabel {
+    font-size: 10px;
+    color: var(--text-muted, #64748b);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+/* =====================================================================
+   PRIMARY TACTICS
+   ===================================================================== */
+
+.phantom-tactics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.phantom-tactic-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phantom-tactic-type {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--accent-cyan, #00d4ff);
+    letter-spacing: 1px;
+    font-family: var(--font-mono, monospace);
+    min-width: 70px;
+}
+
+.phantom-tactic-bar-bg {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.phantom-tactic-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-cyan, #00d4ff), var(--accent-blue, #4a9eff));
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.phantom-tactic-pct {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-primary, #ffffff);
+    font-family: var(--font-mono, monospace);
+    min-width: 32px;
+    text-align: right;
+}
+
+.phantom-tactic-count {
+    font-size: 11px;
+    color: var(--text-muted, #64748b);
+    min-width: 24px;
+}
+
+/* =====================================================================
+   ACTIVITY TIMELINE (horizontal bar chart, CSS-only)
+   ===================================================================== */
+
+.phantom-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.phantom-timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phantom-timeline-range {
+    font-size: 11px;
+    color: var(--text-muted, #64748b);
+    font-family: var(--font-mono, monospace);
+}
+
+.phantom-timeline-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.phantom-timeline-bar-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phantom-timeline-month {
+    font-size: 10px;
+    color: var(--text-muted, #64748b);
+    font-family: var(--font-mono, monospace);
+    min-width: 65px;
+    text-align: right;
+    flex-shrink: 0;
+    order: -1;
+}
+
+.phantom-timeline-bar {
+    height: 18px;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.6), rgba(74, 158, 255, 0.4));
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    min-width: 24px;
+    transition: width 0.4s ease;
+}
+
+.phantom-timeline-bar-count {
+    font-size: 10px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: var(--font-mono, monospace);
+}
+
+/* =====================================================================
+   PREDICTIONS
+   ===================================================================== */
+
+.phantom-predictions {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.phantom-predictions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.phantom-prediction-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+    border-radius: 6px;
+    padding: 14px 16px;
+    transition: background 0.2s ease;
+}
+
+.phantom-prediction-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.phantom-prediction-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.phantom-prediction-index {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--accent-purple, #9d4edd);
+    background: rgba(157, 78, 221, 0.15);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: var(--font-mono, monospace);
+    letter-spacing: 1px;
+}
+
+.phantom-prediction-conf {
+    position: relative;
+    flex: 1;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.phantom-conf-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 9px;
+    opacity: 0.2;
+}
+
+.phantom-conf-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: var(--font-mono, monospace);
+    letter-spacing: 0.5px;
+    z-index: 1;
+}
+
+.phantom-prediction-timeframe {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-muted, #64748b);
+    font-family: var(--font-mono, monospace);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.phantom-prediction-action {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary, #ffffff);
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.phantom-prediction-reasoning {
+    font-size: 12px;
+    color: var(--text-secondary, #a0aec0);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.phantom-prediction-precedent {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-muted, #64748b);
+    font-family: var(--font-mono, monospace);
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.phantom-prediction-precedent svg {
+    stroke: var(--text-muted, #64748b);
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   PATTERN MATCHES
+   ===================================================================== */
+
+.phantom-patterns {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.phantom-patterns-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.phantom-pattern-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.06));
+    border-radius: 6px;
+    padding: 12px 14px;
+}
+
+.phantom-pattern-text {
+    font-size: 13px;
+    color: var(--text-primary, #ffffff);
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.phantom-pattern-stats {
+    display: flex;
+    gap: 16px;
+    font-size: 11px;
+    font-family: var(--font-mono, monospace);
+}
+
+.phantom-pattern-occur {
+    color: var(--text-muted, #64748b);
+}
+
+.phantom-pattern-conf {
+    font-weight: 700;
+}
+
+/* =====================================================================
+   THREAT MATRIX (CSS Grid heatmap)
+   ===================================================================== */
+
+.phantom-matrix {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.phantom-matrix-scroll {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.15) transparent;
+}
+
+.phantom-matrix-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.phantom-matrix-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+}
+
+.phantom-matrix-grid {
+    display: grid;
+    gap: 2px;
+    min-width: fit-content;
+}
+
+.phantom-matrix-corner {
+    background: transparent;
+}
+
+.phantom-matrix-col-header {
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--text-muted, #64748b);
+    letter-spacing: 1px;
+    font-family: var(--font-mono, monospace);
+    text-align: center;
+    padding: 8px 4px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 3px;
+}
+
+.phantom-matrix-row-header {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary, #a0aec0);
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.phantom-matrix-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--font-mono, monospace);
+    color: #ffffff;
+    padding: 8px 4px;
+    border-radius: 3px;
+    min-height: 36px;
+    transition: background 0.2s ease;
+}
+
+.phantom-matrix-cell:hover {
+    outline: 1px solid rgba(0, 212, 255, 0.5);
+    z-index: 1;
+}
+
+/* =====================================================================
+   RESPONSIVE
+   ===================================================================== */
+
+@media (max-width: 900px) {
+    .phantom-actor-body {
+        flex-direction: column;
+    }
+
+    .phantom-actor-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .phantom-actor-stats {
+        flex-wrap: wrap;
+    }
+
+    .phantom-stat {
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .phantom-container {
+        padding: 16px;
+    }
+
+    .phantom-controls {
+        flex-direction: column;
+    }
+
+    .phantom-selector-group {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .phantom-actor-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .phantom-prediction-header {
+        flex-wrap: wrap;
+    }
+}
+
+/* =====================================================================
+   ANIMATIONS
+   ===================================================================== */
+
+@keyframes phantom-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.phantom-actor-card {
+    animation: phantom-fade-in 0.3s ease both;
+}
+
+.phantom-prediction-card {
+    animation: phantom-fade-in 0.3s ease both;
+}
+
+.phantom-prediction-card:nth-child(1) { animation-delay: 0s; }
+.phantom-prediction-card:nth-child(2) { animation-delay: 0.05s; }
+.phantom-prediction-card:nth-child(3) { animation-delay: 0.1s; }
+.phantom-prediction-card:nth-child(4) { animation-delay: 0.15s; }
+
+@keyframes phantom-gauge-fill-anim {
+    from { --gauge-pct: 0%; }
+}
+
+.phantom-gauge {
+    animation: phantom-gauge-fill-anim 0.8s ease both;
+}

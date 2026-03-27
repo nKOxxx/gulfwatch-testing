@@ -1,0 +1,620 @@
+/**
+ * SENTINEL — Counter-UAS Threat Layer Styles
+ * Dark theme with AMBER/ORANGE accent (warning / active defense feel)
+ */
+
+/* =====================================================================
+   CONTAINER & HEADER
+   ===================================================================== */
+
+.sentinel-container {
+    padding: 0;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #fff;
+}
+
+.sentinel-header {
+    padding: 24px 24px 16px;
+    border-bottom: 1px solid rgba(255, 153, 0, 0.15);
+}
+
+.sentinel-header-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff9900;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sentinel-header-sub {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 4px;
+    margin-left: 32px;
+}
+
+/* =====================================================================
+   STATS BAR
+   ===================================================================== */
+
+.sentinel-stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sentinel-stat-item {
+    padding: 16px 20px;
+    background: #0a0a14;
+    text-align: center;
+}
+
+.sentinel-stat-value {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.sentinel-stat-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .sentinel-stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =====================================================================
+   BODY LAYOUT
+   ===================================================================== */
+
+.sentinel-body {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 20px;
+    padding: 20px 24px;
+}
+
+@media (max-width: 900px) {
+    .sentinel-body {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sentinel-col-main,
+.sentinel-col-side {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* =====================================================================
+   CARDS
+   ===================================================================== */
+
+.sentinel-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.sentinel-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sentinel-empty {
+    text-align: center;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 13px;
+}
+
+/* =====================================================================
+   DRONE INCIDENT FEED
+   ===================================================================== */
+
+.sentinel-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.sentinel-feed::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sentinel-feed::-webkit-scrollbar-thumb {
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 2px;
+}
+
+.sentinel-feed-item {
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.sentinel-feed-item:hover {
+    background: rgba(255, 153, 0, 0.04);
+    border-color: rgba(255, 153, 0, 0.15);
+}
+
+.sentinel-feed-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.sentinel-drone-badge {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.sentinel-drone-badge--owa { background: rgba(255, 34, 68, 0.2); color: #ff4466; }
+.sentinel-drone-badge--isr { background: rgba(255, 153, 0, 0.2); color: #ff9900; }
+.sentinel-drone-badge--cargo { background: rgba(255, 204, 0, 0.15); color: #ffcc00; }
+.sentinel-drone-badge--swarm { background: rgba(255, 68, 102, 0.2); color: #ff4466; }
+.sentinel-drone-badge--uas { background: rgba(255, 153, 0, 0.15); color: #ff9900; }
+
+.sentinel-feed-time {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.sentinel-feed-title {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.sentinel-feed-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.sentinel-feed-source { color: rgba(255, 153, 0, 0.6); }
+
+.sentinel-feed-verif {
+    padding: 1px 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 2px;
+    font-size: 9px;
+}
+
+/* =====================================================================
+   THREAT CLASSIFICATION
+   ===================================================================== */
+
+.sentinel-threat-class {
+    margin-bottom: 12px;
+}
+
+.sentinel-threat-class:last-child { margin-bottom: 0; }
+
+.sentinel-threat-class-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.sentinel-threat-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.sentinel-threat-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    flex: 1;
+}
+
+.sentinel-threat-risk {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.sentinel-risk--critical { background: rgba(255, 34, 68, 0.2); color: #ff2244; }
+.sentinel-risk--high { background: rgba(255, 102, 0, 0.2); color: #ff6600; }
+.sentinel-risk--medium { background: rgba(255, 153, 0, 0.15); color: #ff9900; }
+.sentinel-risk--low { background: rgba(255, 204, 0, 0.12); color: #ccaa00; }
+
+.sentinel-threat-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sentinel-threat-bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sentinel-threat-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.sentinel-threat-count {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'JetBrains Mono', monospace;
+    min-width: 24px;
+    text-align: right;
+}
+
+/* =====================================================================
+   COUNTER-UAS SYSTEM CARDS
+   ===================================================================== */
+
+.sentinel-sys-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sentinel-sys-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.sentinel-sys-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.sentinel-sys-icon {
+    font-size: 20px;
+    width: 32px;
+    text-align: center;
+}
+
+.sentinel-sys-info {
+    flex: 1;
+}
+
+.sentinel-sys-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sentinel-sys-type {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.sentinel-sys-readiness-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 6px currentColor;
+}
+
+.sentinel-ready--green {
+    background: #00ff88;
+    color: #00ff88;
+}
+
+.sentinel-ready--yellow {
+    background: #ffaa00;
+    color: #ffaa00;
+}
+
+.sentinel-ready--red {
+    background: #ff2244;
+    color: #ff2244;
+}
+
+.sentinel-sys-desc {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.sentinel-sys-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.sentinel-sys-metric {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sentinel-sys-metric strong {
+    font-size: 13px;
+    color: #ff9900;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.sentinel-sys-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.sentinel-sys-status {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.sentinel-sys-status--active { background: rgba(0, 255, 136, 0.15); color: #00ff88; }
+.sentinel-sys-status--engaged { background: rgba(255, 34, 68, 0.2); color: #ff4466; }
+.sentinel-sys-status--standby { background: rgba(255, 255, 255, 0.06); color: rgba(255, 255, 255, 0.4); }
+.sentinel-sys-status--testing { background: rgba(255, 204, 0, 0.12); color: #ffcc00; }
+
+.sentinel-sys-systems {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+/* =====================================================================
+   ACTIVITY TREND CHART
+   ===================================================================== */
+
+.sentinel-trend-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    height: 140px;
+    padding-top: 20px;
+}
+
+.sentinel-trend-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.sentinel-trend-val {
+    font-size: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 4px;
+}
+
+.sentinel-trend-bar {
+    width: 100%;
+    max-width: 36px;
+    background: linear-gradient(to top, #ff6600, #ff9900);
+    border-radius: 3px 3px 0 0;
+    min-height: 4px;
+    transition: height 0.4s ease;
+}
+
+.sentinel-trend-label {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.35);
+    margin-top: 6px;
+    white-space: nowrap;
+}
+
+/* =====================================================================
+   SECTOR GRID (Active Engagement Zones)
+   ===================================================================== */
+
+.sentinel-sector-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.sentinel-sector-cell {
+    aspect-ratio: 1;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.3s ease;
+}
+
+.sentinel-sector--clear {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.sentinel-sector--low {
+    background: rgba(255, 204, 0, 0.08);
+    border-color: rgba(255, 204, 0, 0.2);
+}
+
+.sentinel-sector--medium {
+    background: rgba(255, 153, 0, 0.12);
+    border-color: rgba(255, 153, 0, 0.3);
+    animation: sentinel-pulse-medium 3s ease-in-out infinite;
+}
+
+.sentinel-sector--high {
+    background: rgba(255, 102, 0, 0.15);
+    border-color: rgba(255, 102, 0, 0.4);
+    animation: sentinel-pulse-high 2s ease-in-out infinite;
+}
+
+.sentinel-sector--critical {
+    background: rgba(255, 34, 68, 0.2);
+    border-color: rgba(255, 34, 68, 0.5);
+    animation: sentinel-pulse-critical 1.5s ease-in-out infinite;
+}
+
+@keyframes sentinel-pulse-medium {
+    0%, 100% { box-shadow: none; }
+    50% { box-shadow: inset 0 0 8px rgba(255, 153, 0, 0.15); }
+}
+
+@keyframes sentinel-pulse-high {
+    0%, 100% { box-shadow: none; }
+    50% { box-shadow: inset 0 0 10px rgba(255, 102, 0, 0.2); }
+}
+
+@keyframes sentinel-pulse-critical {
+    0%, 100% { box-shadow: none; }
+    50% { box-shadow: inset 0 0 12px rgba(255, 34, 68, 0.25); }
+}
+
+.sentinel-sector-name {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+}
+
+.sentinel-sector-contacts {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ff9900;
+}
+
+.sentinel-sector-legend {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.sentinel-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.sentinel-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.sentinel-sector-rows {
+    display: flex;
+    justify-content: space-around;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.1em;
+}
+
+/* =====================================================================
+   RESPONSE TIME ANALYSIS
+   ===================================================================== */
+
+.sentinel-resp-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background: rgba(255, 153, 0, 0.06);
+    border: 1px solid rgba(255, 153, 0, 0.12);
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sentinel-resp-total-val {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff9900;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.sentinel-resp-phase {
+    margin-bottom: 10px;
+}
+
+.sentinel-resp-phase:last-child { margin-bottom: 0; }
+
+.sentinel-resp-phase-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 4px;
+}
+
+.sentinel-resp-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sentinel-resp-bar-track {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sentinel-resp-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}

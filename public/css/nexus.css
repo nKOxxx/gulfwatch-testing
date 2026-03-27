@@ -1,0 +1,555 @@
+/**
+ * NEXUS — Entity Resolution & Link Analysis Visualization Styles
+ */
+
+/* =====================================================================
+   CONTAINER & HEADER
+   ===================================================================== */
+
+.nexus-container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.nexus-header {
+    margin-bottom: 24px;
+}
+
+.nexus-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00ff88;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.nexus-subtitle {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 32px;
+}
+
+/* =====================================================================
+   STATS BAR
+   ===================================================================== */
+
+.nexus-stats-bar {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.nexus-stat {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    padding: 10px 8px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nexus-stat-accent {
+    background: rgba(0, 255, 136, 0.04);
+    border-color: rgba(0, 255, 136, 0.12);
+}
+
+.nexus-stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nexus-stat-accent .nexus-stat-value {
+    font-size: 13px;
+    color: #00ff88;
+}
+
+.nexus-stat-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 4px;
+}
+
+/* =====================================================================
+   FILTER BAR
+   ===================================================================== */
+
+.nexus-filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.nexus-filter-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.35);
+    margin-right: 4px;
+}
+
+.nexus-filter-btn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.nexus-filter-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nexus-filter-active {
+    background: rgba(0, 255, 136, 0.1);
+    border-color: rgba(0, 255, 136, 0.3);
+    color: #00ff88;
+}
+
+.nexus-filter-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* =====================================================================
+   LEGEND
+   ===================================================================== */
+
+.nexus-legend {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nexus-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.nexus-legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.nexus-legend-sep {
+    width: 1px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nexus-legend-line {
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+    border-radius: 1px;
+}
+
+/* =====================================================================
+   GRAPH LAYOUT
+   ===================================================================== */
+
+.nexus-graph-wrapper {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.nexus-graph-panel {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nexus-graph-container {
+    position: relative;
+    background: radial-gradient(ellipse at center, rgba(0, 255, 136, 0.02) 0%, rgba(10, 10, 20, 0) 70%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.nexus-graph-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* =====================================================================
+   NODES
+   ===================================================================== */
+
+.nexus-node {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s;
+    z-index: 2;
+    background: rgba(10, 10, 20, 0.85);
+    border: 2px solid var(--node-color, #666);
+    box-shadow: 0 0 8px color-mix(in srgb, var(--node-color) 30%, transparent),
+                inset 0 0 6px color-mix(in srgb, var(--node-color) 15%, transparent);
+}
+
+.nexus-node:hover {
+    transform: scale(1.25);
+    z-index: 10;
+    box-shadow: 0 0 20px color-mix(in srgb, var(--node-color) 50%, transparent),
+                0 0 40px color-mix(in srgb, var(--node-color) 20%, transparent),
+                inset 0 0 10px color-mix(in srgb, var(--node-color) 25%, transparent);
+}
+
+.nexus-node-selected {
+    transform: scale(1.2);
+    z-index: 10;
+    box-shadow: 0 0 24px color-mix(in srgb, var(--node-color) 60%, transparent),
+                0 0 48px color-mix(in srgb, var(--node-color) 25%, transparent);
+    border-width: 3px;
+}
+
+.nexus-node-ring-0 {
+    z-index: 5;
+    border-width: 3px;
+    background: rgba(10, 10, 20, 0.95);
+}
+
+.nexus-node-label {
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    line-height: 1.15;
+    font-weight: 600;
+    padding: 2px;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+    pointer-events: none;
+    max-width: calc(var(--node-size, 36px) - 6px);
+    word-break: break-all;
+}
+
+/* ── Node type-specific glow ───────────────────────────────────────── */
+
+.nexus-node-actor {
+    --node-color: #ff2244;
+}
+
+.nexus-node-location {
+    --node-color: #00aaff;
+}
+
+.nexus-node-weapon {
+    --node-color: #ff8800;
+}
+
+.nexus-node-vessel {
+    --node-color: #00ff88;
+}
+
+.nexus-node-org {
+    --node-color: #aa44ff;
+}
+
+/* =====================================================================
+   DETAIL PANEL
+   ===================================================================== */
+
+.nexus-detail-panel {
+    width: 260px;
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nexus-detail-placeholder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.nexus-detail-header {
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.nexus-detail-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.nexus-detail-type {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.nexus-detail-metrics {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.6;
+    padding: 8px 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.nexus-detail-id {
+    font-size: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(255, 255, 255, 0.2);
+    margin-top: 12px;
+    word-break: break-all;
+}
+
+/* =====================================================================
+   SECTION TITLES
+   ===================================================================== */
+
+.nexus-section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #00ff88;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+/* =====================================================================
+   RELATIONSHIP LIST
+   ===================================================================== */
+
+.nexus-relationships {
+    margin-bottom: 28px;
+}
+
+.nexus-rel-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nexus-rel-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    transition: background 0.2s;
+}
+
+.nexus-rel-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nexus-rel-entity {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    min-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nexus-rel-arrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nexus-rel-type {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.nexus-rel-weight {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(255, 255, 255, 0.3);
+    min-width: 24px;
+    text-align: right;
+}
+
+/* =====================================================================
+   ENTITY TABLE
+   ===================================================================== */
+
+.nexus-entity-table {
+    margin-bottom: 24px;
+}
+
+.nexus-table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 80px 90px 80px;
+    gap: 8px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 8px 8px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 600;
+}
+
+.nexus-table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 80px 90px 80px;
+    gap: 8px;
+    padding: 9px 14px;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 12px;
+    transition: background 0.2s;
+    cursor: default;
+}
+
+.nexus-table-row:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.nexus-table-row:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.nexus-table-col-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nexus-table-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.nexus-table-col-type {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+}
+
+.nexus-table-col-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* =====================================================================
+   RESPONSIVE
+   ===================================================================== */
+
+@media (max-width: 950px) {
+    .nexus-graph-wrapper {
+        flex-direction: column;
+    }
+    .nexus-detail-panel {
+        width: 100%;
+        min-height: 100px;
+    }
+    .nexus-graph-container {
+        width: 100% !important;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nexus-container {
+        padding: 14px;
+    }
+    .nexus-stats-bar {
+        flex-wrap: wrap;
+    }
+    .nexus-table-header,
+    .nexus-table-row {
+        grid-template-columns: 2fr 1fr 60px 70px 60px;
+        font-size: 11px;
+    }
+    .nexus-rel-entity {
+        min-width: 80px;
+        font-size: 11px;
+    }
+}

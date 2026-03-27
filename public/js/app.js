@@ -411,11 +411,82 @@ function initializeNavigation() {
                 initializeData();
             } else if (section === 'hermes') {
                 initializeHermes();
+            } else if (section === 'cascade') {
+                initializeFeature('cascade', 'cascade-output', () => {
+                    const engine = new CascadeEngine(state.incidents || []);
+                    return renderCascade(engine);
+                });
+            } else if (section === 'phantom') {
+                initializeFeature('phantom', 'phantom-output', () => {
+                    const engine = new PhantomEngine(state.incidents || []);
+                    return renderPhantom(engine);
+                });
+            } else if (section === 'lifeline') {
+                initializeFeature('lifeline', 'lifeline-output', () => {
+                    const engine = new LifelineEngine(state.incidents || []);
+                    return renderLifeline(engine);
+                });
+            } else if (section === 'nexus') {
+                initializeFeature('nexus', 'nexus-output', () => {
+                    const engine = new NexusEngine(state.incidents || []);
+                    return renderNexus(engine);
+                });
+            } else if (section === 'prism') {
+                initializeFeature('prism', 'prism-output', () => {
+                    const engine = new PrismEngine(state.incidents || []);
+                    return renderPrism(engine);
+                });
+            } else if (section === 'overwatch') {
+                initializeFeature('overwatch', 'overwatch-output', () => {
+                    const engine = new OverwatchEngine(state.incidents || []);
+                    return renderOverwatch(engine);
+                });
+            } else if (section === 'citadel') {
+                initializeFeature('citadel', 'citadel-output', () => {
+                    return renderCitadel(state.incidents || [], 'analyst');
+                });
+            } else if (section === 'specter') {
+                initializeFeature('specter', 'specter-output', () => {
+                    const engine = new SpecterEngine(state.incidents || []);
+                    return renderSpecter(engine);
+                });
+            } else if (section === 'hydra') {
+                initializeFeature('hydra', 'hydra-output', () => {
+                    const engine = new HydraEngine(state.incidents || []);
+                    return renderHydra(engine);
+                });
+            } else if (section === 'sentinel') {
+                initializeFeature('sentinel', 'sentinel-output', () => {
+                    const engine = new SentinelEngine(state.incidents || []);
+                    return renderSentinel(engine);
+                });
             } else if (section === 'ragnarok') {
                 initializeRagnarok();
             }
         });
     });
+}
+
+// ============================================================================
+// GENERIC FEATURE INITIALIZER
+// ============================================================================
+
+const _featureInitialized = {};
+
+function initializeFeature(name, outputId, renderFn) {
+    const output = document.getElementById(outputId);
+    if (!output) { console.error(`${name}: #${outputId} not found`); return; }
+    try {
+        const html = renderFn();
+        if (html) {
+            output.innerHTML = html;
+            _featureInitialized[name] = true;
+            console.log(`✅ ${name} rendered`);
+        }
+    } catch (err) {
+        console.error(`❌ ${name} error:`, err);
+        output.innerHTML = `<div style="color:#f44336;padding:40px;text-align:center"><h3>${name.toUpperCase()} — Render Error</h3><p>${err.message}</p></div>`;
+    }
 }
 
 // ============================================================================

@@ -1,0 +1,591 @@
+/**
+ * HYDRA — Red Team Wargaming Styles
+ * Dark theme with RED accent (adversary / red-team feel)
+ */
+
+/* =====================================================================
+   CONTAINER & HEADER
+   ===================================================================== */
+
+.hydra-container {
+    padding: 0;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #fff;
+}
+
+.hydra-header {
+    padding: 24px 24px 16px;
+    border-bottom: 1px solid rgba(255, 34, 68, 0.15);
+}
+
+.hydra-header-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff2244;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hydra-header-sub {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 4px;
+    margin-left: 32px;
+}
+
+/* =====================================================================
+   TABS
+   ===================================================================== */
+
+.hydra-tabs {
+    display: flex;
+    gap: 4px;
+    padding: 12px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 34, 68, 0.03);
+    overflow-x: auto;
+}
+
+.hydra-tab {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.hydra-tab:hover {
+    background: rgba(255, 34, 68, 0.1);
+    border-color: rgba(255, 34, 68, 0.3);
+    color: #fff;
+}
+
+.hydra-tab--active {
+    background: rgba(255, 34, 68, 0.15);
+    border-color: #ff2244;
+    color: #ff2244;
+}
+
+.hydra-tab-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   GRID LAYOUT
+   ===================================================================== */
+
+.hydra-panels {
+    padding: 20px 24px;
+}
+
+.hydra-grid {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .hydra-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hydra-col-left,
+.hydra-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* =====================================================================
+   CARDS
+   ===================================================================== */
+
+.hydra-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.hydra-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* =====================================================================
+   CAPABILITY RADAR (BAR STYLE)
+   ===================================================================== */
+
+.hydra-radar-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hydra-radar-bar {
+    display: grid;
+    grid-template-columns: 80px 1fr 42px;
+    align-items: center;
+    gap: 10px;
+}
+
+.hydra-radar-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.05em;
+}
+
+.hydra-radar-track {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.hydra-radar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.hydra-radar-val {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* =====================================================================
+   DOCTRINE
+   ===================================================================== */
+
+.hydra-doctrine-text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin: 0 0 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hydra-doctrine-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hydra-doctrine-heading {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+}
+
+.hydra-doctrine-list--obj .hydra-doctrine-heading,
+.hydra-doctrine-heading:first-child {
+    color: #ff2244;
+}
+
+.hydra-doctrine-list--con .hydra-doctrine-heading {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.hydra-doctrine-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hydra-doctrine-list li {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 3px 0 3px 14px;
+    position: relative;
+}
+
+.hydra-doctrine-list--obj li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: #ff2244;
+    font-weight: 700;
+}
+
+.hydra-doctrine-list--con li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+/* =====================================================================
+   FORCE POSTURE
+   ===================================================================== */
+
+.hydra-card--posture {
+    border-color: rgba(68, 136, 255, 0.15);
+}
+
+.hydra-posture-meta {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 12px;
+}
+
+.hydra-posture-bar {
+    display: grid;
+    grid-template-columns: 90px 1fr 36px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.hydra-posture-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+}
+
+.hydra-posture-track {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.hydra-posture-fill {
+    height: 100%;
+    background: #4488ff;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.hydra-posture-val {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* =====================================================================
+   WARGAME SCORE
+   ===================================================================== */
+
+.hydra-card--score {
+    background: rgba(255, 34, 68, 0.04);
+    border-color: rgba(255, 34, 68, 0.15);
+}
+
+.hydra-score-bar-wrap {
+    margin-bottom: 12px;
+}
+
+.hydra-score-label-left,
+.hydra-score-label-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.hydra-score-label-right {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+
+.hydra-score-pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hydra-score-bar {
+    display: flex;
+    height: 22px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.hydra-score-adv {
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.hydra-score-def {
+    height: 100%;
+    background: #4488ff;
+    transition: width 0.5s ease;
+}
+
+.hydra-readiness {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hydra-readiness-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.hydra-readiness--low { color: #ff2244; }
+.hydra-readiness--mid { color: #ffaa00; }
+.hydra-readiness--high { color: #00ff88; }
+
+/* =====================================================================
+   SCENARIO CARDS
+   ===================================================================== */
+
+.hydra-scenarios-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hydra-scenario {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 3px solid #ff2244;
+    border-radius: 8px;
+    padding: 14px 16px;
+    transition: background 0.2s;
+}
+
+.hydra-scenario:hover {
+    background: rgba(255, 34, 68, 0.04);
+}
+
+.hydra-scenario-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.hydra-scenario-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.hydra-scenario-badges {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.hydra-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hydra-impact--critical { background: rgba(255, 34, 68, 0.2); color: #ff2244; }
+.hydra-impact--high { background: rgba(255, 136, 0, 0.2); color: #ff8800; }
+.hydra-impact--medium { background: rgba(255, 170, 0, 0.15); color: #ffaa00; }
+.hydra-impact--low { background: rgba(255, 255, 255, 0.08); color: rgba(255, 255, 255, 0.6); }
+
+.hydra-prob--high { background: rgba(255, 34, 68, 0.2); color: #ff4466; }
+.hydra-prob--mid { background: rgba(255, 170, 0, 0.15); color: #ffaa00; }
+.hydra-prob--low { background: rgba(0, 255, 136, 0.12); color: #00ff88; }
+
+.hydra-scenario-row {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.5;
+    padding: 2px 0;
+}
+
+.hydra-scenario-key {
+    color: rgba(255, 255, 255, 0.35);
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.hydra-scenario-footer {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hydra-scenario-stat {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.hydra-scenario-stat strong {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* =====================================================================
+   GAP ANALYSIS
+   ===================================================================== */
+
+.hydra-gap-row {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.hydra-gap-row:last-child { border-bottom: none; }
+
+.hydra-gap-cap {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hydra-gap-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.hydra-gap-pair {
+    display: grid;
+    grid-template-columns: 52px 1fr 36px;
+    align-items: center;
+    gap: 8px;
+}
+
+.hydra-gap-label {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hydra-gap-track {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.hydra-gap-fill {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.hydra-gap-fill--threat { background: #ff2244; }
+.hydra-gap-fill--defense { background: #4488ff; }
+
+.hydra-gap-num {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'JetBrains Mono', monospace;
+    text-align: right;
+}
+
+.hydra-gap-status-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+}
+
+.hydra-gap--critical .hydra-gap-status-badge {
+    background: rgba(255, 34, 68, 0.2);
+    color: #ff2244;
+}
+
+.hydra-gap--warning .hydra-gap-status-badge {
+    background: rgba(255, 170, 0, 0.15);
+    color: #ffaa00;
+}
+
+.hydra-gap--adequate .hydra-gap-status-badge {
+    background: rgba(0, 255, 136, 0.12);
+    color: #00ff88;
+}
+
+.hydra-gap-rec {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.hydra-gap--critical .hydra-gap-cap { color: #ff2244; }
+.hydra-gap--warning .hydra-gap-cap { color: #ffaa00; }
+
+/* =====================================================================
+   NARRATIVE
+   ===================================================================== */
+
+.hydra-card--narrative {
+    border: 1px solid rgba(255, 34, 68, 0.2);
+    background: rgba(255, 34, 68, 0.03);
+}
+
+.hydra-card--narrative .hydra-card-title {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+.hydra-narrative-text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+    margin: 0;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border-left: 2px solid rgba(255, 34, 68, 0.3);
+}

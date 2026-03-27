@@ -1,0 +1,1164 @@
+/**
+ * CITADEL — Collaborative Command Workspace Styles
+ * Role-based operational picture with defense-grade UI
+ */
+
+/* =====================================================================
+   WORKSPACE LAYOUT
+   ===================================================================== */
+
+.citadel-workspace {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #fff;
+    padding: 0;
+}
+
+/* =====================================================================
+   COMMON OPERATING PICTURE BAR
+   ===================================================================== */
+
+.citadel-cop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 14px 24px;
+    margin-bottom: 16px;
+}
+
+.citadel-cop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    min-width: 100px;
+}
+
+.citadel-cop-label {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.citadel-cop-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #00ff88;
+}
+
+.citadel-cop-divider {
+    width: 1px;
+    height: 36px;
+    background: rgba(255,255,255,0.1);
+}
+
+.citadel-threat-critical { color: #ff3d3d !important; }
+.citadel-threat-high { color: #ff9100 !important; }
+.citadel-threat-medium { color: #ffd600 !important; }
+.citadel-threat-low { color: #00ff88 !important; }
+
+/* =====================================================================
+   ROLE SELECTOR TABS
+   ===================================================================== */
+
+.citadel-role-selector {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.citadel-role-tab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 6px;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.citadel-role-tab:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: var(--role-color, #00e5ff);
+    color: var(--role-color, #00e5ff);
+}
+
+.citadel-role-tab.citadel-role-active {
+    background: color-mix(in srgb, var(--role-color, #00e5ff) 12%, transparent);
+    border-color: var(--role-color, #00e5ff);
+    color: var(--role-color, #00e5ff);
+    box-shadow: 0 0 20px color-mix(in srgb, var(--role-color, #00e5ff) 15%, transparent);
+}
+
+.citadel-role-icon {
+    font-size: 16px;
+}
+
+.citadel-role-label {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* =====================================================================
+   ACCESS LEVEL BANNER
+   ===================================================================== */
+
+.citadel-access-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: color-mix(in srgb, var(--role-color, #00e5ff) 8%, #0a0a14);
+    border: 1px solid color-mix(in srgb, var(--role-color, #00e5ff) 30%, transparent);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.citadel-access-role {
+    color: var(--role-color, #00e5ff);
+    font-weight: 700;
+}
+
+.citadel-access-class {
+    color: #ffd600;
+    font-weight: 700;
+    padding: 2px 10px;
+    background: rgba(255,214,0,0.1);
+    border: 1px solid rgba(255,214,0,0.3);
+    border-radius: 3px;
+}
+
+.citadel-access-time {
+    color: rgba(255,255,255,0.4);
+}
+
+/* =====================================================================
+   MAIN LAYOUT
+   ===================================================================== */
+
+.citadel-main-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 16px;
+}
+
+@media (max-width: 1100px) {
+    .citadel-main-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.citadel-main-content {
+    min-width: 0;
+}
+
+.citadel-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* =====================================================================
+   PANEL GRIDS
+   ===================================================================== */
+
+.citadel-panels {
+    display: grid;
+    gap: 12px;
+}
+
+.citadel-analyst-grid { grid-template-columns: 1fr 1fr; }
+.citadel-commander-grid { grid-template-columns: 1fr 1fr; }
+.citadel-diplomat-grid { grid-template-columns: 1fr 1fr; }
+.citadel-logistics-grid { grid-template-columns: 1fr 1fr; }
+
+.citadel-panel-wide { grid-column: 1 / -1; }
+
+@media (max-width: 800px) {
+    .citadel-analyst-grid,
+    .citadel-commander-grid,
+    .citadel-diplomat-grid,
+    .citadel-logistics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================================
+   PANELS
+   ===================================================================== */
+
+.citadel-panel {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.citadel-panel-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.02);
+}
+
+.citadel-panel-icon {
+    font-size: 14px;
+    color: #00ff88;
+}
+
+.citadel-sidebar-panel {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.citadel-empty {
+    padding: 20px;
+    text-align: center;
+    color: rgba(255,255,255,0.25);
+    font-size: 12px;
+}
+
+/* =====================================================================
+   ANALYST VIEW — RAW FEED
+   ===================================================================== */
+
+.citadel-raw-feed {
+    max-height: 260px;
+    overflow-y: auto;
+    padding: 8px 0;
+}
+
+.citadel-raw-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    transition: background 0.15s;
+}
+
+.citadel-raw-row:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+.citadel-raw-time {
+    color: rgba(255,255,255,0.35);
+    font-size: 10px;
+    flex-shrink: 0;
+    width: 50px;
+}
+
+.citadel-sev-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.citadel-sev-critical { background: #ff3d3d; box-shadow: 0 0 6px #ff3d3d; }
+.citadel-sev-high { background: #ff9100; box-shadow: 0 0 6px #ff9100; }
+.citadel-sev-medium { background: #ffd600; }
+.citadel-sev-low { background: #00ff88; }
+
+.citadel-raw-title {
+    flex: 1;
+    color: rgba(255,255,255,0.85);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.citadel-raw-src {
+    color: rgba(255,255,255,0.3);
+    font-size: 10px;
+    flex-shrink: 0;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* =====================================================================
+   ANALYST VIEW — SOURCES
+   ===================================================================== */
+
+.citadel-src-list {
+    padding: 8px 16px;
+}
+
+.citadel-src-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-src-name {
+    flex: 1;
+    color: rgba(255,255,255,0.75);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.citadel-src-badge {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.citadel-src-A { background: rgba(0,255,136,0.2); color: #00ff88; border: 1px solid rgba(0,255,136,0.3); }
+.citadel-src-B { background: rgba(0,229,255,0.2); color: #00e5ff; border: 1px solid rgba(0,229,255,0.3); }
+.citadel-src-C { background: rgba(255,214,0,0.2); color: #ffd600; border: 1px solid rgba(255,214,0,0.3); }
+.citadel-src-D { background: rgba(255,61,61,0.2); color: #ff3d3d; border: 1px solid rgba(255,61,61,0.3); }
+
+.citadel-src-count {
+    color: rgba(255,255,255,0.35);
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   ANALYST VIEW — PATTERNS
+   ===================================================================== */
+
+.citadel-pattern-list {
+    padding: 12px 16px;
+}
+
+.citadel-pattern-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 11px;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-pattern-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.citadel-pattern-critical .citadel-pattern-dot { background: #ff3d3d; box-shadow: 0 0 8px #ff3d3d; }
+.citadel-pattern-high .citadel-pattern-dot { background: #ff9100; }
+.citadel-pattern-medium .citadel-pattern-dot { background: #ffd600; }
+.citadel-pattern-low .citadel-pattern-dot { background: #00ff88; }
+
+/* =====================================================================
+   ANALYST VIEW — ENTITIES
+   ===================================================================== */
+
+.citadel-entity-list {
+    padding: 8px 16px;
+}
+
+.citadel-entity-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-entity-name {
+    color: #00e5ff;
+    font-weight: 600;
+}
+
+.citadel-entity-mentions {
+    color: rgba(255,255,255,0.35);
+    font-size: 10px;
+}
+
+/* =====================================================================
+   ANALYST VIEW — TYPE BREAKDOWN
+   ===================================================================== */
+
+.citadel-type-list {
+    padding: 12px 16px;
+}
+
+.citadel-type-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+    font-size: 11px;
+}
+
+.citadel-type-label {
+    width: 80px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+.citadel-type-bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.citadel-type-bar-fill {
+    height: 100%;
+    background: #00e5ff;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.citadel-type-val {
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+    width: 30px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   COUNTRY DISTRIBUTION
+   ===================================================================== */
+
+.citadel-country-list {
+    padding: 8px 16px;
+}
+
+.citadel-country-row,
+.citadel-country-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-country-name {
+    color: rgba(255,255,255,0.75);
+}
+
+.citadel-country-count {
+    color: #00ff88;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* =====================================================================
+   COMMANDER VIEW — THREATS
+   ===================================================================== */
+
+.citadel-threat-list {
+    padding: 8px 0;
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.citadel-threat-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-sev-badge {
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+.citadel-sev-badge.citadel-sev-critical { background: rgba(255,61,61,0.2); color: #ff3d3d; border: 1px solid rgba(255,61,61,0.3); }
+.citadel-sev-badge.citadel-sev-high { background: rgba(255,145,0,0.2); color: #ff9100; border: 1px solid rgba(255,145,0,0.3); }
+.citadel-sev-badge.citadel-sev-medium { background: rgba(255,214,0,0.2); color: #ffd600; border: 1px solid rgba(255,214,0,0.3); }
+.citadel-sev-badge.citadel-sev-low { background: rgba(0,255,136,0.2); color: #00ff88; border: 1px solid rgba(0,255,136,0.3); }
+
+.citadel-threat-title {
+    flex: 1;
+    color: rgba(255,255,255,0.85);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.citadel-threat-loc {
+    color: rgba(255,255,255,0.35);
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   COMMANDER VIEW — READINESS
+   ===================================================================== */
+
+.citadel-readiness-list {
+    padding: 12px 16px;
+}
+
+.citadel-readiness-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-readiness-unit {
+    width: 110px;
+    color: rgba(255,255,255,0.7);
+    flex-shrink: 0;
+    font-size: 10px;
+}
+
+.citadel-readiness-bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.citadel-readiness-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.citadel-readiness-status {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    width: 70px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.citadel-bar-green { background: #00ff88; }
+.citadel-bar-yellow { background: #ffd600; }
+.citadel-bar-red { background: #ff3d3d; }
+
+.citadel-status-green { color: #00ff88; }
+.citadel-status-yellow { color: #ffd600; }
+.citadel-status-red { color: #ff3d3d; }
+
+/* =====================================================================
+   COMMANDER VIEW — ACTIONS
+   ===================================================================== */
+
+.citadel-action-list {
+    padding: 12px 16px;
+}
+
+.citadel-action-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 11px;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-action-pri {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.citadel-action-immediate .citadel-action-pri {
+    background: rgba(255,61,61,0.2);
+    color: #ff3d3d;
+    border: 1px solid rgba(255,61,61,0.3);
+}
+
+.citadel-action-priority .citadel-action-pri {
+    background: rgba(255,145,0,0.2);
+    color: #ff9100;
+    border: 1px solid rgba(255,145,0,0.3);
+}
+
+.citadel-action-routine .citadel-action-pri {
+    background: rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.citadel-action-text {
+    color: rgba(255,255,255,0.7);
+}
+
+/* =====================================================================
+   COMMANDER VIEW — MATRIX
+   ===================================================================== */
+
+.citadel-matrix-header,
+.citadel-matrix-row {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    font-size: 11px;
+}
+
+.citadel-matrix-header {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.02);
+}
+
+.citadel-matrix-row {
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-matrix-country {
+    flex: 1;
+    color: rgba(255,255,255,0.7);
+}
+
+.citadel-matrix-cell {
+    width: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.citadel-matrix-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* =====================================================================
+   COMMANDER VIEW — TEMPO
+   ===================================================================== */
+
+.citadel-tempo {
+    padding: 12px 16px;
+}
+
+.citadel-tempo-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-tempo-val {
+    color: #00ff88;
+    font-weight: 600;
+}
+
+.citadel-tempo-highlight {
+    color: rgba(255,255,255,0.75);
+}
+
+.citadel-tempo-highlight .citadel-tempo-val {
+    color: #ff9100;
+}
+
+/* =====================================================================
+   DIPLOMAT VIEW — IMPLICATIONS
+   ===================================================================== */
+
+.citadel-impl-list {
+    padding: 12px 16px;
+}
+
+.citadel-impl-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 11px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-impl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.citadel-impl-critical .citadel-impl-dot { background: #ff3d3d; box-shadow: 0 0 6px #ff3d3d; }
+.citadel-impl-high .citadel-impl-dot { background: #ff9100; }
+.citadel-impl-medium .citadel-impl-dot { background: #ffd600; }
+.citadel-impl-low .citadel-impl-dot { background: #00ff88; }
+
+/* =====================================================================
+   DIPLOMAT VIEW — ALLIANCES
+   ===================================================================== */
+
+.citadel-alliance-list {
+    padding: 8px 16px;
+}
+
+.citadel-alliance-row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-alliance-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+}
+
+.citadel-alliance-status {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.citadel-alliance-detail {
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.5;
+}
+
+/* =====================================================================
+   DIPLOMAT VIEW — ESCALATION GAUGE
+   ===================================================================== */
+
+.citadel-escalation-gauge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.citadel-gauge-ring {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--risk-color, #00ff88) 0%,
+        var(--risk-color, #00ff88) calc(var(--risk-pct, 0) * 1%),
+        rgba(255,255,255,0.06) calc(var(--risk-pct, 0) * 1%),
+        rgba(255,255,255,0.06) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px color-mix(in srgb, var(--risk-color, #00ff88) 20%, transparent);
+}
+
+.citadel-gauge-inner {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #0a0a14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.citadel-gauge-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--risk-color, #00ff88);
+    line-height: 1;
+}
+
+.citadel-gauge-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 4px;
+}
+
+/* =====================================================================
+   DIPLOMAT VIEW — CHANNELS
+   ===================================================================== */
+
+.citadel-channel-list {
+    padding: 8px 16px;
+}
+
+.citadel-channel-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-channel-name {
+    flex: 1;
+    color: rgba(255,255,255,0.7);
+}
+
+.citadel-channel-status {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+.citadel-channel-time {
+    color: rgba(255,255,255,0.3);
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   LOGISTICS VIEW — SUPPLY CHAIN
+   ===================================================================== */
+
+.citadel-supply-list {
+    padding: 8px 16px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.citadel-supply-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-supply-item {
+    width: 160px;
+    color: rgba(255,255,255,0.7);
+    flex-shrink: 0;
+    font-size: 10px;
+}
+
+.citadel-supply-bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.citadel-supply-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.citadel-supply-pct {
+    width: 35px;
+    text-align: right;
+    font-size: 10px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.citadel-supply-depot {
+    color: rgba(255,255,255,0.3);
+    font-size: 9px;
+    width: 90px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   LOGISTICS VIEW — FORCE MOVEMENT
+   ===================================================================== */
+
+.citadel-movement-list {
+    padding: 8px 16px;
+}
+
+.citadel-movement-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-movement-unit {
+    width: 150px;
+    color: rgba(255,255,255,0.75);
+    font-weight: 600;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+.citadel-movement-route {
+    flex: 1;
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+}
+
+.citadel-movement-eta {
+    color: #00e5ff;
+    font-size: 10px;
+    flex-shrink: 0;
+    width: 60px;
+    text-align: center;
+}
+
+.citadel-movement-status {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    width: 85px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   LOGISTICS VIEW — BUDGET / RESOURCE ALLOCATION
+   ===================================================================== */
+
+.citadel-budget-list {
+    padding: 12px 16px;
+}
+
+.citadel-budget-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-budget-cat {
+    width: 120px;
+    color: rgba(255,255,255,0.7);
+    flex-shrink: 0;
+    font-size: 10px;
+}
+
+.citadel-budget-bar-track {
+    flex: 1;
+    height: 8px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.citadel-budget-bar-alloc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0,229,255,0.15);
+    border-radius: 4px;
+}
+
+.citadel-budget-bar-spent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #00e5ff;
+    border-radius: 4px;
+}
+
+.citadel-budget-val {
+    color: rgba(255,255,255,0.45);
+    font-size: 10px;
+    width: 80px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   LOGISTICS VIEW — RISKS
+   ===================================================================== */
+
+.citadel-risk-list {
+    padding: 12px 16px;
+}
+
+.citadel-risk-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 11px;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-risk-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.citadel-risk-critical .citadel-risk-dot { background: #ff3d3d; box-shadow: 0 0 6px #ff3d3d; }
+.citadel-risk-high .citadel-risk-dot { background: #ff9100; }
+.citadel-risk-medium .citadel-risk-dot { background: #ffd600; }
+.citadel-risk-low .citadel-risk-dot { background: #00ff88; }
+
+/* =====================================================================
+   ACTIVITY LOG
+   ===================================================================== */
+
+.citadel-log-list {
+    max-height: 260px;
+    overflow-y: auto;
+    padding: 4px 0;
+}
+
+.citadel-log-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 14px;
+    font-size: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.citadel-log-time {
+    color: rgba(255,255,255,0.3);
+    flex-shrink: 0;
+    width: 42px;
+}
+
+.citadel-log-role {
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+    width: 75px;
+}
+
+.citadel-log-action {
+    color: rgba(255,255,255,0.55);
+    line-height: 1.4;
+}
+
+/* =====================================================================
+   SHARED ANNOTATIONS
+   ===================================================================== */
+
+.citadel-annotation-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 4px 0;
+}
+
+.citadel-annotation-row {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.citadel-annotation-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.citadel-annotation-author {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.citadel-annotation-time {
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+}
+
+.citadel-annotation-text {
+    font-size: 11px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.6);
+}
+
+/* =====================================================================
+   SCROLLBAR STYLING
+   ===================================================================== */
+
+.citadel-raw-feed::-webkit-scrollbar,
+.citadel-threat-list::-webkit-scrollbar,
+.citadel-log-list::-webkit-scrollbar,
+.citadel-annotation-list::-webkit-scrollbar,
+.citadel-supply-list::-webkit-scrollbar,
+.citadel-matrix-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.citadel-raw-feed::-webkit-scrollbar-track,
+.citadel-threat-list::-webkit-scrollbar-track,
+.citadel-log-list::-webkit-scrollbar-track,
+.citadel-annotation-list::-webkit-scrollbar-track,
+.citadel-supply-list::-webkit-scrollbar-track,
+.citadel-matrix-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.citadel-raw-feed::-webkit-scrollbar-thumb,
+.citadel-threat-list::-webkit-scrollbar-thumb,
+.citadel-log-list::-webkit-scrollbar-thumb,
+.citadel-annotation-list::-webkit-scrollbar-thumb,
+.citadel-supply-list::-webkit-scrollbar-thumb,
+.citadel-matrix-list::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+}
