@@ -409,12 +409,71 @@ function initializeNavigation() {
             } else if (section === 'data') {
                 // Initialize data tab
                 initializeData();
+            } else if (section === 'hermes') {
+                initializeHermes();
             } else if (section === 'ragnarok') {
                 initializeRagnarok();
             }
         });
     });
 }
+
+// ============================================================================
+// HERMES — INTELLIGENCE BRIEFING GENERATOR
+// ============================================================================
+
+let hermesInitialized = false;
+let currentHermesBriefing = null;
+
+function initializeHermes() {
+    if (hermesInitialized) return;
+    hermesInitialized = true;
+    // Auto-generate a CDB on first open if we have incidents
+    if (state.incidents && state.incidents.length > 0) {
+        generateHermesBriefing();
+    }
+    console.log('📋 Hermes initialized');
+}
+
+function generateHermesBriefing() {
+    const format = document.getElementById('hermes-format')?.value || 'cdb';
+    const timeWindow = document.getElementById('hermes-timewindow')?.value || '24h';
+    const classification = document.getElementById('hermes-classification')?.value || 'UNCLASSIFIED';
+    const region = document.getElementById('hermes-region')?.value || 'all';
+    const output = document.getElementById('hermes-output');
+    if (!output) return;
+
+    try {
+        const engine = new HermesEngine(state.incidents || [], {
+            format, timeWindow, classification, region
+        });
+        currentHermesBriefing = engine.generateBriefing();
+        output.innerHTML = renderHermesBriefing(currentHermesBriefing);
+        console.log('📋 Hermes briefing generated:', currentHermesBriefing.typeShort);
+    } catch (err) {
+        console.error('📋 Hermes error:', err);
+        output.innerHTML = '<div style="color:red;padding:24px">Hermes error: ' + err.message + '</div>';
+    }
+}
+
+function copyHermesBriefing() {
+    if (!currentHermesBriefing) return;
+    const text = hermesExportText(currentHermesBriefing);
+    navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('hermes-copy');
+        if (btn) {
+            btn.classList.add('copied');
+            btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied';
+            setTimeout(() => {
+                btn.classList.remove('copied');
+                btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy';
+            }, 2000);
+        }
+    });
+}
+
+window.generateHermesBriefing = generateHermesBriefing;
+window.copyHermesBriefing = copyHermesBriefing;
 
 // ============================================================================
 // MISSILE DEFENSE DASHBOARD

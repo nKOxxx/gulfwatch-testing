@@ -23,6 +23,7 @@
     <!-- Vercel Analytics -->
     <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
     <!-- Ragnarok OODA CSS -->
+    <link rel="stylesheet" href="css/hermes.css?v=1">
     <link rel="stylesheet" href="css/ragnarok.css?v=5">
 </head>
 <body>
@@ -161,6 +162,16 @@
                         <line x1="12" y1="22.08" x2="12" y2="12"></line>
                     </svg>
                     Prediction
+                </button>
+                <button class="tab-btn" data-section="hermes">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    Hermes
                 </button>
                 <button class="tab-btn" data-section="missile-defense">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -398,6 +409,106 @@
                                         <strong>Probability Calculation</strong>
                                         <span>Calculates likelihoods based on historical frequencies</span>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hermes — Intelligence Briefing Generator -->
+                <div class="section" id="hermes-section" data-section="hermes" style="display: none;">
+                    <div class="hermes-container">
+                        <div class="hermes-section-header">
+                            <div class="hermes-section-title-bar">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                </svg>
+                                HERMES — Intelligence Briefing Generator
+                            </div>
+                            <div class="hermes-section-subtitle">
+                                One-click automated intel briefs: Commander's Daily Brief, SALUTE, SITREP, Flash Report
+                            </div>
+                        </div>
+
+                        <div class="hermes-controls">
+                            <div class="hermes-control-group">
+                                <label>Briefing Format</label>
+                                <select id="hermes-format">
+                                    <option value="cdb">Commander's Daily Brief</option>
+                                    <option value="salute">SALUTE Report</option>
+                                    <option value="sitrep">SITREP</option>
+                                    <option value="flash">Flash Report</option>
+                                </select>
+                            </div>
+                            <div class="hermes-control-group">
+                                <label>Time Window</label>
+                                <select id="hermes-timewindow">
+                                    <option value="6h">Last 6 Hours</option>
+                                    <option value="12h">Last 12 Hours</option>
+                                    <option value="24h" selected>Last 24 Hours</option>
+                                    <option value="48h">Last 48 Hours</option>
+                                    <option value="7d">Last 7 Days</option>
+                                    <option value="30d">Last 30 Days</option>
+                                </select>
+                            </div>
+                            <div class="hermes-control-group">
+                                <label>Classification</label>
+                                <select id="hermes-classification">
+                                    <option value="UNCLASSIFIED">UNCLASSIFIED</option>
+                                    <option value="CONFIDENTIAL">CONFIDENTIAL</option>
+                                    <option value="SECRET">SECRET</option>
+                                    <option value="TOP SECRET">TOP SECRET</option>
+                                    <option value="TOP SECRET//SCI">TOP SECRET//SCI</option>
+                                </select>
+                            </div>
+                            <div class="hermes-control-group">
+                                <label>Region</label>
+                                <select id="hermes-region">
+                                    <option value="all">All Regions</option>
+                                    <option value="uae">UAE</option>
+                                    <option value="saudi">Saudi Arabia</option>
+                                    <option value="yemen">Yemen</option>
+                                    <option value="iran">Iran</option>
+                                    <option value="iraq">Iraq</option>
+                                    <option value="syria">Syria</option>
+                                    <option value="israel">Israel</option>
+                                    <option value="red sea">Red Sea</option>
+                                </select>
+                            </div>
+                            <button class="hermes-generate-btn" id="hermes-generate" onclick="generateHermesBriefing()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                Generate Briefing
+                            </button>
+                            <div class="hermes-action-btns">
+                                <button class="hermes-copy-btn" id="hermes-copy" onclick="copyHermesBriefing()">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    Copy
+                                </button>
+                                <button class="hermes-print-btn" onclick="window.print()">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                                        <rect x="6" y="14" width="12" height="8"></rect>
+                                    </svg>
+                                    Print
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="hermes-output">
+                            <div class="hermes-empty">
+                                <div class="hermes-empty-icon">📋</div>
+                                <div class="hermes-empty-title">Ready to Generate</div>
+                                <div class="hermes-empty-text">
+                                    Select briefing format, time window, and classification level, then click Generate Briefing to produce an automated intelligence report from live incident data.
                                 </div>
                             </div>
                         </div>
@@ -1045,6 +1156,7 @@ https://gulfwatch-testing.vercel.app/feed.json
     <script src="js/predictor.js?v=3"></script>
     
     <!-- Ragnarok OODA Engine -->
+    <script src="js/hermes.js?v=1"></script>
     <script src="js/ragnarok.js?v=4"></script>
 
     <!-- Application JavaScript -->

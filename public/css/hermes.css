@@ -1,0 +1,547 @@
+/**
+ * HERMES — Intelligence Briefing Generator Styles
+ */
+
+/* =====================================================================
+   SECTION LAYOUT
+   ===================================================================== */
+
+#hermes-section {
+    min-height: 600px;
+}
+
+.hermes-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.hermes-section-header {
+    margin-bottom: 24px;
+}
+
+.hermes-section-title-bar {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent, #00ff88);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.hermes-section-subtitle {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 32px;
+}
+
+/* =====================================================================
+   CONTROLS
+   ===================================================================== */
+
+.hermes-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+    align-items: flex-end;
+}
+
+.hermes-control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hermes-control-group label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 600;
+}
+
+.hermes-control-group select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 32px 10px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='rgba(255,255,255,0.4)' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    min-width: 160px;
+}
+
+.hermes-control-group select:focus {
+    outline: none;
+    border-color: var(--accent, #00ff88);
+}
+
+.hermes-generate-btn {
+    background: linear-gradient(135deg, var(--accent, #00ff88), #00cc6a);
+    color: #000;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hermes-generate-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+}
+
+.hermes-generate-btn:active {
+    transform: translateY(0);
+}
+
+.hermes-action-btns {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.hermes-copy-btn,
+.hermes-print-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.hermes-copy-btn:hover,
+.hermes-print-btn:hover {
+    border-color: var(--accent, #00ff88);
+    color: var(--accent, #00ff88);
+}
+
+.hermes-copy-btn.copied {
+    border-color: #4caf50;
+    color: #4caf50;
+}
+
+/* =====================================================================
+   BRIEFING DOCUMENT
+   ===================================================================== */
+
+.hermes-briefing {
+    background: #0c0c14;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hermes-flash {
+    border-color: rgba(244, 67, 54, 0.4);
+    box-shadow: 0 0 30px rgba(244, 67, 54, 0.1);
+}
+
+.hermes-classification-bar {
+    text-align: center;
+    padding: 6px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hermes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.hermes-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hermes-type-badge {
+    background: var(--accent, #00ff88);
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hermes-type-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.hermes-header-right {
+    text-align: right;
+}
+
+.hermes-dtg {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent, #00ff88);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hermes-origin {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+/* =====================================================================
+   SECTIONS
+   ===================================================================== */
+
+.hermes-sections {
+    padding: 16px 24px;
+}
+
+.hermes-section {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    transition: border-color 0.2s;
+}
+
+.hermes-section:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.hermes-section.hermes-highlight {
+    border-color: rgba(255, 152, 0, 0.3);
+    background: rgba(255, 152, 0, 0.04);
+}
+
+.hermes-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent, #00ff88);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hermes-section-icon {
+    font-size: 16px;
+}
+
+.hermes-section-content {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+}
+
+/* =====================================================================
+   INCIDENT ITEMS
+   ===================================================================== */
+
+.hermes-items {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hermes-item {
+    display: flex;
+    gap: 12px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+    align-items: flex-start;
+}
+
+.hermes-item.severity-critical { border-left-color: #f44336; }
+.hermes-item.severity-high { border-left-color: #ff9800; }
+.hermes-item.severity-medium { border-left-color: #ffc107; }
+.hermes-item.severity-low { border-left-color: #4caf50; }
+
+.hermes-item-time {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(255, 255, 255, 0.4);
+    white-space: nowrap;
+    min-width: 140px;
+}
+
+.hermes-item-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* =====================================================================
+   TABLES
+   ===================================================================== */
+
+.hermes-table-wrap {
+    margin-top: 12px;
+    overflow-x: auto;
+}
+
+.hermes-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.hermes-table th {
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+}
+
+.hermes-table td {
+    padding: 8px 12px;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+}
+
+.hermes-table tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.cell-critical { color: #f44336; font-weight: 700; }
+.cell-high { color: #ff9800; font-weight: 600; }
+.cell-moderate { color: #ffc107; }
+
+/* =====================================================================
+   RECOMMENDATIONS
+   ===================================================================== */
+
+.hermes-recommendations {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hermes-rec {
+    display: flex;
+    gap: 12px;
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    align-items: flex-start;
+}
+
+.hermes-rec-prio {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+    min-width: 80px;
+    text-align: center;
+}
+
+.prio-immediate .hermes-rec-prio {
+    background: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+}
+
+.prio-high .hermes-rec-prio {
+    background: rgba(255, 152, 0, 0.2);
+    color: #ff9800;
+}
+
+.prio-medium .hermes-rec-prio {
+    background: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+}
+
+.hermes-rec-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* =====================================================================
+   STATS GRID
+   ===================================================================== */
+
+.hermes-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.hermes-stat-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+}
+
+.hermes-stat-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent, #00ff88);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hermes-stat-value.stat-critical { color: #f44336; }
+.hermes-stat-value.stat-elevated { color: #ff9800; }
+
+.hermes-stat-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+/* =====================================================================
+   EMPTY STATE
+   ===================================================================== */
+
+.hermes-empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.hermes-empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.hermes-empty-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 8px;
+}
+
+.hermes-empty-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* =====================================================================
+   RESPONSIVE
+   ===================================================================== */
+
+@media (max-width: 768px) {
+    .hermes-controls {
+        flex-direction: column;
+    }
+
+    .hermes-control-group select {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .hermes-action-btns {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .hermes-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hermes-header-right {
+        text-align: left;
+    }
+
+    .hermes-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hermes-item {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .hermes-item-time {
+        min-width: auto;
+    }
+
+    .hermes-generate-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* =====================================================================
+   PRINT STYLES
+   ===================================================================== */
+
+@media print {
+    .hermes-controls,
+    .hermes-section-header,
+    .hermes-action-btns {
+        display: none !important;
+    }
+
+    .hermes-briefing {
+        border: 2px solid #000;
+        border-radius: 0;
+    }
+
+    .hermes-classification-bar {
+        color: #000 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .hermes-section {
+        break-inside: avoid;
+    }
+
+    body {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}
