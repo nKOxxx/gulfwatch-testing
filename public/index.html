@@ -24,8 +24,17 @@
     <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
     <!-- Ragnarok OODA CSS -->
     <link rel="stylesheet" href="css/ragnarok.css?v=5">
+
+    <!-- Auth, Classification, i18n, WebSocket -->
+    <script src="js/auth.js?v=1"></script>
+    <script src="js/classification.js?v=1"></script>
+    <script src="js/i18n.js?v=1"></script>
+    <script src="js/ws-client.js?v=1"></script>
 </head>
 <body>
+    <!-- CLASSIFICATION BANNER (top) — injected by classification.js, placeholder for pre-render -->
+    <div id="classification-banner-top"></div>
+
     <!-- TOP COMMAND BAR -->
     <header class="top-bar">
         <div class="brand">
@@ -50,6 +59,7 @@
                     <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
                 </svg>
             </button>
+            <button class="icon-btn" id="lang-toggle" title="Switch to Arabic" onclick="if(window._i18n)window._i18n.setLanguage(window._i18n.getLang()==='ar'?'en':'ar')" style="font-size:12px;font-weight:700;width:auto;padding:4px 10px;letter-spacing:0.5px;">AR</button>
             <button class="icon-btn" id="settings-toggle" title="Settings">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="3"></circle>
@@ -128,9 +138,9 @@
 
         <!-- MAIN CONTENT AREA -->
         <main class="main-content">
-            <!-- Section Tabs -->
+            <!-- Section Tabs (consolidated) -->
             <nav class="section-tabs">
-                <button class="tab-btn active" data-section="monitor">
+                <button class="tab-btn active" data-section="monitor" data-i18n="tab.monitor">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                         <line x1="9" y1="9" x2="15" y2="15"></line>
@@ -138,7 +148,7 @@
                     </svg>
                     Monitor
                 </button>
-                <button class="tab-btn" data-section="map">
+                <button class="tab-btn" data-section="map" data-i18n="tab.map">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polygon points="1 6 1 22 8 18 16 22 21 18 21 2 16 6 8 2 1 6"></polygon>
                         <line x1="8" y1="2" x2="8" y2="18"></line>
@@ -146,7 +156,7 @@
                     </svg>
                     Map
                 </button>
-                <button class="tab-btn" data-section="analysis">
+                <button class="tab-btn" data-section="analysis" data-i18n="tab.analysis">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="18" y1="20" x2="18" y2="10"></line>
                         <line x1="12" y1="20" x2="12" y2="4"></line>
@@ -154,52 +164,28 @@
                     </svg>
                     Analysis
                 </button>
-                <button class="tab-btn" data-section="prediction">
+                <button class="tab-btn" data-section="scenario-modeling" data-i18n="tab.scenario">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                         <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                         <line x1="12" y1="22.08" x2="12" y2="12"></line>
                     </svg>
-                    Prediction
+                    Scenario Modeling
                 </button>
-                <button class="tab-btn" data-section="missile-defense">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
-                    Missile Defense
-                </button>
-                <button class="tab-btn" data-section="argus">
+                <button class="tab-btn" data-section="operations" data-i18n="tab.operations">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="10"></circle>
-                        <circle cx="12" cy="12" r="6"></circle>
-                        <circle cx="12" cy="12" r="2"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
                     </svg>
-                    Argus
+                    Operations
                 </button>
-                <button class="tab-btn" data-section="data">
+                <button class="tab-btn" data-section="data" data-i18n="tab.data">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                         <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
                         <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                     </svg>
                     Data
-                </button>
-                <button class="tab-btn" data-section="reports">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg>
-                    Reports
-                </button>
-                <button class="tab-btn" data-section="ragnarok">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                    Ragnarok
                 </button>
             </nav>
 
@@ -298,8 +284,8 @@
                     </div>
                 </div>
 
-                <!-- Prediction Section -->
-                <div class="section" id="prediction-section" data-section="prediction" style="display: none;">
+                <!-- Scenario Modeling Section (formerly Prediction) -->
+                <div class="section" id="scenario-modeling-section" data-section="scenario-modeling" style="display: none;">
                     <div class="prediction-container">
                         <!-- Header -->
                         <div class="prediction-header">
@@ -404,172 +390,16 @@
                     </div>
                 </div>
 
-                <!-- Missile Defense Section -->
-                <div class="section" id="missile-defense-section" data-section="missile-defense" style="display: none;">
-                    <div class="missile-defense-container">
-                        <!-- Country Selector -->
-                        <div class="missile-defense-header">
-                            <div class="country-selector">
-                                <label for="missile-defense-country">Select Country:</label>
-                                <select id="missile-defense-country">
-                                    <option value="all">All Countries (Regional Overview)</option>
-                                    <option value="uae">🇦🇪 United Arab Emirates</option>
-                                    <option value="saudi">🇸🇦 Saudi Arabia</option>
-                                    <option value="qatar">🇶🇦 Qatar</option>
-                                    <option value="bahrain">🇧🇭 Bahrain</option>
-                                    <option value="kuwait">🇰🇼 Kuwait</option>
-                                    <option value="israel">🇮🇱 Israel</option>
-                                    <option value="iran">🇮🇷 Iran</option>
-                                </select>
-                            </div>
-                            <div class="missile-defense-title" id="missile-defense-title">REGIONAL MISSILE DEFENSE</div>
-                        </div>
+                <!-- Missile Defense + Argus moved to Operations tab -->
 
-                        <!-- Main Metrics Cards -->
-                        <div class="missile-metrics-grid">
-                            <div class="missile-metric-card detected">
-                                <div class="metric-icon">⊙</div>
-                                <div class="metric-value" id="metric-detected">--</div>
-                                <div class="metric-label">Detected</div>
-                                <div class="metric-subtitle">Threats identified</div>
-                            </div>
-                            <div class="missile-metric-card intercepted">
-                                <div class="metric-icon">⌖</div>
-                                <div class="metric-value" id="metric-intercepted">--</div>
-                                <div class="metric-label">Intercepted</div>
-                                <div class="metric-subtitle">Successfully neutralized</div>
-                            </div>
-                            <div class="missile-metric-card impacted">
-                                <div class="metric-icon">✗</div>
-                                <div class="metric-value" id="metric-impacted">--</div>
-                                <div class="metric-label">Impacted Territory</div>
-                                <div class="metric-subtitle">Not intercepted</div>
-                            </div>
-                        </div>
-
-                        <!-- Stats Breakdown -->
-                        <div class="missile-stats-grid">
-                            <!-- Ballistic Missiles -->
-                            <div class="missile-stat-card">
-                                <div class="stat-header">
-                                    <span class="stat-icon">†</span>
-                                    <span class="stat-title">Ballistic Missiles</span>
-                                </div>
-                                <div class="stat-breakdown">
-                                    <div class="stat-item">
-                                        <span class="stat-label">Detected</span>
-                                        <span class="stat-value detected" id="ballistic-detected">--</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-label">Intercepted</span>
-                                        <span class="stat-value intercepted" id="ballistic-intercepted">--</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Drones -->
-                            <div class="missile-stat-card">
-                                <div class="stat-header">
-                                    <span class="stat-icon">✦</span>
-                                    <span class="stat-title">Drones</span>
-                                </div>
-                                <div class="stat-breakdown">
-                                    <div class="stat-item">
-                                        <span class="stat-label">Detected</span>
-                                        <span class="stat-value detected" id="drone-detected">--</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-label">Intercepted</span>
-                                        <span class="stat-value intercepted" id="drone-intercepted">--</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Success Rate -->
-                            <div class="missile-stat-card success-rate-card">
-                                <div class="stat-header">
-                                    <span class="stat-icon">✓</span>
-                                    <span class="stat-title">Success Rate</span>
-                                </div>
-                                <div class="success-rate-display">
-                                    <div class="success-rate-circle">
-                                        <svg viewBox="0 0 36 36">
-                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                            <path class="circle-progress" id="success-rate-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                        </svg>
-                                        <div class="success-rate-value" id="success-rate-value">--%</div>
-                                    </div>
-                                    <div class="success-rate-label">Interception Success</div>
-                                </div>
-                            </div>
-
-                            <!-- Last 24 Hours -->
-                            <div class="missile-stat-card">
-                                <div class="stat-header">
-                                    <span class="stat-icon">◷</span>
-                                    <span class="stat-title">Last 24 Hours</span>
-                                </div>
-                                <div class="stat-breakdown">
-                                    <div class="stat-item">
-                                        <span class="stat-label">Detected</span>
-                                        <span class="stat-value" id="24h-detected">--</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-label">Intercepted</span>
-                                        <span class="stat-value intercepted" id="24h-intercepted">--</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Country Breakdown Table -->
-                        <div class="missile-country-table-container">
-                            <div class="table-header">
-                                <span class="table-icon">🌍</span>
-                                <span class="table-title">Per-Country Breakdown</span>
-                            </div>
-                            <table class="missile-country-table">
-                                <thead>
-                                    <tr>
-                                        <th>Country</th>
-                                        <th>Detected</th>
-                                        <th>Intercepted</th>
-                                        <th>Impacted</th>
-                                        <th>Success Rate</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="missile-country-tbody">
-                                    <!-- Populated by JS -->
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- Source Attribution -->
-                        <div class="missile-source-attribution">
-                            <div class="source-icon">📡</div>
-                            <div class="source-text">
-                                <span class="source-label">Data Source:</span>
-                                <span class="source-value" id="missile-defense-source">Aggregated from Multiple Government & Defense Sources</span>
-                            </div>
-                            <div class="last-updated" id="missile-last-updated">Updated: --</div>
-                        </div>
-                    </div>
-
-                <!-- Argus Section -->
-                <div class="section" id="argus-section" data-section="argus" style="display: none;">
-                    <div style="padding: 20px; background: #111936; min-height: 500px;">
-                        <h2 style="color: #00d4ff; margin-bottom: 20px;">ARGUS - Entity Resolution</h2>
-                        <p style="color: #fff;">Threat Analysis Content</p>
-                    </div>
-                </div>
-
-                <!-- Data Section -->
+                <!-- Data Section (merged: Data + Reports) -->
                 <div class="section" id="data-section" data-section="data" style="display: none;">
                     <div class="data-tabs">
                         <button class="data-tab active" data-tab="api">API Access</button>
                         <button class="data-tab" data-tab="exports">Exports</button>
                         <button class="data-tab" data-tab="rss">RSS Feeds</button>
                         <button class="data-tab" data-tab="docs">Documentation</button>
+                        <button class="data-tab" data-tab="reports">Reports</button>
                     </div>
                     <div class="data-content" id="data-content">
                         <div class="data-panel active" data-panel="api">
@@ -597,66 +427,75 @@ https://gulfwatch-testing.vercel.app/feed.json
                                 </button>
                             </div>
                         </div>
+                        <!-- Reports sub-panel (merged from standalone Reports tab) -->
+                        <div class="data-panel" data-panel="reports">
+                            <div class="reports-grid">
+                                <div class="report-card">
+                                    <h3>Incoming Reports</h3>
+                                    <div id="incoming-reports">
+                                        <p class="text-muted">No pending reports</p>
+                                    </div>
+                                </div>
+                                <div class="report-card">
+                                    <h3>Verification Queue</h3>
+                                    <div id="verification-queue">
+                                        <p class="text-muted">Queue empty</p>
+                                    </div>
+                                </div>
+                                <div class="report-card">
+                                    <h3>Source Credibility</h3>
+                                    <div id="source-credibility">
+                                        <div class="finance-item">
+                                            <span class="finance-name">Government</span>
+                                            <span class="finance-change positive">95%</span>
+                                        </div>
+                                        <div class="finance-item">
+                                            <span class="finance-name">News Agencies</span>
+                                            <span class="finance-change positive">75%</span>
+                                        </div>
+                                        <div class="finance-item">
+                                            <span class="finance-name">Social Media</span>
+                                            <span class="finance-change negative">42%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="report-card">
+                                    <h3>Incident Validation</h3>
+                                    <div id="validation-stats">
+                                        <div class="casualty-grid">
+                                            <div class="casualty-item">
+                                                <div class="casualty-number" id="validated-count">--</div>
+                                                <div class="casualty-label">Validated</div>
+                                            </div>
+                                            <div class="casualty-item">
+                                                <div class="casualty-number" id="pending-count">--</div>
+                                                <div class="casualty-label">Pending</div>
+                                            </div>
+                                            <div class="casualty-item">
+                                                <div class="casualty-number" id="disputed-count">--</div>
+                                                <div class="casualty-label">Disputed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Reports Section -->
-                <div class="section" id="reports-section" data-section="reports" style="display: none;">
-                    <div class="reports-grid">
-                        <div class="report-card">
-                            <h3>Incoming Reports</h3>
-                            <div id="incoming-reports">
-                                <p class="text-muted">No pending reports</p>
-                            </div>
-                        </div>
-                        <div class="report-card">
-                            <h3>Verification Queue</h3>
-                            <div id="verification-queue">
-                                <p class="text-muted">Queue empty</p>
-                            </div>
-                        </div>
-                        <div class="report-card">
-                            <h3>Source Credibility</h3>
-                            <div id="source-credibility">
-                                <div class="finance-item">
-                                    <span class="finance-name">Government</span>
-                                    <span class="finance-change positive">95%</span>
-                                </div>
-                                <div class="finance-item">
-                                    <span class="finance-name">News Agencies</span>
-                                    <span class="finance-change positive">75%</span>
-                                </div>
-                                <div class="finance-item">
-                                    <span class="finance-name">Social Media</span>
-                                    <span class="finance-change negative">42%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="report-card">
-                            <h3>Incident Validation</h3>
-                            <div id="validation-stats">
-                                <div class="casualty-grid">
-                                    <div class="casualty-item">
-                                        <div class="casualty-number" id="validated-count">--</div>
-                                        <div class="casualty-label">Validated</div>
-                                    </div>
-                                    <div class="casualty-item">
-                                        <div class="casualty-number" id="pending-count">--</div>
-                                        <div class="casualty-label">Pending</div>
-                                    </div>
-                                    <div class="casualty-item">
-                                        <div class="casualty-number" id="disputed-count">--</div>
-                                        <div class="casualty-label">Disputed</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Operations Section (merged: Ragnarok + Missile Defense + Argus) -->
+                <div class="section" id="operations-section" data-section="operations" style="display: none;">
+                    <!-- Operations sub-tabs -->
+                    <div class="data-tabs" style="margin-bottom: 0;">
+                        <button class="data-tab active" data-tab="ops-ragnarok" onclick="switchOpsTab(this)">Ragnarok OODA</button>
+                        <button class="data-tab" data-tab="ops-missile" onclick="switchOpsTab(this)">Missile Defense</button>
+                        <button class="data-tab" data-tab="ops-argus" onclick="switchOpsTab(this)">Argus Entity Resolution</button>
                     </div>
-                </div>
 
-
-                <!-- Ragnarok Section - OODA Loop Escalation Timeline -->
-                <div class="section" id="ragnarok-section" data-section="ragnarok">
+                    <!-- Ragnarok sub-panel -->
+                    <div class="ops-panel active" data-ops="ops-ragnarok">
+                    <!-- Ragnarok OODA Loop Escalation Timeline -->
+                    <div id="ragnarok-section">
                     <div class="ragnarok-section-header">
                         <div class="ragnarok-section-title">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -814,8 +653,80 @@ https://gulfwatch-testing.vercel.app/feed.json
     </div>
   </div>
 </div></div>
-                </div>
-            </div>
+                    </div><!-- /ragnarok-section -->
+                    </div><!-- /ops-panel ragnarok -->
+
+                    <!-- Missile Defense sub-panel -->
+                    <div class="ops-panel" data-ops="ops-missile" style="display:none;">
+                        <div class="missile-defense-container">
+                            <div class="missile-defense-header">
+                                <div class="country-selector">
+                                    <label for="missile-defense-country-ops">Select Country:</label>
+                                    <select id="missile-defense-country-ops" onchange="if(typeof updateMissileDefense==='function')updateMissileDefense(this.value)">
+                                        <option value="all">All Countries (Regional Overview)</option>
+                                        <option value="uae">UAE</option>
+                                        <option value="saudi">Saudi Arabia</option>
+                                        <option value="qatar">Qatar</option>
+                                        <option value="bahrain">Bahrain</option>
+                                        <option value="kuwait">Kuwait</option>
+                                        <option value="israel">Israel</option>
+                                        <option value="iran">Iran</option>
+                                    </select>
+                                </div>
+                                <div class="missile-defense-title" id="missile-defense-title-ops">REGIONAL MISSILE DEFENSE</div>
+                            </div>
+                            <div class="missile-metrics-grid">
+                                <div class="missile-metric-card detected">
+                                    <div class="metric-icon">&#x2299;</div>
+                                    <div class="metric-value" id="ops-metric-detected">--</div>
+                                    <div class="metric-label">Detected</div>
+                                </div>
+                                <div class="missile-metric-card intercepted">
+                                    <div class="metric-icon">&#x2316;</div>
+                                    <div class="metric-value" id="ops-metric-intercepted">--</div>
+                                    <div class="metric-label">Intercepted</div>
+                                </div>
+                                <div class="missile-metric-card impacted">
+                                    <div class="metric-icon">&#x2717;</div>
+                                    <div class="metric-value" id="ops-metric-impacted">--</div>
+                                    <div class="metric-label">Impacted</div>
+                                </div>
+                            </div>
+                            <div class="missile-source-attribution">
+                                <div class="source-icon">&#x1F4E1;</div>
+                                <div class="source-text">
+                                    <span class="source-label">Data Source:</span>
+                                    <span class="source-value">Aggregated from Multiple Government &amp; Defense Sources</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /ops-panel missile -->
+
+                    <!-- Argus Entity Resolution sub-panel -->
+                    <div class="ops-panel" data-ops="ops-argus" style="display:none;">
+                        <div style="padding: 20px; background: #111936; min-height: 500px;">
+                            <h2 style="color: #00d4ff; margin-bottom: 20px;">ARGUS &mdash; Entity Resolution</h2>
+                            <p style="color: rgba(255,255,255,0.7); margin-bottom: 16px;">Cross-reference entities across intelligence feeds to resolve identity, affiliation, and threat linkage.</p>
+                            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+                                <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;text-align:center;">
+                                    <div style="font-size:28px;font-weight:700;color:#00d4ff;font-family:monospace;">--</div>
+                                    <div style="font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-top:4px;">Entities Tracked</div>
+                                </div>
+                                <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;text-align:center;">
+                                    <div style="font-size:28px;font-weight:700;color:#ff9800;font-family:monospace;">--</div>
+                                    <div style="font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-top:4px;">Unresolved</div>
+                                </div>
+                                <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;text-align:center;">
+                                    <div style="font-size:28px;font-weight:700;color:#00ff88;font-family:monospace;">--</div>
+                                    <div style="font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-top:4px;">Resolved Today</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /ops-panel argus -->
+
+                </div><!-- /operations-section -->
+
+            </div><!-- /section-content -->
         </main>
 
         <!-- RIGHT INTELLIGENCE RAIL -->
@@ -1049,5 +960,67 @@ https://gulfwatch-testing.vercel.app/feed.json
 
     <!-- Application JavaScript -->
     <script src="js/app.js?v=13"></script>
+
+    <!-- Operations tab switcher + init scripts -->
+    <script>
+    (function () {
+        'use strict';
+
+        // Operations sub-tab switching
+        window.switchOpsTab = function (btn) {
+            var tab = btn.getAttribute('data-tab');
+            // Toggle active button
+            btn.parentElement.querySelectorAll('.data-tab').forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            // Toggle panels
+            var opsSection = document.getElementById('operations-section');
+            if (!opsSection) return;
+            opsSection.querySelectorAll('.ops-panel').forEach(function (p) {
+                p.style.display = (p.getAttribute('data-ops') === tab) ? '' : 'none';
+                if (p.getAttribute('data-ops') === tab) p.classList.add('active');
+                else p.classList.remove('active');
+            });
+        };
+
+        // Tab navigation: update for new section names
+        document.querySelectorAll('.tab-btn[data-section]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var section = this.getAttribute('data-section');
+                // Activate tab
+                document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
+                this.classList.add('active');
+                // Show section
+                document.querySelectorAll('.section[data-section]').forEach(function (s) {
+                    s.style.display = (s.getAttribute('data-section') === section) ? '' : 'none';
+                });
+            });
+        });
+
+        // Init classification banners
+        if (window.GulfWatchClassification) {
+            window.GulfWatchClassification.init({ defaultDataSource: 'DEMO' });
+        }
+
+        // Init i18n
+        window._i18n = new I18n();
+        window._i18n.init();
+
+        // Init auth guard (only on index.html)
+        if (window.AuthGuard && location.pathname !== '/login.html') {
+            window._auth = new AuthGuard();
+            window._auth.init();
+        }
+
+        // Init WebSocket (connect after auth is ready)
+        if (window.GulfWatchWS) {
+            var token = localStorage.getItem('gw_access_token') || '';
+            window._ws = new GulfWatchWS({ token: token });
+            window._ws.subscribe('incidents');
+            window._ws.subscribe('alerts');
+            window._ws.subscribe('thermal');
+            window._ws.connect();
+        }
+    })();
+    </script>
 </body>
 </html>

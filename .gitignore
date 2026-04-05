@@ -1,4 +1,11 @@
-# GulfWatch Testing - Git Ignore
+# GulfWatch - Git Ignore
+
+# Environment & secrets (NEVER commit)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
 
 # Python
 __pycache__/
@@ -24,12 +31,14 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.pyc
 
 # Node
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.npm
 
 # IDE
 .vscode/
@@ -46,8 +55,19 @@ yarn-error.log*
 
 # Logs
 *.log
+logs/
 
-# Local config
-.env
-.env.local
+# Docker
+docker-compose.override.yml
+
+# Vercel
 .vercel
+
+# Coverage & testing
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Output
+output/

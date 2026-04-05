@@ -1,0 +1,22 @@
+# Gulf Watch v2 -- Backend Python dependencies
+# Author: Rena Oduya, Backend Core
+
+# Database
+psycopg2-binary>=2.9.9,<3.0      # PostgreSQL adapter (binary for easy install)
+# Use psycopg2 (non-binary) in production Docker images for performance
+
+# Redis
+redis>=5.0.0,<6.0                 # Redis client (sync for ingest_worker)
+redis[hiredis]>=5.0.0,<6.0        # C parser for performance
+
+# WebSocket server
+websockets>=12.0,<14.0            # asyncio WebSocket library
+
+# JWT verification
+PyJWT[crypto]>=2.8.0,<3.0         # JWT decode + RSA support
+
+# RSS parsing
+feedparser>=6.0.0,<7.0            # RSS/Atom feed parser
+
+# Async Redis (for WebSocket server)
+# Included in redis>=5.0 as redis.asyncio

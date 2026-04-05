@@ -1,0 +1,599 @@
+/* ===========================================================================
+   Gulf Watch v2 -- RTL Layout & Arabic Typography
+   Author: Farah Al-Rashidi, Arabic NLP & Intelligence Linguist
+
+   Provides:
+     - RTL direction rules applied when [dir="rtl"] or [lang="ar"]
+     - Bidirectional text handling for mixed Arabic/English content
+     - Arabic font stack (Noto Sans Arabic, Noto Kufi Arabic)
+     - Mirrored layouts for navigation, cards, tables, forms
+     - Override specificity for existing LTR styles
+   =========================================================================== */
+
+/* ---------------------------------------------------------------------------
+   1. ARABIC FONT STACK
+   --------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/notosansarabic/v18/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyfutHS.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/notosansarabic/v18/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCf0mCfutHS.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/notokufiarabic/v16/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh5v.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/notokufiarabic/v16/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh5v.woff2') format('woff2');
+}
+
+
+/* ---------------------------------------------------------------------------
+   2. GLOBAL RTL RULES
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"],
+[lang="ar"],
+html:lang(ar) {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Noto Sans Arabic', 'Noto Kufi Arabic', 'Segoe UI', 'Arial', sans-serif;
+}
+
+[dir="rtl"] *,
+[lang="ar"] * {
+    /* Inherit RTL direction unless overridden */
+    direction: inherit;
+}
+
+/* Ensure Arabic text has appropriate line height */
+[dir="rtl"] body,
+[lang="ar"] body {
+    line-height: 1.8;
+    letter-spacing: 0;
+}
+
+/* Headings in Arabic */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+    font-family: 'Noto Kufi Arabic', 'Noto Sans Arabic', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+
+/* ---------------------------------------------------------------------------
+   3. BIDIRECTIONAL TEXT HANDLING
+   --------------------------------------------------------------------------- */
+
+/* Mixed content: Arabic paragraph with embedded English */
+.bidi-content {
+    unicode-bidi: plaintext;
+}
+
+/* Force LTR for numbers, URLs, code, and English excerpts within RTL */
+[dir="rtl"] .ltr-inline,
+[dir="rtl"] code,
+[dir="rtl"] .url,
+[dir="rtl"] .coordinate,
+[dir="rtl"] .timestamp,
+[dir="rtl"] .flight-number {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+}
+
+/* Force LTR for numerical data */
+[dir="rtl"] .number,
+[dir="rtl"] .stat-value,
+[dir="rtl"] .price,
+[dir="rtl"] .percentage,
+[dir="rtl"] .count {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
+/* Ensure code blocks and JSON stay LTR */
+[dir="rtl"] pre,
+[dir="rtl"] code,
+[dir="rtl"] .json-viewer {
+    direction: ltr;
+    text-align: left;
+    unicode-bidi: isolate;
+}
+
+/* Isolate for inline bidirectional text */
+[dir="rtl"] .bdi,
+.bidi-isolate {
+    unicode-bidi: isolate;
+}
+
+/* Embed for nested directionality */
+.bidi-embed-ltr {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+.bidi-embed-rtl {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+
+/* ---------------------------------------------------------------------------
+   4. LAYOUT MIRRORING
+   --------------------------------------------------------------------------- */
+
+/* Flex containers: reverse direction */
+[dir="rtl"] .flex-row,
+[dir="rtl"] .nav-links,
+[dir="rtl"] .toolbar,
+[dir="rtl"] .breadcrumb {
+    flex-direction: row-reverse;
+}
+
+/* Grid: mirror start/end alignment */
+[dir="rtl"] .sidebar-left {
+    grid-column: -1 / -2;
+    border-left: none;
+    border-right: 1px solid var(--border-color, #333);
+}
+
+[dir="rtl"] .main-content {
+    grid-column: 1 / -2;
+}
+
+/* Margin/padding mirroring */
+[dir="rtl"] .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] .pl-4 {
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+[dir="rtl"] .pr-4 {
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+/* Float mirroring */
+[dir="rtl"] .float-left {
+    float: right;
+}
+
+[dir="rtl"] .float-right {
+    float: left;
+}
+
+/* Text alignment */
+[dir="rtl"] .text-left {
+    text-align: right;
+}
+
+[dir="rtl"] .text-right {
+    text-align: left;
+}
+
+
+/* ---------------------------------------------------------------------------
+   5. NAVIGATION & HEADER
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] .top-nav {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-brand {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] .nav-item {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+[dir="rtl"] .nav-item:first-child {
+    margin-left: 1rem;
+}
+
+[dir="rtl"] .nav-item:last-child {
+    margin-left: 0;
+}
+
+/* Breadcrumb separator mirroring */
+[dir="rtl"] .breadcrumb-separator::before {
+    content: '\u25C0';  /* Left-pointing triangle for RTL */
+}
+
+/* Dropdown menus: align to right edge */
+[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: 0;
+    text-align: right;
+}
+
+
+/* ---------------------------------------------------------------------------
+   6. INCIDENT CARDS
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] .incident-card {
+    text-align: right;
+}
+
+[dir="rtl"] .incident-card .card-header {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .incident-card .severity-badge {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .incident-card .card-meta {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .incident-card .source-tag {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+[dir="rtl"] .incident-card .card-actions {
+    flex-direction: row-reverse;
+}
+
+/* Arabic title styling in cards */
+[dir="rtl"] .incident-card .title-ar {
+    font-family: 'Noto Kufi Arabic', 'Noto Sans Arabic', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 0.25rem;
+}
+
+/* English title below Arabic */
+[dir="rtl"] .incident-card .title-en {
+    font-size: 0.9em;
+    color: var(--text-secondary, #999);
+    direction: ltr;
+    text-align: left;
+}
+
+
+/* ---------------------------------------------------------------------------
+   7. TABLES
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] table {
+    direction: rtl;
+}
+
+[dir="rtl"] th,
+[dir="rtl"] td {
+    text-align: right;
+}
+
+/* Numeric columns stay LTR */
+[dir="rtl"] .col-number,
+[dir="rtl"] .col-date,
+[dir="rtl"] .col-time,
+[dir="rtl"] .col-coordinate {
+    direction: ltr;
+    text-align: left;
+}
+
+[dir="rtl"] .table-actions {
+    text-align: left;
+}
+
+
+/* ---------------------------------------------------------------------------
+   8. FORMS & INPUTS
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] input[type="text"],
+[dir="rtl"] input[type="search"],
+[dir="rtl"] input[type="email"],
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+    text-align: right;
+    direction: rtl;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+/* Search input with icon */
+[dir="rtl"] .search-wrapper {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .search-wrapper .search-icon {
+    left: auto;
+    right: 0.75rem;
+}
+
+[dir="rtl"] .search-wrapper input {
+    padding-left: 0.75rem;
+    padding-right: 2.5rem;
+}
+
+/* Labels */
+[dir="rtl"] label {
+    text-align: right;
+    display: block;
+}
+
+/* Checkbox/radio: move to right */
+[dir="rtl"] .checkbox-wrapper,
+[dir="rtl"] .radio-wrapper {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .checkbox-wrapper input,
+[dir="rtl"] .radio-wrapper input {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+
+/* ---------------------------------------------------------------------------
+   9. FILTER BAR & CONTROLS
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] .filter-bar {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .filter-group {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+[dir="rtl"] .filter-group:last-child {
+    margin-left: 0;
+}
+
+[dir="rtl"] .toggle-group {
+    flex-direction: row-reverse;
+}
+
+/* Severity filter pills */
+[dir="rtl"] .severity-filters {
+    flex-direction: row-reverse;
+}
+
+
+/* ---------------------------------------------------------------------------
+   10. MAP & VISUALIZATION
+   --------------------------------------------------------------------------- */
+
+/* Map controls: flip to left side for RTL */
+[dir="rtl"] .map-controls {
+    left: 10px;
+    right: auto;
+}
+
+/* Map legend: flip to left */
+[dir="rtl"] .map-legend {
+    left: 10px;
+    right: auto;
+    text-align: right;
+}
+
+/* Tooltip: flip arrow direction */
+[dir="rtl"] .map-tooltip {
+    text-align: right;
+}
+
+[dir="rtl"] .map-tooltip .tooltip-title {
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+
+/* ---------------------------------------------------------------------------
+   11. STATUS BADGES & TAGS
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] .badge {
+    direction: rtl;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+[dir="rtl"] .badge-icon {
+    margin-left: 0.25rem;
+    margin-right: 0;
+}
+
+[dir="rtl"] .tag-list {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .tag {
+    margin-left: 0.25rem;
+    margin-right: 0;
+}
+
+
+/* ---------------------------------------------------------------------------
+   12. TIMELINE / FEED
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] .timeline {
+    border-left: none;
+    border-right: 2px solid var(--border-color, #333);
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+[dir="rtl"] .timeline-item::before {
+    left: auto;
+    right: -0.5rem;
+}
+
+[dir="rtl"] .timeline-item .time-label {
+    text-align: left;
+    direction: ltr;
+}
+
+
+/* ---------------------------------------------------------------------------
+   13. SCROLLBAR (for RTL)
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] ::-webkit-scrollbar {
+    /* Keep scrollbar on right even in RTL (browser default) */
+}
+
+
+/* ---------------------------------------------------------------------------
+   14. INTELLIGENCE MODULE PANEL
+   --------------------------------------------------------------------------- */
+
+[dir="rtl"] .module-panel {
+    text-align: right;
+}
+
+[dir="rtl"] .module-panel .module-header {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .module-panel .module-status {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .entity-list {
+    text-align: right;
+}
+
+[dir="rtl"] .entity-list .entity-name-ar {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 1.05em;
+}
+
+[dir="rtl"] .entity-list .entity-name-en {
+    font-size: 0.85em;
+    color: var(--text-secondary, #999);
+    direction: ltr;
+}
+
+
+/* ---------------------------------------------------------------------------
+   15. RESPONSIVE RTL
+   --------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    [dir="rtl"] .sidebar-left {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color, #333);
+    }
+
+    [dir="rtl"] .filter-bar {
+        flex-wrap: wrap;
+    }
+
+    [dir="rtl"] .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------
+   16. PRINT RTL
+   --------------------------------------------------------------------------- */
+
+@media print {
+    [dir="rtl"] body {
+        font-family: 'Noto Sans Arabic', 'Arial', sans-serif;
+    }
+
+    [dir="rtl"] .no-print {
+        display: none;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------
+   17. LANGUAGE SWITCHER
+   --------------------------------------------------------------------------- */
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lang-switcher .lang-btn {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border-color, #555);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text-primary, #fff);
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+.lang-switcher .lang-btn.active {
+    background: var(--accent-color, #00d4ff);
+    color: #000;
+    border-color: var(--accent-color, #00d4ff);
+}
+
+.lang-switcher .lang-btn:hover {
+    background: var(--hover-bg, rgba(255, 255, 255, 0.1));
+}
+
+/* Arabic label for the language switcher */
+.lang-switcher .lang-btn[data-lang="ar"] {
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+
+/* ---------------------------------------------------------------------------
+   18. ANIMATION DIRECTION FIX
+   --------------------------------------------------------------------------- */
+
+/* Progress bars: reverse fill direction in RTL */
+[dir="rtl"] .progress-bar .progress-fill {
+    transform-origin: right center;
+}
+
+/* Slide animations: reverse direction */
+[dir="rtl"] .slide-in {
+    animation-direction: reverse;
+}
+
+/* Loading spinner: no change needed (rotation is direction-agnostic) */

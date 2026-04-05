@@ -15,7 +15,7 @@ def load_reports():
     try:
         with open(REPORTS_FILE, 'r') as f:
             return json.load(f)
-    except:
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
         return {
             'generated_at': datetime.now(timezone.utc).isoformat(),
             'total_reports': 0,

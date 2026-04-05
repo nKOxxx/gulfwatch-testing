@@ -130,9 +130,9 @@ class CircuitBreaker:
                     score += 10
                 elif hours_ago < 24:
                     score += 5
-        except:
+        except (ValueError, TypeError, KeyError):
             pass
-        
+
         # Map score to confidence level
         if score >= 70:
             return 'VERIFIED'

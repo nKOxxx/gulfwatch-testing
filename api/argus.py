@@ -17,7 +17,7 @@ def handler():
     try:
         with open('incidents.json', 'r') as f:
             incidents = json.load(f)
-    except:
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
         incidents = []
     result = process_events(incidents)
     return jsonify(result)

@@ -3,8 +3,19 @@
   "version": "2.0.0",
   "description": "MENA Security Monitor - RSS-based intelligence dashboard",
   "scripts": {
+    "start": "node api/index.js",
+    "dev": "node --watch api/index.js",
+    "test": "pytest",
+    "migrate": "python db/migrate.py",
+    "ingest": "python scripts/ingest_worker.py",
     "fetch": "python scripts/fetch_rss.py"
   },
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "jose": "^5.2.0",
+    "ws": "^8.16.0",
+    "dotenv": "^16.4.0",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0"
+  }
 }

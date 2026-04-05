@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "language": "ar",
+    "direction": "rtl",
+    "version": "1.0.0",
+    "author": "Farah Al-Rashidi"
+  },
+
+  "app": {
+    "title": "رصد الخليج",
+    "subtitle": "منصة الاستخبارات الجيوسياسية",
+    "version": "الإصدار الثاني",
+    "tagline": "رصد أمني وجيوسياسي للشرق الأوسط في الوقت الفعلي"
+  },
+
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "incidents": "الأحداث",
+    "map": "الخريطة",
+    "entities": "الكيانات",
+    "modules": "الوحدات",
+    "airspace": "المجال الجوي",
+    "prices": "أسعار الطاقة",
+    "reports": "التقارير",
+    "settings": "الإعدادات",
+    "scenario": "تحليل السيناريوهات",
+    "search": "بحث",
+    "notifications": "الإشعارات",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول"
+  },
+
+  "tabs": {
+    "live_feed": "البث المباشر",
+    "incidents": "الأحداث",
+    "map_view": "عرض الخريطة",
+    "analysis": "التحليل",
+    "timeline": "الجدول الزمني",
+    "sources": "المصادر",
+    "entities": "الكيانات",
+    "modules": "وحدات الاستخبارات",
+    "airspace": "المجال الجوي",
+    "energy": "الطاقة",
+    "regional": "إحصائيات إقليمية"
+  },
+
+  "filters": {
+    "all": "الكل",
+    "filter_by": "تصفية حسب",
+    "country": "الدولة",
+    "severity": "الخطورة",
+    "type": "النوع",
+    "source": "المصدر",
+    "date_range": "النطاق الزمني",
+    "from": "من",
+    "to": "إلى",
+    "last_24h": "آخر 24 ساعة",
+    "last_7d": "آخر 7 أيام",
+    "last_30d": "آخر 30 يوماً",
+    "custom": "مخصص",
+    "apply": "تطبيق",
+    "clear": "مسح",
+    "reset": "إعادة تعيين",
+    "status": "الحالة",
+    "language": "اللغة",
+    "arabic_only": "العربية فقط",
+    "english_only": "الإنجليزية فقط",
+    "all_languages": "جميع اللغات"
+  },
+
+  "severity": {
+    "critical": "حرج",
+    "high": "عالي",
+    "medium": "متوسط",
+    "low": "منخفض",
+    "unknown": "غير محدد"
+  },
+
+  "status": {
+    "confirmed": "مؤكد",
+    "unconfirmed": "غير مؤكد",
+    "disputed": "متنازع عليه",
+    "retracted": "مسحوب",
+    "developing": "قيد التطور",
+    "resolved": "منتهي"
+  },
+
+  "incident_types": {
+    "military": "عسكري",
+    "political": "سياسي",
+    "economic": "اقتصادي",
+    "humanitarian": "إنساني",
+    "security": "أمني",
+    "diplomatic": "دبلوماسي",
+    "environmental": "بيئي",
+    "cyber": "سيبراني"
+  },
+
+  "buttons": {
+    "view_details": "عرض التفاصيل",
+    "show_more": "عرض المزيد",
+    "show_less": "عرض أقل",
+    "refresh": "تحديث",
+    "export": "تصدير",
+    "share": "مشاركة",
+    "copy": "نسخ",
+    "close": "إغلاق",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "submit": "إرسال",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "download": "تنزيل",
+    "upload": "رفع",
+    "print": "طباعة",
+    "zoom_in": "تكبير",
+    "zoom_out": "تصغير",
+    "fullscreen": "ملء الشاشة",
+    "report_incident": "الإبلاغ عن حادث",
+    "verify": "تحقق",
+    "mark_read": "تعليم كمقروء",
+    "archive": "أرشفة",
+    "switch_language": "تبديل اللغة"
+  },
+
+  "search": {
+    "placeholder": "بحث في الأحداث والكيانات...",
+    "placeholder_ar": "بحث بالعربية...",
+    "no_results": "لا توجد نتائج",
+    "searching": "جارٍ البحث...",
+    "results_count": "تم العثور على {count} نتيجة",
+    "advanced_search": "بحث متقدم",
+    "search_arabic": "بحث بالعربية",
+    "search_english": "بحث بالإنجليزية",
+    "search_mixed": "بحث مختلط",
+    "fuzzy_search": "بحث تقريبي",
+    "root_search": "بحث بالجذر"
+  },
+
+  "countries": {
+    "SA": "المملكة العربية السعودية",
+    "AE": "الإمارات العربية المتحدة",
+    "QA": "قطر",
+    "KW": "الكويت",
+    "BH": "البحرين",
+    "OM": "عمان",
+    "IQ": "العراق",
+    "IR": "إيران",
+    "SY": "سوريا",
+    "LB": "لبنان",
+    "JO": "الأردن",
+    "YE": "اليمن",
+    "EG": "مصر",
+    "PS": "فلسطين",
+    "IL": "إسرائيل",
+    "TR": "تركيا",
+    "SD": "السودان",
+    "LY": "ليبيا",
+    "TN": "تونس",
+    "DZ": "الجزائر",
+    "MA": "المغرب"
+  },
+
+  "regions": {
+    "gulf": "دول الخليج",
+    "levant": "بلاد الشام",
+    "north_africa": "شمال أفريقيا",
+    "horn_of_africa": "القرن الأفريقي",
+    "middle_east": "الشرق الأوسط",
+    "mena": "الشرق الأوسط وشمال أفريقيا"
+  },
+
+  "modules": {
+    "argus": {
+      "name": "أرغوس",
+      "description": "محرك تحقق من الأحداث والكيانات بالذكاء الاصطناعي"
+    },
+    "babel": {
+      "name": "بابل",
+      "description": "معالجة اللغة العربية الطبيعية واستخراج الكيانات"
+    },
+    "chatter": {
+      "name": "شاتر",
+      "description": "تحليل المشاعر وتقييم مصداقية المصادر"
+    },
+    "chronos": {
+      "name": "كرونوس",
+      "description": "تحليل السلاسل الزمنية واكتشاف الأنماط"
+    },
+    "ignite": {
+      "name": "إغنايت",
+      "description": "كشف الحرائق والأحداث الحرارية عبر الأقمار الصناعية"
+    },
+    "skyline": {
+      "name": "سكايلاين",
+      "description": "بيانات الطقس وتأثيرها على العمليات"
+    }
+  },
+
+  "intelligence": {
+    "threat_level": "مستوى التهديد",
+    "credibility": "المصداقية",
+    "confidence": "الثقة",
+    "verified": "موثق",
+    "unverified": "غير موثق",
+    "source_reliability": "موثوقية المصدر",
+    "cross_referenced": "مقارنة مرجعية",
+    "single_source": "مصدر واحد",
+    "multi_source": "مصادر متعددة",
+    "escalation_risk": "خطر التصعيد",
+    "situation_report": "تقرير الوضع",
+    "intelligence_brief": "ملخص استخباراتي",
+    "assessment": "تقييم"
+  },
+
+  "military": {
+    "airstrike": "غارة جوية",
+    "missile_strike": "ضربة صاروخية",
+    "drone_attack": "هجوم بطائرة مسيرة",
+    "ground_operation": "عملية برية",
+    "naval_operation": "عملية بحرية",
+    "bombing": "قصف",
+    "shelling": "قصف مدفعي",
+    "clashes": "اشتباكات",
+    "ceasefire": "وقف إطلاق النار",
+    "truce": "هدنة",
+    "deployment": "انتشار",
+    "withdrawal": "انسحاب",
+    "blockade": "حصار",
+    "interception": "اعتراض",
+    "casualties": "إصابات",
+    "killed": "قتلى",
+    "wounded": "جرحى",
+    "displaced": "نازحون",
+    "hostages": "رهائن",
+    "prisoners": "أسرى",
+    "ballistic_missile": "صاروخ بالستي",
+    "cruise_missile": "صاروخ كروز",
+    "anti_ship_missile": "صاروخ مضاد للسفن",
+    "air_defense": "دفاع جوي",
+    "no_fly_zone": "منطقة حظر طيران",
+    "military_buildup": "حشد عسكري",
+    "exercises": "مناورات عسكرية",
+    "conscription": "تجنيد",
+    "special_forces": "قوات خاصة",
+    "intelligence_operation": "عملية استخباراتية",
+    "assassination": "اغتيال",
+    "sabotage": "تخريب",
+    "cyber_attack": "هجوم سيبراني"
+  },
+
+  "diplomatic": {
+    "summit": "قمة",
+    "agreement": "اتفاقية",
+    "treaty": "معاهدة",
+    "sanctions": "عقوبات",
+    "embargo": "حظر",
+    "normalization": "تطبيع",
+    "mediation": "وساطة",
+    "negotiation": "مفاوضات",
+    "ambassador": "سفير",
+    "embassy": "سفارة",
+    "consulate": "قنصلية",
+    "diplomatic_crisis": "أزمة دبلوماسية",
+    "recall_ambassador": "سحب السفير",
+    "sever_relations": "قطع العلاقات",
+    "joint_statement": "بيان مشترك",
+    "resolution": "قرار",
+    "veto": "فيتو"
+  },
+
+  "energy": {
+    "oil_price": "سعر النفط",
+    "gas_price": "سعر الغاز",
+    "brent_crude": "خام برنت",
+    "wti_crude": "خام غرب تكساس",
+    "opec_production": "إنتاج أوبك",
+    "barrel": "برميل",
+    "pipeline": "خط أنابيب",
+    "refinery": "مصفاة",
+    "lng": "غاز طبيعي مسال",
+    "per_barrel": "للبرميل",
+    "production_cut": "خفض الإنتاج",
+    "production_increase": "زيادة الإنتاج"
+  },
+
+  "airspace": {
+    "flight_tracking": "تتبع الرحلات",
+    "notam": "إشعار للطيارين",
+    "airspace_closure": "إغلاق المجال الجوي",
+    "military_aircraft": "طائرات عسكرية",
+    "civilian_aircraft": "طائرات مدنية",
+    "surveillance": "استطلاع",
+    "tanker": "طائرة تزويد بالوقود",
+    "altitude": "الارتفاع",
+    "heading": "الاتجاه",
+    "speed": "السرعة",
+    "callsign": "رمز النداء"
+  },
+
+  "time": {
+    "just_now": "الآن",
+    "minutes_ago": "قبل {count} دقيقة",
+    "hours_ago": "قبل {count} ساعة",
+    "days_ago": "قبل {count} يوم",
+    "today": "اليوم",
+    "yesterday": "أمس",
+    "this_week": "هذا الأسبوع",
+    "last_week": "الأسبوع الماضي",
+    "this_month": "هذا الشهر",
+    "last_updated": "آخر تحديث"
+  },
+
+  "errors": {
+    "generic": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+    "network": "خطأ في الاتصال بالشبكة",
+    "not_found": "غير موجود",
+    "unauthorized": "غير مصرح",
+    "forbidden": "محظور",
+    "timeout": "انتهت المهلة",
+    "server_error": "خطأ في الخادم",
+    "load_failed": "فشل في التحميل",
+    "no_data": "لا توجد بيانات متاحة"
+  },
+
+  "accessibility": {
+    "skip_nav": "تخطي إلى المحتوى الرئيسي",
+    "open_menu": "فتح القائمة",
+    "close_menu": "إغلاق القائمة",
+    "expand": "توسيع",
+    "collapse": "طي",
+    "loading": "جارٍ التحميل...",
+    "sort_asc": "ترتيب تصاعدي",
+    "sort_desc": "ترتيب تنازلي",
+    "new_incident": "حادث جديد",
+    "high_priority": "أولوية عالية"
+  },
+
+  "report": {
+    "title": "الإبلاغ عن حادث",
+    "incident_title": "عنوان الحادث",
+    "description": "الوصف",
+    "location": "الموقع",
+    "date_time": "التاريخ والوقت",
+    "source_url": "رابط المصدر",
+    "attachments": "المرفقات",
+    "submit_report": "إرسال البلاغ",
+    "report_submitted": "تم إرسال البلاغ بنجاح",
+    "report_status": "حالة البلاغ",
+    "under_review": "قيد المراجعة",
+    "approved": "معتمد",
+    "rejected": "مرفوض"
+  },
+
+  "settings": {
+    "language": "اللغة",
+    "theme": "المظهر",
+    "dark_mode": "الوضع الداكن",
+    "light_mode": "الوضع الفاتح",
+    "notifications_enabled": "تفعيل الإشعارات",
+    "auto_refresh": "تحديث تلقائي",
+    "refresh_interval": "فترة التحديث",
+    "map_style": "نمط الخريطة",
+    "default_region": "المنطقة الافتراضية",
+    "timezone": "المنطقة الزمنية",
+    "data_source": "مصدر البيانات",
+    "live_data": "بيانات مباشرة",
+    "mock_data": "بيانات تجريبية"
+  },
+
+  "footer": {
+    "powered_by": "مشغّل بواسطة رصد الخليج الإصدار الثاني",
+    "disclaimer": "هذه المنصة للأغراض المعلوماتية فقط. لا تشكل نصيحة استخباراتية رسمية.",
+    "last_sync": "آخر مزامنة",
+    "data_freshness": "حداثة البيانات",
+    "copyright": "جميع الحقوق محفوظة"
+  }
+}

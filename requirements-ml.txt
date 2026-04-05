@@ -1,0 +1,32 @@
+# =============================================================================
+# Gulf Watch v2 -- ML Dependencies
+# Required for intelligence module ML upgrades (Marcus Lindgren)
+#
+# Install: pip install -r requirements-ml.txt
+#
+# NOTE: All modules gracefully degrade if these are not installed.
+# The rule-based/keyword fallback logic runs without any ML dependencies.
+# =============================================================================
+
+# --- ARGUS v2: Embedding-based entity resolution ---
+# all-MiniLM-L6-v2 model for 384-dim entity embeddings + cosine similarity
+sentence-transformers>=2.2.0,<3.0.0
+
+# --- CHATTER v2: Transformer-based sentiment analysis ---
+# nlptown/bert-base-multilingual-uncased-sentiment for multilingual sentiment
+transformers>=4.30.0,<5.0.0
+
+# --- Shared ML runtime ---
+# PyTorch (CPU-only for deployment; GPU optional for development)
+torch>=2.0.0,<3.0.0
+# Tokenizers (required by transformers, pinned for reproducibility)
+tokenizers>=0.13.0,<1.0.0
+
+# --- Numerical / scientific computing ---
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0,<2.0.0
+scikit-learn>=1.2.0,<2.0.0
+
+# --- Optional: ONNX Runtime for optimized inference ---
+# Uncomment for production deployment (faster inference, smaller footprint)
+# onnxruntime>=1.15.0,<2.0.0

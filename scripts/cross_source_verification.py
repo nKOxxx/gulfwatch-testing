@@ -95,7 +95,7 @@ class CrossSourceVerification:
             t2 = datetime.fromisoformat(inc2.get('published', '').replace('Z', '+00:00'))
             time_diff = abs((t1 - t2).total_seconds()) / 3600  # hours
             time_sim = max(0, 1 - (time_diff / 6))  # 0-1 scale, 6h = 0
-        except:
+        except (ValueError, TypeError, KeyError):
             time_sim = 0.5  # unknown time
         
         # Weighted average

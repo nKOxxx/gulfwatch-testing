@@ -94,9 +94,9 @@ def sanitize_url(url: Optional[str], allow_relative: bool = False) -> str:
         for protocol in ['javascript:', 'data:']:
             if normalized.startswith(protocol):
                 return "#"
-    except:
+    except (ValueError, TypeError, UnicodeError):
         pass
-    
+
     # If no protocol specified
     if '://' not in url:
         if allow_relative and url.startswith('/'):

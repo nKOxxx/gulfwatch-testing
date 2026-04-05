@@ -1,0 +1,238 @@
+# =============================================================================
+# Gulf Watch - Docker Compose (Development & Air-Gap Deployment)
+#
+# Services:
+#   app        - Node.js API + static frontend
+#   postgres   - PostgreSQL 16 + TimescaleDB (encrypted at rest)
+#   redis      - Redis 7 for caching, rate limiting, and message queue
+#   ingestion  - Python ingestion pipeline (RSS, OpenSky, FIRMS pollers)
+#
+# Usage:
+#   docker-compose up -d              # Start all services
+#   docker-compose logs -f app        # Follow app logs
+#   docker-compose exec postgres psql -U gulfwatch gulfwatch  # DB shell
+#
+# Air-gap deployment: set AIRGAP=true in .env to disable external pollers
+# =============================================================================
+
+version: "3.9"
+
+x-common-env: &common-env
+  NODE_ENV: ${NODE_ENV:-development}
+  LOG_LEVEL: ${LOG_LEVEL:-INFO}
+  DATABASE_URL: postgresql://gulfwatch:${POSTGRES_PASSWORD:-changeme}@postgres:5432/gulfwatch?sslmode=prefer
+  REDIS_URL: redis://:${REDIS_PASSWORD:-changeme}@redis:6379/0
+  JWT_SECRET: ${JWT_SECRET}
+  JWT_ISSUER: ${JWT_ISSUER:-https://gulfwatch.io}
+  JWT_AUDIENCE: ${JWT_AUDIENCE:-gulfwatch-api}
+  CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:3000}
+  GULFWATCH_ADMIN_KEY: ${GULFWATCH_ADMIN_KEY}
+
+services:
+  # ---------------------------------------------------------------------------
+  # Application: Node.js API + static frontend
+  # ---------------------------------------------------------------------------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: gulfwatch-app
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    environment:
+      <<: *common-env
+      PORT: "3000"
+    volumes:
+      - app-data:/app/data
+      - app-logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "1.0"
+        reservations:
+          memory: 128M
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:size=64M
+
+  # ---------------------------------------------------------------------------
+  # PostgreSQL 16 + TimescaleDB
+  # ---------------------------------------------------------------------------
+  postgres:
+    image: timescale/timescaledb:latest-pg16
+    container_name: gulfwatch-postgres
+    restart: unless-stopped
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    environment:
+      POSTGRES_DB: gulfwatch
+      POSTGRES_USER: gulfwatch
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_INITDB_ARGS: "--data-checksums --encoding=UTF8"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gulfwatch -d gulfwatch"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: "2.0"
+        reservations:
+          memory: 256M
+    security_opt:
+      - no-new-privileges:true
+    shm_size: 128mb
+    command:
+      - "postgres"
+      - "-c"
+      - "shared_preload_libraries=timescaledb"
+      - "-c"
+      - "ssl=on"
+      - "-c"
+      - "ssl_cert_file=/var/lib/postgresql/data/server.crt"
+      - "-c"
+      - "ssl_key_file=/var/lib/postgresql/data/server.key"
+      - "-c"
+      - "max_connections=100"
+      - "-c"
+      - "shared_buffers=256MB"
+      - "-c"
+      - "log_statement=ddl"
+      - "-c"
+      - "log_connections=on"
+      - "-c"
+      - "log_disconnections=on"
+
+  # ---------------------------------------------------------------------------
+  # Redis 7 - caching, rate limiting, BullMQ message queue
+  # ---------------------------------------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: gulfwatch-redis
+    restart: unless-stopped
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    command:
+      - "redis-server"
+      - "--requirepass"
+      - "${REDIS_PASSWORD:-changeme}"
+      - "--maxmemory"
+      - "128mb"
+      - "--maxmemory-policy"
+      - "allkeys-lru"
+      - "--appendonly"
+      - "yes"
+      - "--appendfsync"
+      - "everysec"
+      - "--rename-command"
+      - "FLUSHALL"
+      - '""'
+      - "--rename-command"
+      - "FLUSHDB"
+      - '""'
+      - "--rename-command"
+      - "DEBUG"
+      - '""'
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-changeme}", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          memory: 192M
+          cpus: "0.5"
+        reservations:
+          memory: 64M
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:size=16M
+
+  # ---------------------------------------------------------------------------
+  # Ingestion pipeline: Python pollers (RSS, OpenSky, FIRMS, Twitter)
+  # ---------------------------------------------------------------------------
+  ingestion:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: gulfwatch-ingestion
+    restart: unless-stopped
+    environment:
+      <<: *common-env
+      OPENSKY_USERNAME: ${OPENSKY_USERNAME}
+      OPENSKY_PASSWORD: ${OPENSKY_PASSWORD}
+      NASA_FIRMS_API_KEY: ${NASA_FIRMS_API_KEY}
+      TWITTER_BEARER_TOKEN: ${TWITTER_BEARER_TOKEN}
+      NEWSDATA_API_KEY: ${NEWSDATA_API_KEY}
+      AIRGAP: ${AIRGAP:-false}
+      POLL_INTERVAL_SECONDS: ${POLL_INTERVAL_SECONDS:-300}
+    volumes:
+      - app-data:/app/data
+      - app-logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: ["python3", "scripts/fetch_rss.py"]
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "1.0"
+        reservations:
+          memory: 128M
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:size=64M
+
+# ---------------------------------------------------------------------------
+# Named volumes (persistent across restarts)
+# ---------------------------------------------------------------------------
+volumes:
+  postgres-data:
+    driver: local
+  redis-data:
+    driver: local
+  app-data:
+    driver: local
+  app-logs:
+    driver: local
+
+# ---------------------------------------------------------------------------
+# Network isolation
+# ---------------------------------------------------------------------------
+networks:
+  default:
+    name: gulfwatch-net
+    driver: bridge

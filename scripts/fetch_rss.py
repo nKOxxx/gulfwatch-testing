@@ -253,9 +253,9 @@ def extract_casualties(text: str) -> dict:
                     # Default to civilian if unclear
                     civilian = num
                     military = 0
-            except:
+            except (ValueError, TypeError):
                 pass
-    
+
     # If no specific classification, put all in civilian
     if total > 0 and military == 0 and civilian == 0:
         civilian = total

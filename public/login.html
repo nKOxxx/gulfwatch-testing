@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulf Watch | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+
+    <!-- Classification Banners -->
+    <div class="login-classification login-classification--top">UNCLASSIFIED // FOR OFFICIAL USE ONLY</div>
+    <div class="login-classification login-classification--bottom">UNCLASSIFIED // FOR OFFICIAL USE ONLY</div>
+
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Brand -->
+            <div class="login-brand">
+                <img src="icons/icon-192.svg" alt="Gulf Watch" class="login-brand-logo" onerror="this.style.display='none'">
+                <div class="login-brand-title">Gulf Watch</div>
+                <div class="login-brand-subtitle">Real-Time Geopolitical Intelligence</div>
+            </div>
+
+            <!-- Error Display -->
+            <div class="login-error" id="login-error"></div>
+
+            <!-- Login Form -->
+            <form class="login-form" id="login-form" autocomplete="on">
+                <div class="form-group">
+                    <label class="form-label" for="login-email">Email</label>
+                    <input class="form-input" id="login-email" name="email" type="email"
+                           placeholder="operator@gulfwatch.io" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="login-password">Password</label>
+                    <input class="form-input" id="login-password" name="password" type="password"
+                           placeholder="Enter password" required autocomplete="current-password">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="login-mfa">MFA Code <span class="mfa-hint">(optional)</span></label>
+                    <input class="form-input" id="login-mfa" name="mfa_code" type="text"
+                           placeholder="6-digit code" maxlength="6" inputmode="numeric"
+                           autocomplete="one-time-code" pattern="[0-9]{6}">
+                </div>
+
+                <button class="login-btn" type="submit" id="login-btn">Sign In</button>
+            </form>
+
+            <div class="login-footer">
+                Authorized personnel only. All access is monitored and logged.
+            </div>
+        </div>
+    </div>
+
+    <script>
+    (function () {
+        'use strict';
+
+        var form     = document.getElementById('login-form');
+        var errorBox = document.getElementById('login-error');
+        var btn      = document.getElementById('login-btn');
+
+        // If already authenticated, redirect
+        var token = localStorage.getItem('gw_access_token');
+        if (token) {
+            try {
+                var payload = JSON.parse(atob(token.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')));
+                if (payload.exp && payload.exp * 1000 > Date.now()) {
+                    location.href = '/index.html';
+                }
+            } catch (_) { /* invalid token, stay on login */ }
+        }
+
+        function showError(msg) {
+            errorBox.textContent = msg;
+            errorBox.classList.add('visible');
+        }
+
+        function hideError() {
+            errorBox.classList.remove('visible');
+        }
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            hideError();
+            btn.disabled = true;
+            btn.textContent = 'Signing in...';
+
+            var email    = document.getElementById('login-email').value.trim();
+            var password = document.getElementById('login-password').value;
+            var mfa      = document.getElementById('login-mfa').value.trim();
+
+            var body = { email: email, password: password };
+            if (mfa) body.mfa_code = mfa;
+
+            fetch('/api/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body),
+            })
+            .then(function (res) {
+                if (!res.ok) {
+                    return res.json().then(function (data) {
+                        throw new Error(data.error || data.message || 'Invalid credentials');
+                    }).catch(function (err) {
+                        if (err.message) throw err;
+                        throw new Error('Authentication failed (' + res.status + ')');
+                    });
+                }
+                return res.json();
+            })
+            .then(function (data) {
+                if (data.access_token) {
+                    localStorage.setItem('gw_access_token', data.access_token);
+                }
+                if (data.refresh_token) {
+                    localStorage.setItem('gw_refresh_token', data.refresh_token);
+                }
+                location.href = '/index.html';
+            })
+            .catch(function (err) {
+                showError(err.message);
+                btn.disabled = false;
+                btn.textContent = 'Sign In';
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

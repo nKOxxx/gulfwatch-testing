@@ -96,9 +96,9 @@ def extract_casualties(text):
                 else:
                     # Default split if unclear
                     civilian += num
-            except:
+            except (ValueError, TypeError):
                 pass
-    
+
     return {
         'total': total,
         'military': military,

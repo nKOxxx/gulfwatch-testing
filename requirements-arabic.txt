@@ -1,0 +1,32 @@
+# Gulf Watch v2 -- Arabic NLP Dependencies (BABEL Module)
+# Author: Farah Al-Rashidi
+#
+# Core (required):
+#   - feedparser: Arabic RSS feed parsing
+#
+# Enhanced (optional, gracefully degraded when missing):
+#   - camel-tools: Arabic morphological analysis, NER, tokenization (MIT)
+#   - pyarabic: Arabic text utilities and normalization
+#   - transformers + torch: AraBERT for advanced NER and sentiment
+#
+# Install core only:
+#   pip install -r requirements-arabic.txt
+#
+# Install with enhanced Arabic NLP:
+#   pip install -r requirements-arabic.txt --extra-index-url https://pypi.org/simple/
+
+# ── Core (always needed) ──────────────────────────────────
+feedparser>=6.0.10
+
+# ── Arabic NLP (optional, enhanced accuracy) ──────────────
+camel-tools>=1.5.0            # CAMeL Tools: Arabic morphology, NER, tokenization (MIT license)
+pyarabic>=0.6.15              # Arabic text utilities: tashkeel, normalization
+
+# ── ML / Transformers (optional, for AraBERT integration) ─
+# Uncomment these for transformer-based NER and sentiment:
+# transformers>=4.35.0
+# torch>=2.1.0
+# arabert                     # Arabic BERT models
+
+# ── Search & Matching (optional) ──────────────────────────
+# python-Levenshtein>=0.21.0  # Fast fuzzy matching (C extension)
