@@ -11,9 +11,16 @@ module.exports = (req, res) => {
         return;
     }
     
-    // OpenSky credentials
-    const username = 'arestheagent@gmail.com-api-client';
-    const password = 'E9hWNjvQoXKWmguZcKBbrZSBvIHC5hlw';
+    // OpenSky credentials (set OPENSKY_USERNAME / OPENSKY_PASSWORD in the environment)
+    const username = process.env.OPENSKY_USERNAME;
+    const password = process.env.OPENSKY_PASSWORD;
+
+    if (!username || !password) {
+        console.error('Missing OPENSKY_USERNAME or OPENSKY_PASSWORD env vars');
+        res.status(500).json({ error: 'OpenSky credentials not configured' });
+        return;
+    }
+
     const authString = Buffer.from(`${username}:${password}`).toString('base64');
     
     const options = {
