@@ -10,7 +10,7 @@
 - **Files Modified**: `public/index.html`
 
 #### 2. Hardcoded Admin Key (CRITICAL)
-- **Issue**: Admin key `gulfwatch_admin_2024` was hardcoded in source
+- **Issue**: The admin key was hardcoded in source (old value retired — do not reuse)
 - **Fix**: Moved to environment variable `GULFWATCH_ADMIN_KEY`
 - **Files Modified**: `scripts/user_report_system.py`
 
@@ -54,7 +54,7 @@
 
 | Threat | Status | Mitigation |
 |--------|--------|------------|
-| Hardcoded Secrets | ✅ FIXED | Environment variables only |
+| Hardcoded Secrets | ⚠️ INCIDENT 2026-07-06 | OpenSky credentials were hardcoded in `api/aircraft.js` (missed by the 2026-03-14 pass) and exposed while the repo was public. Moved to env vars 2026-07-06; credential rotation required. |
 | Timing Attacks | ✅ FIXED | `hmac.compare_digest()` |
 | Privacy Leak | ✅ FIXED | IP addresses hashed |
 
@@ -85,6 +85,10 @@ export GULFWATCH_ADMIN_KEY="your-secure-random-key-here"
 
 # Required for NewsData.io API (optional)
 export NEWSDATA_API_KEY="your-newsdata-api-key"
+
+# Required for the aircraft tracking endpoint (api/aircraft.js)
+export OPENSKY_USERNAME="your-opensky-api-client-username"
+export OPENSKY_PASSWORD="your-opensky-password"
 ```
 
 ### Security Headers
@@ -152,6 +156,11 @@ While GDPR compliance is not strictly required for this use case, the applicatio
 
 ### Security Audit Log
 
+- **2026-07-06**: OpenSky credential incident remediation
+  - Removed hardcoded OpenSky username/password from `api/aircraft.js` (main and new-features branches); replaced with `OPENSKY_USERNAME` / `OPENSKY_PASSWORD` env vars
+  - The credential was exposed in the public repo (including a third-party fork) and MUST be rotated at OpenSky; treat the old value as compromised
+  - Removed the retired admin key value previously printed in this file
+  - Corrected the "Hardcoded Secrets: FIXED" claim, which was false at the time it was written
 - **2026-03-14**: Comprehensive security hardening
   - Fixed all XSS/HTML injection vulnerabilities
   - Added comprehensive escaping (HTML, CSS, JS, URL)
