@@ -1,20 +1,360 @@
 {
-  "generated_at": "2026-07-28T12:39:54.848751+00:00",
-  "total_incidents": 107,
+  "generated_at": "2026-07-29T00:33:11.462249+00:00",
+  "total_incidents": 111,
   "circuit_breaker_stats": {
-    "total_processed": 110,
+    "total_processed": 114,
     "duplicates_filtered": 3,
     "recaps_blocked": 0,
-    "unique_signatures": 97
+    "unique_signatures": 98
   },
   "incidents": [
     {
-      "id": 59998144,
-      "title": "Israeli settler attack on at-Tuwani",
+      "id": 514957418,
+      "title": "US says it intercepted \u2018surprise\u2019 Iran missile attack on its forces in Middle East after lull in fighting",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/jul/29/iran-missile-attack-us-base-forces",
+      "published": "2026-07-29T00:00:00+00:00",
+      "type": "missile",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184653-0010",
+        "incident_type": "missile",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 926540445,
+      "title": "Iran war live: US accuses IRGC of \u2018surprise\u2019 ballistic missile attacks",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/7/28/israeli-settler-attack-on-at-tuwani?traffic_source=rss",
-      "published": "2026-07-28T11:27:08+00:00",
+      "source_url": "https://www.aljazeera.com/news/liveblog/2026/7/29/iran-war-live-us-accuses-irgc-of-surprise-ballistic-missile-attacks?traffic_source=rss",
+      "published": "2026-07-29T00:00:00+00:00",
+      "type": "missile",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184669-0016",
+        "incident_type": "missile",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 922240254,
+      "title": "Yemen\u2019s Houthis claim missile attack on Saudi Arabia oil tanker",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/7/28/yemens-houthis-claim-missile-attack-on-saudi-arabia-oil-tanker?traffic_source=rss",
+      "published": "2026-07-28T23:16:44+00:00",
+      "type": "missile",
+      "status": "reported",
+      "location": {
+        "name": "Unknown City",
+        "country": "Saudi Arabia",
+        "lat": 23.8859,
+        "lng": 45.0792
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184672-0017",
+        "incident_type": "missile",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 96026829,
+      "title": "Israeli airstrike destroys Gaza City mosque near displacement camp",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/7/28/israeli-airstrike-destroys-gaza-city-mosque-near-displacement-camp?traffic_source=rss",
+      "published": "2026-07-28T21:24:20+00:00",
       "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184675-0018",
+        "incident_type": "airstrike",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 308671773,
+      "title": "Iran and Oman exchange proposals to manage Strait of Hormuz",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/7/28/iran-and-oman-exchange-proposals-to-manage-strait-of-hormuz?traffic_source=rss",
+      "published": "2026-07-28T21:01:19+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Oman",
+        "lat": 21.4735,
+        "lng": 55.9754
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184678-0019",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 264902008,
+      "title": "UAE strongly condemns hostile attack on Jordan #WamNews https://www.wam.ae/a/17ch635",
+      "source": "WAM English",
+      "source_url": "https://nitter.net/WAMNEWS_ENG/status/2082204242019016817#m",
+      "published": "2026-07-28T20:39:11+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 95,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185498-0057",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "VERIFIED",
+        "score": 90,
+        "num_sources": 2,
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "id": 966577506,
+      "title": "Many feared dead from 7.1-magnitude quake in Kumamoto, Japan",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/7/28/aje-onl-nf_many-feared-dead-from-7-280726?traffic_source=rss",
+      "published": "2026-07-28T20:36:48+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "Qatar",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184681-0020",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 845990112,
+      "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u064f\u062f\u064a\u0646 \u0628\u0634\u062f\u0629 \u0627\u0644\u0647\u062c\u0648\u0645 \u0627\u0644\u0639\u062f\u0648\u0627\u0646\u064a \u0639\u0644\u0649 \u0627\u0644\u0623\u0631\u062f\u0646 #\u0648\u0627\u0645 https://www.wam.ae/a/17ch5bd",
+      "source": "WAM News Agency",
+      "source_url": "https://nitter.net/wamnews/status/2082202458659692810#m",
+      "published": "2026-07-28T20:32:06+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "UAE",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 95,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185488-0056",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "VERIFIED",
+        "score": 90,
+        "num_sources": 2,
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "id": 636035305,
+      "title": "Kyiv warns Iran against escalation after Ukraine\u2019s Caspian Sea attack",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/7/28/kyiv-warns-iran-against-escalation-after-ukraines-caspian-sea-attack?traffic_source=rss",
+      "published": "2026-07-28T20:29:42+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184684-0021",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 350192986,
+      "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u064f\u062f\u064a\u0646 \u0628\u0634\u062f\u0629 \u0627\u0644\u0647\u062c\u0648\u0645 \u0627\u0644\u0639\u062f\u0648\u0627\u0646\u064a \u0639\u0644\u0649 \u0627\u0644\u0623\u0631\u062f\u0646 UAE Strongly Condemns Hostile Attack on Jordan",
+      "source": "UAE Ministry of Foreign Affairs",
+      "source_url": "https://nitter.net/mofauae/status/2082200516239802664#m",
+      "published": "2026-07-28T20:24:23+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185829-0071",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "VERIFIED",
+        "score": 90,
+        "num_sources": 2,
+        "status": "VERIFIED"
+      }
+    },
+    {
+      "id": 587947198,
+      "title": "How US defence aid shaped Israel\u2019s military developments since Oct 7, 2023",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/economy/2026/7/28/how-us-defence-aid-shaped-israels-military-developments-since-oct-7-2023?traffic_source=rss",
+      "published": "2026-07-28T20:11:04+00:00",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
@@ -30,7 +370,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388413-0017",
+        "event_id": "GW-1785285184688-0022",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -43,7 +383,687 @@
       }
     },
     {
-      "id": 825837198,
+      "id": 345961554,
+      "title": "\u0644\u0627\u0646\u0627 \u0646\u0633\u064a\u0628\u0629 \u062a\u0634\u0627\u0631\u0643 \u0641\u064a \u0627\u0644\u0644\u0642\u0627\u0621 \u0627\u0644\u062a\u0634\u0627\u0648\u0631\u064a \u0644\u0648\u0632\u0631\u0627\u0621 \u062e\u0627\u0631\u062c\u064a\u0629 \u0645\u062c\u0644\u0633 \u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0644\u062f\u0648\u0644 \u0627\u0644\u062e\u0644\u064a\u062c \u0627\u0644\u0639\u0631\u0628\u064a\u0629 https://www.mofa.gov.ae/ar-ae/mediahub/news/2026/7/28/Nusseibeh-Gulf-Cooperation-Council",
+      "source": "UAE Ministry of Foreign Affairs",
+      "source_url": "https://nitter.net/mofauae/status/2082194450810622030#m",
+      "published": "2026-07-28T20:00:17+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "UAE",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185842-0072",
+        "incident_type": "raid",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 482903140,
+      "title": "\u2018The dream I carried is gone\u2019: Miscarriages rise amid trauma of Gaza\u2019s war",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/features/2026/7/28/the-dream-i-carried-is-gone-miscarriages-rise-amid-trauma-of-gazas-war?traffic_source=rss",
+      "published": "2026-07-28T18:46:57+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184692-0023",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 850908362,
+      "title": "\u2018No freedom at all\u2019: Israeli closures leave West Bank patients trapped",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/7/28/no-freedom-at-all-israeli-closures-leave-west-bank-patients-trapped?traffic_source=rss",
+      "published": "2026-07-28T18:24:26+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184696-0024",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 19052812,
+      "title": "\u0634\u0647\u062f \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0634\u064a\u062e \u0646\u0647\u064a\u0627\u0646 \u0628\u0646 \u0645\u0628\u0627\u0631\u0643 \u0622\u0644 \u0646\u0647\u064a\u0627\u0646\u060c \u0648\u0632\u064a\u0631 \u0627\u0644\u062a\u0633\u0627\u0645\u062d \u0648\u0627\u0644\u062a\u0639\u0627\u064a\u0634\u060c \u0628\u062d\u0636\u0648\u0631 \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0641\u0631\u064a\u0642 \u0627\u0644\u0631\u0643\u0646 \u0639\u064a\u0633\u0649 \u0633\u064a\u0641 \u0628\u0646 \u0639\u0628\u0644\u0627\u0646 \u0627\u0644\u0645\u0632\u0631\u0648\u0639\u064a\u060c \u0631\u0626\u064a\u0633\u064f \u0623\u0631\u0643\u0627\u0646 \u0627\u0644\u0642\u0648\u0627\u062a \u0627\u0644\u0645\u0633\u0644\u062d\u0629\u060c \u0648\u0627\u0644\u0644\u0648\u0627\u0621 \u0627\u0644\u0631\u0643\u0646 \u062d\u0645\u062f\u0627\u0646 \u0623\u062d\u0645\u062f \u0627\u0644\u0632\u064a\u0648\u062f\u064a\u060c \u0642\u0627\u0626\u062f \u0642\u0648\u0627\u062a \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u0637\u060c \u062d\u0641\u0644 \u062a\u062e\u0631\u064a\u062c \u0645\u062c\u0646\u062f\u064a \u0627\u0644\u062f\u0641\u0639\u0629 \u0627\u0644\u064024 \u0645\u0646 \u0645\u0646\u062a\u0633\u0628\u064a \u0627\u0644\u062e\u062f\u0645\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0641\u064a \u0645\u0631\u0643\u0632 \u062a\u062f\u0631\u064a\u0628 \u0633\u0648\u064a\u062d\u0627\u0646\u060c \u0628\u062d\u0636\u0648\u0631 \u0639\u062f\u062f \u0645\u0646 \u0643\u0628\u0627\u0631 \u0636\u0628\u0627\u0637 \u0627\u0644\u0642\u0648\u0627\u062a \u0627\u0644\u0645\u0633\u0644\u062d\u0629 \u0648\u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0646. \u0648\u062a\u0636\u0645\u0646\u062a \u0645\u0631\u0627\u0633\u0645 \u0627\u0644\u062a\u062e\u0631\u064a\u062c \u0639\u0631\u0648\u0636\u0627\u064b \u0639\u0633\u0643\u0631\u064a\u0629 \u0639\u0643\u0633\u062a \u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0645\u062a\u0642\u062f\u0645 \u0627\u0644\u0630\u064a \u0648\u0635\u0644 \u0625\u0644\u064a\u0647 \u0627\u0644\u0645\u062c\u0646\u062f\u0648\u0646\u060c \u0648\u0623\u0638\u0647\u0631\u062a \u0645\u0627 \u0627\u0643\u062a\u0633\u0628\u0648\u0647 \u0645\u0646 \u0645\u0647\u0627\u0631\u0627\u062a \u0645\u064a\u062f\u0627\u0646\u064a\u0629 \u0648\u0642\u062f\u0631\u0627\u062a \u0628\u062f\u0646\u064a\u0629 \u0648\u0627\u0646\u0636\u0628\u0627\u0637 \u0639\u0633\u0643\u0631\u064a\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u062c\u0627\u0647\u0632\u064a\u062a\u0647\u0645 \u0644\u062a\u0646\u0641\u064a\u0630 \u0645\u062e\u062a\u0644\u0641 \u0627\u0644\u0645\u0647\u0627\u0645 \u0648\u0627\u0644\u0648\u0627\u062c\u0628\u0627\u062a \u0628\u0643\u0641\u0627\u0621\u0629 \u0648\u0627\u062d\u062a\u0631\u0627\u0641\u064a\u0629\u060c \u0628\u0639\u062f \u0625\u062a\u0645\u0627\u0645\u0647\u0645 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a \u0627\u0644\u0645\u0642\u0631\u0631. \u0648\u0641\u064a \u0645\u0631\u0643\u0632 \u062a\u062f\u0631\u064a\u0628 \u0644\u064a\u0648\u0627\u060c \u0634\u0647\u062f \u0627\u0644\u0634\u064a\u062e \u064a\u0627\u0633 \u0628\u0646 \u062d\u0645\u062f\u0627\u0646 \u0628\u0646 \u0632\u0627\u064a\u062f \u0622\u0644 \u0646\u0647\u064a\u0627\u0646\u060c \u0628\u062d\u0636\u0648\u0631 \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0641\u0631\u064a\u0642 \u0627\u0644\u0631\u0643\u0646 \u0639\u064a\u0633\u0649 \u0633\u064a\u0641 \u0628\u0646 \u0639\u0628\u0644\u0627\u0646 \u0627\u0644\u0645\u0632\u0631\u0648\u0639\u064a\u060c \u0631\u0626\u064a\u0633\u064f \u0623\u0631\u0643\u0627\u0646 \u0627\u0644\u0642\u0648\u0627\u062a \u0627\u0644\u0645\u0633\u0644\u062d\u0629\u060c \u062d\u0641\u0644 \u062a\u062e\u0631\u064a\u062c \u0645\u062c\u0646\u062f\u064a \u0627\u0644\u062f\u0641\u0639\u0629 \u0627\u0644\u064024 \u0645\u0646 \u0645\u0646\u062a\u0633\u0628\u064a \u0627\u0644\u062e\u062f\u0645\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u0639\u062f\u062f \u0645\u0646 \u0643\u0628\u0627\u0631 \u0627\u0644\u0636\u0628\u0627\u0637 \u0648\u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0646. \u0648\u064a\u062c\u0633\u0651\u062f \u062d\u0641\u0644\u064e\u0627 \u0627\u0644\u062a\u062e\u0631\u064a\u062c \u0627\u0644\u0627\u0647\u062a\u0645\u0627\u0645 \u0627\u0644\u0645\u062a\u0648\u0627\u0635\u0644 \u0628\u062a\u0623\u0647\u064a\u0644 \u0627\u0644\u0643\u0648\u0627\u062f\u0631 \u0627\u0644\u0648\u0637\u0646\u064a\u0629\u060c \u0648\u062a\u0631\u0633\u064a\u062e \u0642\u064a\u0645 \u0627\u0644\u0627\u0646\u0636\u0628\u0627\u0637 \u0648\u0627\u0644\u0648\u0644\u0627\u0621 \u0648\u0627\u0644\u0627\u0646\u062a\u0645\u0627\u0621\u060c \u0648\u0625\u0639\u062f\u0627\u062f \u062c\u064a\u0644 \u0642\u0627\u062f\u0631 \u0639\u0644\u0649 \u062a\u062d\u0645\u0644 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629\u060c \u0628\u0645\u0627 \u064a\u0639\u0632\u0632 \u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0642\u0648\u0627\u062a \u0627\u0644\u0645\u0633\u0644\u062d\u0629 \u0648\u064a\u062f\u0639\u0645 \u0645\u0633\u064a\u0631\u0629 \u0627\u0644\u062f\u0641\u0627\u0639 \u0639\u0646 \u0627\u0644\u0648\u0637\u0646 \u0648\u0635\u0648\u0646 \u0645\u0643\u062a\u0633\u0628\u0627\u062a\u0647. #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0641\u0627\u0639 #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a\u064a\u0629 #MOD #UAEMinistryOfDefence",
+      "source": "UAE Ministry of Defence",
+      "source_url": "https://nitter.net/modgovae/status/2082170241250115828#m",
+      "published": "2026-07-28T18:24:05+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185221-0052",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 272827041,
+      "title": "CENTCOM announces US-UAE task force on AI",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/07/centcom-announces-us-uae-task-force-on-ai/",
+      "published": "2026-07-28T18:03:59+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184789-0040",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 376487910,
+      "title": "Lindsey Graham \u2018almost cried\u2019 tears of joy over war on Iran, footage shows",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/7/28/lindsey-graham-almost-cried-tears-of-joy-over-war-on-iran-footage-shows?traffic_source=rss",
+      "published": "2026-07-28T18:01:03+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184701-0025",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 848594479,
+      "title": "UAE President receives Ajman Crown Prince #WamNews https://www.wam.ae/a/c1g6aun",
+      "source": "WAM English",
+      "source_url": "https://nitter.net/WAMNEWS_ENG/status/2082160426717163829#m",
+      "published": "2026-07-28T17:45:05+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 95,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185508-0058",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 852638511,
+      "title": "\u062f\u0641\u0639 \u0627\u0644\u0645\u062e\u0627\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0631\u0648\u0631\u064a\u0629 Traffic fines Payment #\u062e\u062f\u0645\u0627\u062a\u064a_\u0631\u0642\u0645\u064a\u0629 #MOI_go_digital #\u062e\u062f\u0645\u0627\u062a_\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 #MOI_Services @uaedgov #\u0641\u062e\u0648\u0631\u064a\u0646_\u0628\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \ud83c\udde6\ud83c\uddea \u0644\u0644\u062f\u062e\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u062e\u062f\u0645\u0629 \u0628\u0634\u0643\u0644 \u0645\u0628\u0627\u0634\u0631 \u060c \u064a\u0631\u062c\u0649 \u0627\u0644\u0636\u063a\u0637 \u0639\u0644\u0649 \u0627\u0644\u0631\u0627\u0628\u0637 \u0627\u0644\u062a\u0627\u0644\u064a To access the service directly, please click on the following link https://portal.moi.gov.ae/eservices/direct?scode=10715",
+      "source": "UAE Ministry of Interior",
+      "source_url": "https://nitter.net/moiuae/status/2082144657509855731#m",
+      "published": "2026-07-28T16:42:25+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184808-0043",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 848075742,
+      "title": "Saqr Ghobash, Nawaf Salam discuss strengthening UAE-Lebanon ties, joint Arab cooperation #WamNews https://www.wam.ae/a/c1g6aul",
+      "source": "WAM English",
+      "source_url": "https://nitter.net/WAMNEWS_ENG/status/2082144381365268928#m",
+      "published": "2026-07-28T16:41:19+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 95,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185531-0060",
+        "incident_type": "raid",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 118654178,
+      "title": "Every day, over 70,000 cubic meters of water are provided to the Gaza Strip through multiple water lines and desalination facilities, exceeding the benchmark for a population\u2019s water needs. COGAT continuously works with its international partners to coordinate new projects and infrastructure maintenance to enhance the local water lines, plants and wells, like this project by @UNICEF, to improve WASH conditions in Gaza. In addition to the improvement of local water sources, water tankers and other essential WASH supplies such as chlorine tabs are brought into Gaza through COGAT\u2019s coordination, supplying water where needed according to our local partners and sources on the ground. COGAT remains committed to facilitating projects that improve humanitarian conditions and ensuring water reaches Gazan civilians, while preventing Hamas from exploiting the water infrastructure for its own interests, as has been proven in the past.",
+      "source": "COGAT",
+      "source_url": "https://nitter.net/cogatonline/status/2082134168713023517#m",
+      "published": "2026-07-28T16:00:44+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      "credibility": 95,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285187574-0113",
+        "incident_type": "ground",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 471612263,
+      "title": "Civil Defence is dealing with a gas-leak explosion in a residential building in West Ekar. Several people were injured, and the National Ambulance carries out its procedures at the site.",
+      "source": "Bahrain Ministry of Interior",
+      "source_url": "https://nitter.net/moi_bahrain/status/2082131059257327925#m",
+      "published": "2026-07-28T15:48:23+00:00",
+      "type": "explosion",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "Bahrain",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285186764-0100",
+        "incident_type": "explosion",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 285141684,
+      "title": "\u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0645\u062f\u0646\u064a \u064a\u0628\u0627\u0634\u0631 \u0628\u0644\u0627\u063a\u0627\u064b \u0628\u0648\u0642\u0648\u0639 \u0627\u0646\u0641\u062c\u0627\u0631 \u0648\u0645\u064a\u0636\u064a \u0641\u064a \u0645\u0628\u0646\u0649 \u0633\u0643\u0646\u064a \u0628\u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0639\u0643\u0631 \u0627\u0644\u063a\u0631\u0628\u064a \u0646\u0627\u062c\u0645 \u0639\u0646 \u062a\u0633\u0631\u0628 \u063a\u0627\u0632 \u060c \u0645\u0627 \u0627\u0633\u0641\u0631 \u0639\u0646 \u0625\u0635\u0627\u0628\u0629 \u0628\u0639\u0636 \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u060c \u0648\u0627\u0644\u0625\u0633\u0639\u0627\u0641 \u0627\u0644\u0648\u0637\u0646\u064a \u064a\u0628\u0627\u0634\u0631 \u0625\u062c\u0631\u0627\u0621\u0627\u062a\u0647 \u0641\u064a \u0627\u0644\u0645\u0648\u0642\u0639",
+      "source": "Bahrain Ministry of Interior",
+      "source_url": "https://nitter.net/moi_bahrain/status/2082128693409788151#m",
+      "published": "2026-07-28T15:38:59+00:00",
+      "type": "air_defense",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "Bahrain",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285186802-0101",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 958056536,
+      "title": "\u0645\u062f\u064a\u0631 \u0639\u0627\u0645 #\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0645\u062f\u0646\u064a \u064a\u0633\u062a\u0642\u0628\u0644 \u0631\u0626\u064a\u0633 \u062c\u0627\u0645\u0639\u0629 \u0633\u0627\u0646\u062a \u0628\u0637\u0631\u0633\u0628\u0631\u063a \u0628\u0648\u0632\u0627\u0631\u0629 \u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0627\u0644\u0631\u0648\u0633\u064a\u0629.",
+      "source": "Saudi Civil Defense",
+      "source_url": "https://nitter.net/SaudiDCD/status/2082127142356124005#m",
+      "published": "2026-07-28T15:32:49+00:00",
+      "type": "air_defense",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "Saudi Arabia",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285186255-0088",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 624223301,
+      "title": "RT by @RoyalOmanPolice: \u0646\u0646\u062a\u0638\u0631\u0643\u064f\u0645 \u063a\u062f\u064b\u0627 \u0641\u064a \u0627\u0644\u0645\u0639\u0631\u0636 \u0627\u0644\u062a\u0648\u0639\u0648\u064a \u0627\u0644\u0645\u0631\u0648\u0631\u064a \u0627\u0644\u0645\u064f\u0635\u0627\u062d\u0628 \u0644\u0641\u0639\u0627\u0644\u064a\u0627\u062a \u062e\u0631\u064a\u0641 \u0638\u0641\u0627\u0631 \u0662\u0660\u0662\u0666\u0645\u060c \u0648\u0627\u0644\u0645\u0642\u0627\u0645 \u0641\u064a \u201c\u0635\u0644\u0627\u0644\u0629 \u062c\u0631\u0627\u0646\u062f \u0645\u0648\u0644\u201d\u060c \u0648\u0630\u0644\u0643 \u062e\u0644\u0627\u0644 \u0627\u0644\u0641\u062a\u0631\u0629 \u0645\u0646 \u0662\u0669 \u064a\u0648\u0644\u064a\u0648 \u0625\u0644\u0649 \u0662 \u0623\u063a\u0633\u0637\u0633 \u0662\u0660\u0662\u0666\u0645. #\u0634\u0631\u0637\u0629_\u0639\u0645\u0627\u0646_\u0627\u0644\u0633\u0644\u0637\u0627\u0646\u064a\u0629",
+      "source": "Royal Oman Police",
+      "source_url": "https://nitter.net/RopTraffic/status/2082120735347380390#m",
+      "published": "2026-07-28T15:07:21+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Oman",
+        "lat": 21.4735,
+        "lng": 55.9754
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285186936-0104",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 522394676,
+      "title": "\u062d\u064a\u0646 \u062a\u0643\u0648\u0646 \u0643\u0644 \u062b\u0627\u0646\u064a\u0629 \u0645\u0647\u0645\u0629\u060c \u0644\u0627 \u0645\u0643\u0627\u0646 \u0644\u0644\u0639\u0648\u0627\u0626\u0642. \u0645\u0639\u062f\u0629 \u062a\u062d\u0631\u064a\u0643 \u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062a \u0627\u0644\u0645\u0639\u0631\u0642\u0644\u0629 \u0625\u062d\u062f\u0649 \u0627\u0644\u0645\u0639\u062f\u0627\u062a \u0627\u0644\u0645\u062a\u062e\u0635\u0635\u0629 \u0627\u0644\u062a\u064a \u062a\u0633\u062a\u062e\u062f\u0645\u0647\u0627 \u0647\u064a\u0626\u0629 \u0627\u0644\u0634\u0627\u0631\u0642\u0629 \u0644\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0645\u062f\u0646\u064a \u0644\u0625\u0632\u0627\u062d\u0629 \u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0639\u064a\u0642 \u062d\u0631\u0643\u0629 \u0622\u0644\u064a\u0627\u062a \u0627\u0644\u0637\u0648\u0627\u0631\u0626\u060c \u0628\u0645\u0627 \u064a\u0633\u0647\u0645 \u0641\u064a \u062a\u0633\u0631\u064a\u0639 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u0628\u0644\u0627\u063a\u0627\u062a \u0648\u062f\u0639\u0645 \u0643\u0641\u0627\u0621\u0629 \u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0625\u0646\u0642\u0627\u0630 \u0648\u0627\u0644\u0625\u0637\u0641\u0627\u0621 . #scda997",
+      "source": "Sharjah Civil Defence",
+      "source_url": "https://nitter.net/civildefenceshj/status/2082120246778093593#m",
+      "published": "2026-07-28T15:05:25+00:00",
+      "type": "air_defense",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "UAE",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185777-0070",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 815594406,
+      "title": "\ud83d\udd34ELIMINATED: Muhammad Khalil Muhammad Aslam, a Nukhba platoon commander in the Islamic Jihad terrorist organization, who commanded a terrorist cell that participated in the abduction of Israeli civilians during the October 7 Massacre. Recently, Aslam advanced attacks targeting IDF troops and Israeli civilians.",
+      "source": "Israel Defense Forces",
+      "source_url": "https://nitter.net/IDF/status/2082117164987756859#m",
+      "published": "2026-07-28T14:53:10+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 95,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285186978-0105",
+        "incident_type": "ground",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 987995844,
+      "title": "#\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0645\u062f\u0646\u064a .. \u062c\u0647\u0648\u062f \u0645\u064a\u062f\u0627\u0646\u064a\u0629 \u0644\u0644\u0645\u062d\u0627\u0641\u0638\u0629 \u0639\u0644\u0649 \u0627\u0644\u0623\u0631\u0648\u0627\u062d. #\u0627\u0644\u064a\u0648\u0645_\u0627\u0644\u0639\u0627\u0644\u0645\u064a_\u0644\u0644\u0648\u0642\u0627\u064a\u0629_\u0645\u0646_\u0627\u0644\u063a\u0631\u0642 #\u0645\u0646_\u0627\u0644\u0645\u064a\u062f\u0627\u0646",
+      "source": "Saudi Civil Defense",
+      "source_url": "https://nitter.net/SaudiDCD/status/2082109037655539761#m",
+      "published": "2026-07-28T14:20:52+00:00",
+      "type": "air_defense",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "Saudi Arabia",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 100,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285186273-0089",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 253053150,
+      "title": "The IMOD has completed a years-long commemoration project, placing memorial stones in a Prague cemetery for Haviva Reik and Rafael Reiss, two Jewish parachutists from pre-state Israel who were murdered by the Nazis during World War II. Read More: https://www.linkedin.com/posts/israelmod_the-israel-ministry-of-defense-imod-has-activity-7487863191658614784-hWiy?utm_source=share&utm_medium=member_ios&rcm=ACoAACoGTWsBhTxoJG7xP0ZwnL8No_iAzlkHrWo",
+      "source": "Israel Ministry of Defense",
+      "source_url": "https://nitter.net/Israel_MOD/status/2082098299704635634#m",
+      "published": "2026-07-28T13:38:12+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 95,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285187484-0112",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 250774117,
+      "title": "Emirates Red Crescent launches 'Water Aid' initiative in UAE, abroad #WamNews https://www.wam.ae/a/c1g6ag7",
+      "source": "WAM English",
+      "source_url": "https://nitter.net/WAMNEWS_ENG/status/2082097077253976119#m",
+      "published": "2026-07-28T13:33:21+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 95,
+      "is_government": true,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285185546-0061",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 29138920,
+      "title": "Time to decide: A critical moment in Japan-US missile defense cooperation",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/07/time-to-decide-a-critical-moment-in-japan-us-missile-defense-cooperation/",
+      "published": "2026-07-28T13:30:00+00:00",
+      "type": "missile",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184794-0041",
+        "incident_type": "missile",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 140820334,
       "title": "Emirates officially launches http://Crypto.com Pay\u2122, allowing its customers to use the digital payment solution on the airline\u2019s website and app platforms. Customers with a http://Crypto.com account booking on http://emirates.com and the Emirates App can now select http://Crypto.com Pay\u2122 at checkout, with transactions processed securely and in compliance with UAE regulatory standards. http://Crypto.com Pay\u2122 is available to eligible UAE residents for bookings priced and settled in Emirati Dirham (AED). @cryptocom I @emirates",
       "source": "Dubai Media Office",
       "source_url": "https://nitter.net/DXBMediaOffice/status/2082060872906924363#m",
@@ -64,7 +1084,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389155-0062",
+        "event_id": "GW-1785285185659-0068",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -77,41 +1097,7 @@
       }
     },
     {
-      "id": 857420974,
-      "title": "Several dead in Japan after magnitude 7.1 earthquake causes blast at mall",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/7/28/magnitude-7-1-earthquake-shakes-southern-japan-tsunami-warning-issued?traffic_source=rss",
-      "published": "2026-07-28T11:02:03+00:00",
-      "type": "explosion",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "Qatar",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388415-0018",
-        "incident_type": "explosion",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 109434395,
+      "id": 1082085,
       "title": "UAE leaders congratulate President of #Peru on Independence Day #WamNews https://www.wam.ae/a/c1g6aae",
       "source": "WAM English",
       "source_url": "https://nitter.net/WAMNEWS_ENG/status/2082044840326660432#m",
@@ -132,7 +1118,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389026-0053",
+        "event_id": "GW-1785285185560-0062",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -145,7 +1131,7 @@
       }
     },
     {
-      "id": 15414980,
+      "id": 157364706,
       "title": "#UAE President and #Greek Prime Minister discuss Comprehensive Strategic Partnership and regional developments in phone call #WamNews https://www.wam.ae/a/c1g6aaf",
       "source": "WAM English",
       "source_url": "https://nitter.net/WAMNEWS_ENG/status/2082044309139001712#m",
@@ -166,7 +1152,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389037-0054",
+        "event_id": "GW-1785285185574-0063",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "OSINT"
@@ -179,7 +1165,7 @@
       }
     },
     {
-      "id": 789713971,
+      "id": 402897082,
       "title": "In most cities, if you happen to lose something, you go looking for it. Dubai takes a different approach... Dubai Police strive to return your lost possessions through their initiative \u2018Your Lost Belongings... Delivered to You Wherever You Are\u2019. The initiative delivers lost items traced in the Emirate of Dubai to your home or workplace anywhere in the UAE. To use the service, contact the Call Centre: 901",
       "source": "Dubai Media Office",
       "source_url": "https://nitter.net/DXBMediaOffice/status/2082043818854306021#m",
@@ -200,7 +1186,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389211-0063",
+        "event_id": "GW-1785285185725-0069",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -213,7 +1199,7 @@
       }
     },
     {
-      "id": 869377732,
+      "id": 253370012,
       "title": "#UAE presents road safety experience at high-level #UN meeting, highlights key national achievements of a 74% reduction in road traffic fatalities between 2011 and 2025 #WamNews https://www.wam.ae/a/c1g6a7f",
       "source": "WAM English",
       "source_url": "https://nitter.net/WAMNEWS_ENG/status/2082031732329783392#m",
@@ -234,7 +1220,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389054-0055",
+        "event_id": "GW-1785285185593-0064",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -247,75 +1233,7 @@
       }
     },
     {
-      "id": 480250110,
-      "title": "Sixty Palestinians detained by Israel return to Gaza, describe abuses",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/7/28/sixty-palestinians-detained-by-israel-return-to-gaza-describe-abuses?traffic_source=rss",
-      "published": "2026-07-28T08:25:07+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388418-0019",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 321358929,
-      "title": "Colombia\u2019s president-elect to suspend Palestine embassy",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/7/28/colombias-president-elect-to-suspend-palestine-embassy?traffic_source=rss",
-      "published": "2026-07-28T08:19:12+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Palestine",
-        "lat": 31.9522,
-        "lng": 35.2332
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388421-0020",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 565540539,
+      "id": 714745925,
       "title": "Royal Jordanian Air Force downs drone after airspace violation #WamNews https://www.wam.ae/a/c1g6a4k",
       "source": "WAM English",
       "source_url": "https://nitter.net/WAMNEWS_ENG/status/2082013659539399089#m",
@@ -336,7 +1254,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389075-0056",
+        "event_id": "GW-1785285185617-0065",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "OSINT"
@@ -349,7 +1267,7 @@
       }
     },
     {
-      "id": 277688886,
+      "id": 340757153,
       "title": "\u0634\u0627\u0631\u0643\u062a \u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0645\u0645\u062b\u0644\u0629 \u0628\u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629\u060c \u0641\u064a \u0627\u062c\u062a\u0645\u0627\u0639 \u0631\u0641\u064a\u0639 \u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0628\u0634\u0623\u0646 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642\u060c \u0627\u0644\u0630\u064a \u0639\u0642\u062f \u0641\u064a \u0645\u0642\u0631 \u0627\u0644\u0623\u0645\u0645 \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u0628\u0645\u062f\u064a\u0646\u0629 \u0646\u064a\u0648\u064a\u0648\u0631\u0643\u060c \u062d\u064a\u062b \u0623\u0643\u062f\u062a \u0627\u0644\u062a\u0632\u0627\u0645\u0647\u0627 \u0645\u0648\u0627\u0635\u0644\u0629 \u062f\u0639\u0645 \u062c\u0647\u0648\u062f \u062a\u0639\u0632\u064a\u0632 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0637\u0631\u0642\u060c \u0648\u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0647\u062f\u0641 \u0627\u0644\u0639\u0627\u0644\u0645\u064a \u0627\u0644\u0645\u062a\u0645\u062b\u0644 \u0641\u064a \u062e\u0641\u0636 \u0627\u0644\u0648\u0641\u064a\u0627\u062a \u0648\u0627\u0644\u0625\u0635\u0627\u0628\u0627\u062a \u0627\u0644\u0628\u0644\u064a\u063a\u0629 \u0627\u0644\u0646\u0627\u062a\u062c\u0629 \u0639\u0646 \u0627\u0644\u062d\u0648\u0627\u062f\u062b \u0627\u0644\u0645\u0631\u0648\u0631\u064a\u0629 \u0625\u0644\u0649 \u0627\u0644\u0646\u0635\u0641 \u0628\u062d\u0644\u0648\u0644 \u0639\u0627\u0645 (2030)\u060c \u0648\u0627\u0633\u062a\u0639\u0631\u0636\u062a \u0627\u0644\u062f\u0648\u0644\u0629 \u062e\u0644\u0627\u0644 \u0627\u0644\u0645\u0634\u0627\u0631\u0643\u0629\u060c \u0623\u0628\u0631\u0632 \u0625\u0646\u062c\u0627\u0632\u0627\u062a\u0647\u0627 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0645\u062c\u0627\u0644\u060c \u0645\u0634\u064a\u0631\u0629\u064b \u0625\u0644\u0649 \u0627\u0646\u062e\u0641\u0627\u0636 \u0648\u0641\u064a\u0627\u062a \u0627\u0644\u062d\u0648\u0627\u062f\u062b \u0627\u0644\u0645\u0631\u0648\u0631\u064a\u0629 \u0628\u0646\u0633\u0628\u0629 (74%) \u062e\u0644\u0627\u0644 \u0627\u0644\u0641\u062a\u0631\u0629 \u0645\u0646 \u0639\u0627\u0645 (2011) \u0648\u062d\u062a\u0649 \u0639\u0627\u0645 (2025)\u060c \u0648\u0630\u0644\u0643 \u0628\u0641\u0636\u0644 \u0645\u0646\u0638\u0648\u0645\u0629 \u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u062a\u0631\u062a\u0643\u0632 \u0639\u0644\u0649 \u0627\u0644\u062d\u0648\u0643\u0645\u0629 \u0627\u0644\u0641\u0627\u0639\u0644\u0629\u060c \u0648\u0627\u0644\u062a\u0634\u0631\u064a\u0639\u0627\u062a \u0627\u0644\u0645\u062a\u0637\u0648\u0631\u0629\u060c \u0648\u0627\u0644\u0625\u0646\u0641\u0627\u0630 \u0627\u0644\u0630\u0643\u064a \u0648\u0627\u0644\u0631\u0635\u062f \u0627\u0644\u0645\u062f\u0639\u0648\u0645 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629\u060c \u0648\u062a\u0646\u0641\u064a\u0630 \u0628\u0631\u0627\u0645\u062c \u0627\u0644\u062a\u0648\u0639\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629. Represented by the Ministry of Interior, the UAE participated in a high-level meeting on road safety held at the UN Headquarters in New York. The meeting formed part of ongoing international efforts to enhance road safety, protect road users, and reduce traffic-related fatalities and injuries, The UAE also highlighted its key national achievements in this field, reporting a 74% reduction in road traffic fatalities between 2011 and 2025. This progress has been driven by a comprehensive road safety framework founded on effective governance, advanced legislation, smart enforcement, AI-powered monitoring, continuous infrastructure development, and nationwide public awareness campaigns. #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a #\u0641\u062e\u0648\u0631\u064a\u0646_\u0628\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \ud83c\udde6\ud83c\uddea #\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a_\u0623\u0645\u0646_\u0648\u0623\u0645\u0627\u0646 #MOIUAE",
       "source": "UAE Ministry of Interior",
       "source_url": "https://nitter.net/moiuae/status/2082009549012455818#m",
@@ -370,7 +1288,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388513-0039",
+        "event_id": "GW-1785285184830-0044",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -383,7 +1301,7 @@
       }
     },
     {
-      "id": 435431974,
+      "id": 809274216,
       "title": "R to @UAEmediaoffice: The National Drug Enforcement Authority has successfully concluded the National Campaign for Drug Enforcement, launched in collaboration with the UAE Government Media Office. Held under the theme \u2018United as One to Eradicate the Threat\u2019, the campaign translates into action the UAE\u2019s comprehensive strategic vision to protect society and safeguard its national achievements.",
       "source": "UAE Government Media Office",
       "source_url": "https://nitter.net/UAEmediaoffice/status/2082008928767152428#m",
@@ -404,7 +1322,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388957-0049",
+        "event_id": "GW-1785285185448-0055",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -417,41 +1335,7 @@
       }
     },
     {
-      "id": 458040893,
-      "title": "\u0645\u0643\u062a\u0648\u0645 \u0628\u0646 \u0645\u062d\u0645\u062f: \u064a\u0633\u062a\u0645\u0631 \u0645\u0631\u0643\u0632 \u062f\u0628\u064a \u0627\u0644\u0645\u0627\u0644\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u064a \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u0646\u062a\u0627\u0626\u062c\u0647 \u0627\u0644\u0625\u064a\u062c\u0627\u0628\u064a\u0629 \u0648\u0625\u0646\u062c\u0627\u0632\u0627\u062a\u0647 \u0627\u0644\u0645\u062a\u0644\u0627\u062d\u0642\u0629 \u0644\u0644\u0648\u0635\u0648\u0644 \u0628\u062f\u0628\u064a \u0625\u0644\u0649 \u0627\u0644\u0647\u062f\u0641 \u0627\u0644\u0630\u064a \u0631\u0633\u0645\u0647 \u0644\u0647\u0627 \u0635\u0627\u062d\u0628 \u0627\u0644\u0633\u0645\u0648 \u0627\u0644\u0634\u064a\u062e \u0645\u062d\u0645\u062f \u0628\u0646 \u0631\u0627\u0634\u062f \u0622\u0644 \u0645\u0643\u062a\u0648\u0645 \u0636\u0645\u0646 \u0623\u062c\u0646\u062f\u062a\u0647\u0627 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 D33 \u0644\u062a\u0643\u0648\u0646 \u0636\u0645\u0646 \u0623\u0641\u0636\u0644 \u0623\u0631\u0628\u0639 \u0645\u0631\u0627\u0643\u0632 \u0645\u0627\u0644\u064a\u0629 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645. \u0641\u064a \u0646\u062a\u0627\u0626\u062c\u0647 \u062e\u0644\u0627\u0644 \u0627\u0644\u0646\u0635\u0641 \u0627\u0644\u0623\u0648\u0644 \u0645\u0646 \u0627\u0644\u0639\u0627\u0645 \u0627\u0644\u062d\u0627\u0644\u064a\u060c \u062a\u062c\u0627\u0648\u0632 \u0639\u062f\u062f \u0627\u0644\u0634\u0631\u0643\u0627\u062a \u0627\u0644\u0645\u0633\u062c\u0644\u0629 \u0627\u0644\u0646\u0634\u0637\u0629 \u0641\u064a \u0627\u0644\u0645\u0631\u0643\u0632 \u062d\u0627\u062c\u0632 \u0627\u0644 10,000 \u0634\u0631\u0643\u0629 \u0644\u0644\u0645\u0631\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0641\u064a \u062a\u0627\u0631\u064a\u062e\u0647\u060c \u0645\u0639 \u0646\u0645\u0648\u064d \u0633\u0646\u0648\u064a \u0628\u0644\u063a 30%\u060c \u0648\u0627\u0631\u062a\u0641\u0639\u062a \u0634\u0631\u0643\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627 \u0627\u0644\u0645\u0627\u0644\u064a\u0629 \u0648\u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631 \u0625\u0644\u0649 1,933 \u0634\u0631\u0643\u0629 \u0628\u0646\u0645\u0648 \u0628\u0644\u063a 39%\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u0627\u0644\u0646\u0645\u0648 \u0627\u0644\u0645\u062a\u0648\u0627\u0635\u0644 \u0641\u064a \u0627\u0644\u0634\u0631\u0643\u0627\u062a \u0627\u0644\u0639\u0627\u0626\u0644\u064a\u0629 \u0648\u0627\u0644\u0645\u0624\u0633\u0633\u0627\u062a. \u0641\u064a \u062f\u0628\u064a\u060c \u0644\u0646 \u062a\u0642\u0641 \u0627\u0644\u0631\u064a\u0627\u062f\u0629 \u0639\u0646\u062f \u0645\u0627 \u0646\u062d\u0642\u0642\u0647\u060c \u0628\u0644 \u0633\u062a\u0633\u062a\u0645\u0631 \u0628\u0645\u0627 \u0646\u0635\u0646\u0639\u0647 \u0645\u0646 \u0641\u0631\u0635 \u0644\u0644\u0622\u062e\u0631\u064a\u0646 \u0641\u064a \u0645\u0633\u064a\u0631\u0629\u064d \u0644\u0627 \u062a\u0643\u062a\u0641\u064a \u0628\u0645\u0648\u0627\u0643\u0628\u0629 \u0627\u0644\u0645\u0633\u062a\u0642\u0628\u0644\u060c \u0628\u0644 \u062a\u0634\u0627\u0631\u0643 \u0641\u064a \u0635\u064a\u0627\u063a\u062a\u0647.",
-      "source": "Dubai Media Office",
-      "source_url": "https://nitter.net/DXBMediaOffice/status/2082004444921962925#m",
-      "published": "2026-07-28T07:25:16+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "UAE",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389258-0064",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 740735967,
+      "id": 202424384,
       "title": "\u062a\u062a\u0648\u0641\u0631 \u062e\u062f\u0645\u0629 \u062a\u0642\u0633\u064a\u0637 \u0627\u0644\u0645\u062e\u0627\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0631\u0648\u0631\u064a\u0629 \u0628\u062f\u0648\u0646 \u0631\u0633\u0648\u0645 \u0625\u0636\u0627\u0641\u064a\u0629 The traffic fine installment service is available, without additional charges #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a #\u0641\u062e\u0648\u0631\u064a\u0646_\u0628\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \ud83c\udde6\ud83c\uddea #\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a_\u0623\u0645\u0646_\u0648\u0623\u0645\u0627\u0646 #MOIUAE",
       "source": "UAE Ministry of Interior",
       "source_url": "https://nitter.net/moiuae/status/2081996550566547590#m",
@@ -472,7 +1356,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388594-0040",
+        "event_id": "GW-1785285184929-0045",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -485,143 +1369,7 @@
       }
     },
     {
-      "id": 373561897,
-      "title": "\u0627\u0644\u0642\u0648\u0627\u062a \u0627\u0644\u0645\u0633\u0644\u062d\u0629 \u0627\u0644\u0623\u0631\u062f\u0646\u064a\u0629 \u062a\u0633\u0642\u0637 \u0637\u0627\u0626\u0631\u0629 \u0645\u0633\u064a\u0631\u0629 \u0627\u062e\u062a\u0631\u0642\u062a \u0627\u0644\u0645\u062c\u0627\u0644 \u0627\u0644\u062c\u0648\u064a \u0644\u0644\u0645\u0645\u0644\u0643\u0629 #\u0648\u0627\u0645 https://www.wam.ae/a/c1g62c5",
-      "source": "WAM News Agency",
-      "source_url": "https://nitter.net/wamnews/status/2081993775669510399#m",
-      "published": "2026-07-28T06:42:52+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "UAE",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388992-0050",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 605851623,
-      "title": "In an interview with the Government of Dubai Media Office, Anthony Nakache, Managing Director for Google in the Middle East and North Africa, highlights Google's journey in the UAE since opening its first office in Dubai Internet City 18 years ago. He also discusses the rapid momentum behind the adoption of AI solutions, noting that the Gemini app has reached 900 million monthly users. Nakache further highlights Google's contribution to the UAE's economy, with the company's tools generating an estimated AED 21.8 billion in economic activity across the country, while reaffirming Google's commitment to supporting the objectives of the Dubai Economic Agenda D33, which aims to double the size of the emirate's economy. @GoogleArabia",
-      "source": "Dubai Media Office",
-      "source_url": "https://nitter.net/DXBMediaOffice/status/2081983068345393159#m",
-      "published": "2026-07-28T06:00:19+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389413-0066",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 493421110,
-      "title": "\u0641\u064a \u0645\u0642\u0627\u0628\u0644\u0629 \u0645\u0639 \u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0625\u0639\u0644\u0627\u0645\u064a \u0644\u062d\u0643\u0648\u0645\u0629 \u062f\u0628\u064a\u060c \u064a\u0633\u0644\u0637 \u0623\u0646\u0637\u0648\u0646\u064a \u0646\u0642\u0627\u0634\u060c \u0627\u0644\u0645\u062f\u064a\u0631 \u0627\u0644\u0639\u0627\u0645 \u0627\u0644\u062a\u0646\u0641\u064a\u0630\u064a \u0644\u062f\u0649 Google \u0641\u064a \u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637 \u0648\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627\u060c \u0627\u0644\u0636\u0648\u0621 \u0639\u0644\u0649 \u0645\u0633\u064a\u0631\u0629 Google \u0641\u064a \u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0645\u0646\u0630 \u0627\u0641\u062a\u062a\u0627\u062d \u0623\u0648\u0644 \u0645\u0643\u062a\u0628 \u0644\u0647\u0627 \u0641\u064a \u0645\u062f\u064a\u0646\u0629 \u062f\u0628\u064a \u0644\u0644\u0625\u0646\u062a\u0631\u0646\u062a \u0642\u0628\u0644 18 \u0639\u0627\u0645\u0627\u064b. \u0643\u0645\u0627 \u064a\u0633\u062a\u0639\u0631\u0636 \u0627\u0644\u0632\u062e\u0645 \u0627\u0644\u0645\u062a\u0633\u0627\u0631\u0639 \u0641\u064a \u062a\u0648\u0638\u064a\u0641 \u062d\u0644\u0648\u0644 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0645\u0634\u064a\u0631\u0627\u064b \u0625\u0644\u0649 \u0648\u0635\u0648\u0644 \u0639\u062f\u062f \u0645\u0633\u062a\u062e\u062f\u0645\u064a \u062a\u0637\u0628\u064a\u0642 Gemini \u0625\u0644\u0649 900 \u0645\u0644\u064a\u0648\u0646 \u0645\u0633\u062a\u062e\u062f\u0645 \u0634\u0647\u0631\u064a\u0627\u064b. \u0648\u0623\u0634\u0627\u0631 \u0646\u0642\u0627\u0634 \u0625\u0644\u0649 \u0625\u0633\u0647\u0627\u0645 Google \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u0623\u062b\u0631 \u0627\u0642\u062a\u0635\u0627\u062f\u064a \u062a\u064f\u0642\u062f\u0651\u0631 \u0642\u064a\u0645\u062a\u0647 \u0628\u0646\u062d\u0648 21.8 \u0645\u0644\u064a\u0627\u0631 \u062f\u0631\u0647\u0645 \u0641\u064a \u0627\u0644\u062f\u0648\u0644\u0629\u060c \u0645\u0624\u0643\u062f\u0627\u064b \u0645\u0648\u0627\u0635\u0644\u0629 \u062f\u0639\u0645 \u0645\u0633\u062a\u0647\u062f\u0641\u0627\u062a \u0623\u062c\u0646\u062f\u0629 \u062f\u0628\u064a \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 D33 \u0627\u0644\u0631\u0627\u0645\u064a\u0629 \u0625\u0644\u0649 \u0645\u0636\u0627\u0639\u0641\u0629 \u062d\u062c\u0645 \u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0625\u0645\u0627\u0631\u0629. @GoogleArabia",
-      "source": "Dubai Media Office",
-      "source_url": "https://nitter.net/DXBMediaOffice/status/2081983031947178181#m",
-      "published": "2026-07-28T06:00:10+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "UAE",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389491-0067",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 49953665,
-      "title": "Palestine weekly: West Bank in flames after Tal killings",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/7/28/palestine-weekly-west-bank-in-flames-after-tal-killings?traffic_source=rss",
-      "published": "2026-07-28T05:58:22+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Palestine",
-        "lat": 31.9522,
-        "lng": 35.2332
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388424-0021",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 8312615,
+      "id": 856386169,
       "title": "\u0634\u0627\u0631\u0643\u062a \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629\u060c \u0645\u0645\u062b\u0644\u0629 \u0628\u0627\u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0644\u0644\u0634\u0631\u0637\u0629 \u0627\u0644\u062c\u0646\u0627\u0626\u064a\u0629 \u0627\u0644\u0627\u062a\u062d\u0627\u062f\u064a\u0629\u060c \u0641\u064a \u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639 \u0627\u0644\u062d\u0627\u062f\u064a \u0639\u0634\u0631 \u0644\u0645\u062c\u0645\u0648\u0639\u0629 \u062e\u0628\u0631\u0627\u0621 \u0627\u0644\u0623\u062f\u0644\u0629 \u0627\u0644\u062c\u0646\u0627\u0626\u064a\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0644\u0644\u0625\u0646\u062a\u0631\u0628\u0648\u0644\u060c \u0627\u0644\u0630\u064a \u0623\u0642\u064a\u0645 \u0641\u064a \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u0647\u0646\u062f \u062e\u0644\u0627\u0644 \u0627\u0644\u0641\u062a\u0631\u0629 \u0645\u0646 13 \u0625\u0644\u0649 14 \u064a\u0648\u0644\u064a\u0648 2026\u060c \u0643\u0645\u0627 \u0634\u0627\u0631\u0643\u062a \u0641\u064a \u0627\u0644\u0646\u0633\u062e\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0645\u0646 \u0642\u0645\u0629 \u0627\u0644\u0645\u062d\u0642\u0642\u064a\u0646 \u0627\u0644\u0639\u0627\u0644\u0645\u064a\u0629 \u0627\u0644\u062a\u064a \u0639\u0642\u062f\u062a \u0641\u064a 15 \u064a\u0648\u0644\u064a\u0648 \u0627\u0644\u062c\u0627\u0631\u064a\u060c \u0628\u062a\u0646\u0638\u064a\u0645 \u0645\u0646 \u0645\u0631\u0643\u0632 \u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631 \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0644\u0625\u0646\u062a\u0631\u0628\u0648\u0644\u060c \u0648\u0642\u062f\u0645\u062a \u0627\u0644\u0645\u062f\u0646\u064a \u0645\u0631\u064a\u0645 \u0627\u0644\u0645\u062f\u062d\u0627\u0646\u064a \u0639\u0631\u0636\u0627\u064b \u0628\u0639\u0646\u0648\u0627\u0646 \"\u0625\u062f\u0645\u0627\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a \u0623\u062f\u0648\u0627\u062a \u0627\u0644\u0645\u062e\u062a\u0628\u0631 \u0627\u0644\u062c\u0646\u0627\u0626\u064a \u0627\u0644\u0631\u0642\u0645\u064a \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629\"\u060c \u0627\u0633\u062a\u0639\u0631\u0636\u062a \u062e\u0644\u0627\u0644\u0647\u0627 \u062a\u062c\u0631\u0628\u0629 \u0627\u0644\u0648\u0632\u0627\u0631\u0629 \u0641\u064a \u062a\u0648\u0638\u064a\u0641 \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0644\u062a\u0639\u0632\u064a\u0632 \u0643\u0641\u0627\u0621\u0629 \u0627\u0644\u0645\u062e\u062a\u0628\u0631\u0627\u062a \u0627\u0644\u062c\u0646\u0627\u0626\u064a\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629\u060c \u0648\u062a\u0637\u0648\u064a\u0631 \u0642\u062f\u0631\u0627\u062a \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0623\u062f\u0644\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629. Represented by the Federal Criminal Police Department, the Ministry of Interior took part in the 11th Meeting of the INTERPOL Digital Forensics Expert Group, held in the Republic of India on July 13 and 14, 2026. It also participated in the inaugural Global Investigators Summit, organized by the INTERPOL Innovation Hub on July 15, 2026, During the meeting, Mariam Al Madhani of the Ministry of Interior presented a paper entitled \u201cIntegrating AI into the Ministry of Interior\u2019s Digital Forensics Laboratory Tools.\u201d She highlighted the Ministry\u2019s experience in harnessing AI to improve the operational efficiency of digital forensics laboratories and advance digital evidence analysis capabilities. #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a #\u0641\u062e\u0648\u0631\u064a\u0646_\u0628\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \ud83c\udde6\ud83c\uddea #\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a_\u0623\u0645\u0646_\u0648\u0623\u0645\u0627\u0646 #MOIUAE",
       "source": "UAE Ministry of Interior",
       "source_url": "https://nitter.net/moiuae/status/2081980827295260958#m",
@@ -642,7 +1390,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388607-0041",
+        "event_id": "GW-1785285184944-0046",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -655,7 +1403,7 @@
       }
     },
     {
-      "id": 522076606,
+      "id": 44081649,
       "title": "Prisoners at Iran\u2019s largest jail sew lips shut in hunger strike as executions soar",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/jul/28/prisoners-iran-largest-jail-sew-lips-shut-hunger-strike-executions-soar",
@@ -676,7 +1424,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388395-0010",
+        "event_id": "GW-1785285184656-0011",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "OSINT"
@@ -689,7 +1437,7 @@
       }
     },
     {
-      "id": 217280496,
+      "id": 861408018,
       "title": "A dog saved Houssein Hamze from a bomb. When war returned, he stayed to care for Lebanon\u2019s animals",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/jul/28/man-who-stayed-to-save-lebanon-wartime-animals-mashala-shelter",
@@ -710,7 +1458,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388397-0011",
+        "event_id": "GW-1785285184658-0012",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -723,18 +1471,52 @@
       }
     },
     {
-      "id": 489202366,
-      "title": "Iraq seizes $1.9 million cash haul from former finance official\u2019s home",
+      "id": 513313653,
+      "title": "'Excellent' and 'productive': Trump hosts Netanyahu as US considers next steps on Iran",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/07/28/iraq-seizes-19-million-cash-haul-from-former-finance-officials-home/",
+      "source_url": "https://www.thenationalnews.com/news/us/2026/07/28/excellent-and-productive-trump-hosts-netanyahu-as-us-considers-next-steps-on-iran/",
+      "published": "2026-07-28T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184705-0026",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 766820563,
+      "title": "UAE's diverse energy mix and US partnerships will bolster AI goals, official says",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/future/technology/2026/07/28/uaes-diverse-energy-mix-and-us-partnerships-will-bolster-ai-goals-official-says/",
       "published": "2026-07-28T00:00:00+00:00",
       "type": "security",
       "status": "confirmed",
       "location": {
         "name": "Unknown City",
-        "country": "Iraq",
-        "lat": 33.2232,
-        "lng": 43.6793
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
       },
       "credibility": 85,
       "is_government": false,
@@ -744,8 +1526,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388427-0022",
-        "incident_type": "incident",
+        "event_id": "GW-1785285184710-0027",
+        "incident_type": "naval",
         "is_recap": false,
         "confidence": "OSINT"
       },
@@ -757,18 +1539,18 @@
       }
     },
     {
-      "id": 566134092,
-      "title": "Kuwait's foreign minister to visit Pakistan after defence pact approved",
+      "id": 631730537,
+      "title": "Brent oil slides more than 6% as US-Iran talks gain steam",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/gulf/2026/07/28/kuwaits-foreign-minister-to-visit-pakistan-after-defence-pact-approved/",
+      "source_url": "https://www.thenationalnews.com/business/energy/2026/07/28/brent-oil-slides-more-than-6-as-us-iran-talks-gain-steam/",
       "published": "2026-07-28T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
-        "country": "Kuwait",
-        "lat": 29.3117,
-        "lng": 47.4818
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
       },
       "credibility": 85,
       "is_government": false,
@@ -778,7 +1560,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388431-0023",
+        "event_id": "GW-1785285184721-0029",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -791,18 +1573,18 @@
       }
     },
     {
-      "id": 644852126,
-      "title": "Israeli drones hit south Lebanon's Nabatieh as military demolishes homes",
+      "id": 496186167,
+      "title": "Japan earthquake: Several feared dead as dozens trapped inside collapsed shopping mall",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/07/28/israeli-drones-hit-south-lebanons-nabatieh-as-military-demolishes-homes/",
+      "source_url": "https://www.thenationalnews.com/news/asia/2026/07/28/tsunami-warning-after-powerful-earthquake-hits-southern-japan/",
       "published": "2026-07-28T00:00:00+00:00",
-      "type": "drone",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
+        "name": "Unknown",
+        "country": "UAE",
+        "lat": 25.0,
+        "lng": 45.0
       },
       "credibility": 85,
       "is_government": false,
@@ -812,8 +1594,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388435-0024",
-        "incident_type": "drone",
+        "event_id": "GW-1785285184725-0030",
+        "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
       },
@@ -825,18 +1607,18 @@
       }
     },
     {
-      "id": 762823071,
-      "title": "Iraqi PM in Turkey for talks on energy, water and security",
+      "id": 935757936,
+      "title": "A fatal shooting, a seized villa and a Lime bike chase: British man\u2019s quest for justice in Syria",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/07/28/iraqi-pm-heads-to-turkey-for-talks-on-energy-water-and-security/",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/07/28/a-fatal-shooting-a-seized-villa-and-a-lime-bike-chase-british-mans-quest-for-justice-in-syria/",
       "published": "2026-07-28T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
-        "country": "Iraq",
-        "lat": 33.2232,
-        "lng": 43.6793
+        "country": "Syria",
+        "lat": 34.8021,
+        "lng": 38.9968
       },
       "credibility": 85,
       "is_government": false,
@@ -846,7 +1628,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388439-0025",
+        "event_id": "GW-1785285184732-0031",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -859,18 +1641,18 @@
       }
     },
     {
-      "id": 854303839,
-      "title": "Bahrain hosts joint GCC military exercises as regional tensions persist",
+      "id": 134430189,
+      "title": "Oman steps up bid to open Strait of Hormuz as Iran widens threats",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/gulf/2026/07/28/bahrain-hosts-joint-gcc-military-exercises-as-regional-tensions-persist/",
+      "source_url": "https://www.thenationalnews.com/news/gulf/2026/07/28/oman-steps-up-hormuz-diplomacy-as-iran-issues-new-shipping-threat/",
       "published": "2026-07-28T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
-        "country": "Bahrain",
-        "lat": 26.0667,
-        "lng": 50.5577
+        "country": "Oman",
+        "lat": 21.4735,
+        "lng": 55.9754
       },
       "credibility": 85,
       "is_government": false,
@@ -880,7 +1662,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388443-0026",
+        "event_id": "GW-1785285184739-0032",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -893,10 +1675,10 @@
       }
     },
     {
-      "id": 944552147,
-      "title": "UAE rainfall to become less frequent but more intense, study finds",
+      "id": 154522616,
+      "title": "UAE and US to develop AI military applications",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/07/28/uae-rainfall-to-become-less-frequent-but-more-intense-study-finds/",
+      "source_url": "https://www.thenationalnews.com/future/technology/2026/07/28/uae-us-military-ai-task-force/",
       "published": "2026-07-28T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
@@ -914,7 +1696,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388448-0027",
+        "event_id": "GW-1785285184744-0033",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -927,20 +1709,20 @@
       }
     },
     {
-      "id": 372862825,
-      "title": "Tsunami warning after powerful earthquake hits southern Japan",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/asia/2026/07/28/tsunami-warning-after-powerful-earthquake-hits-southern-japan/",
+      "id": 743049927,
+      "title": "El Nino is a threat indicator. The military should treat it like one.",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/opinion/2026/07/28/el-nino-is-a-threat-indicator-the-military-should-treat-it-like-one/",
       "published": "2026-07-28T00:00:00+00:00",
-      "type": "alert",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown",
-        "country": "UAE",
+        "country": "International",
         "lat": 25.0,
         "lng": 45.0
       },
-      "credibility": 85,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -948,10 +1730,10 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388453-0028",
+        "event_id": "GW-1785285184749-0034",
         "incident_type": "incident",
         "is_recap": false,
-        "confidence": "OSINT"
+        "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "UNCONFIRMED",
@@ -961,20 +1743,54 @@
       }
     },
     {
-      "id": 385230405,
-      "title": "Baghdad to investigate Saudi Arabia's claims drone attack launched from Iraq",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/07/28/iraq-launches-probe-after-saudi-arabia-alleges-drone-attack-originated-from-its-territory/",
+      "id": 19949220,
+      "title": "US Central Command, UAE to launch artifical intelligence task force",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/industry/techwatch/2026/07/28/us-central-command-uae-to-launch-artifical-intelligence-task-force/",
+      "published": "2026-07-28T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184755-0035",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 43232694,
+      "title": "Finland closes airspace, restricts maritime traffic near Russia over drone risk",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/global/europe/2026/07/28/finland-closes-airspace-restricts-maritime-traffic-near-russia-over-drone-risk/",
       "published": "2026-07-28T00:00:00+00:00",
       "type": "drone",
-      "status": "reported",
+      "status": "unconfirmed",
       "location": {
-        "name": "Baghdad",
-        "country": "Iraq",
-        "lat": 33.3152,
-        "lng": 44.3661
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
       },
-      "credibility": 85,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -982,10 +1798,10 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388457-0029",
+        "event_id": "GW-1785285184762-0036",
         "incident_type": "drone",
         "is_recap": false,
-        "confidence": "OSINT"
+        "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "UNCONFIRMED",
@@ -995,75 +1811,7 @@
       }
     },
     {
-      "id": 82583171,
-      "title": "Why Lebanon cannot disarm Hezbollah without Nabih Berri",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/opinion/comment/2026/07/28/lebanon-hezbollah-israel-trump-middle-east/",
-      "published": "2026-07-28T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Lebanon",
-        "lat": 33.8547,
-        "lng": 35.8623
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388462-0030",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 277757805,
-      "title": "Houthis mimic Iranian behaviour in Red Sea, says Yemeni Foreign Minister",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/07/28/houthis-mimic-iranian-behaviour-in-red-sea-says-yemeni-foreign-minister/",
-      "published": "2026-07-28T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Yemen",
-        "lat": 15.5527,
-        "lng": 48.5164
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388466-0031",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 333151837,
+      "id": 884053168,
       "title": "French wildfires threaten nuclear deterrence industry, Rafale assembly",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/global/europe/2026/07/28/french-wildfires-threaten-nuclear-deterrence-industry-rafale-assembly/",
@@ -1084,7 +1832,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388471-0032",
+        "event_id": "GW-1785285184769-0037",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1097,7 +1845,7 @@
       }
     },
     {
-      "id": 572524078,
+      "id": 957121483,
       "title": "\u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0645\u062f\u0646\u064a \u064a\u062e\u0644\u064a \u0645\u0628\u0646\u0649 \u0633\u0643\u0646\u064a \u0627\u062d\u062a\u0631\u0627\u0632\u064a\u0627\u064b \u0628\u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0628\u0633\u064a\u062a\u064a\u0646 \u060c \u0648\u064a\u062a\u0645\u0643\u0646 \u0645\u0646 \u0627\u062e\u0645\u0627\u062f \u062d\u0631\u064a\u0642 \u0627\u0646\u062f\u0644\u0639 \u0641\u064a \u0625\u062d\u062f\u0649 \u0627\u0644\u0634\u0642\u0642 \u060c \u0648\u0627\u0644\u062c\u0647\u0627\u062a \u0627\u0644\u0645\u062e\u062a\u0635\u0629 \u062a\u0628\u0627\u0634\u0631 \u0627\u062c\u0631\u0627\u0621\u0627\u062a\u0647\u0627 \u0644\u0645\u0639\u0631\u0641\u0629 \u0633\u0628\u0628 \u0627\u0646\u062f\u0644\u0627\u0639 \u0627\u0644\u062d\u0631\u064a\u0642.",
       "source": "Bahrain Ministry of Interior",
       "source_url": "https://nitter.net/moi_bahrain/status/2081850359266329018#m",
@@ -1118,7 +1866,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390772-0101",
+        "event_id": "GW-1785285186854-0102",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1131,7 +1879,7 @@
       }
     },
     {
-      "id": 999833530,
+      "id": 511468097,
       "title": "Trump says Iran war talks taking place during lull in strikes",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c62xn4vzmnpo?at_medium=RSS&at_campaign=rss",
@@ -1152,7 +1900,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388388-0001",
+        "event_id": "GW-1785285184646-0001",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1165,7 +1913,7 @@
       }
     },
     {
-      "id": 807496680,
+      "id": 38245973,
       "title": "As the US pauses the war with Iran, is Trump really running out of weapons?",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c0qvnk2ezp7o?at_medium=RSS&at_campaign=rss",
@@ -1186,7 +1934,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388388-0002",
+        "event_id": "GW-1785285184646-0002",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1199,7 +1947,7 @@
       }
     },
     {
-      "id": 598808306,
+      "id": 364074974,
       "title": "UAE strongly condemns hostile attacks attempting to target oil facilities in Saudi Arabia #WamNews https://www.wam.ae/a/c1fkvek",
       "source": "WAM English",
       "source_url": "https://nitter.net/WAMNEWS_ENG/status/2081807896657183039#m",
@@ -1220,7 +1968,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389087-0057",
+        "event_id": "GW-1785285185631-0066",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1233,7 +1981,7 @@
       }
     },
     {
-      "id": 930398591,
+      "id": 291160412,
       "title": "UAE Strongly Condemns Hostile Attacks Attempting to Target Oil Facilities in Saudi Arabia",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081803908155060479#m",
@@ -1254,7 +2002,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389659-0070",
+        "event_id": "GW-1785285185865-0073",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1267,7 +2015,7 @@
       }
     },
     {
-      "id": 497659075,
+      "id": 854995311,
       "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u064f\u062f\u064a\u0646 \u0628\u0634\u062f\u0629 \u0627\u0644\u0647\u062c\u0645\u0627\u062a \u0627\u0644\u0639\u062f\u0648\u0627\u0646\u064a\u0629 \u0627\u0644\u062a\u064a \u062d\u0627\u0648\u0644\u062a \u0627\u0633\u062a\u0647\u062f\u0627\u0641 \u0645\u0646\u0634\u0622\u062a \u0628\u062a\u0631\u0648\u0644\u064a\u0629 \u0641\u064a \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081801769525596441#m",
@@ -1288,54 +2036,20 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389672-0071",
+        "event_id": "GW-1785285185880-0074",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
       "verification": {
-        "badge": "VERIFIED",
-        "score": 90,
-        "num_sources": 2,
-        "status": "VERIFIED"
+        "badge": "LIKELY",
+        "score": 70,
+        "num_sources": 1,
+        "status": "LIKELY"
       }
     },
     {
-      "id": 675721345,
-      "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u064f\u062f\u064a\u0646 \u0628\u0634\u062f\u0629 \u0627\u0644\u0647\u062c\u0645\u0627\u062a \u0627\u0644\u0639\u062f\u0648\u0627\u0646\u064a\u0629 \u0627\u0644\u062a\u064a \u062d\u0627\u0648\u0644\u062a \u0627\u0633\u062a\u0647\u062f\u0627\u0641 \u0645\u0646\u0634\u0622\u062a \u0628\u062a\u0631\u0648\u0644\u064a\u0629 \u0641\u064a \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 #\u0648\u0627\u0645 https://www.wam.ae/a/c1fknms",
-      "source": "WAM News Agency",
-      "source_url": "https://nitter.net/wamnews/status/2081800739865985100#m",
-      "published": "2026-07-27T17:55:49+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "UAE",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389004-0051",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "VERIFIED",
-        "score": 90,
-        "num_sources": 2,
-        "status": "VERIFIED"
-      }
-    },
-    {
-      "id": 586834320,
+      "id": 977889622,
       "title": "\u062e\u0644\u0627\u0644 \u0627\u0644\u0645\u0646\u0627\u0642\u0634\u0629 \u0627\u0644\u0645\u0641\u062a\u0648\u062d\u0629 \u0631\u0641\u064a\u0639\u0629 \u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0644\u0645\u062c\u0644\u0633 \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0644\u0623\u0645\u0645 \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u062d\u0648\u0644 \"\u062d\u0648\u0643\u0645\u0629 \u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629\u060c \u0648\u0645\u0646\u0639 \u0627\u0644\u0646\u0632\u0627\u0639\u0627\u062a \u0648\u0627\u0644\u0633\u0644\u0627\u0645 \u0627\u0644\u0645\u0633\u062a\u062f\u0627\u0645\"\u060c \u0623\u0643\u062f \u0633\u0639\u0627\u062f\u0629 \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0628\u0627\u0644\u0639\u0644\u0627\u0621\u060c \u0645\u0633\u0627\u0639\u062f \u0648\u0632\u064a\u0631 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 \u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u0637\u0627\u0642\u0629 \u0648\u0627\u0644\u0627\u0633\u062a\u062f\u0627\u0645\u0629\u060c \u0623\u0646 \u062a\u0639\u0632\u064a\u0632 \u062d\u0648\u0643\u0645\u0629 \u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629 \u064a\u064f\u0639\u062f\u0651 \u0631\u0643\u064a\u0632\u0629 \u0623\u0633\u0627\u0633\u064a\u0629 \u0644\u0645\u0646\u0639 \u0627\u0644\u0646\u0632\u0627\u0639\u0627\u062a\u060c \u0648\u0627\u0644\u062a\u0635\u062f\u064a \u0644\u0627\u0633\u062a\u063a\u0644\u0627\u0644 \u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0645\u0646 \u0642\u0628\u0644 \u0627\u0644\u062c\u0645\u0627\u0639\u0627\u062a \u0627\u0644\u0645\u0633\u0644\u062d\u0629 \u0648\u0627\u0644\u0634\u0628\u0643\u0627\u062a \u0627\u0644\u0625\u062c\u0631\u0627\u0645\u064a\u0629\u060c \u0648\u062a\u0647\u064a\u0626\u0629 \u0627\u0644\u0641\u0631\u0635 \u0644\u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u062a\u0646\u0645\u064a\u0629 \u0627\u0644\u0645\u0633\u062a\u062f\u0627\u0645\u0629. \u0648\u0634\u062f\u062f \u0633\u0639\u0627\u062f\u062a\u0647 \u0639\u0644\u0649 \u0623\u0647\u0645\u064a\u0629 \u0648\u062c\u0648\u062f \u0645\u0624\u0633\u0633\u0627\u062a \u062a\u062a\u0633\u0645 \u0628\u0627\u0644\u0634\u0641\u0627\u0641\u064a\u0629\u060c \u0648\u062a\u0634\u062c\u064a\u0639 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u060c \u0648\u0625\u0642\u0627\u0645\u0629 \u0634\u0631\u0627\u0643\u0627\u062a \u00a0\u0628\u0645\u0627 \u064a\u0636\u0645\u0646 \u0623\u0646 \u062a\u0643\u0648\u0646 \u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0637\u0628\u064a\u0639\u064a\u0629 \u0623\u0633\u0627\u0633\u0627\u064b \u0644\u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0633\u0644\u0627\u0645 \u0648\u0627\u0644\u0627\u0632\u062f\u0647\u0627\u0631. \u0648\u062c\u062f\u062f \u0633\u0639\u0627\u062f\u062a\u0647 \u0627\u0644\u062a\u0623\u0643\u064a\u062f \u0639\u0644\u0649 \u0627\u0644\u062a\u0632\u0627\u0645 \u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0628\u0627\u0644\u0639\u0645\u0644 \u0645\u0639 \u0627\u0644\u0623\u0645\u0645 \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u0648\u0627\u0644\u0634\u0631\u0643\u0627\u0621 \u0641\u064a \u0627\u0644\u0642\u0627\u0631\u0629 \u0627\u0644\u0623\u0641\u0631\u064a\u0642\u064a\u0629 \u0648\u0627\u0644\u062f\u0648\u0644 \u0627\u0644\u0623\u0639\u0636\u0627\u0621 \u0644\u062a\u0639\u0632\u064a\u0632 \u0627\u0644\u0646\u0645\u0648 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a \u0627\u0644\u0645\u0633\u062a\u062f\u0627\u0645. \u00a0 \u00a0https://www.mofa.gov.ae/ar-ae/mediahub/news/2026/7/27/uae-un-security-council",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081800497514852638#m",
@@ -1356,7 +2070,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389689-0072",
+        "event_id": "GW-1785285185895-0075",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1369,7 +2083,7 @@
       }
     },
     {
-      "id": 145958579,
+      "id": 548743025,
       "title": "UAE Strongly Condemns Hostile Attack on Jordan",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081797647149814269#m",
@@ -1390,20 +2104,20 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389789-0073",
+        "event_id": "GW-1785285186004-0076",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
       "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
+        "badge": "VERIFIED",
+        "score": 90,
+        "num_sources": 2,
+        "status": "VERIFIED"
       }
     },
     {
-      "id": 427459651,
+      "id": 325269015,
       "title": "Pentagon inks deal with L3Harris to ramp rocket motor production",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/07/pentagon-inks-deal-with-l3harris-to-ramp-rocket-motor-production/",
@@ -1424,7 +2138,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388494-0036",
+        "event_id": "GW-1785285184801-0042",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1437,41 +2151,7 @@
       }
     },
     {
-      "id": 539382085,
-      "title": "UAE strongly condemns hostile attack on Jordan #WamNews https://www.wam.ae/a/c1fkvbr",
-      "source": "WAM English",
-      "source_url": "https://nitter.net/WAMNEWS_ENG/status/2081796717528416627#m",
-      "published": "2026-07-27T17:39:50+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389103-0058",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "VERIFIED",
-        "score": 90,
-        "num_sources": 2,
-        "status": "VERIFIED"
-      }
-    },
-    {
-      "id": 592060831,
+      "id": 263684555,
       "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u064f\u062f\u064a\u0646 \u0628\u0634\u062f\u0629 \u0627\u0644\u0647\u062c\u0648\u0645 \u0627\u0644\u0639\u062f\u0648\u0627\u0646\u064a \u0639\u0644\u0649 \u0627\u0644\u0623\u0631\u062f\u0646",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081791864622219697#m",
@@ -1492,7 +2172,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389797-0074",
+        "event_id": "GW-1785285186013-0077",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1505,41 +2185,7 @@
       }
     },
     {
-      "id": 254768149,
-      "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u064f\u062f\u064a\u0646 \u0628\u0634\u062f\u0629 \u0627\u0644\u0647\u062c\u0648\u0645 \u0627\u0644\u0639\u062f\u0648\u0627\u0646\u064a \u0639\u0644\u0649 \u0627\u0644\u0623\u0631\u062f\u0646 #\u0648\u0627\u0645 https://www.wam.ae/a/c1fknmp",
-      "source": "WAM News Agency",
-      "source_url": "https://nitter.net/wamnews/status/2081791648602931547#m",
-      "published": "2026-07-27T17:19:41+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "UAE",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389017-0052",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 660836757,
+      "id": 528040848,
       "title": "Ukraine dismisses Iranian threats as Caspian Sea strike directly links wars",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cwyj7yl0xndo?at_medium=RSS&at_campaign=rss",
@@ -1560,7 +2206,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388389-0005",
+        "event_id": "GW-1785285184647-0005",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1573,75 +2219,7 @@
       }
     },
     {
-      "id": 240942276,
-      "title": "du announces the successful activation of its National Hypercloud solutions on its sovereign cloud platform, \"du Tech National Hypercloud,\" making it the first sovereign cloud platform for the transport sector in the UAE, deployed for Dubai Taxi Company. The transformation involved migrating Dubai Taxi Company's core operational systems entirely onto du's sovereign cloud platform, built on \"Oracle Alloy\" technology. This delivers ultra-high-speed computing capabilities, independent databases, and AI-ready infrastructure, all hosted entirely within the UAE. @dutweets | @DTCUAE",
-      "source": "Dubai Media Office",
-      "source_url": "https://nitter.net/DXBMediaOffice/status/2081772514582421751#m",
-      "published": "2026-07-27T16:03:39+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389547-0068",
-        "incident_type": "raid",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 763715587,
-      "title": "\"\u062f\u0648\" \u062a\u0639\u0644\u0646 \u0646\u062c\u0627\u062d\u0647\u0627 \u0641\u064a \u062a\u0641\u0639\u064a\u0644 \u062d\u0644\u0648\u0644 \u0645\u0646\u0635\u062a\u0647\u0627 \u0627\u0644\u0633\u062d\u0627\u0628\u064a\u0629 \u0627\u0644\u0633\u064a\u0627\u062f\u064a\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u0641\u0627\u0626\u0642\u0629 \"du Tech National Hypercloud\" \u0643\u0623\u0648\u0644 \u0645\u0646\u0635\u0629 \u0633\u062d\u0627\u0628\u064a\u0629 \u0633\u064a\u0627\u062f\u064a\u0629 \u0644\u0642\u0637\u0627\u0639 \u0627\u0644\u0646\u0642\u0644 \u0641\u064a \u0627\u0644\u062f\u0648\u0644\u0629 \u0644\u0635\u0627\u0644\u062d \u0634\u0631\u0643\u0629 \u062a\u0627\u0643\u0633\u064a \u062f\u0628\u064a. \u0648\u062a\u0636\u0645\u0646\u062a \u0639\u0645\u0644\u064a\u0629 \u0627\u0644\u062a\u062d\u0648\u0644 \u0646\u0642\u0644 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629 \u0644\u0634\u0631\u0643\u0629 \u062a\u0627\u0643\u0633\u064a \u062f\u0628\u064a \u0628\u0627\u0644\u0643\u0627\u0645\u0644 \u0625\u0644\u0649 \u0645\u0646\u0635\u0629 \"\u062f\u0648\" \u0627\u0644\u0633\u062d\u0627\u0628\u064a\u0629 \u0627\u0644\u0633\u064a\u0627\u062f\u064a\u0629 \u0627\u0644\u0642\u0627\u0626\u0645\u0629 \u0639\u0644\u0649 \u062a\u0642\u0646\u064a\u0629 \"Oracle Alloy\"\u061b \u0645\u0645\u0627 \u064a\u0648\u0641\u0631 \u0642\u062f\u0631\u0627\u062a \u062d\u0648\u0633\u0628\u0629 \u0641\u0627\u0626\u0642\u0629 \u0627\u0644\u0633\u0631\u0639\u0629\u060c \u0648\u0642\u0648\u0627\u0639\u062f \u0628\u064a\u0627\u0646\u0627\u062a \u0645\u0633\u062a\u0642\u0644\u0629\u060c \u0648\u0628\u0646\u064a\u0629 \u062a\u062d\u062a\u064a\u0629 \u062c\u0627\u0647\u0632\u0629 \u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0648\u062a\u062a\u0645 \u0627\u0633\u062a\u0636\u0627\u0641\u062a\u0647\u0627 \u0628\u0627\u0644\u0643\u0627\u0645\u0644 \u062f\u0627\u062e\u0644 \u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a. @dutweets | @DTCUAE",
-      "source": "Dubai Media Office",
-      "source_url": "https://nitter.net/DXBMediaOffice/status/2081772226374930598#m",
-      "published": "2026-07-27T16:02:30+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389613-0069",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 331345435,
+      "id": 571119507,
       "title": "\ud83d\udd34ELIMINATED: Amro Abu Alrish, a Nukhba terrorist in the military wing of the Islamic Jihad terrorist organization. Abu Alrish took part in the handing over & release of an Israeli civilian from Islamic Jihad captivity, executing attacks against IDF troops and rebuilding the Islamic Jihad terrorist organization. Additionally, Abd Al-Nasser Al-Aziz Maqadmeh, a commander in Hamas\u2019 police and a deputy platoon commander in Hamas\u2019 military wing was eliminated. He advanced terror attacks against Israeli civilians and IDF troops.",
       "source": "Israel Defense Forces",
       "source_url": "https://nitter.net/IDF/status/2081771939211665839#m",
@@ -1662,7 +2240,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390878-0104",
+        "event_id": "GW-1785285187083-0107",
         "incident_type": "ground",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1675,41 +2253,7 @@
       }
     },
     {
-      "id": 186084371,
-      "title": "Laser air defenses will be operational before decade\u2019s end, Lockheed exec says",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/07/laser-air-defenses-will-be-operational-before-decades-end-lockheed-exec-says/",
-      "published": "2026-07-27T16:00:52+00:00",
-      "type": "air_defense",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388500-0037",
-        "incident_type": "raid",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 605203821,
+      "id": 148276494,
       "title": "\u0648\u062c\u0648\u062f \u0639\u0648\u0627\u0626\u0642 \u0641\u064a \u0633\u0628\u0644 \u0627\u0644\u0647\u0631\u0648\u0628 \u0645\u062e\u0627\u0644\u0641\u0629 \u062a\u0648\u062c\u0628 \u0627\u0644\u0639\u0642\u0648\u0628\u0629. #\u0645\u062e\u0627\u0644\u0641\u0629_\u0633\u0644\u0627\u0645\u0629 #\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0645\u062f\u0646\u064a",
       "source": "Saudi Civil Defense",
       "source_url": "https://nitter.net/SaudiDCD/status/2081771615554064759#m",
@@ -1730,7 +2274,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390054-0087",
+        "event_id": "GW-1785285186291-0090",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1743,7 +2287,7 @@
       }
     },
     {
-      "id": 698764674,
+      "id": 690960459,
       "title": "Oil price dives as US and Iran pause attacks",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/clyj834jn5lo?at_medium=RSS&at_campaign=rss",
@@ -1764,7 +2308,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388389-0004",
+        "event_id": "GW-1785285184647-0004",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1777,7 +2321,7 @@
       }
     },
     {
-      "id": 680960622,
+      "id": 591320211,
       "title": "\ud83c\udfa5WATCH: A Hamas terror tunnel in northern Gaza, stretching hundreds of meters. As part of operations to dismantle Hamas\u2019 underground terror network, IDF soldiers dismantled the tunnel.",
       "source": "Israel Defense Forces",
       "source_url": "https://nitter.net/IDF/status/2081748919868940383#m",
@@ -1798,7 +2342,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390990-0105",
+        "event_id": "GW-1785285187202-0108",
         "incident_type": "ground",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1811,7 +2355,7 @@
       }
     },
     {
-      "id": 857082843,
+      "id": 895244349,
       "title": "RT by @IDF: The Truth Behind Humanitarian Aid in Gaza. Read my latest Substack: https://idfspokesperson.substack.com/p/the-truth-behind-humanitarian-aid",
       "source": "Israel Defense Forces",
       "source_url": "https://nitter.net/LTC_Ariella/status/2081745963526279674#m",
@@ -1832,7 +2376,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390847-0103",
+        "event_id": "GW-1785285187050-0106",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1845,7 +2389,7 @@
       }
     },
     {
-      "id": 573613048,
+      "id": 631190011,
       "title": "#\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0645\u062f\u0646\u064a \u064a\u0634\u0627\u0631\u0643 \u0636\u0645\u0646 \u0641\u0639\u0627\u0644\u064a\u0627\u062a #\u0627\u0644\u064a\u0648\u0645_\u0627\u0644\u0639\u0627\u0644\u0645\u064a_\u0644\u0644\u0648\u0642\u0627\u064a\u0629_\u0645\u0646_\u0627\u0644\u063a\u0631\u0642 \u0641\u064a \u0645\u062e\u062a\u0644\u0641 \u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0645\u0645\u0644\u0643\u0629.",
       "source": "Saudi Civil Defense",
       "source_url": "https://nitter.net/SaudiDCD/status/2081745524730818674#m",
@@ -1866,7 +2410,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390070-0088",
+        "event_id": "GW-1785285186308-0091",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1879,7 +2423,7 @@
       }
     },
     {
-      "id": 130877337,
+      "id": 711620488,
       "title": "More than 600 US military service members injured since Iran War began in February",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c998pzd1e8xo?at_medium=RSS&at_campaign=rss",
@@ -1900,7 +2444,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388388-0003",
+        "event_id": "GW-1785285184646-0003",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1913,7 +2457,7 @@
       }
     },
     {
-      "id": 599412478,
+      "id": 448607239,
       "title": "\ud83d\udd34ELIMINATED: Wael Musa Khaled Ladawi in the Deir al-Balah area, the Head of Hamas' Internal Security in Central Gaza. Under Ladawi's command, the apparatus collected intelligence for senior Hamas officials, supporting their decision-making and facilitating the planning and execution of terrorist attacks against Israel.",
       "source": "Israel Defense Forces",
       "source_url": "https://nitter.net/IDF/status/2081727389826945106#m",
@@ -1934,7 +2478,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242391029-0106",
+        "event_id": "GW-1785285187244-0109",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1947,7 +2491,7 @@
       }
     },
     {
-      "id": 102245056,
+      "id": 861222838,
       "title": "His Excellency Sheikh Khalifa bin Hamad bin Khalifa Al Thani, Minister of Interior and Commander of the Internal Security Force (Lekhwiya), during his reception of His Excellency Mohsin Raza Naqvi, Minister for Interior and Narcotics Control of the Islamic Republic of Pakistan. #MOIQatar",
       "source": "Qatar Ministry of Interior EN",
       "source_url": "https://nitter.net/MOI_QatarEn/status/2081723589414277158#m",
@@ -1968,7 +2512,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390182-0094",
+        "event_id": "GW-1785285186368-0094",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1981,41 +2525,7 @@
       }
     },
     {
-      "id": 287826260,
-      "title": "UAE President commends global humanitarian efforts of UAE Search and Rescue Team #WamNews https://www.wam.ae/a/c1fkux9",
-      "source": "WAM English",
-      "source_url": "https://nitter.net/WAMNEWS_ENG/status/2081723101067587766#m",
-      "published": "2026-07-27T12:47:18+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389113-0059",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 75,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 749475580,
+      "id": 837440717,
       "title": "\u0643\u0648\u0646\u0648\u0627 \u0639\u0644\u0649 \u0627\u0644\u0645\u0648\u0639\u062f \u0645\u0639 \u062d\u0641\u0644 \u062a\u062e\u0631\u064a\u062c \u0645\u062c\u0646\u062f\u064a \u0627\u0644\u062e\u062f\u0645\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u062f\u0641\u0639\u0629 24 \u0627\u0644\u062b\u0644\u0627\u062b\u0627\u062128 \u064a\u0648\u0644\u064a\u0648 #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a #\u0641\u062e\u0648\u0631\u064a\u0646_\u0628\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \ud83c\udde6\ud83c\uddea #\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a_\u0623\u0645\u0646_\u0648\u0623\u0645\u0627\u0646 #MOIUAE",
       "source": "UAE Ministry of Interior",
       "source_url": "https://nitter.net/moiuae/status/2081713056057631202#m",
@@ -2036,7 +2546,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388691-0042",
+        "event_id": "GW-1785285185043-0047",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2049,41 +2559,7 @@
       }
     },
     {
-      "id": 247355530,
-      "title": "UK selects Tekever AR5 surveillance drones to succeed Watchkeeper",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/07/uk-selects-tekever-ar5-surveillance-drones-to-succeed-watchkeeper/",
-      "published": "2026-07-27T11:54:30+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388507-0038",
-        "incident_type": "drone",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 786633817,
+      "id": 756415218,
       "title": "H.E. Sheikh Khalifa bin Hamad bin Khalifa Al Thani, Minister of Interior and Commander of the Internal Security Force (Lekhwiya), received H.E. Mohsin Raza Naqvi, Minister of Interior and Narcotics Control of the Islamic Republic of Pakistan. During the meeting, they reviewed the cooperative relations between the two countries in the security field. They discussed ways to further strengthen and develop them, in addition to exchanging views on several issues of mutual interest. #MOIQatar",
       "source": "Qatar Ministry of Interior EN",
       "source_url": "https://nitter.net/MOI_QatarEn/status/2081707763739107631#m",
@@ -2104,7 +2580,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390239-0095",
+        "event_id": "GW-1785285186424-0095",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2117,41 +2593,7 @@
       }
     },
     {
-      "id": 240490519,
-      "title": "UAE becomes ASEANAPOL Dialogue Partner #WamNews https://www.wam.ae/a/c1fkurf",
-      "source": "WAM English",
-      "source_url": "https://nitter.net/WAMNEWS_ENG/status/2081695861063696536#m",
-      "published": "2026-07-27T10:59:03+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242389145-0061",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 75,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 60095724,
+      "id": 597729325,
       "title": "\u0627\u0641\u062a\u062a\u062d \u0633\u0639\u0627\u062f\u0629 \u0645\u062d\u0645\u062f \u0645\u0631\u0627\u062f \u0627\u0644\u0628\u0644\u0648\u0634\u064a\u060c \u0633\u0641\u064a\u0631 \u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u0644\u062f\u0649 \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0623\u0630\u0631\u0628\u064a\u062c\u0627\u0646\u060c \u0628\u062d\u0636\u0648\u0631 \u0639\u062f\u062f \u0645\u0646 \u0643\u0628\u0627\u0631 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0646\u060c \u0645\u0642\u0631 \u0627\u0644\u0645\u0644\u062d\u0642\u064a\u0629 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u0644\u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0641\u064a \u0627\u0644\u0639\u0627\u0635\u0645\u0629 \u0628\u0627\u0643\u0648\u060c \u0648\u0630\u0644\u0643 \u0641\u064a \u0625\u0637\u0627\u0631 \u062a\u0639\u0632\u064a\u0632 \u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0627\u0644\u062f\u0641\u0627\u0639\u064a \u0648\u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0628\u064a\u0646 \u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u0648\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0623\u0630\u0631\u0628\u064a\u062c\u0627\u0646\u060c \u0648\u062f\u0639\u0645 \u0623\u0648\u0627\u0635\u0631 \u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0627\u0644\u062b\u0646\u0627\u0626\u064a\u0629 \u0628\u064a\u0646 \u0627\u0644\u0628\u0644\u062f\u064a\u0646 \u0641\u064a \u0645\u062e\u062a\u0644\u0641 \u0627\u0644\u0645\u062c\u0627\u0644\u0627\u062a. \u0648\u0623\u0643\u062f \u0633\u0639\u0627\u062f\u062a\u0647 \u0623\u0646 \u0627\u0641\u062a\u062a\u0627\u062d \u0645\u0642\u0631 \u0627\u0644\u0645\u0644\u062d\u0642\u064a\u0629 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u064a\u062c\u0633\u062f \u062d\u0631\u0635 \u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0639\u0644\u0649 \u062a\u0637\u0648\u064a\u0631 \u0639\u0644\u0627\u0642\u0627\u062a\u0647\u0627 \u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0629 \u0645\u0639 \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0623\u0630\u0631\u0628\u064a\u062c\u0627\u0646\u060c \u0648\u062a\u0639\u0632\u064a\u0632 \u0622\u0641\u0627\u0642 \u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0627\u0644\u0645\u0634\u062a\u0631\u0643 \u0628\u0645\u0627 \u064a\u062e\u062f\u0645 \u0627\u0644\u0645\u0635\u0627\u0644\u062d \u0627\u0644\u0645\u062a\u0628\u0627\u062f\u0644\u0629 \u0644\u0644\u0628\u0644\u062f\u064a\u0646 \u0627\u0644\u0635\u062f\u064a\u0642\u064a\u0646. His Excellency Mohammed Murad Al Blooshi, UAE Ambassador to the Republic of Azerbaijan, inaugurated the UAE Military Attach\u00e9 Office in Baku, the capital of Azerbaijan, in the presence of several senior officials. This is part of efforts to strengthen defence and military cooperation between the UAE and Azerbaijan and to bolster bilateral partnerships across various sectors. His Excellency affirmed that the opening of the military attach\u00e9\u2019s office embodies the UAE\u2019s keenness to develop its strategic relations with the Republic of Azerbaijan, and to enhance prospects for bilateral cooperation in a way that serves the mutual interests of the two friendly countries. #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0641\u0627\u0639 #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a\u064a\u0629 #MOD #UAEMinistryOfDefence",
       "source": "UAE Ministry of Defence",
       "source_url": "https://nitter.net/modgovae/status/2081693628557316129#m",
@@ -2172,7 +2614,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388847-0047",
+        "event_id": "GW-1785285185322-0053",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2185,7 +2627,7 @@
       }
     },
     {
-      "id": 646496894,
+      "id": 688839348,
       "title": "Netanyahu accuses NYC Mayor Mamdani of 'fomenting hate' after arrest threat",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c5yegvd9ddeo?at_medium=RSS&at_campaign=rss",
@@ -2206,7 +2648,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388391-0007",
+        "event_id": "GW-1785285184649-0007",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2219,7 +2661,7 @@
       }
     },
     {
-      "id": 744716764,
+      "id": 585769709,
       "title": "\u062d\u0635\u0644\u062a \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u0628\u062f\u0648\u0644\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0639\u0644\u0649 \u0635\u0641\u0629 \u0634\u0631\u064a\u0643 \u0627\u0644\u062d\u0648\u0627\u0631 (Dialogue Partner) \u0641\u064a \u0645\u0646\u0638\u0645\u0629 \u0627\u0644\u0622\u0633\u064a\u0627\u0646\u0627\u0628\u0648\u0644 (ASEANAPOL)\u060c \u0627\u0644\u0645\u0639\u0646\u064a\u0629 \u0628\u062a\u0639\u0632\u064a\u0632 \u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0627\u0644\u0634\u0631\u0637\u064a \u0628\u064a\u0646 \u0623\u062c\u0647\u0632\u0629 \u0627\u0644\u0634\u0631\u0637\u0629 \u0641\u064a \u0627\u0644\u062f\u0648\u0644 \u0627\u0644\u0623\u0639\u0636\u0627\u0621 \u0628\u0631\u0627\u0628\u0637\u0629 \u062f\u0648\u0644 \u062c\u0646\u0648\u0628 \u0634\u0631\u0642 \u0622\u0633\u064a\u0627 (\u0627\u0644\u0622\u0633\u064a\u0627\u0646)\u060c \u0644\u062a\u0635\u0628\u062d \u0628\u0630\u0644\u0643 \u0623\u0648\u0644 \u062f\u0648\u0644\u0629 \u0639\u0631\u0628\u064a\u0629 \u062a\u0646\u0627\u0644 \u0647\u0630\u0647 \u0627\u0644\u0635\u0641\u0629\u060c \u0648\u062c\u0627\u0621 \u0627\u0639\u062a\u0645\u0627\u062f \u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0628\u0625\u062c\u0645\u0627\u0639 \u0627\u0644\u062f\u0648\u0644 \u0627\u0644\u0623\u0639\u0636\u0627\u0621 \u0627\u0644\u0639\u0634\u0631 \u0641\u064a \u0627\u0644\u0645\u0646\u0638\u0645\u0629\u060c \u062e\u0644\u0627\u0644 \u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0645\u0624\u062a\u0645\u0631 \u0627\u0644\u064044 \u0644\u0644\u0622\u0633\u064a\u0627\u0646\u0627\u0628\u0648\u0644\u060c \u0627\u0644\u0630\u064a \u0627\u0633\u062a\u0636\u0627\u0641\u062a\u0647 \u0627\u0644\u0634\u0631\u0637\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u0641\u0644\u0628\u064a\u0646\u064a\u0629 \u0641\u064a \u0627\u0644\u0639\u0627\u0635\u0645\u0629 \u0645\u0627\u0646\u064a\u0644\u0627 \u062e\u0644\u0627\u0644 \u0627\u0644\u0641\u062a\u0631\u0629 \u0645\u0646 22 \u0625\u0644\u0649 26 \u064a\u0648\u0644\u064a\u0648 2026\u060c \u0628\u0645\u0634\u0627\u0631\u0643\u0629 \u0648\u0641\u0648\u062f \u0627\u0644\u062f\u0648\u0644 \u0627\u0644\u0623\u0639\u0636\u0627\u0621 \u0648\u0634\u0631\u0643\u0627\u0621 \u0627\u0644\u062d\u0648\u0627\u0631 \u0648\u0627\u0644\u062c\u0647\u0627\u062a \u0627\u0644\u0645\u0631\u0627\u0642\u0628\u0629. Represented by the Ministry of Interior, the UAE has been elevated to Dialogue Partner status within ASEANAPOL, the regional body that promotes police cooperation among the member states of the Association of Southeast Asian Nations. The UAE is the first Arab nation to receive this designation. The decision was endorsed unanimously by ASEANAPOL\u2019s ten member states at the organization\u2019s 44th conference, held in Manila from 22 to 26 July 2026 under the auspices of the Philippine National Police. The event brought together representatives of member countries, dialogue partners, and observer entities. #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a #\u0641\u062e\u0648\u0631\u064a\u0646_\u0628\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \ud83c\udde6\ud83c\uddea #\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a_\u0623\u0645\u0646_\u0648\u0623\u0645\u0627\u0646 #MOIUAE",
       "source": "UAE Ministry of Interior",
       "source_url": "https://nitter.net/moiuae/status/2081677999544611083#m",
@@ -2240,7 +2682,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388706-0043",
+        "event_id": "GW-1785285185060-0048",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2253,7 +2695,7 @@
       }
     },
     {
-      "id": 44043487,
+      "id": 359973577,
       "title": "\u0627\u0644\u0645\u062a\u0627\u0628\u0639\u0629 \u0627\u0644\u0623\u0633\u0631\u064a\u0629 \u0627\u0644\u0648\u0627\u0639\u064a\u0629 \u0623\u0633\u0627\u0633 \u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0622\u0645\u0646 \u0648\u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0644\u0645\u0646\u0635\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a Informed Parental Supervision Is the Foundation of Safe and Responsible Social Media Use \u0633\u0648\u0634\u0644 \u0645\u06cc\u0688\u06cc\u0627 \u067e\u0644\u06cc\u0679 \u0641\u0627\u0631\u0645\u0632 \u06a9\u06d2 \u0645\u062d\u0641\u0648\u0638 \u0627\u0648\u0631 \u0630\u0645\u06c1 \u062f\u0627\u0631\u0627\u0646\u06c1 \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u06a9\u06d2 \u0644\u06cc\u06d2 \u062e\u0627\u0646\u062f\u0627\u0646 \u06a9\u06cc \u062c\u0627\u0646\u0628 \u0633\u06d2 \u0628\u0627\u062e\u0628\u0631 \u0646\u06af\u0631\u0627\u0646\u06cc \u0628\u0646\u06cc\u0627\u062f\u06cc \u062d\u06cc\u062b\u06cc\u062a \u0631\u06a9\u06be\u062a\u06cc \u06c1\u06d2\u06d4 #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a #\u0641\u062e\u0648\u0631\u064a\u0646_\u0628\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \ud83c\udde6\ud83c\uddea #\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a_\u0623\u0645\u0646_\u0648\u0623\u0645\u0627\u0646 #MOIUAE",
       "source": "UAE Ministry of Interior",
       "source_url": "https://nitter.net/moiuae/status/2081668692341919850#m",
@@ -2274,7 +2716,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388788-0044",
+        "event_id": "GW-1785285185149-0049",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2287,7 +2729,7 @@
       }
     },
     {
-      "id": 417853861,
+      "id": 344877214,
       "title": "UAE Strongly Condemns Attacks by Israeli Settlers on Villages in the Occupied West Bank",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081658805373514114#m",
@@ -2308,7 +2750,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389805-0075",
+        "event_id": "GW-1785285186022-0078",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2321,7 +2763,7 @@
       }
     },
     {
-      "id": 37223352,
+      "id": 179917921,
       "title": "US and Iran pause strikes for third night to make space for talks, US ambassador says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c5y45kdkynpo?at_medium=RSS&at_campaign=rss",
@@ -2342,7 +2784,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388390-0006",
+        "event_id": "GW-1785285184648-0006",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2355,7 +2797,7 @@
       }
     },
     {
-      "id": 899617066,
+      "id": 175129690,
       "title": "Wearing your seat belt while driving enhances your safety and the safety of your passengers, and reflects your commitment to traffic laws and regulations. Safe travels. #MOIQatar #TrafficQatar",
       "source": "Qatar Ministry of Interior EN",
       "source_url": "https://nitter.net/MOI_QatarEn/status/2081643066977398982#m",
@@ -2376,7 +2818,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390324-0096",
+        "event_id": "GW-1785285186510-0096",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2389,7 +2831,7 @@
       }
     },
     {
-      "id": 42197723,
+      "id": 318361745,
       "title": "\u063a\u064a\u064a\u0631 \u0631\u0642\u0645 \u0644\u0648\u062d\u0629 \u0645\u0631\u0643\u0628\u0629 Change Vehicle Plate Number #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a #\u0641\u062e\u0648\u0631\u064a\u0646_\u0628\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \ud83c\udde6\ud83c\uddea #\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a_\u0623\u0645\u0646_\u0648\u0623\u0645\u0627\u0646 #MOIUAE @uaedgov \u0644\u0644\u062f\u062e\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u062e\u062f\u0645\u0629 \u0628\u0634\u0643\u0644 \u0645\u0628\u0627\u0634\u0631 \u060c \u064a\u0631\u062c\u0649 \u0627\u0644\u0636\u063a\u0637 \u0639\u0644\u0649 \u0627\u0644\u0631\u0627\u0628\u0637 \u0627\u0644\u062a\u0627\u0644\u064a To access the service directly, please click on the following link https://portal.moi.gov.ae/eservices/direct?scode=666",
       "source": "UAE Ministry of Interior",
       "source_url": "https://nitter.net/moiuae/status/2081642791671926862#m",
@@ -2410,7 +2852,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388813-0045",
+        "event_id": "GW-1785285185181-0050",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2423,7 +2865,7 @@
       }
     },
     {
-      "id": 866607593,
+      "id": 452409326,
       "title": "Civil Defence has brought a fire on an offshore platform in the Corniche area under control, with no injuries reported. #MOIQatar",
       "source": "Qatar Ministry of Interior EN",
       "source_url": "https://nitter.net/MOI_QatarEn/status/2081623833606308031#m",
@@ -2444,7 +2886,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390361-0097",
+        "event_id": "GW-1785285186547-0097",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2457,7 +2899,7 @@
       }
     },
     {
-      "id": 378468833,
+      "id": 152026010,
       "title": "Trump warns of return to \u2018strong military action\u2019 if Iran diplomacy fails",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/jul/27/trump-warns-return-strong-military-action-iran-diplomacy-fails",
@@ -2478,7 +2920,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388399-0012",
+        "event_id": "GW-1785285184661-0013",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -2491,7 +2933,7 @@
       }
     },
     {
-      "id": 379472970,
+      "id": 914940334,
       "title": "\u2018You say genocide, I say war\u2019: Boy George releases pro-Israel song, We Will Dance Again",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/music/2026/jul/27/you-say-genocide-i-say-war-boy-george-releases-pro-israel-song-we-will-dance-again",
@@ -2512,7 +2954,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388401-0013",
+        "event_id": "GW-1785285184663-0014",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -2525,7 +2967,7 @@
       }
     },
     {
-      "id": 128779565,
+      "id": 245062391,
       "title": "Home Office blocking evacuation of dozens of women and children from Gaza",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/uk-news/2026/jul/27/home-office-blocking-evacuation-women-children-gaza-refugee-family-reunion",
@@ -2546,7 +2988,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388404-0014",
+        "event_id": "GW-1785285184666-0015",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -2559,7 +3001,41 @@
       }
     },
     {
-      "id": 491146959,
+      "id": 428965486,
+      "title": "Iran war latest: Hormuz 'will never return to pre-war state, Iranian minister says",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/07/27/live-us-iran-strikes/",
+      "published": "2026-07-27T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1785285184715-0028",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 662001932,
       "title": "Pentagon calls for cheaper long-range strike weapons,\u00a0with testing in just 3 months",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/news/2026/07/27/pentagon-calls-for-cheaper-long-range-strike-weapons-with-testing-in-just-3-months/",
@@ -2580,7 +3056,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388477-0033",
+        "event_id": "GW-1785285184776-0038",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2593,7 +3069,7 @@
       }
     },
     {
-      "id": 625253819,
+      "id": 339790023,
       "title": "India moves closer to a homegrown, long-range air defense",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/global/asia-pacific/2026/07/27/india-moves-closer-to-a-homegrown-long-range-air-defense/",
@@ -2614,7 +3090,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388483-0034",
+        "event_id": "GW-1785285184783-0039",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2627,7 +3103,7 @@
       }
     },
     {
-      "id": 506202132,
+      "id": 906699099,
       "title": "Israeli settlers set fire to mosques, cars and farm land in West Bank, Palestinians say",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cjrv77gl4deo?at_medium=RSS&at_campaign=rss",
@@ -2648,7 +3124,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388392-0008",
+        "event_id": "GW-1785285184650-0008",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2661,7 +3137,7 @@
       }
     },
     {
-      "id": 90776903,
+      "id": 741059053,
       "title": "BBC speaks to Palestinians targeted by Israeli settlers",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/videos/cwy47pkpkrwo?at_medium=RSS&at_campaign=rss",
@@ -2682,7 +3158,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388394-0009",
+        "event_id": "GW-1785285184652-0009",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2695,7 +3171,7 @@
       }
     },
     {
-      "id": 213371135,
+      "id": 620768527,
       "title": "RT @OFMUAE: \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0628\u0646 \u0632\u0627\u064a\u062f \u0648\u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0633\u064a\u062f \u0628\u062f\u0631 \u0628\u0646 \u062d\u0645\u062f \u0627\u0644\u0628\u0648\u0633\u0639\u064a\u062f\u064a\u060c \u0648\u0632\u064a\u0631 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 \u0641\u064a \u0633\u0644\u0637\u0646\u0629 \u0639\u064f\u0645\u0627\u0646 \u0627\u0644\u0634\u0642\u064a\u0642\u0629\u060c \u064a\u0628\u062d\u062b\u0627\u0646 \u0647\u0627\u062a\u0641\u064a\u0627\u064b \u0627\u0644\u0639\u0644\u0627\u0642\u0627\u062a \u0627\u0644\u0623\u062e\u0648\u064a\u0629 \u0628\u064a\u0646 \ud83c\udde6\ud83c\uddea\u2026",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081470573671293312#m",
@@ -2716,7 +3192,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389820-0076",
+        "event_id": "GW-1785285186037-0079",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2729,7 +3205,7 @@
       }
     },
     {
-      "id": 454965309,
+      "id": 824373772,
       "title": "RT @OFMUAE: Abdullah bin zayed and @badralbusaidi, discussed during a phone call, the brotherly relations between \ud83c\udde6\ud83c\uddea & \ud83c\uddf4\ud83c\uddf2, as well as the l\u2026",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081470565878202873#m",
@@ -2750,7 +3226,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389839-0077",
+        "event_id": "GW-1785285186058-0080",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2763,7 +3239,7 @@
       }
     },
     {
-      "id": 379036251,
+      "id": 886199761,
       "title": "RT @OFMUAE: Abdullah bin Zayed received a phone call from @MBA_AlThani_, during which both sides discussed the brotherly relations between\u2026",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081457893631779179#m",
@@ -2784,7 +3260,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389861-0078",
+        "event_id": "GW-1785285186082-0081",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2797,7 +3273,7 @@
       }
     },
     {
-      "id": 313646320,
+      "id": 426228874,
       "title": "RT @OFMUAE: \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0628\u0646 \u0632\u0627\u064a\u062f \u064a\u062a\u0644\u0642\u0649 \u0627\u062a\u0635\u0627\u0644\u0627\u064b \u0647\u0627\u062a\u0641\u064a\u0627\u064b \u0645\u0646 \u0645\u0639\u0627\u0644\u064a \u0627\u0644\u0634\u064a\u062e \u0645\u062d\u0645\u062f \u0628\u0646 \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0628\u0646 \u062c\u0627\u0633\u0645 \u0622\u0644 \u062b\u0627\u0646\u064a\u060c \u0631\u0626\u064a\u0633 \u0645\u062c\u0644\u0633 \u0627\u0644\u0648\u0632\u0631\u0627\u0621 \u0648\u0632\u064a\u0631 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 \u0641\u064a \u062f\u0648\u0644\u0629\u2026",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081457878825910359#m",
@@ -2818,7 +3294,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389883-0079",
+        "event_id": "GW-1785285186106-0082",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2831,7 +3307,7 @@
       }
     },
     {
-      "id": 909770042,
+      "id": 948522677,
       "title": "RT by @MOISaudiArabia: \u0641\u064a \u0642\u0628\u0636\u0629 \u0631\u062c\u0627\u0644 \u0627\u0644\u0645\u0643\u0627\u0641\u062d\u0629. #\u0628\u0627\u0644\u0645\u0631\u0635\u0627\u062f",
       "source": "Saudi Ministry of Interior",
       "source_url": "https://nitter.net/Mokafha_SA/status/2081439380808351988#m",
@@ -2852,20 +3328,20 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390033-0085",
+        "event_id": "GW-1785285186243-0087",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "LIKELY",
-        "score": 75,
+        "score": 70,
         "num_sources": 1,
         "status": "LIKELY"
       }
     },
     {
-      "id": 372451579,
+      "id": 434525357,
       "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u062a\u0636\u0627\u0645\u0646 \u0645\u0639 \u0641\u0631\u0646\u0633\u0627 \u0641\u064a \u062d\u0631\u0627\u0626\u0642 \u0627\u0644\u063a\u0627\u0628\u0627\u062a UAE Expresses Solidarity with France over Wildfires",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081433092179501199#m",
@@ -2886,7 +3362,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389904-0080",
+        "event_id": "GW-1785285186130-0083",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2899,7 +3375,7 @@
       }
     },
     {
-      "id": 340055851,
+      "id": 23379107,
       "title": "RT by @SaudiDCD: \u0646\u0627\u0626\u0628 \u0648\u0632\u064a\u0631 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u0627\u0644\u0645\u064f\u0643\u0644\u0651\u0641 \u0648\u0645\u0639\u0627\u0644\u064a \u0631\u0626\u064a\u0633 \u0645\u0624\u0633\u0633\u0629 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0633\u0639\u0648\u062f\u064a (\u0633\u0628\u0644) @SPL_KSA_online \u064a\u0648\u0642\u0651\u0639\u0627\u0646 \u0627\u062a\u0641\u0627\u0642\u064a\u0629 \u062a\u0639\u0627\u0648\u0646.",
       "source": "Saudi Civil Defense",
       "source_url": "https://nitter.net/MOISaudiArabia/status/2081432357865656773#m",
@@ -2920,7 +3396,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390085-0089",
+        "event_id": "GW-1785285186325-0092",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2933,7 +3409,7 @@
       }
     },
     {
-      "id": 89379635,
+      "id": 514533386,
       "title": "\u062a\u0631\u0642\u0628\u0648\u0627... \u0645\u062d\u0637\u0629 \u0648\u0637\u0646\u064a\u0629 \u062a\u062c\u0633\u0651\u062f \u0645\u0639\u0627\u0646\u064a \u0627\u0644\u0627\u0646\u0636\u0628\u0627\u0637 \u0648\u0627\u0644\u062c\u0627\u0647\u0632\u064a\u0629 \u0648\u0627\u0644\u0648\u0644\u0627\u0621 \u0644\u0644\u0648\u0637\u0646\u060c \u0641\u064a \u062a\u062e\u0631\u064a\u062c \u062f\u0641\u0639\u0627\u062a \u0627\u0644\u062e\u062f\u0645\u0629 \u0627\u0644\u0648\u0637\u0646\u064a\u0629 \u0627\u0644\u062a\u062e\u0635\u0635\u064a\u0629 \u0627\u0644\u0640 24. #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0641\u0627\u0639 #\u0648\u0632\u0627\u0631\u0629_\u0627\u0644\u062f\u0641\u0627\u0639_\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a\u064a\u0629 #MOD #UAEMinistryOfDefence",
       "source": "UAE Ministry of Defence",
       "source_url": "https://nitter.net/modgovae/status/2081430181961675233#m",
@@ -2954,7 +3430,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242388941-0048",
+        "event_id": "GW-1785285185430-0054",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -2967,7 +3443,7 @@
       }
     },
     {
-      "id": 870660759,
+      "id": 226186574,
       "title": "As part of the ongoing effort to ensure a stable and continuous water supply for civilians across the Gaza Strip, COGAT reached out directly to Gazan residents through its Arabic language social media page and asked them to report locations where additional water deliveries were needed. As part of the ongoing effort to ensure a stable and continuous water supply for civilians across the Gaza Strip, COGAT reached out directly to Gazan residents through its Arabic-language social media page and asked them to report locations where additional water deliveries were needed. Following the many responses received from the civilian population, COGAT reviewed the requests and coordinated with local and international partners to dispatch water tankers to the relevant areas. This direct channel of communication helps identify specific needs on the ground and enables a faster and more focused humanitarian response. COGAT remains committed to facilitating humanitarian assistance in coordination with the international community and in direct contact with the public, to help ensure that aid reaches the civilians who need it most.",
       "source": "COGAT",
       "source_url": "https://nitter.net/cogatonline/status/2081409207513833615#m",
@@ -2988,7 +3464,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242391316-0110",
+        "event_id": "GW-1785285187791-0114",
         "incident_type": "ground",
         "is_recap": false,
         "confidence": "OSINT"
@@ -3001,7 +3477,7 @@
       }
     },
     {
-      "id": 444681174,
+      "id": 942910620,
       "title": "\ud83d\udd34ELIMINATED: Hamam Eid, the Commander of the Hamas\u2019 UAV Cell in the central camps. Previously, he had served as the Head of the Drone Unit in the central camps. As part of his current role, he was responsible for the production of UAVs for Hamas, and intended to harm Israeli civilians and IDF troops. Recently, he had been operating to rehabilitate and strengthen Hamas\u2019 aerial capabilities, in violation of the ceasefire agreement.",
       "source": "Israel Defense Forces",
       "source_url": "https://nitter.net/IDF/status/2081398317494206902#m",
@@ -3022,7 +3498,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242391101-0107",
+        "event_id": "GW-1785285187320-0110",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -3035,7 +3511,7 @@
       }
     },
     {
-      "id": 359399026,
+      "id": 594578067,
       "title": "The UAE continues to expand its global partnerships through Comprehensive Economic Partnership Agreements (CEPAs), strengthening its position as a global hub for trade and investment while supporting sustainable economic growth and prosperity.",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081379357239742504#m",
@@ -3056,7 +3532,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389920-0081",
+        "event_id": "GW-1785285186147-0084",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -3069,7 +3545,7 @@
       }
     },
     {
-      "id": 809423696,
+      "id": 443515988,
       "title": "The Metrash app enables users to pay visa fees and receive a copy of the visa instantly via email, quickly and conveniently. #MOIQatar #Metrash",
       "source": "Qatar Ministry of Interior EN",
       "source_url": "https://nitter.net/MOI_QatarEn/status/2081360016552997364#m",
@@ -3090,7 +3566,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390393-0098",
+        "event_id": "GW-1785285186574-0098",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -3103,7 +3579,7 @@
       }
     },
     {
-      "id": 785989388,
+      "id": 102184439,
       "title": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u062a\u062a\u0636\u0627\u0645\u0646 \u0645\u0639 \u0633\u0648\u0631\u064a\u0627 \u0648\u062a\u064f\u0639\u0632\u0651\u064a \u0641\u064a \u0636\u062d\u0627\u064a\u0627 \u0627\u0635\u0637\u062f\u0627\u0645 \u062d\u0627\u0641\u0644\u062a\u064e\u064a \u0631\u0643\u0627\u0628 UAE Expresses Solidarity with Syria and Conveys Condolences over Victims of Collision Between Two Passenger Buses",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081341481198219637#m",
@@ -3124,7 +3600,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389959-0082",
+        "event_id": "GW-1785285186189-0085",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -3137,7 +3613,7 @@
       }
     },
     {
-      "id": 995297474,
+      "id": 873518175,
       "title": "As part of efforts to strengthen security cooperation and exchange expertise with the Ministry of Interior of the sisterly Kingdom of Saudi Arabia, the Ministry of Interior, represented by a number of its security and specialized departments, received a delegation headed by Major General Dr. Ibrahim Satam Al-Anzi, Director General of the General Department of Legal Affairs at the Public Security of the Saudi Ministry of Interior. The visit included the Correctional Institutions Department, the Judgments Enforcement Department, the Police Academy, the Juvenile Police Department, the Police Rescue Department (Al Fazaa), and the Capital Security Department. It aimed to review best practices and exchange expertise in various fields of security and police work. #MOIQatar",
       "source": "Qatar Ministry of Interior EN",
       "source_url": "https://nitter.net/MOI_QatarEn/status/2081321450724573454#m",
@@ -3158,7 +3634,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390428-0099",
+        "event_id": "GW-1785285186606-0099",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -3171,7 +3647,7 @@
       }
     },
     {
-      "id": 410245085,
+      "id": 418120327,
       "title": "RT by @SaudiDCD: \u062e\u0644\u0627\u0644 \u0623\u0633\u0628\u0648\u0639.. \u0636\u0628\u0637 (30) \u0645\u062e\u0627\u0644\u0641\u064b\u0627 \u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u0628\u064a\u0626\u0629 \u0641\u064a \u0639\u062f\u062f \u0645\u0646 \u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0645\u0645\u0644\u0643\u0629. @SFES_KSA @BG994 #\u0644\u0623\u062c\u0644_\u0628\u064a\u0626\u0629_\u0645\u0633\u062a\u062f\u0627\u0645\u0629",
       "source": "Saudi Civil Defense",
       "source_url": "https://nitter.net/MOISaudiArabia/status/2081318610736136466#m",
@@ -3192,7 +3668,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390106-0090",
+        "event_id": "GW-1785285186347-0093",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -3205,7 +3681,7 @@
       }
     },
     {
-      "id": 951905835,
+      "id": 883588379,
       "title": "Northern Governor discusses enhancing community partnership with Bahrain Motivators Society for People with Disabilities https://www.policemc.gov.bh/en/news/80514/",
       "source": "Bahrain Ministry of Interior",
       "source_url": "https://nitter.net/moi_bahrain/status/2081315617441808767#m",
@@ -3226,7 +3702,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242390814-0102",
+        "event_id": "GW-1785285186901-0103",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -3239,7 +3715,7 @@
       }
     },
     {
-      "id": 641898727,
+      "id": 277914338,
       "title": "RT @OFMUAE: \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0628\u0646 \u0632\u0627\u064a\u062f \u064a\u0628\u062d\u062b \u062e\u0644\u0627\u0644 \u0627\u062a\u0635\u0627\u0644 \u0647\u0627\u062a\u0641\u064a \u0645\u0639 \u0645\u0639\u0627\u0644\u064a \u0623\u0646\u064a\u062a\u0627 \u0623\u0646\u0627\u0646\u062f\u060c \u0648\u0632\u064a\u0631\u0629 \u062e\u0627\u0631\u062c\u064a\u0629 \u0643\u0646\u062f\u0627\u060c \u0627\u0644\u0639\u0644\u0627\u0642\u0627\u062a \u0627\u0644\u062b\u0646\u0627\u0626\u064a\u0629 \u0628\u064a\u0646 \ud83c\udde6\ud83c\uddea \u0648 \ud83c\udde8\ud83c\udde6\u060c \u0643\u0645\u0627 \u0647\u0646\u0623\u0647\u0627 \u0628\u0645\u0646\u0627\u0633\u0628\u0629\u2026",
       "source": "UAE Ministry of Foreign Affairs",
       "source_url": "https://nitter.net/mofauae/status/2081304035366490501#m",
@@ -3260,7 +3736,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242389986-0083",
+        "event_id": "GW-1785285186218-0086",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -3273,41 +3749,7 @@
       }
     },
     {
-      "id": 102967247,
-      "title": "RT @OFMUAE: Abdullah bin Zayed & @AnitaAnandMP discussed during a phone call, the \ud83c\udde6\ud83c\uddea-\ud83c\udde8\ud83c\udde6 bilateral relations. His Highness also congratulate\u2026",
-      "source": "UAE Ministry of Foreign Affairs",
-      "source_url": "https://nitter.net/mofauae/status/2081304028357791791#m",
-      "published": "2026-07-26T09:02:03+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 100,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242390009-0084",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 390861815,
+      "id": 659749135,
       "title": "\ud83d\udd34ELIMINATED: Fares Al-Masri, the head of a department in Hamas\u2019 Weapons Production Headquarters & Muhammad Abu Shakyan, a Hamas Nukhba terrorist. In recent months, both terrorists had been involved in advancing terrorist attack plans targeting IDF troops and Israeli civilians.",
       "source": "Israel Defense Forces",
       "source_url": "https://nitter.net/IDF/status/2081277427775410253#m",
@@ -3328,314 +3770,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1785242391192-0108",
+        "event_id": "GW-1785285187420-0111",
         "incident_type": "ground",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 493629034,
-      "title": "US pauses Iran attacks after Trump advised to halt bombing",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/2026/jul/26/us-pauses-trump-netanyahu-attacks-on-iran-talks-hormuz",
-      "published": "2026-07-26T00:00:00+00:00",
-      "type": "explosion",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388406-0015",
-        "incident_type": "airstrike",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 432557317,
-      "title": "The Guardian view on a US-Saudi nuclear agreement: an offer that further erodes international safeguards | Editorial",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/commentisfree/2026/jul/26/the-guardian-view-on-a-us-saudi-nuclear-agreement-an-offer-that-further-erodes-international-safeguards",
-      "published": "2026-07-26T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388409-0016",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 771014226,
-      "title": "Iran says Ukrainian attack on vessel in Caspian Sea killed sailor",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/global/mideast-africa/2026/07/26/iran-says-ukrainian-attack-on-vessel-in-caspian-sea-killed-sailor/",
-      "published": "2026-07-26T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242388488-0035",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 79745776,
-      "title": "RT by @SaudiDCD: \u0627\u0633\u0628\u0642 \u0627\u0644\u063a\u0631\u0642 \u0628\u0648\u0639\u064a\u0643.. #\u0627\u0644\u064a\u0648\u0645_\u0627\u0644\u0639\u0627\u0644\u0645\u064a_\u0644\u0644\u0648\u0642\u0627\u064a\u0629_\u0645\u0646_\u0627\u0644\u063a\u0631\u0642 #\u0633\u0644\u0633\u0644\u0629_\u0628\u0625\u064a\u062c\u0627\u0632",
-      "source": "Saudi Civil Defense",
-      "source_url": "https://nitter.net/MOISaudiArabia/status/2081110991559884910#m",
-      "published": "2026-07-25T20:15:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
-      },
-      "credibility": 100,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242390127-0091",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 483589869,
-      "title": "\ud83d\udd34ELIMINATED: Muhannad Asaad Mahmoud Abu Ghazal, a Nukhba cell commander who infiltrated the Kissufim area during the October 7 Massacre. Additionally, Raed Hani Mohammed Al-Amsi, in Hamas\u2019 Aerial Array & Nabhan Mohammed Nabhan Al-Amsi, in Hamas' Gaza Brigade, were eliminated.",
-      "source": "Israel Defense Forces",
-      "source_url": "https://nitter.net/IDF/status/2081078424202854905#m",
-      "published": "2026-07-25T18:05:35+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 95,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242391252-0109",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 327463171,
-      "title": "RT by @MOISaudiArabia: \u0641\u064a \u0642\u0628\u0636\u0629 \u0631\u062c\u0627\u0644 \u0627\u0644\u0623\u0645\u0646. #\u062a\u0645_\u0627\u0644\u0642\u0628\u0636",
-      "source": "Saudi Ministry of Interior",
-      "source_url": "https://nitter.net/security_gov/status/2081077340206162359#m",
-      "published": "2026-07-25T18:01:17+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
-      },
-      "credibility": 100,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242390044-0086",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 75,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 374002005,
-      "title": "The Police Academy celebrated the graduation of the third and fourth groups of the seventh edition of the Police of Tomorrow Program (Summer 2026), with a total of 400 students, in the presence of His Excellency Major General (Staff) Abdullah bin Mohammed Al Suwaidi, Assistant Undersecretary of the Ministry of Interior for Technical and Specialized Affairs; Major General Abdulrahman Majid Al Sulaiti, President of the Police Academy; and Colonel Dr. Fahad Saeed Al Subaie, Vice President of the Police Academy and Director of the Police College, along with a number of Ministry of Interior officers and the students' parents. The ceremony featured demonstrations showcasing the skills and knowledge the students acquired throughout the program, which aims to strengthen national identity, instill the values of loyalty and belonging, develop leadership skills, and foster a sense of responsibility through a range of sports, military, and educational activities. #MOIQatar",
-      "source": "Qatar Ministry of Interior EN",
-      "source_url": "https://nitter.net/MOI_QatarEn/status/2081033317315391611#m",
-      "published": "2026-07-25T15:06:21+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Qatar",
-        "lat": 25.3548,
-        "lng": 51.1839
-      },
-      "credibility": 100,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242390582-0100",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 699223209,
-      "title": "RT by @SaudiDCD: \u0628\u0627\u0644\u062c\u0647\u0648\u062f \u0627\u0644\u0623\u0645\u0646\u064a\u0629 \u0646\u0633\u0647\u0645 \u0641\u064a \u0627\u0644\u0648\u0642\u0627\u064a\u0629 \u0645\u0646 \u0627\u0644\u063a\u0631\u0642 \u0628\u0627\u0644\u062a\u0648\u0639\u064a\u0629 \u0648\u0627\u0644\u0625\u0631\u0634\u0627\u062f \u0648\u0627\u0644\u0645\u062a\u0627\u0628\u0639\u0629 \u0648\u0645\u0628\u0627\u0634\u0631\u0629 \u0627\u0644\u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0637\u0627\u0631\u0626\u0629 .. \u0643\u0646 \u0648\u0627\u0639\u064a\u064b\u0627\u060c \u062a\u0643\u0646 \u0622\u0645\u0646\u064b\u0627. #\u0627\u0644\u064a\u0648\u0645_\u0627\u0644\u0639\u0627\u0644\u0645\u064a_\u0644\u0644\u0648\u0642\u0627\u064a\u0629_\u0645\u0646_\u0627\u0644\u063a\u0631\u0642",
-      "source": "Saudi Civil Defense",
-      "source_url": "https://nitter.net/MOISaudiArabia/status/2081016767778803998#m",
-      "published": "2026-07-25T14:00:35+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
-      },
-      "credibility": 100,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242390141-0092",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "LIKELY",
-        "score": 70,
-        "num_sources": 1,
-        "status": "LIKELY"
-      }
-    },
-    {
-      "id": 252730546,
-      "title": "\u062e\u062f\u0645\u0629 \u062a\u0645\u062f\u064a\u062f \u0645\u062f\u0629 \u062a\u0631\u0627\u062e\u064a\u0635 \u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0645\u062f\u0646\u064a \u0639\u0628\u0631 #\u0628\u0648\u0627\u0628\u0629_\u0633\u0644\u0627\u0645\u0629 .",
-      "source": "Saudi Civil Defense",
-      "source_url": "https://nitter.net/SaudiDCD/status/2081001564924194823#m",
-      "published": "2026-07-25T13:00:10+00:00",
-      "type": "air_defense",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "Saudi Arabia",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 100,
-      "is_government": true,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1785242390168-0093",
-        "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
