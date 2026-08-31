@@ -8,7 +8,7 @@
 
 ## 🎯 What is Gulf Watch?
 
-A military-grade situational awareness platform monitoring security events across the Middle East. Think **Bloomberg Terminal for geopolitical risk** - designed for analysts, journalists, and decision-makers who need real-time intelligence.
+A regional intelligence dashboard monitoring security events across the Middle East. Think **Bloomberg Terminal for geopolitical risk** - designed for analysts, journalists, and decision-makers who need real-time intelligence.
 
 **Inspired by:** [WorldMonitor](https://www.worldmonitor.app/)
 
@@ -221,7 +221,7 @@ Machine-readable documentation for AI crawlers at `/llms.txt`.
 #### 18. Dark Tactical Interface
 - OLED-optimized dark theme
 - High contrast severity colors
-- Military-style design
+- Operations-room styling
 - Command center aesthetic
 
 #### 19. Mobile-First Responsive
