@@ -127,7 +127,8 @@ def handler(request):
         })}
         
     except Exception as e:
-        return {'statusCode': 500, 'headers': headers, 'body': json.dumps({'error': str(e)})}
+        print(f'Report handler error: {e}')
+        return {'statusCode': 500, 'headers': headers, 'body': json.dumps({'error': 'Could not process report'})}
 
 # Vercel handler
 class ReportHandler(BaseHTTPRequestHandler):

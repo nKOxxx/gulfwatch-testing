@@ -3,6 +3,17 @@
  * Includes: Interactive Animation + Comparative View
  */
 
+// Escape untrusted incident text before inserting into innerHTML.
+function ragEscapeHtml(value) {
+    if (value === null || value === undefined) return '';
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 class RagnarokEngine {
     constructor(incident) {
         this.incident = incident;
@@ -308,8 +319,8 @@ function renderComparative(incidentA, incidentB) {
     const stagesA = engineA.getEscalationStages();
     const stagesB = engineB.getEscalationStages();
 
-    const labelA = incidentA.title?.substring(0, 40) || 'Scenario A';
-    const labelB = incidentB.title?.substring(0, 40) || 'Scenario B';
+    const labelA = ragEscapeHtml(incidentA.title?.substring(0, 40)) || 'Scenario A';
+    const labelB = ragEscapeHtml(incidentB.title?.substring(0, 40)) || 'Scenario B';
 
     let html = `
     <div class="ragnarok-container" data-mode="compare">

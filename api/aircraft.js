@@ -45,14 +45,15 @@ module.exports = (req, res) => {
                 const jsonData = JSON.parse(data);
                 res.status(200).json(jsonData);
             } catch (e) {
-                res.status(500).json({ error: 'Parse error', message: e.message, raw: data.substring(0, 200) });
+                console.error('Aircraft feed parse error:', e.message, data.substring(0, 200));
+                res.status(502).json({ error: 'Upstream feed returned an unreadable response' });
             }
         });
     });
-    
+
     proxyReq.on('error', (error) => {
         console.error('Proxy error:', error.message);
-        res.status(500).json({ error: 'Request failed', message: error.message });
+        res.status(502).json({ error: 'Upstream feed request failed' });
     });
     
     proxyReq.end();

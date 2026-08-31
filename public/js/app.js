@@ -996,7 +996,7 @@ function renderIncidents() {
                     <span class="incident-flag">${flag}</span>
                     <span class="incident-severity ${severity}"></span>
                     <span class="incident-time">${timeAgo}</span>
-                    <span class="incident-type" title="${(incident.type || 'INCIDENT').toUpperCase().replace(/_/g, ' ')}">${(incident.type || 'INCIDENT').toUpperCase().replace(/_/g, ' ')}</span>
+                    <span class="incident-type" title="${escapeHtml((incident.type || 'INCIDENT').toUpperCase().replace(/_/g, ' '))}">${escapeHtml((incident.type || 'INCIDENT').toUpperCase().replace(/_/g, ' '))}</span>
                     ${govBadge}
                 </div>
                 <div class="incident-title line-clamp-2">${escapeHtml(incident.title)}</div>
@@ -1004,7 +1004,7 @@ function renderIncidents() {
                     ${hasCoords ? `📍 ${incident.location.lat.toFixed(4)}, ${incident.location.lng.toFixed(4)}` : '📍 No coordinates'}
                 </div>
                 <div class="incident-source">
-                    ${incident.source || 'Unknown'}
+                    ${escapeHtml(incident.source || 'Unknown')}
                     ${incident.num_sources ? `+ ${incident.num_sources - 1} sources` : ''}
                 </div>
                 <div class="incident-actions">
@@ -1161,7 +1161,7 @@ function updateMapMarkers() {
             <div style="font-family: var(--font-sans); min-width: 200px;">
                 <div style="font-weight: 600; margin-bottom: 8px;">${escapeHtml(incident.title?.substring(0, 60))}...</div>
                 <div style="font-size: 12px; color: var(--text-muted);">
-                    ${getFlagEmoji(incident.location?.country)} ${incident.source || 'Unknown'} • ${getTimeAgo(incident.published)}
+                    ${getFlagEmoji(incident.location?.country)} ${escapeHtml(incident.source || 'Unknown')} • ${getTimeAgo(incident.published)}
                 </div>
             </div>
         `;
@@ -1217,10 +1217,10 @@ function toggleAirspaceLayer(show) {
                 // Add popup
                 const popupContent = `
                     <div style="font-family: var(--font-sans); min-width: 200px;">
-                        <div style="font-weight: 600; color: #00d4ff; margin-bottom: 4px;">${getEventTypeIcon(incident.type)} ${incident.type.replace('_', ' ').toUpperCase()}</div>
+                        <div style="font-weight: 600; color: #00d4ff; margin-bottom: 4px;">${getEventTypeIcon(incident.type)} ${escapeHtml(incident.type.replace('_', ' ').toUpperCase())}</div>
                         <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">${escapeHtml(incident.title?.substring(0, 60))}...</div>
                         <div style="font-size: 11px; color: var(--text-muted);">
-                            ${getFlagEmoji(incident.location?.country)} ${incident.source || 'Unknown'} • ${getTimeAgo(incident.published)}
+                            ${getFlagEmoji(incident.location?.country)} ${escapeHtml(incident.source || 'Unknown')} • ${getTimeAgo(incident.published)}
                         </div>
                     </div>
                 `;
