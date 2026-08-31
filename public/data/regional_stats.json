@@ -7,35 +7,49 @@
       "byCountry": {}
     },
     "missiles": {
-      "launched": 0,
+      "launched": 1,
       "intercepted": 0,
-      "landed": 0,
-      "byCountry": {}
+      "landed": 1,
+      "byCountry": {
+        "uae": {
+          "launched": 1,
+          "intercepted": 0,
+          "landed": 1
+        }
+      }
     },
     "airstrikes": {
-      "total": 0,
+      "total": 1,
       "byCountry": {}
     },
     "drones": {
-      "total": 2,
+      "total": 5,
       "downed": 0,
-      "byCountry": {}
+      "byCountry": {
+        "iran": {
+          "total": 2,
+          "downed": 0
+        },
+        "qatar": {
+          "total": 1,
+          "downed": 0
+        }
+      }
     },
     "incidents": {
-      "total": 25,
+      "total": 29,
       "byType": {
-        "general": 23,
-        "drone": 2
+        "drone": 5,
+        "general": 22,
+        "airstrike": 1,
+        "missile": 1
       },
       "byCountry": {
-        "iran": 4,
+        "iran": 10,
+        "iraq": 2,
         "israel": 5,
-        "gaza": 1,
-        "syria": 3,
-        "saudi": 1,
-        "kuwait": 1,
-        "uae": 4,
-        "iraq": 1,
+        "qatar": 1,
+        "uae": 5,
         "lebanon": 1,
         "palestine": 1
       }
@@ -59,34 +73,76 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 2,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 834046356,
-          "title": "Iran war live: IRGC attacks US bases in Jordan after US bombs Larak Island",
+          "id": 433766767,
+          "title": "UAE intercepts drone after US and Iran exchange attacks",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 276312926,
+          "title": "Iran attacks Jordan, UAE after US bombs Larak Island: What\u2019s the latest?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 536399980,
-          "title": "Iran attacks US bases in Jordan after US strikes Larak Island",
+          "id": 743343212,
+          "title": "US and Iran trade strikes for first time in weeks",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 894309768,
-          "title": "US strikes Iranian launchers in strait of Hormuz, sparking reprisal attack on airbases in Jordan",
+          "id": 222605072,
+          "title": "Iran hostilities flare after US strike in strait of Hormuz \u2013 Middle East crisis live",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 999447374,
-          "title": "US strikes Iranian island in Strait of Hormuz in first military action in month",
+          "id": 23372685,
+          "title": "UAE holds Iran 'fully responsible' for thwarted drone attack and calls for halt to hostilities",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 276772084,
+          "title": "Iran's Kharg and Larak islands: Why they matter",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 114797119,
+          "title": "Iranian attacks on Gulf states and Jordan have failed, says Gargash",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 618034173,
+          "title": "Manus on Markets: US-Iran escalation ahead of SCO summit",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 346105151,
+          "title": "'Symbolic solidarity': Xi, Putin and Modi set to meet Iran's Pezeshkian",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 158905927,
+          "title": "First US military attacks on Iran in a month prompt retaliation",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -116,36 +172,36 @@
       },
       "incidents": [
         {
-          "id": 502095350,
-          "title": "Israeli strike kills 3-year-old child in Gaza",
+          "id": 536009084,
+          "title": "UK raises case of British activist detained by settlers in West Bank with Israel",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 547991472,
-          "title": "Israeli settler rabbi says Palestinians should leave the occupied West Bank",
+          "id": 924028033,
+          "title": "Spain\u2019s Sanchez says Russia, Israel spread disinformation on Ceuta crisis",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 894097974,
-          "title": "Former Israeli soldiers pose as Pro-Palestinian supporters in the US",
+          "id": 690508546,
+          "title": "Syria is choosing diplomacy with Israel, but can its approach last?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 301604305,
+          "id": 634429763,
+          "title": "Israel and Greece sign $3.4bn defence deal amid rising tension with Turkey",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 344094881,
           "title": "BBC tracks one week of Israeli settler violence in occupied West Bank",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 959622866,
-          "title": "Former British-Israeli Hamas hostage married in Tel Aviv",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -175,7 +231,7 @@
       },
       "incidents": [
         {
-          "id": 895249872,
+          "id": 944429500,
           "title": "Palestinian woman and NBC News team reportedly attacked in West Bank",
           "type": "general",
           "time": "",
@@ -204,15 +260,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 877335494,
-          "title": "Jose Andres renews call for investigation into WCK Gaza staff killings",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "lebanon": {
@@ -237,8 +285,8 @@
       },
       "incidents": [
         {
-          "id": 440781556,
-          "title": "UAE and Lebanon revive joint business council as economic ties gather pace",
+          "id": 743379601,
+          "title": "Joy, hope and grief: How Nada Ghazal has been telling Lebanon's story through jewellery for more tha",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -266,29 +314,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 999409931,
-          "title": "\u2018Opening a new chapter\u2019: Syria reopens embassy in Libya after talks",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 907687976,
-          "title": "Syrian security forces kill high-profile Assad-era commander in raid",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 959425951,
-          "title": "Syria's Foreign Minister discusses co-operation with Libya as embassy in Tripoli reopens",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "yemen": {
@@ -334,15 +360,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 424556210,
-          "title": "Top officials from Turkiye, Saudi Arabia, Pakistan to meet in Istanbul",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "uae": {
@@ -354,7 +372,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -367,30 +385,37 @@
       },
       "incidents": [
         {
-          "id": 762749904,
-          "title": "Banque Misr branches in Emirates 'conducting business as usual', UAE and Egypt regulators say",
+          "id": 234441125,
+          "title": "'Joy, friendship and care': UAE pupils excited for start of new school year",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 364466588,
-          "title": "A cut above: UAE lab-grown diamond trade doubles as Dubai launches new hub",
+          "id": 409707058,
+          "title": "Filipina becomes UAE Lottery's first female millionaire with Dh5m win",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 426686028,
-          "title": "'Renewed commitment': Gargash sets out UAE support for Palestine after 50,000 celebrate ties in Duba",
+          "id": 406475060,
+          "title": "Starlink launches in UAE \u2013 but is it an alternative to the telecoms duopoly?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 895169649,
-          "title": "UAE to develop Emirati experts in science and technology under national drive",
+          "id": 962685010,
+          "title": "Queen Elizabeth\u2019s School in Dubai becomes first UK state school to open in UAE",
           "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 955634844,
+          "title": "UAE refutes claims of missile attack on Al Minhad Air Base",
+          "type": "missile",
           "time": "",
           "casualties": 0
         }
@@ -442,8 +467,15 @@
       },
       "incidents": [
         {
-          "id": 664741636,
-          "title": "Iraqi anti-corruption court jails oil ministry official and imposes multimillion-dollar fine",
+          "id": 472916500,
+          "title": "Fire breaks out after unidentified explosions at oil refinery in Baghdad",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 172430903,
+          "title": "Corruption whistleblowers in Iraq to be given financial reward",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -471,15 +503,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 436102867,
-          "title": "Kuwait foils bid by air traveller to smuggle in drug-laced paper sheets",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "bahrain": {
@@ -522,10 +546,18 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 1,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 27867578,
+          "title": "The Mecca pact explained, tankers for Qatar, and CENTCOM\u2019s new drone force",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "oman": {
@@ -552,9 +584,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-08-31T00:33:10.054681",
+  "lastUpdated": "2026-08-31T12:17:31.861139",
   "timeRange": {
-    "from": "2026-08-24T00:33:10.054685",
-    "to": "2026-08-31T00:33:10.054689"
+    "from": "2026-08-24T12:17:31.861147",
+    "to": "2026-08-31T12:17:31.861151"
   }
 }
