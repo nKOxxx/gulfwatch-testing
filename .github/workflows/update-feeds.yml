@@ -22,7 +22,7 @@ jobs:
         python-version: '3.11'
         
     - name: Install dependencies
-      run: pip install feedparser
+      run: pip install feedparser deep-translator
       
     - name: Fetch RSS feeds
       env:
@@ -48,5 +48,5 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add public/incidents.json public/prices.json public/data/regional_stats.json public/airspace.json
+        git add public/incidents.json public/feed.json public/prices.json public/data/regional_stats.json public/airspace.json public/verified_incidents.json public/report_status.json
         git diff --staged --quiet || (git commit -m "Update incidents, prices, regional stats, and airspace data" && git push)

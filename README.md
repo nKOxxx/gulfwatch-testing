@@ -251,10 +251,16 @@ Automatic priority ranking:
 - Report reasons: False info, Outdated, Wrong location, Duplicate
 - Modal form with details field
 
-#### 23. Translate Feature
-**NEW:** Google Translate integration.
-- One-click translate incident titles
-- Auto-detects Arabic/English
+#### 23. English Auto-Translation
+**NEW:** Non-English headlines are translated automatically at fetch time.
+
+- Arabic and Hebrew incident titles are translated to English when RSS data is collected
+- English headlines are left unchanged
+- Original text is preserved in `title_original` for reference
+- Translated cards show an **EN** badge; click **Original** to view the source text
+- Powered by `deep-translator` during `scripts/fetch_rss.py` (also runs in GitHub Actions)
+
+Manual fallback: non-English cards still include a **Translate** link to Google Translate.
 
 ---
 
@@ -286,6 +292,8 @@ Automatic priority ranking:
 
 ```
 Data Collection (48 sources)
+    ↓
+English Auto-Translation (Arabic/Hebrew → English)
     ↓
 Circuit Breaker (Deduplication)
     ↓
@@ -326,12 +334,43 @@ API & UI (Vercel + GitHub Actions)
 ```bash
 # Clone
 git clone https://github.com/nKOxxx/gulfwatch-testing.git
-cd gulfwatch-testing/public
+cd gulfwatch-testing
+
+# Optional: fetch fresh data with English auto-translation
+python3 -m venv .venv
+.venv/bin/pip install -r scripts/requirements.txt
+.venv/bin/python scripts/fetch_rss.py
 
 # Serve locally
-python -m http.server 8000
+cd public
+python3 -m http.server 8001
 
-# Open http://localhost:8000
+# Open http://localhost:8001
+```
+
+### Linux desktop launcher
+
+Install a menu icon that pulls updates, serves `public/` on port 8001, and opens Firefox:
+
+```bash
+./scripts/install-desktop.sh
+```
+
+The launcher is **headless** — no terminal needs to stay open. It starts:
+
+- A background web server on port 8001
+- A background refresh loop (`scripts/background-refresh.sh`) that:
+  - `git pull`s every **5 minutes** (picks up GitHub Actions data updates)
+  - Runs a full RSS fetch every **6 hours** (if `.venv` exists)
+
+The browser reloads `incidents.json` and `prices.json` every **60 seconds**, but those files only change when the background updater or GitHub Actions writes new data.
+
+```bash
+# Check background updater status
+./scripts/background-refresh.sh status
+
+# Stop background updater
+./scripts/background-refresh.sh stop
 ```
 
 ---
@@ -351,4 +390,4 @@ MIT
 ---
 
 Built with ⚔️ by Ares for Nikola
-Last Updated: 2026-03-16
+Last Updated: 2026-06-14

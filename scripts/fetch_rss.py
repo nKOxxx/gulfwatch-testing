@@ -11,10 +11,11 @@ import sys
 from datetime import datetime, timedelta, timezone
 from typing import List, Dict, Optional
 
-# Add parent directory to path for imports
-sys.path.insert(0, '/Users/ares/workspace/gulfwatch-testing/scripts')
+# Add scripts directory to path for imports
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parent))
 
 from circuit_breaker import CircuitBreaker
+from translate_utils import prepare_english_title
 
 # MENA-focused RSS feeds
 FEEDS = [
@@ -360,11 +361,13 @@ def fetch_feed(feed_info: Dict) -> List[Dict]:
             
             # Extract casualties
             casualties = extract_casualties(title)
+            title_info = prepare_english_title(title)
+            display_title = title_info['title']
             
             # Create incident
             incident = {
                 'id': hash(title + feed_info['name']) % 1000000000,
-                'title': title,
+                'title': display_title,
                 'source': feed_info['name'],
                 'source_url': entry.get('link', ''),
                 'published': published.isoformat(),
@@ -375,9 +378,12 @@ def fetch_feed(feed_info: Dict) -> List[Dict]:
                 'is_government': feed_info.get('is_government', False),
                 'casualties': casualties,
             }
+            if title_info.get('title_original'):
+                incident['title_original'] = title_info['title_original']
+                incident['translated'] = True
             
             incidents.append(incident)
-            print(f"   ✅ {title[:60]}...")
+            print(f"   ✅ {display_title[:60]}...")
         
         print(f"   Found {len(incidents)} incidents")
         
@@ -438,10 +444,12 @@ def fetch_newsdata_api():
                         
                         # Extract casualties
                         casualties = extract_casualties(title)
+                        title_info = prepare_english_title(title)
+                        display_title = title_info['title'][:200]
                         
                         incident = {
                             'id': hash(title + 'newsdata') % 1000000000,
-                            'title': title[:200],
+                            'title': display_title,
                             'source': f"NewsData.io - {article.get('source_id', 'Unknown')}",
                             'source_url': article.get('link', ''),
                             'published': article.get('pubDate', datetime.now(timezone.utc).isoformat()),
@@ -452,6 +460,9 @@ def fetch_newsdata_api():
                             'is_government': False,
                             'casualties': casualties,
                         }
+                        if title_info.get('title_original'):
+                            incident['title_original'] = title_info['title_original']
+                            incident['translated'] = True
                         incidents.append(incident)
                         
         except Exception as e:
@@ -489,13 +500,14 @@ def fetch_all():
     unique_incidents = []
     for inc in all_incidents:
         # Convert to article format for Circuit Breaker
+        source_title = inc.get('title_original', inc['title'])
         article = {
-            'title': inc['title'],
+            'title': source_title,
             'location': inc['location']['name'] if inc['location'] else 'Unknown',
             'date': inc['published'],
             'source': inc['source'],
             'url': inc['source_url'],
-            'content': inc['title']  # Use title as content
+            'content': source_title
         }
         
         # Process through Circuit Breaker
@@ -530,15 +542,16 @@ def fetch_all():
         'incidents': unique_incidents
     }
     
-    # Write to JSON
-    with open('public/incidents.json', 'w', encoding='utf-8') as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
+    # Write to JSON (incidents.json is the app source; feed.json is the public API alias)
+    for output_path in ('public/incidents.json', 'public/feed.json'):
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
     
     print()
     print("=" * 50)
     print(f"✅ Generated {len(unique_incidents)} unique incidents")
     print(f"🛡️  Circuit Breaker filtered: {len(all_incidents) - len(unique_incidents)} duplicates")
-    print(f"📁 Saved to public/incidents.json")
+    print(f"📁 Saved to public/incidents.json and public/feed.json")
 
 if __name__ == '__main__':
     fetch_all()
