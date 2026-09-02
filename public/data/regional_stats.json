@@ -2,21 +2,28 @@
   "regional": {
     "casualties": {
       "military": 0,
-      "civilian": 0,
-      "total": 0,
-      "byCountry": {}
+      "civilian": 22,
+      "total": 22,
+      "byCountry": {
+        "jordan": 22
+      }
     },
     "missiles": {
-      "launched": 4,
+      "launched": 6,
       "intercepted": 0,
-      "landed": 4,
-      "byCountry": {}
+      "landed": 6,
+      "byCountry": {
+        "iran": {
+          "launched": 1,
+          "intercepted": 0,
+          "landed": 1
+        }
+      }
     },
     "airstrikes": {
       "total": 2,
       "byCountry": {
-        "israel": 1,
-        "iran": 1
+        "iran": 2
       }
     },
     "drones": {
@@ -27,19 +34,18 @@
     "incidents": {
       "total": 43,
       "byType": {
-        "general": 36,
-        "drone": 1,
+        "general": 34,
         "airstrike": 2,
-        "missile": 4
+        "missile": 6,
+        "drone": 1
       },
       "byCountry": {
         "iran": 12,
         "israel": 11,
-        "palestine": 1,
-        "iraq": 2,
-        "yemen": 1,
-        "lebanon": 2,
-        "uae": 3
+        "saudi": 2,
+        "iraq": 3,
+        "jordan": 2,
+        "uae": 1
       }
     }
   },
@@ -53,12 +59,12 @@
         "total": 0
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
       "airstrikes": {
-        "total": 1
+        "total": 2
       },
       "drones": {
         "total": 0,
@@ -66,70 +72,70 @@
       },
       "incidents": [
         {
-          "id": 248351577,
-          "title": "IAEA calls for access to Iran nuclear sites over proliferation concerns",
+          "id": 381378374,
+          "title": "Iran attacks US bases in Middle East after reports US strike killed four at wedding party",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 807645378,
-          "title": "Iranian state media announces numerous US strikes on the country",
+          "id": 822548404,
+          "title": "Iran, US exchange new attacks: Who was hit in latest strikes?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 386083061,
-          "title": "US launches new airstrikes on Iranian targets as hostilities flare",
+          "id": 477848375,
+          "title": "Iran accuses US of \u2018war crime\u2019 after missile blast kills five people at wedding",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 322375345,
+          "title": "Iran attacks Gulf neighbours as fighting with US expands",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 984220135,
+          "title": "US and Iran exchange more airstrikes, fuelling fears of wider return to hostilities",
           "type": "airstrike",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 32827471,
-          "title": "US and Iran trade strikes as war heats up",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 542152527,
-          "title": "Trump\u2019s Venezuela oil deal gives US access to vast reserves as Iran war drives energy concerns",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 243477282,
+          "id": 506447761,
           "title": "US launches new barrage of strikes on Iran around Strait of Hormuz",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 692050917,
+          "id": 507489987,
           "title": "US and Iran trade strikes for first time in weeks",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 200405607,
+          "id": 30745590,
           "title": "Trump says US will \u2018hit Iran hard\u2019 as hostilities resume \u2013 as it happened",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 796890484,
+          "id": 189178376,
           "title": "Trump threatens further action as US and Iran exchange fire in new flare-up",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 393359506,
+          "id": 374881631,
           "title": "Iran\u2019s economy in crisis as US launches new sanctions campaign",
           "type": "general",
           "time": "",
@@ -152,7 +158,7 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 1
+        "total": 0
       },
       "drones": {
         "total": 0,
@@ -160,70 +166,70 @@
       },
       "incidents": [
         {
-          "id": 837633404,
-          "title": "What\u2019s driven the defence deal between Israel and Greece?",
+          "id": 340596724,
+          "title": "Why Greece is betting on Israel\u2019s Achilles Shield",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 267821039,
+          "id": 158019889,
+          "title": "BBC travels inside occupied Lebanon as officials say Israel expanding positions",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 129241930,
+          "title": "UK must end all trade with Israel, says co-founder of BDS movement",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 59251022,
           "title": "Israel says Hamas security chief captured as strikes kill four during Gaza raid",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 788241193,
-          "title": "Israel\u2019s multiple wars see finance, defence ministries clash over spending",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 39614804,
+          "id": 218527283,
           "title": "Israel warns it will retaliate if UK imposes sanctions",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 991216451,
+          "id": 815474674,
           "title": "Ed Miliband promises \u2018comprehensive reset\u2019 of UK policy toward Israel",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 562329228,
-          "title": "British activist abducted by West Bank settlers and deported by Israel - The Latest",
+          "id": 378261005,
+          "title": "Israeli West Bank settlers abduct British activist - The Latest",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 344491489,
-          "title": "Greece inks $3.4B deal for multi-layered Israeli air defense system",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 107113143,
+          "id": 807658372,
           "title": "UK raises case of British activist detained by settlers in West Bank with Israel",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 625612104,
+          "id": 908288746,
           "title": "US Air Force chief of staff discusses \u2018regional situation\u2019 with Israeli military officials",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 240018383,
+          "id": 427142995,
           "title": "Israel signs $3.5 billion air defense deal with Greece",
           "type": "general",
           "time": "",
@@ -252,15 +258,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 437465762,
-          "title": "UN slashes food aid for occupied West Bank and Gaza amid funding shortfall",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "gaza": {
@@ -306,22 +304,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 386245190,
-          "title": "More than 10 EU countries 'eager to contribute to Lebanon mission'",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 472423934,
-          "title": "UAE minister meets Lebanese delegation to share government modernisation expertise",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "syria": {
@@ -367,15 +350,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 581328209,
-          "title": "US must support Yemeni government and regional allies to counter Houthis, experts say",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "saudi": {
@@ -398,7 +373,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 591453216,
+          "title": "Saudi citizen praised for bravery after saving man from drowning in Dubai Creek",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 507308879,
+          "title": "Two Filipino crew members killed in attack on Saudi vessel in Strait of Hormuz",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "uae": {
@@ -423,22 +413,8 @@
       },
       "incidents": [
         {
-          "id": 275797885,
-          "title": "'Business as usual': UAE gears up for September reset despite regional tension",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 202074531,
-          "title": "The UAE's fiscal model is built to handle uncertainty",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 332058162,
-          "title": "UAE takes part in G20 finance meeting in US",
+          "id": 333205241,
+          "title": "Ramadan 2027 and Eid Al Fitr holiday: Potential dates announced for the UAE",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -451,8 +427,8 @@
       "flag": "\ud83c\uddef\ud83c\uddf4",
       "casualties": {
         "military": 0,
-        "civilian": 0,
-        "total": 0
+        "civilian": 22,
+        "total": 22
       },
       "missiles": {
         "launched": 0,
@@ -466,7 +442,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 122827168,
+          "title": "Ten Jordanians among 22 killed in bus accident in Egypt's south Sinai",
+          "type": "general",
+          "time": "",
+          "casualties": 22
+        },
+        {
+          "id": 753987281,
+          "title": "US-Iran war escalates again, Syria explosion kills five and Jordanian toddler arrives in Dubai for t",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "iraq": {
@@ -491,14 +482,21 @@
       },
       "incidents": [
         {
-          "id": 411787844,
+          "id": 262331854,
+          "title": "Pistol found in French lake may hold clue to murder mystery of British-Iraqi family",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 799470765,
           "title": "US approves potential $800 million helicopter sale to Iraq",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 663462396,
+          "id": 35276601,
           "title": "US approves possible $800 million military helicopter sale to Iraq",
           "type": "general",
           "time": "",
@@ -600,9 +598,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-09-02T00:30:12.890708",
+  "lastUpdated": "2026-09-02T12:16:59.342434",
   "timeRange": {
-    "from": "2026-08-26T00:30:12.890714",
-    "to": "2026-09-02T00:30:12.890718"
+    "from": "2026-08-26T12:16:59.342440",
+    "to": "2026-09-02T12:16:59.342444"
   }
 }
