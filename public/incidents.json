@@ -1,60 +1,26 @@
 {
-  "generated_at": "2026-09-06T00:33:05.427886+00:00",
-  "total_incidents": 37,
+  "generated_at": "2026-09-06T12:14:08.375489+00:00",
+  "total_incidents": 46,
   "circuit_breaker_stats": {
-    "total_processed": 37,
+    "total_processed": 46,
     "duplicates_filtered": 0,
     "recaps_blocked": 0,
-    "unique_signatures": 23
+    "unique_signatures": 34
   },
   "incidents": [
     {
-      "id": 274260894,
-      "title": "Iran war live: IRGC claims new attacks on US warships over naval blockade",
+      "id": 857033338,
+      "title": "Photos: Gaza holds funeral for 100 Palestinians recovered from rubble",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/liveblog/2026/9/6/iran-war-live-irgc-claims-new-attacks-on-us-warships-over-naval-blockade?traffic_source=rss",
-      "published": "2026-09-06T00:00:00+00:00",
-      "type": "attack",
-      "status": "reported",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784516-0014",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 112818589,
-      "title": "Fuel tanker blast in western Iran kills at least 10",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/9/5/fuel-tanker-blast-in-western-iran-kills-at-least-10?traffic_source=rss",
-      "published": "2026-09-05T23:07:48+00:00",
-      "type": "explosion",
+      "source_url": "https://www.aljazeera.com/gallery/2026/9/6/photos-gaza-holds-funeral-for-100-palestinians-recovered-from-rubble?traffic_source=rss",
+      "published": "2026-09-06T11:13:50+00:00",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
       },
       "credibility": 90,
       "is_government": false,
@@ -64,41 +30,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784519-0015",
-        "incident_type": "explosion",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 307284818,
-      "title": "Colombian government reports three killed in rebel attack on military post",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/9/5/colombian-government-reports-three-killed-in-rebel-attack-on-military-post?traffic_source=rss",
-      "published": "2026-09-05T20:03:29+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "Qatar",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784521-0016",
+        "event_id": "GW-1788696847119-0018",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -111,11 +43,79 @@
       }
     },
     {
-      "id": 314869950,
-      "title": "Al Jazeera reporter challenges Huckabee over Israeli settler pogroms",
+      "id": 569171395,
+      "title": "US, Iran engaged in tanker war: Where is the months-long conflict headed?",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/al-jazeera-reporter-challenges-huckabee-over-israeli-settler-pogroms?traffic_source=rss",
-      "published": "2026-09-05T20:00:05+00:00",
+      "source_url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed?traffic_source=rss",
+      "published": "2026-09-06T10:49:22+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847122-0019",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 579147179,
+      "title": "Palestinians in Gaza bury remains of 100 people recovered from rubble",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/9/6/palestinians-in-gaza-bury-remains-of-100-people-recovered-from-rubble?traffic_source=rss",
+      "published": "2026-09-06T10:42:14+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847125-0020",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 749779612,
+      "title": "Israeli flags become the latest weapon of settlers in West Bank domination",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss",
+      "published": "2026-09-06T09:40:06+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
@@ -132,7 +132,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784524-0017",
+        "event_id": "GW-1788696847128-0021",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -145,18 +145,18 @@
       }
     },
     {
-      "id": 568560882,
-      "title": "Woman beaten to death as bystanders watch in India\u2019s Gujarat",
+      "id": 595807632,
+      "title": "Israeli air attacks on Lebanon kill at least four",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/5-09-sv-woman-beaten-to-death-in-gujarat-in?traffic_source=rss",
-      "published": "2026-09-05T19:13:29+00:00",
-      "type": "security",
+      "source_url": "https://www.aljazeera.com/news/2026/9/6/israeli-air-attacks-on-lebanon-kill-at-least-four?traffic_source=rss",
+      "published": "2026-09-06T09:15:20+00:00",
+      "type": "attack",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
-        "country": "Oman",
-        "lat": 21.4735,
-        "lng": 55.9754
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
       },
       "credibility": 90,
       "is_government": false,
@@ -166,7 +166,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784527-0018",
+        "event_id": "GW-1788696847132-0022",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -179,11 +179,249 @@
       }
     },
     {
-      "id": 91736668,
-      "title": "Two pilots killed after Greek fighter jet crashes during an air show",
+      "id": 238772685,
+      "title": "Israel bombards several towns in southern Lebanon",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/two-pilots-killed-after-greek-fighter-jet-crashes-during-an-air-show?traffic_source=rss",
-      "published": "2026-09-05T18:44:41+00:00",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/israel-bombards-several-towns-in-southern-lebanon?traffic_source=rss",
+      "published": "2026-09-06T08:44:03+00:00",
+      "type": "explosion",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847134-0023",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 599083934,
+      "title": "TV presenter among 12 sentenced to death in Egypt drugs case",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5y7gk9knnlo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-09-06T08:05:22+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Egypt",
+        "lat": 26.8206,
+        "lng": 30.8025
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847091-0002",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 75,
+        "num_sources": 3,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 331584037,
+      "title": "Egyptian TV presenter Sarah Khalifa sentenced to death in drugs case",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/9/6/egyptian-tv-presenter-sentenced-to-death-in-major-drug-case?traffic_source=rss",
+      "published": "2026-09-06T07:20:37+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Egypt",
+        "lat": 26.8206,
+        "lng": 30.8025
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847137-0024",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "LIKELY",
+        "score": 75,
+        "num_sources": 3,
+        "status": "LIKELY"
+      }
+    },
+    {
+      "id": 902388782,
+      "title": "UK has billions in contracts with firms tied to illegal Israeli settlements",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/uk-has-billions-in-contracts-with-firms-tied-to-illegal-israeli-settlements-4?traffic_source=rss",
+      "published": "2026-09-06T06:52:23+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847141-0025",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 631849246,
+      "title": "Yemeni forces claim strategic district amid intensified Houthi clashes",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/9/6/yemeni-forces-claim-strategic-district-amid-intensified-houthi-clashes?traffic_source=rss",
+      "published": "2026-09-06T05:02:17+00:00",
+      "type": "security",
+      "status": "reported",
+      "location": {
+        "name": "Unknown City",
+        "country": "Yemen",
+        "lat": 15.5527,
+        "lng": 48.5164
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847145-0026",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 638582098,
+      "title": "Israeli Prime Minister Netanyahu says \u2018Qatar is a hostile state\u2019",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/israeli-prime-minister-netanyahu-says-qatar-is-a-hostile?traffic_source=rss",
+      "published": "2026-09-06T04:59:28+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Qatar",
+        "lat": 25.3548,
+        "lng": 51.1839
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847149-0027",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 945620459,
+      "title": "More than 20 killed in fire at wedding party in DR Congo",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/more-than-20-killed-in-fire-at-wedding-party-in-dr-congo?traffic_source=rss",
+      "published": "2026-09-06T04:47:55+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "Qatar",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 20,
+        "military": 0,
+        "civilian": 20
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847154-0028",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 954305169,
+      "title": "South Africa\u2019s chrome riches fuel a deadly underground economy",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/9/6/south-africas-chrome-riches-fuel-a-deadly-underground-economy?traffic_source=rss",
+      "published": "2026-09-06T04:31:45+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
@@ -200,8 +438,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784530-0019",
-        "incident_type": "incident",
+        "event_id": "GW-1788696847157-0029",
+        "incident_type": "ground",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
@@ -213,7 +451,483 @@
       }
     },
     {
-      "id": 988579610,
+      "id": 786191174,
+      "title": "Iran war likely to drag on for another six months, ex-US defense secretary warns",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/sep/06/iran-war-trump-leon-panetta-interview",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847095-0007",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 938931843,
+      "title": "Broken feet, ripped-out hair and now a death sentence: the fate of twin sisters jailed over Iran protests",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/sep/06/taraneh-romina-rahimi-twin-sisters-jailed-over-iran-protests",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847096-0008",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 283569498,
+      "title": "UAE sends five aid convoys carrying 533 tonnes of supplies into Gaza Strip",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/uae/2026/09/06/uae-sends-five-aid-convoys-carrying-533-tonnes-of-supplies-into-gaza-strip/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847162-0030",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 142089135,
+      "title": "Opec+ keeps oil output policy unchanged for October amid Iran war uncertainty",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/business/energy/2026/09/06/opec-keeps-oil-output-policy-unchanged-for-october-amid-iran-war-uncertainty/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847166-0031",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 687374120,
+      "title": "Iraq boosts oil production capacity to three million bpd amid Strait of Hormuz attacks",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/business/energy/2026/09/06/iraq-boosts-oil-production-capacity-to-three-million-bpd-amid-strait-of-hormuz-attacks/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iraq",
+        "lat": 33.2232,
+        "lng": 43.6793
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847172-0032",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 214613573,
+      "title": "UAE leaders hold talks with Bahrain's King Hamad in Dubai",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/uae/2026/09/06/uae-leaders-hold-talks-with-bahrains-king-hamad-in-dubai/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Dubai",
+        "country": "UAE",
+        "lat": 25.2048,
+        "lng": 55.2708
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847178-0033",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 550036376,
+      "title": "At least four killed in Israeli strikes on Lebanon",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/06/at-least-four-killed-in-israeli-strikes-on-lebanon/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847183-0034",
+        "incident_type": "raid",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 8226353,
+      "title": "US envoy Barrack urges restraint and dialogue as violence escalates in Syria's Sweida",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/06/us-envoy-barrack-urges-restraint-and-dialogue-as-violence-escalates-in-syrias-sweida/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Syria",
+        "lat": 34.8021,
+        "lng": 38.9968
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847187-0035",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 176368533,
+      "title": "US and Iran trade fire after IRGC attacks American warships",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/gulf/2026/09/06/us-and-iran-trade-fire-after-irgc-attacks-american-warships/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847194-0036",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 65,
+        "num_sources": 2,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 55812291,
+      "title": "Iran war latest: Iranian tanker sinks in Gulf of Oman after US strike, Centcom says",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/06/live-iran-war-us-kharg-island-tankers-explosion/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Oman",
+        "lat": 21.4735,
+        "lng": 55.9754
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847199-0037",
+        "incident_type": "raid",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 299499314,
+      "title": "Egypt sentences TV presenter and 11 others to death in drugs case",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/06/egypt-sentences-tv-presenter-and-11-others-to-death-in-drugs-case/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Egypt",
+        "lat": 26.8206,
+        "lng": 30.8025
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847206-0038",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 523503517,
+      "title": "From Al Hilal to Al Nassr: The songs behind every Saudi Pro League club",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/arts-culture/music-stage/2026/09/06/from-al-hilal-to-al-nassr-the-songs-behind-every-saudi-pro-league-club/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Saudi Arabia",
+        "lat": 23.8859,
+        "lng": 45.0792
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847212-0039",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 558413036,
+      "title": "Indoor entertainment fuels UAE attractions boom",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/business/economy/2026/09/06/indoor-entertainment-fuels-uae-attractions-boom/",
+      "published": "2026-09-06T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847218-0040",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 200205816,
+      "title": "US and Iran trade retaliatory attacks on ships as conflict flares",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-09-05T22:44:07+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1788696847091-0001",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 65,
+        "num_sources": 2,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 13622096,
       "title": "Egyptian TV presenter among 12 sentenced to death for drug crime",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/sep/05/egyptian-tv-presenter-among-12-sentenced-to-death-for-drug",
@@ -234,20 +948,20 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784496-0005",
+        "event_id": "GW-1788696847098-0009",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
       },
       "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
+        "badge": "LIKELY",
+        "score": 75,
+        "num_sources": 3,
+        "status": "LIKELY"
       }
     },
     {
-      "id": 529993418,
+      "id": 144207383,
       "title": "US military says it struck three Iranian tankers after American warships came under missile attack",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/sep/05/us-military-iran-tankers",
@@ -268,7 +982,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784497-0006",
+        "event_id": "GW-1788696847099-0010",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "OSINT"
@@ -281,7 +995,7 @@
       }
     },
     {
-      "id": 557072025,
+      "id": 333898241,
       "title": "Civilians among at least 60 killed in Yemen as ground fighting escalates",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/sep/05/yemen-ground-fighting-escalates-houthi-rebels-government-forces",
@@ -302,7 +1016,7 @@
         "civilian": 60
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784498-0007",
+        "event_id": "GW-1788696847101-0011",
         "incident_type": "ground",
         "is_recap": false,
         "confidence": "OSINT"
@@ -315,7 +1029,7 @@
       }
     },
     {
-      "id": 793031545,
+      "id": 331476602,
       "title": "\u2018Guilt by association\u2019: why seven international aid workers were killed in Israeli airstrike",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/sep/05/aid-workers-gaza-killed-in-israel-airstrike-investigation",
@@ -336,7 +1050,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784499-0008",
+        "event_id": "GW-1788696847103-0012",
         "incident_type": "airstrike",
         "is_recap": false,
         "confidence": "OSINT"
@@ -349,7 +1063,7 @@
       }
     },
     {
-      "id": 125127579,
+      "id": 39937808,
       "title": "Gaza refugee says sister-in-law \u2018would be alive\u2019 if Home Office had let her come to UK",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/uk-news/2026/sep/05/gaza-refugee-visa-refusal-home-office",
@@ -370,7 +1084,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784501-0009",
+        "event_id": "GW-1788696847105-0013",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -383,7 +1097,7 @@
       }
     },
     {
-      "id": 408441599,
+      "id": 896922196,
       "title": "Death on the road to Rafah: the night the IDF targeted World Central Kitchen aid workers",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/sep/05/gaza-aid-workers-world-central-kitchen-idf-israel",
@@ -404,7 +1118,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784503-0010",
+        "event_id": "GW-1788696847107-0014",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -417,415 +1131,7 @@
       }
     },
     {
-      "id": 843756687,
-      "title": "Eid Al Etihad: UAE public called upon to share their stories to shape 55th National Day celebrations",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/09/05/eid-al-etihad-share-stories-uae-national-day-2026/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784533-0020",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 115041884,
-      "title": "Iran war latest: US strikes three Iranian tankers after IRGC attacked navy vessels",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/05/live-iran-war-us-kharg-island-tankers-explosion/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784537-0021",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 882079091,
-      "title": "US military strikes three Iranian tankers",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/05/us-military-strikes-three-iranian-tankers/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784541-0022",
-        "incident_type": "raid",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 682869989,
-      "title": "Israel widens Lebanon strikes after announcing control of strategic Ali Al Taher ridge",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/05/israel-widens-lebanon-strikes-after-announcing-control-of-strategic-ali-al-taher-ridge/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784544-0023",
-        "incident_type": "raid",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 78726379,
-      "title": "Bomb tests and dead scorpions: New evidence exposes Al Burhan forces\u2019 chemical programme in Sudan",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/05/new-evidence-points-to-chemical-weapons-use-by-sudans-army/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "explosion",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "UAE",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784548-0024",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 519458878,
-      "title": "'Grateful' Tadej Pogacar to stay with UAE Team Emirates until 2032",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/sport/cycling/2026/09/05/grateful-tadej-pogacar-to-stay-with-uae-team-emirates-until-2032/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784554-0025",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 330746553,
-      "title": "Civilian casualties reported in Houthi attacks on Taiz highway in Yemen",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/05/yemen-government-appeals-to-support-thousands-of-people-displaced-by-renewed-war/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "attack",
-      "status": "reported",
-      "location": {
-        "name": "Unknown City",
-        "country": "Yemen",
-        "lat": 15.5527,
-        "lng": 48.5164
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784558-0026",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 349982755,
-      "title": "UAE keep Women\u2019s Asia Cup hopes alive with Khushi Sharma cheering from the sidelines",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/sport/cricket/2026/09/05/uae-keep-womens-asia-cup-hopes-alive-with-khushi-sharma-cheering-from-the-sidelines/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784563-0027",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 738783410,
-      "title": "Fitch maintains Qatar\u2019s credit rating and expects LNG exports to reach pre-war levels next year",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/business/economy/2026/09/05/fitch-maintains-qatars-credit-rating-and-expects-lng-exports-to-reach-pre-war-levels-next-year/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Qatar",
-        "lat": 25.3548,
-        "lng": 51.1839
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784568-0028",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 586382222,
-      "title": "UAE weather: Temperatures set to hit 50\u00b0C with rain on the way",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/09/05/uae-weather-temperatures-set-to-hit-50c-with-rain-on-the-way/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784575-0029",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 795333341,
-      "title": "UAE response team begins search and rescue efforts in flood-stricken Nepal as aid drive continues",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/09/05/uae-response-team-begins-search-and-rescue-efforts-in-flood-stricken-nepal-as-aid-drive-continues/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784580-0030",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 577158540,
-      "title": "Aid pallets become furniture as Gazans rebuild homes with whatever remains",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/09/05/aid-pallets-become-furniture-as-gazans-rebuild-homes-with-whatever-remains/",
-      "published": "2026-09-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1788654784587-0031",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 590240744,
+      "id": 654996027,
       "title": "Ukraine asks EU to fund first Patriot missiles buy",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/news/pentagon-congress/2026/09/05/ukraine-asks-eu-to-fund-first-pac-3-patriot-buy/",
@@ -846,7 +1152,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784593-0032",
+        "event_id": "GW-1788696847223-0041",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -859,7 +1165,7 @@
       }
     },
     {
-      "id": 726766426,
+      "id": 711321182,
       "title": "US clears $5B in JDAMs for Saudi Arabia, other Middle East deals",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/09/us-clears-5b-in-jdams-for-saudi-arabia-other-middle-east-deals/",
@@ -880,7 +1186,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784608-0035",
+        "event_id": "GW-1788696847241-0044",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -893,7 +1199,7 @@
       }
     },
     {
-      "id": 736417363,
+      "id": 306668722,
       "title": "How could US-Iran conflict end? Three experts give their views",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cgjql614glvo?at_medium=RSS&at_campaign=rss",
@@ -914,7 +1220,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784495-0004",
+        "event_id": "GW-1788696847093-0006",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -927,7 +1233,7 @@
       }
     },
     {
-      "id": 13669336,
+      "id": 945199682,
       "title": "Seeds of hope: how a local farming project is offering a lifeline to Gaza",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/environment/2026/sep/04/seed-bank-hope-farming-project-gaza-al-qarara",
@@ -948,7 +1254,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784507-0011",
+        "event_id": "GW-1788696847110-0015",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -961,7 +1267,7 @@
       }
     },
     {
-      "id": 104554582,
+      "id": 954772878,
       "title": "\u2018Many of us in Israel live in a state of shock at the savagery\u2019: veteran director Amos Gitai returns to Gaza",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/film/2026/sep/04/israel-director-amos-gitai-gaza-the-road-to-jericho-venice",
@@ -982,7 +1288,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784510-0012",
+        "event_id": "GW-1788696847113-0016",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -995,7 +1301,7 @@
       }
     },
     {
-      "id": 634440072,
+      "id": 866411725,
       "title": "Iranian town mourns after deadly strike on wedding",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/sep/04/iranian-town-kuhestak-devastated-strike-wedding",
@@ -1016,7 +1322,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784515-0013",
+        "event_id": "GW-1788696847117-0017",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1029,7 +1335,7 @@
       }
     },
     {
-      "id": 76091558,
+      "id": 19514260,
       "title": "US Air Force speeds Reaper successor timeline after Iran losses",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/news/your-military/2026/09/04/us-air-force-speeds-reaper-successor-timeline-after-iran-losses/",
@@ -1050,7 +1356,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784597-0033",
+        "event_id": "GW-1788696847228-0042",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1063,7 +1369,7 @@
       }
     },
     {
-      "id": 879331869,
+      "id": 4728419,
       "title": "Trump to travel aboard Qatari-donated Air Force One to Ireland",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/news/your-military/2026/09/04/trump-to-travel-aboard-qatari-donated-air-force-one-to-ireland/",
@@ -1084,7 +1390,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784603-0034",
+        "event_id": "GW-1788696847235-0043",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1097,7 +1403,7 @@
       }
     },
     {
-      "id": 98992991,
+      "id": 745153535,
       "title": "US investigating if missile hit Iran wedding, Vance says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cy4zvk3z2k1o?at_medium=RSS&at_campaign=rss",
@@ -1118,7 +1424,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784495-0001",
+        "event_id": "GW-1788696847091-0003",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1131,7 +1437,7 @@
       }
     },
     {
-      "id": 916720570,
+      "id": 98838744,
       "title": "Three farmers detained by Israel in Lebanon, village leader says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c4gq2my0v5po?at_medium=RSS&at_campaign=rss",
@@ -1152,7 +1458,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784495-0002",
+        "event_id": "GW-1788696847092-0004",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1165,7 +1471,7 @@
       }
     },
     {
-      "id": 814146563,
+      "id": 609154820,
       "title": "Oshkosh dangles JLTV bridge option for Marine Corps, but the deadline is looming",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/09/oshkosh-dangles-jltv-bridge-option-for-marine-corps-but-the-deadline-to-take-it-is-looming/",
@@ -1186,7 +1492,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784614-0036",
+        "event_id": "GW-1788696847248-0045",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1199,7 +1505,7 @@
       }
     },
     {
-      "id": 453910925,
+      "id": 952801430,
       "title": "Palestinian teens killed during settler attack on West Bank village",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
@@ -1220,7 +1526,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784495-0003",
+        "event_id": "GW-1788696847092-0005",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1233,7 +1539,7 @@
       }
     },
     {
-      "id": 187701775,
+      "id": 323058755,
       "title": "Belgium and India partner on local 70mm rocket assembly, wave of industry agreements",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/09/belgium-and-india-partner-on-local-70mm-rocket-assembly-wave-of-industry-agreements/",
@@ -1254,7 +1560,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1788654784621-0037",
+        "event_id": "GW-1788696847256-0046",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
