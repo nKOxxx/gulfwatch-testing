@@ -2,14 +2,16 @@
   "regional": {
     "casualties": {
       "military": 0,
-      "civilian": 0,
-      "total": 0,
-      "byCountry": {}
+      "civilian": 10,
+      "total": 10,
+      "byCountry": {
+        "syria": 10
+      }
     },
     "missiles": {
-      "launched": 7,
+      "launched": 6,
       "intercepted": 0,
-      "landed": 7,
+      "landed": 6,
       "byCountry": {
         "iran": {
           "launched": 1,
@@ -19,29 +21,35 @@
       }
     },
     "airstrikes": {
-      "total": 0,
+      "total": 1,
       "byCountry": {}
     },
     "drones": {
-      "total": 2,
+      "total": 8,
       "downed": 0,
-      "byCountry": {}
+      "byCountry": {
+        "iran": {
+          "total": 2,
+          "downed": 0
+        }
+      }
     },
     "incidents": {
-      "total": 47,
+      "total": 55,
       "byType": {
-        "general": 38,
-        "missile": 7,
-        "drone": 2
+        "general": 40,
+        "drone": 8,
+        "airstrike": 1,
+        "missile": 6
       },
       "byCountry": {
-        "iran": 8,
-        "israel": 14,
-        "yemen": 2,
+        "israel": 20,
+        "iran": 6,
+        "yemen": 4,
+        "uae": 1,
+        "syria": 3,
         "saudi": 3,
-        "uae": 3,
-        "palestine": 1,
-        "syria": 1
+        "palestine": 1
       }
     }
   },
@@ -63,61 +71,47 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 2,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 45744458,
-          "title": "Iran war live: US hits Iranian tankers, IRGC attacks US base in Jordan",
+          "id": 552891433,
+          "title": "Did Iran capture a US submarine? What we know about the underwater drone",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 834801875,
+          "title": "Tanker war 2.0: How US-Iran ship attacks are escalating",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 249151362,
-          "title": "US increases pressure on Iran with sanctions targeting aviation sector",
+          "id": 388051417,
+          "title": "US-Iran tanker conflict escalates and new arrangement for Israel-Lebanon talks",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 249479513,
-          "title": "US bombs five Iranian oil tankers after its navy is attacked",
-          "type": "general",
+          "id": 714987270,
+          "title": "Iran says it captured US submarine drone in Strait of Hormuz",
+          "type": "drone",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 692660250,
-          "title": "US says Iranian tankers destroyed after missile attacks on American warship",
+          "id": 597725826,
+          "title": "US says Iranian tankers \u2018destroyed\u2019 after missile attacks on American warship",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 971440237,
-          "title": "US forces strike five Iranian oil tankers, Centcom says",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 701670550,
-          "title": "Treasury targets Iran airlines as US steps up economic pressure campaign",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 856213249,
-          "title": "Bahrain Airshow cancelled this year as Iran war continues",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 246379458,
+          "id": 144656395,
           "title": "Iran warns of 'faster, heavier, more painful response' to US attacks",
           "type": "general",
           "time": "",
@@ -148,71 +142,71 @@
       },
       "incidents": [
         {
-          "id": 354119166,
+          "id": 944089351,
+          "title": "Israel gives British consulate in Jerusalem 30 days to close",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 779156584,
+          "title": "British-Israeli relations at lowest ebb in decades",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 401864511,
+          "title": "In West Bank, date farmers weigh impact of UK sanctions on Israeli settlers",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 75261814,
+          "title": "UK accuses Israeli \u2018terrorists\u2019 of ethnic cleansing in West Bank with government backing",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 90148416,
           "title": "Will UK sanctions have any impact on Israel\u2019s \u2018settler terrorists\u2019 in West Bank?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 510610018,
+          "id": 478525770,
           "title": "Ella Baron on the UK\u2019s ban on trade with illegal Israeli settlements \u2013 cartoon",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 423720981,
+          "id": 676636503,
           "title": "Israel to close British consulate in Jerusalem after sanctions announced",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 567011399,
-          "title": "UAE responds to media report that claims Israel was warned of October 7 attack",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 594955708,
-          "title": "Israel rejects push to keep international troops in south Lebanon after Unifil exit",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 584296822,
-          "title": "Israel to close UK consulate and bar some British MPs over sanctions on settlers",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 337081093,
+          "id": 194898223,
           "title": "Israeli strikes in southern Lebanese village kill 12",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 900477656,
+          "id": 304557330,
           "title": "UK to adopt tougher stance on Israel with illegal settlements trade ban",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 962738795,
+          "id": 506994087,
           "title": "Israeli ministers keep telling everyone their brutal plans \u2013 so why doesn\u2019t the world take them seri",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 178664030,
-          "title": "UN expert Francesca Albanese calls for \u2018true paradigm shift\u2019 as Miliband resets policy on Israel",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -242,7 +236,7 @@
       },
       "incidents": [
         {
-          "id": 963698940,
+          "id": 15440395,
           "title": "Palestinian parents fear for children's lives at school as settler attacks grow",
           "type": "general",
           "time": "",
@@ -302,8 +296,8 @@
       "flag": "\ud83c\uddf8\ud83c\uddfe",
       "casualties": {
         "military": 0,
-        "civilian": 0,
-        "total": 0
+        "civilian": 10,
+        "total": 10
       },
       "missiles": {
         "launched": 0,
@@ -319,14 +313,28 @@
       },
       "incidents": [
         {
-          "id": 404312889,
+          "id": 142146293,
+          "title": "At least three dead and 10 injured after ammunition store explodes in Syria's Idlib province",
+          "type": "general",
+          "time": "",
+          "casualties": 10
+        },
+        {
+          "id": 277037325,
+          "title": "Syrian-born BossLogic on going from viral fan art to working with Marvel and Disney",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 226480733,
           "title": "Syrian reactor could have been used for nuclear weapons if completed, UN says",
           "type": "general",
           "time": "",
           "casualties": 0
         }
       ],
-      "trend": "stable"
+      "trend": "decreasing"
     },
     "yemen": {
       "name": "Yemen",
@@ -350,14 +358,28 @@
       },
       "incidents": [
         {
-          "id": 124719327,
+          "id": 42977231,
+          "title": "Yemen war escalates: Who are the key actors involved?",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 417644671,
+          "title": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 811550310,
           "title": "Saudi Arabia vows to respond after Houthis attack cities and energy facilities",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 708093163,
+          "id": 303767426,
           "title": "Houthis strike Saudi Arabian cities in significant expansion of Middle East war",
           "type": "general",
           "time": "",
@@ -388,21 +410,21 @@
       },
       "incidents": [
         {
-          "id": 651452035,
+          "id": 588518277,
+          "title": "Houthi strikes on Saudi Arabia could widen conflict, UN warns",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 546012682,
           "title": "British family of man abducted by Saudi Arabia speak out over nine-year ordeal",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 862484715,
-          "title": "LIV Golf files for bankruptcy, with post-Saudi future uncertain",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 230769048,
+          "id": 499736749,
           "title": "Saudi deal offers a revenue boost for Exeter University that will save jobs | Letter",
           "type": "general",
           "time": "",
@@ -433,22 +455,8 @@
       },
       "incidents": [
         {
-          "id": 803741491,
-          "title": "UAE sends fourth aid flight to Nepal as total delivery reaches 186 tonnes",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 944931152,
-          "title": "IHC to acquire 80% stake in UAE's Marlan Holding to expand into space economy",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 644782601,
-          "title": "Dubai schools in global top 10 as UAE improves nationwide",
+          "id": 512902029,
+          "title": "'UAE is now home': German families on building lives in the Emirates",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -595,9 +603,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-09-09T00:32:15.601661",
+  "lastUpdated": "2026-09-09T12:18:30.625882",
   "timeRange": {
-    "from": "2026-09-02T00:32:15.601666",
-    "to": "2026-09-09T00:32:15.601670"
+    "from": "2026-09-02T12:18:30.625887",
+    "to": "2026-09-09T12:18:30.625890"
   }
 }
