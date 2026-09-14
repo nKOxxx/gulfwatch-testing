@@ -2,14 +2,16 @@
   "regional": {
     "casualties": {
       "military": 0,
-      "civilian": 0,
-      "total": 0,
-      "byCountry": {}
+      "civilian": 10,
+      "total": 10,
+      "byCountry": {
+        "israel": 10
+      }
     },
     "missiles": {
-      "launched": 5,
+      "launched": 3,
       "intercepted": 0,
-      "landed": 5,
+      "landed": 3,
       "byCountry": {}
     },
     "airstrikes": {
@@ -17,39 +19,35 @@
       "byCountry": {}
     },
     "drones": {
-      "total": 5,
+      "total": 3,
       "downed": 0,
       "byCountry": {
-        "saudi": {
-          "total": 3,
-          "downed": 0
-        },
-        "iran": {
-          "total": 1,
-          "downed": 0
-        },
         "israel": {
           "total": 1,
+          "downed": 0
+        },
+        "saudi": {
+          "total": 2,
           "downed": 0
         }
       }
     },
     "incidents": {
-      "total": 42,
+      "total": 29,
       "byType": {
-        "general": 32,
-        "drone": 5,
-        "missile": 5
+        "general": 23,
+        "drone": 3,
+        "missile": 3
       },
       "byCountry": {
-        "iran": 5,
-        "yemen": 9,
-        "israel": 7,
-        "saudi": 5,
+        "yemen": 6,
+        "iran": 1,
+        "israel": 9,
         "iraq": 1,
-        "uae": 2,
-        "oman": 3,
-        "gaza": 2,
+        "jordan": 1,
+        "saudi": 3,
+        "uae": 1,
+        "oman": 1,
         "palestine": 1
       }
     }
@@ -72,42 +70,14 @@
         "total": 0
       },
       "drones": {
-        "total": 1,
+        "total": 0,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 394122768,
-          "title": "A dignified life is a \u2018distant dream\u2019 for many Iranian families amid US war",
+          "id": 152189102,
+          "title": "Iran war live: Oman says Hormuz talks with Iran, Gulf states postponed",
           "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 794234112,
-          "title": "Iran war latest: Houthi projectile strike on Saudi border injures two",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 623636152,
-          "title": "Iran\u2019s Houthi allies capture strategic island on vital oil shipping route",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 615101233,
-          "title": "Trump and Hegseth use 9/11 memorial remarks at Pentagon to defend war on Iran",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 427234731,
-          "title": "US refutes claims that Iran captured Saildrone USV",
-          "type": "drone",
           "time": "",
           "casualties": 0
         }
@@ -119,8 +89,8 @@
       "flag": "\ud83c\uddee\ud83c\uddf1",
       "casualties": {
         "military": 0,
-        "civilian": 0,
-        "total": 0
+        "civilian": 10,
+        "total": 10
       },
       "missiles": {
         "launched": 0,
@@ -136,56 +106,70 @@
       },
       "incidents": [
         {
-          "id": 494145128,
-          "title": "Israeli attack on Gaza kills two Palestinians",
+          "id": 602396755,
+          "title": "Israeli quadcopter terrorises homes in Gaza City",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 587649706,
+          "title": "Pro-Palestine protest demands Australia increases pressure on Israel",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 446288319,
+          "id": 768263464,
+          "title": "Jerusalem Daily: Pregnant woman killed in Gaza",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 802427123,
+          "title": "US Envoy Jared Kushner says Doha attack left Israel \u2018globally isolated\u2019",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 488761989,
+          "title": "Pregnant woman among more than 10 killed in Israeli attacks on Gaza",
+          "type": "general",
+          "time": "",
+          "casualties": 10
+        },
+        {
+          "id": 249617879,
           "title": "\u2018I\u2019ve lost everything \u2013 my child, my house, my money\u2019: how Israel\u2019s war on Gaza has changed men",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 647102431,
+          "id": 91567132,
           "title": "Israeli election billboards stir unease in Cyprus",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 365953279,
+          "id": 163797047,
           "title": "Call it the Miliband doctrine. Let\u2019s hope the new Israeli settlement boycott is just the start | Ste",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 888105840,
+          "id": 709914807,
           "title": "Israel says it has destroyed major underground Hezbollah base",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 387967169,
-          "title": "Israeli military creates new branch focused on AI, drones and robotics",
-          "type": "drone",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 689416034,
-          "title": "Israel's Netanyahu to sue newspaper over claim UAE warned him of 7 October attack",
           "type": "general",
           "time": "",
           "casualties": 0
         }
       ],
-      "trend": "stable"
+      "trend": "increasing"
     },
     "palestine": {
       "name": "Palestine",
@@ -209,7 +193,7 @@
       },
       "incidents": [
         {
-          "id": 114342892,
+          "id": 208148448,
           "title": "IDF soldier filmed shooting Palestinian in leg amid West Bank settler standoff",
           "type": "general",
           "time": "",
@@ -238,22 +222,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 400432186,
-          "title": "Naza wins Venice special jury prize as Kaouther Ben Hania praises Gaza documentary",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 729776667,
-          "title": "In Gaza, we\u2019ve seen horror unfold with global powers\u2019 support. Is that a blueprint for horror elsewh",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "lebanon": {
@@ -324,64 +293,43 @@
       },
       "incidents": [
         {
-          "id": 858048312,
-          "title": "Fighting continues between Yemen gov\u2019t forces, Houthis: What is the latest?",
+          "id": 141018526,
+          "title": "Yemen\u2019s Houthis advance on government strongholds of Marib, Taiz",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 334130064,
-          "title": "About 1,400 Yemenis flee to Djibouti within 24 hours",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 561649070,
-          "title": "Yemen\u2019s Houthis seize strategic Mayun Island in Red Sea",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 779607545,
+          "id": 992561144,
           "title": "Houthis claim attack on Saudi base as fighting flares with Yemeni forces",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 216422852,
-          "title": "Houthis claim responsibility for new attacks on Saudi Arabia in Red Sea offensive",
+          "id": 587819195,
+          "title": "Heavy fighting in Yemen as Houthis seek further gains in Taiz",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 909825114,
+          "id": 947577341,
           "title": "Nearly 50,000 Yemeni civilians flee as Houthis advance along Red Sea coast",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 361284806,
+          "id": 735072138,
           "title": "Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 445802999,
+          "id": 802018417,
           "title": "Lightning Houthi advance in Yemen may bring dangerous new dimension to Iran war",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 898297335,
-          "title": "Saudi crown prince sought US military help with Houthis, sources say",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -406,40 +354,26 @@
         "total": 0
       },
       "drones": {
-        "total": 3,
+        "total": 2,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 779996164,
-          "title": "Mosque and homes damaged in Saudi Arabia after alleged Houthi strike",
+          "id": 676950082,
+          "title": "Cristiano Ronaldo wants Saudi club fans banned for life for Diogo Jota chants",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 399100486,
-          "title": "Iraq seizes drone-launching platform used for targeting Saudi oil pipeline",
-          "type": "drone",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 172854647,
-          "title": "Iran\u2019s Pezeshkian: \u2018We are not at war with Saudi Arabia\u2019",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 529351857,
+          "id": 916182260,
           "title": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
           "type": "drone",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 347119205,
+          "id": 198474144,
           "title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
           "type": "drone",
           "time": "",
@@ -470,15 +404,8 @@
       },
       "incidents": [
         {
-          "id": 554250183,
+          "id": 322615715,
           "title": "UAE research could provide early warnings to prevent Nepal flooding tragedies",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 716049809,
-          "title": "Algeria to sever diplomatic ties with UAE",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -506,7 +433,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 949953956,
+          "title": "President Sheikh Mohamed receives Jordanian King Abdullah in Abu Dhabi",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "iraq": {
@@ -531,7 +466,7 @@
       },
       "incidents": [
         {
-          "id": 840713101,
+          "id": 58923071,
           "title": "Making Iraq \u2018normal\u2019 again: do mass arrests and cash seizures signal end to corruption?",
           "type": "general",
           "time": "",
@@ -631,22 +566,8 @@
       },
       "incidents": [
         {
-          "id": 995398350,
+          "id": 65340659,
           "title": "Venice Golden Lion winner May el-Toukhy on Woman Unknown and her Egyptian roots",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 48507909,
-          "title": "Danish-Egyptian director May el-Toukhy wins Venice Golden Lion for Woman Unknown",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 634076795,
-          "title": "Art heists are a form of cultural destruction, so why do we romanticise them?",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -655,9 +576,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-09-13T12:16:40.573499",
+  "lastUpdated": "2026-09-14T00:32:41.126907",
   "timeRange": {
-    "from": "2026-09-06T12:16:40.573504",
-    "to": "2026-09-13T12:16:40.573507"
+    "from": "2026-09-07T00:32:41.126913",
+    "to": "2026-09-14T00:32:41.126917"
   }
 }
