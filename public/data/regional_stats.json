@@ -2,19 +2,27 @@
   "regional": {
     "casualties": {
       "military": 0,
-      "civilian": 0,
-      "total": 0,
-      "byCountry": {}
+      "civilian": 50,
+      "total": 50,
+      "byCountry": {
+        "gaza": 30,
+        "israel": 20
+      }
     },
     "missiles": {
       "launched": 3,
-      "intercepted": 1,
-      "landed": 2,
+      "intercepted": 2,
+      "landed": 1,
       "byCountry": {
-        "iran": {
-          "launched": 2,
+        "saudi": {
+          "launched": 1,
           "intercepted": 1,
-          "landed": 1
+          "landed": 0
+        },
+        "iran": {
+          "launched": 1,
+          "intercepted": 1,
+          "landed": 0
         }
       }
     },
@@ -24,26 +32,31 @@
     },
     "drones": {
       "total": 5,
-      "downed": 0,
-      "byCountry": {}
+      "downed": 1,
+      "byCountry": {
+        "saudi": {
+          "total": 1,
+          "downed": 1
+        }
+      }
     },
     "incidents": {
-      "total": 49,
+      "total": 53,
       "byType": {
-        "general": 40,
+        "general": 44,
         "drone": 5,
         "missile": 3,
         "airstrike": 1
       },
       "byCountry": {
-        "iran": 18,
-        "oman": 4,
-        "israel": 5,
+        "gaza": 4,
+        "israel": 8,
         "saudi": 4,
-        "yemen": 3,
-        "gaza": 1,
+        "iran": 15,
         "syria": 2,
-        "uae": 2,
+        "uae": 4,
+        "yemen": 3,
+        "oman": 2,
         "palestine": 1
       }
     }
@@ -58,7 +71,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 2,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -71,70 +84,70 @@
       },
       "incidents": [
         {
-          "id": 356057941,
-          "title": "Bessent to hold talks with China on Iran financial ties before Trump-Xi summit",
+          "id": 533944066,
+          "title": "Iran war costs: $38B, plus $2-3B per month going forward, CBO says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 609380835,
-          "title": "Amazon Web Services unable to restore Bahrain data network knocked out by Iran",
+          "id": 733443666,
+          "title": "\u2018Hundreds\u2019 of buildings, \u2018dozens\u2019 of aircraft destroyed or damaged during Iran ops: DoD IG",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 536796381,
-          "title": "Iran accused of using spyware to snoop on dissidents overseas",
+          "id": 26780303,
+          "title": "US House votes for third time to end Iran war after $38bn cost is revealed",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 650648618,
+          "id": 255439103,
           "title": "Iran war has cost $38 billion, depleted two-thirds of US missile interceptors, CBO says",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 857854537,
+          "id": 755043353,
           "title": "Iranian strikes damaged hundreds of US military buildings, dozens of aircraft",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 875703912,
+          "id": 965954981,
           "title": "Russia and Iran deepen weapons partnership amid wars in Ukraine, Middle East",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 812325086,
+          "id": 135933203,
           "title": "US pilot shot down over Iran recalls 'free-falling' in first interview since rescue",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 792094321,
+          "id": 978382138,
           "title": "US airman recounts Iran rescue in 60 Minutes segment branded propaganda",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 88384103,
+          "id": 324260422,
           "title": "Gulf states postpone strait of Hormuz talks with Iran as Yemen conflict intensifies",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 109519249,
+          "id": 848773342,
           "title": "The situation in Iran is dangerously escalating \u2013 but whatever you do, don\u2019t call it a war | Arwa Ma",
           "type": "general",
           "time": "",
@@ -148,8 +161,8 @@
       "flag": "\ud83c\uddee\ud83c\uddf1",
       "casualties": {
         "military": 0,
-        "civilian": 0,
-        "total": 0
+        "civilian": 20,
+        "total": 20
       },
       "missiles": {
         "launched": 0,
@@ -165,42 +178,63 @@
       },
       "incidents": [
         {
-          "id": 649258025,
-          "title": "Israel lacking respect for dead buried in Gaza rubble: UN",
+          "id": 910079112,
+          "title": "Israeli double-tap strike kills 15-year-old and paramedic in Gaza",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 460345618,
+          "id": 57872675,
+          "title": "Human rights lawyer Noura Erakat arrested at hearing against Israel Bonds",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 141624880,
+          "title": "At least 20 killed after Israeli-hit building in Gaza City collapses",
+          "type": "general",
+          "time": "",
+          "casualties": 20
+        },
+        {
+          "id": 736880093,
+          "title": "Ursula von der Leyen deplores EU's 'painful' inaction on Israeli settlements",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 553067482,
           "title": "Rafael integrating SPICE 1000 stand-off munition on Israeli F-35s",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 3009799,
+          "id": 291545938,
           "title": "UK sanctions on Israel \u2018fall far short\u2019 of its obligations, legal experts say",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 334274656,
+          "id": 493365286,
           "title": "Israeli minister threatens to revoke filmmakers' citizenship over Gaza documentary",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 412700889,
+          "id": 844075107,
           "title": "Israeli minister threatens to strip Israeli film-makers of citizenship over Gaza documentary NAZA",
           "type": "general",
           "time": "",
           "casualties": 0
         }
       ],
-      "trend": "stable"
+      "trend": "decreasing"
     },
     "palestine": {
       "name": "Palestine",
@@ -224,7 +258,7 @@
       },
       "incidents": [
         {
-          "id": 259590654,
+          "id": 539393132,
           "title": "Israel accused of trying to \u2018eliminate\u2019 living conditions for Palestinians in West Bank",
           "type": "general",
           "time": "",
@@ -238,8 +272,8 @@
       "flag": "\ud83c\uddf5\ud83c\uddf8",
       "casualties": {
         "military": 0,
-        "civilian": 0,
-        "total": 0
+        "civilian": 30,
+        "total": 30
       },
       "missiles": {
         "launched": 0,
@@ -255,14 +289,35 @@
       },
       "incidents": [
         {
-          "id": 932586497,
+          "id": 565768925,
+          "title": "At least 20 killed after war-damaged Gaza building collapses",
+          "type": "general",
+          "time": "",
+          "casualties": 20
+        },
+        {
+          "id": 85098558,
+          "title": "At least 10 dead, dozens missing in Gaza building collapse",
+          "type": "general",
+          "time": "",
+          "casualties": 10
+        },
+        {
+          "id": 429770446,
+          "title": "UAE floating hospital in Al Arish receives more Gaza patients for specialist care",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 7077755,
           "title": "Stories in Gaza documentary pulled by BBC still need to be aired, director says",
           "type": "general",
           "time": "",
           "casualties": 0
         }
       ],
-      "trend": "stable"
+      "trend": "decreasing"
     },
     "lebanon": {
       "name": "Lebanon",
@@ -309,15 +364,15 @@
       },
       "incidents": [
         {
-          "id": 869190241,
-          "title": "President Sheikh Mohamed and Syria's Ahmad Al Shara discuss economic ties in Abu Dhabi",
+          "id": 12008702,
+          "title": "Syria's first Art Week seeks to revive cultural scene after years of war",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 414793309,
-          "title": "US officials and business leaders visit Syria in bid to deepen economic ties",
+          "id": 251564140,
+          "title": "Rotana Hotels in talks to re-enter Syria and confirms no job cuts despite war",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -347,22 +402,22 @@
       },
       "incidents": [
         {
-          "id": 141435834,
+          "id": 66871737,
+          "title": "Houthis condemned for Makkah attack, UAE and Syria hold talks and ransomware activity rises across r",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 266166940,
           "title": "Houthis threaten more Saudi strikes as UN warns of humanitarian crisis in Yemen",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 342967583,
+          "id": 848059453,
           "title": "Houthis seize strategic Red Sea islands as analysts warn of impending oil crunch",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 410852493,
-          "title": "Yemen warns Bab Al Mandeb is at risk of becoming a \u2018blackmail card\u2019",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -379,7 +434,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -387,33 +442,33 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 1,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 287393263,
+          "id": 179822520,
+          "title": "Saudi Arabia says it shot down Houthi drone south of Mecca",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 292279703,
+          "title": "Saudi Arabia warns of \u2018red line\u2019 after Houthi drone intercepted close to holy city of Mecca",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 650922812,
           "title": "Satellite image reveals major damage that shut crucial Saudi oil pipeline",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 359408049,
-          "title": "Houthi gains test Trump\u2019s limits on US military involvement and ties with Saudi Arabia",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 78567221,
-          "title": "Saudi Arabia and Egypt press for Red Sea security as Crown Prince visits Cairo",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 747250830,
+          "id": 907131207,
           "title": "Satellite images show extent of damage to major Saudi pipeline, amid global oil supply fears",
           "type": "general",
           "time": "",
@@ -444,15 +499,29 @@
       },
       "incidents": [
         {
-          "id": 286281861,
-          "title": "UAE cyber security chief reveals hacker demanded more than $5m in attack on private company",
+          "id": 213873767,
+          "title": "UAE shuts down 200 social media accounts over unlicensed domestic worker recruitment",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 14368649,
-          "title": "UAE company pioneers affordable satellite phone coverage",
+          "id": 800828549,
+          "title": "'The descending is over, we're going to take off': UAE tourism ready for winter boost, says Abdulla ",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 61766243,
+          "title": "UAE schools tighten dress-code rules to restrict hairstyles and make-up",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 6881090,
+          "title": "F1 2027 calendar: Abu Dhabi gets sprint race, Bahrain to host opening Grand Prix",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -597,29 +666,15 @@
       },
       "incidents": [
         {
-          "id": 112237233,
-          "title": "Romanian shepards and farmers clash with police",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 154877843,
+          "id": 121160006,
           "title": "Two sailors missing after tanker attacked in Strait of Hormuz, Oman says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 877670941,
+          "id": 727983737,
           "title": "Legend of Destruction review \u2013 starry voices grace animated telling of the Jewish revolt against the",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 594660479,
-          "title": "Rubio calls Omani Foreign Minister and voices support for stronger ties with Muscat",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -628,9 +683,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-09-16T00:28:44.493628",
+  "lastUpdated": "2026-09-16T12:16:42.383754",
   "timeRange": {
-    "from": "2026-09-09T00:28:44.493632",
-    "to": "2026-09-16T00:28:44.493637"
+    "from": "2026-09-09T12:16:42.383758",
+    "to": "2026-09-16T12:16:42.383762"
   }
 }
