@@ -2,49 +2,55 @@
   "regional": {
     "casualties": {
       "military": 0,
-      "civilian": 21,
-      "total": 21,
-      "byCountry": {
-        "gaza": 21
-      }
+      "civilian": 0,
+      "total": 0,
+      "byCountry": {}
     },
     "missiles": {
       "launched": 4,
       "intercepted": 1,
       "landed": 3,
-      "byCountry": {}
+      "byCountry": {
+        "yemen": {
+          "launched": 1,
+          "intercepted": 0,
+          "landed": 1
+        },
+        "saudi": {
+          "launched": 1,
+          "intercepted": 1,
+          "landed": 0
+        }
+      }
     },
     "airstrikes": {
-      "total": 3,
+      "total": 1,
       "byCountry": {
-        "saudi": 1,
-        "iran": 1
+        "saudi": 1
       }
     },
     "drones": {
-      "total": 4,
+      "total": 2,
       "downed": 0,
       "byCountry": {}
     },
     "incidents": {
-      "total": 51,
+      "total": 40,
       "byType": {
-        "general": 40,
-        "drone": 4,
+        "general": 33,
         "missile": 4,
-        "airstrike": 3
+        "drone": 2,
+        "airstrike": 1
       },
       "byCountry": {
-        "iran": 10,
-        "israel": 5,
-        "oman": 1,
-        "saudi": 6,
-        "uae": 5,
-        "iraq": 2,
-        "syria": 2,
+        "iran": 7,
         "yemen": 4,
-        "palestine": 1,
-        "gaza": 2
+        "saudi": 7,
+        "israel": 9,
+        "gaza": 2,
+        "uae": 4,
+        "iraq": 2,
+        "syria": 1
       }
     }
   },
@@ -63,7 +69,7 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 1
+        "total": 0
       },
       "drones": {
         "total": 0,
@@ -71,71 +77,50 @@
       },
       "incidents": [
         {
-          "id": 84387749,
-          "title": "Iran stages show of force during mobilisation campaign in Tehran",
+          "id": 289113337,
+          "title": "Iran war live: Tehran sets terms for peace; Saudi forces foil Riyadh attack",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 525293739,
-          "title": "Turkiye revokes operating licence of Iran\u2019s Bank Mellat in Istanbul",
+          "id": 950540231,
+          "title": "Hegseth kicks off \u2018Send Me Tour\u2019 amid Iran war backlash",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 730645483,
+          "id": 590463129,
+          "title": "Iran says conditions to re-engage in talks, end war sent to US via Qatar",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 594042686,
           "title": "Turkey revokes operating licence of Iran's Mellat Bank amid US economic pressure on Tehran",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 428832181,
-          "title": "Dnata expects \u2018healthy\u2019 profit as global business cushions effects of Iran war",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 142736019,
+          "id": 160841625,
           "title": "Iranian actor Laleh Marzban faces severe threats after Venice film festival speech",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 268713573,
+          "id": 190915630,
           "title": "South Korea will not send military to support US war on Iran, defying Trump pressure",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 526525113,
-          "title": "Trump signs Lindsey Graham Russia-Iran sanctions bill into law",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 898648841,
+          "id": 406373399,
           "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 846123719,
-          "title": "Iran school bombing: grounds to believe US was behind atrocity, UN finds",
-          "type": "airstrike",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 351515162,
-          "title": "Photos show widespread damage at US sites from Iranian attacks",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -165,35 +150,63 @@
       },
       "incidents": [
         {
-          "id": 566031637,
-          "title": "NAZA: Why are old Gaza allegations causing new fury in Israel?",
+          "id": 51584162,
+          "title": "Israel\u2019s president pardons soldier who killed wounded Palestinian in 2016",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 926398557,
+          "id": 24116211,
+          "title": "Israel targets paramedics in southern Lebanon",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 130991748,
+          "title": "Jerusalem Daily: Gaza\u2019s children return to schools",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 567672954,
+          "title": "Israeli president pardons combat medic who shot dead wounded Palestinian attacker",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 411825020,
           "title": "From ovations in Venice to death threats in Israel: the extreme responses to NAZA documentary",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 550643378,
+          "id": 638327039,
+          "title": "UAE official source responds to claims that Israel was warned of October 7 attack",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 645819436,
           "title": "This Israeli election could be the country\u2019s last \u2013 this week I saw that for myself | Jonathan Freed",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 489421327,
+          "id": 33837909,
           "title": "\u2018Run! Get away!\u2019: witnesses recount Israeli \u2018double tap\u2019 strike that killed child and medic in Gaza",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 316678044,
+          "id": 143864395,
           "title": "Algae bloom that crippled Israel's desalination plants raises water security concerns",
           "type": "general",
           "time": "",
@@ -222,15 +235,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 150040759,
-          "title": "YouTube star Ms Rachel to match Macklemore\u2019s $1m Palestine aid donation",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "gaza": {
@@ -238,8 +243,8 @@
       "flag": "\ud83c\uddf5\ud83c\uddf8",
       "casualties": {
         "military": 0,
-        "civilian": 21,
-        "total": 21
+        "civilian": 0,
+        "total": 0
       },
       "missiles": {
         "launched": 0,
@@ -255,18 +260,18 @@
       },
       "incidents": [
         {
-          "id": 685563360,
-          "title": "Watching NAZA was like peering through a window \u2013 and seeing the machinery of killing in Gaza | Mahm",
+          "id": 839499588,
+          "title": "Lacking equipment, but not ambition: Gaza students try to keep up with tech",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 740106915,
-          "title": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
+          "id": 143643334,
+          "title": "Ed Sheeran concert set to go ahead after outcry over Gaza",
           "type": "general",
           "time": "",
-          "casualties": 21
+          "casualties": 0
         }
       ],
       "trend": "stable"
@@ -316,15 +321,8 @@
       },
       "incidents": [
         {
-          "id": 181838408,
+          "id": 372103255,
           "title": "Syria arrests five Assad-era air force officers over strikes on civilians",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 947040713,
-          "title": "US court sentences ex-Syrian official who ran notorious \u2018punishment wing\u2019 to 60 years",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -341,7 +339,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -354,29 +352,29 @@
       },
       "incidents": [
         {
-          "id": 409768507,
+          "id": 634260031,
+          "title": "Houthis say they targeted Saudi capital with ballistic missiles",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 198401470,
+          "title": "Thick smoke seen near Riyadh airport as Houthis claim attack on Saudi capital",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 846460488,
           "title": "Yemen\u2019s anti-Houthi forces launch inquest into sudden military collapse",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 483429279,
+          "id": 261188788,
           "title": "Verified video shows wreckage of Saudi fighter jet shot down over Yemen",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 153943593,
-          "title": "\u2018We left everything behind\u2019: 125,000 people displaced as war reignites in Yemen",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 672779802,
-          "title": "Thursday briefing: Yemen\u2019s war continues to threaten oil supplies\u2013 but what about its people?",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -393,7 +391,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -406,43 +404,50 @@
       },
       "incidents": [
         {
-          "id": 342837039,
+          "id": 315392586,
+          "title": "Turkiye backs Saudi Arabia\u2019s security amid escalating Houthi attacks: FM",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 634881695,
+          "title": "Saudi-led coalition says defences intercept Houthi missile fired at Riyadh",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 353497895,
           "title": "Pact with Saudi Arabia threatens to draw Pakistan into Middle East conflict",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 824487198,
+          "id": 163471000,
           "title": "Iran war latest: Saudi Arabia issues all-clear after wave of alerts in Riyadh and Al Kharj",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 362486790,
+          "id": 904932670,
           "title": "Why US plan to sell F-35 warplanes to Saudi Arabia is controversial",
           "type": "airstrike",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 86500794,
+          "id": 382989418,
           "title": "US clears way for $24.3 billion fighter jet sale to Saudi Arabia",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 111869615,
+          "id": 732155930,
           "title": "US clears $24B F-35 sale for Saudi Arabia",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 593691015,
-          "title": "How escalating Saudi oil crisis could drive up prices everywhere",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -472,36 +477,29 @@
       },
       "incidents": [
         {
-          "id": 43516888,
+          "id": 167292658,
           "title": "UAE launches Cybrani initiative to help students develop cyber security skills",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 831096310,
+          "id": 835417732,
           "title": "Dubai Police issue scam warning ahead of new season of Global Village",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 355170691,
+          "id": 458974867,
           "title": "Gold still shines for UAE's younger buyers, but it's turning lighter",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 203479353,
+          "id": 854416300,
           "title": "UAE joins Pacific Islands Forum as strategic partner to expand ties across region",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 813108144,
-          "title": "New UAE organic waste plant puts faith in time-honoured composting methods to boost food security",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -554,14 +552,14 @@
       },
       "incidents": [
         {
-          "id": 634347712,
+          "id": 628195533,
           "title": "No fixed deadline for militia disarmament committee, says Iraqi PM adviser",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 705972892,
+          "id": 170633320,
           "title": "Iraq lifts decade-long restriction on civilian use of military airspace",
           "type": "general",
           "time": "",
@@ -659,21 +657,13 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 182325553,
-          "title": "Brazilian police capture suspected serial killer disguised as a woman",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-09-19T12:14:32.942116",
+  "lastUpdated": "2026-09-20T00:32:42.481037",
   "timeRange": {
-    "from": "2026-09-12T12:14:32.942121",
-    "to": "2026-09-19T12:14:32.942128"
+    "from": "2026-09-13T00:32:42.481043",
+    "to": "2026-09-20T00:32:42.481047"
   }
 }
