@@ -7,36 +7,47 @@
       "byCountry": {}
     },
     "missiles": {
-      "launched": 0,
-      "intercepted": 0,
+      "launched": 1,
+      "intercepted": 1,
       "landed": 0,
-      "byCountry": {}
-    },
-    "airstrikes": {
-      "total": 2,
       "byCountry": {
-        "yemen": 1
+        "saudi": {
+          "launched": 1,
+          "intercepted": 1,
+          "landed": 0
+        }
       }
     },
-    "drones": {
-      "total": 2,
-      "downed": 0,
+    "airstrikes": {
+      "total": 0,
       "byCountry": {}
     },
+    "drones": {
+      "total": 3,
+      "downed": 0,
+      "byCountry": {
+        "israel": {
+          "total": 1,
+          "downed": 0
+        }
+      }
+    },
     "incidents": {
-      "total": 40,
+      "total": 48,
       "byType": {
-        "general": 36,
-        "airstrike": 2,
-        "drone": 2
+        "general": 44,
+        "missile": 1,
+        "drone": 3
       },
       "byCountry": {
-        "iran": 10,
-        "israel": 6,
-        "palestine": 1,
-        "yemen": 5,
-        "gaza": 6,
-        "uae": 2,
+        "israel": 7,
+        "yemen": 4,
+        "lebanon": 1,
+        "iran": 12,
+        "saudi": 3,
+        "gaza": 8,
+        "uae": 3,
+        "iraq": 1,
         "syria": 1
       }
     }
@@ -64,70 +75,70 @@
       },
       "incidents": [
         {
-          "id": 260156346,
-          "title": "Iran war live: Tehran wants Washington to re-enter MoU before US midterms",
+          "id": 512672708,
+          "title": "Iran pitches seven-day roadmap to end conflict with US",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 4879436,
+          "id": 652780623,
+          "title": "Iran war latest: It's up to US to choose whether it wants to end war, says Pezeshkian",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 312391675,
+          "title": "Oil prices waver in face of Iran war truce and Houthi attacks",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 92878361,
+          "title": "Iran hardens Hormuz position, Trump hosts Xi, and celebrities detained at pro-Palestine protest",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 912428984,
           "title": "Iran awaiting response from Trump on proposal to open strait of Hormuz in six days",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 508414561,
+          "id": 486409544,
           "title": "Family of Iranian twins sentenced to death and decades in jail ask UN for help",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 774293811,
-          "title": "US Senate rejects Democratic-led resolution to curb Trump's Iran war powers",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 983320180,
-          "title": "Lebanon seeks 'new chapter' with Iran as leaders hold rare talks at UN",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 951860459,
-          "title": "UAE suspends flights by Iranian airlines until further notice",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 299662079,
+          "id": 332171629,
           "title": "Iran's president tells Trump it will never 'bend the knee'",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 966962379,
+          "id": 966913592,
           "title": "US and Iran hold first talks since June after Trump's 'annihilation' threat",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 442502479,
+          "id": 348225529,
           "title": "Iran\u2019s president hits out at \u2018bully\u2019 Trump in UN speech but signals willingness to talk",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 394161387,
+          "id": 778855305,
           "title": "Iran denies dropping preconditions amid \u2018very productive\u2019 three-hour UN talks in New York",
           "type": "general",
           "time": "",
@@ -153,48 +164,55 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 1,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 709777810,
+          "id": 514953784,
           "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 614406340,
-          "title": "Benjamin Netanyahu attacks Israel\u2019s enemies and allies in UN speech",
+          "id": 801948771,
+          "title": "Israel\u2019s Abu Farchi sent off for gun celebration in Nations League match",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 260205223,
-          "title": "Israel moves to ban main Palestinian-led lists from election",
+          "id": 219476654,
+          "title": "Israel and the US have battered the international legal order. The impunity must stop | Varsha Gandi",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 558363729,
-          "title": "Israel\u2019s policies threaten \u2018very existence\u2019 of Palestinians, Abbas tells UN",
+          "id": 479833560,
+          "title": "Israel promises to allow EU aid for essential services into Gaza for first time in year",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 406214602,
+          "id": 173762050,
+          "title": "Two Israeli soldiers killed in Gaza by drone they were operating",
+          "type": "drone",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 212088833,
+          "title": "Israel v Ireland: Boycott calls, protests and the Nations League dispute explained",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 443128560,
           "title": "Israel facing water shortages caused by destruction of Gaza\u2019s treatment plants",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 428835137,
-          "title": "Arab parties barred from Israel\u2019s elections but not the far right",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -222,15 +240,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 846324922,
-          "title": "US rapper Macklemore announces Free Palestine tour after Ed Sheeran fallout",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "gaza": {
@@ -255,42 +265,56 @@
       },
       "incidents": [
         {
-          "id": 911947340,
+          "id": 211879590,
+          "title": "Mamdani plants olive tree with Gaza families",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 785157546,
+          "title": "\u2018We skate on the rooftops of damaged buildings\u2019: a day in the life of a skateboarder in Gaza",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 56328148,
+          "title": "Dubai launches drive to send 10 million meals to Gaza in honour of Sheikh Ahmed bin Rashid",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 742632201,
           "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 878714438,
+          "id": 29817817,
           "title": "\u2018First there\u2019s the gruelling task of trying to charge my laptop\u2019: a day in the life of a university ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 429566472,
+          "id": 836586211,
           "title": "Global release announced for acclaimed Gaza documentary NAZA",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 221306928,
-          "title": "UAE launches winter clothing drive to support one million Gazans",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 889488504,
+          "id": 699445597,
           "title": "Reports of violence against women in Gaza surge, UN agency finds",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 275350306,
+          "id": 879750783,
           "title": "\u2018This is where I live now, the back of a truck\u2019: a day in the life of a grandmother in Gaza",
           "type": "general",
           "time": "",
@@ -319,7 +343,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 486505158,
+          "title": "UN General Assembly live: Leaders from Lebanon, Iraq, Pakistan to speak",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "syria": {
@@ -344,7 +376,7 @@
       },
       "incidents": [
         {
-          "id": 867156379,
+          "id": 87624522,
           "title": "Syria looks to end foreign military presence, have sovereignty over all bases: President",
           "type": "general",
           "time": "",
@@ -367,7 +399,7 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 1
+        "total": 0
       },
       "drones": {
         "total": 0,
@@ -375,37 +407,30 @@
       },
       "incidents": [
         {
-          "id": 975932546,
+          "id": 308490651,
+          "title": "Pakistan, Turkiye edge closer towards joining Saudi war against Houthis",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 32567885,
           "title": "Who are the Houthis and what do they want?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 253978924,
-          "title": "UAE hammer Yemen in Arabian Gulf Cup opener as Zlatko Dalic reign starts with bang",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 43276135,
+          "id": 74908085,
           "title": "Save the Children officially warned by regulator over staff put at risk in Yemen",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 468671726,
+          "id": 117617434,
           "title": "Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly",
           "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 164543698,
-          "title": "UK to help refuel Saudi jets countering Houthi attacks",
-          "type": "airstrike",
           "time": "",
           "casualties": 0
         }
@@ -421,7 +446,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -432,7 +457,29 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 142791910,
+          "title": "Saudi Arabia allies line up support as Houthi attacks mount",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 426946988,
+          "title": "Saudi Arabia intercepts wave of Houthi missiles as oil climbs to one-week high",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 628247614,
+          "title": "France to send military to protect Saudi Arabia on Red Sea oil route, Macron says",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "uae": {
@@ -457,15 +504,22 @@
       },
       "incidents": [
         {
-          "id": 699649938,
-          "title": "GCC member states in talks over water co-operation, says senior UAE official",
+          "id": 96621490,
+          "title": "UAE schools attract families from new markets but British demand still strong",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 586535473,
-          "title": "UAE art guide: Ten exhibitions to see, from Unseen Script at Rizq to Taking Form at The Third Line",
+          "id": 985927155,
+          "title": "India's three-day bank strike could impact residents in UAE",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 377211838,
+          "title": "Top 76 concerts and events coming to the UAE, from Katy Perry to Mo Amer",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -516,7 +570,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 219222676,
+          "title": "US signs deal to hand over diplomatic hub at Baghdad airport to Iraqi government",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "kuwait": {
@@ -612,9 +674,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-09-25T00:30:27.694046",
+  "lastUpdated": "2026-09-25T12:16:59.987520",
   "timeRange": {
-    "from": "2026-09-18T00:30:27.694050",
-    "to": "2026-09-25T00:30:27.694054"
+    "from": "2026-09-18T12:16:59.987525",
+    "to": "2026-09-25T12:16:59.987529"
   }
 }
