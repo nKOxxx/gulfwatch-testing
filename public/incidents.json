@@ -1,60 +1,26 @@
 {
-  "generated_at": "2026-10-01T12:18:02.152858+00:00",
-  "total_incidents": 52,
+  "generated_at": "2026-10-02T00:32:35.850813+00:00",
+  "total_incidents": 43,
   "circuit_breaker_stats": {
-    "total_processed": 54,
+    "total_processed": 45,
     "duplicates_filtered": 2,
     "recaps_blocked": 0,
-    "unique_signatures": 33
+    "unique_signatures": 32
   },
   "incidents": [
     {
-      "id": 37072918,
-      "title": "How was the Flydubai pilot who attacked his co-pilot cleared to fly?",
+      "id": 404586275,
+      "title": "Iran war live: US moves 2,000 Marines to Middle East, tanker hit in Hormuz",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/1/how-was-the-flydubai-pilot-who-attacked-his-co-pilot-cleared-to-fly?traffic_source=rss",
-      "published": "2026-10-01T11:50:25+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081294-0028",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 186764872,
-      "title": "UAE investigates possible \u2018terrorist\u2019 link in attack on flight to Israel",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/1/uae-investigates-possible-terrorist-link-in-attack-on-flight-to-israel?traffic_source=rss",
-      "published": "2026-10-01T11:46:08+00:00",
-      "type": "attack",
+      "source_url": "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss",
+      "published": "2026-10-02T00:00:00+00:00",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
       },
       "credibility": 90,
       "is_government": false,
@@ -64,7 +30,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081297-0029",
+        "event_id": "GW-1790901154901-0027",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -77,11 +43,45 @@
       }
     },
     {
-      "id": 568081532,
-      "title": "Jewish human rights barrister, 94, arrested for supporting Palestine Action",
+      "id": 834751883,
+      "title": "Israeli drone kills Palestinian in Gaza, settlers kill another in West Bank",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/1/jewish-human-rights-barrister-94-arrested-for-supporting-palestine-action?traffic_source=rss",
-      "published": "2026-10-01T11:42:27+00:00",
+      "source_url": "https://www.aljazeera.com/news/2026/10/1/israeli-drone-kills-palestinian-in-gaza-settlers-kill-another-in-west-bank?traffic_source=rss",
+      "published": "2026-10-01T23:44:39+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154905-0028",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 699155036,
+      "title": "94-year-old Jewish barrister arrested for supporting Palestine Action",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/94-year-old-jewish-barrister-arrested-for-supporting-palestine-action?traffic_source=rss",
+      "published": "2026-10-01T22:44:56+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
@@ -98,7 +98,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081301-0030",
+        "event_id": "GW-1790901154909-0029",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -111,12 +111,148 @@
       }
     },
     {
-      "id": 705530751,
-      "title": "Afghanistan says Pakistani airstrikes killed women and children",
+      "id": 79908125,
+      "title": "DoD obligates $142B from reconciliation bill before deadline, leaving billions subject to cuts",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/dod-obligates-142b-from-reconciliation-bill-before-deadline-leaving-billions-subject-to-cuts/",
+      "published": "2026-10-01T21:57:29+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154980-0041",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 993440426,
+      "title": "Flydubai co-pilot \u2018assaulted\u2019 captain before landing: Initial Saudi probe",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/afghanistan-says-pakistani-airstrikes-killed-women-and-children?traffic_source=rss",
-      "published": "2026-10-01T11:38:59+00:00",
-      "type": "attack",
+      "source_url": "https://www.aljazeera.com/news/2026/10/1/flydubai-co-pilot-assaulted-captain-before-landing-initial-saudi-probe?traffic_source=rss",
+      "published": "2026-10-01T21:53:16+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Dubai",
+        "country": "UAE",
+        "lat": 25.2048,
+        "lng": 55.2708
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154914-0030",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 781515675,
+      "title": "Protesters halt game as calls grow on Ireland to boycott second Israel game",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/sports/2026/10/1/protesters-halt-game-as-calls-grow-on-ireland-to-boycott-second-israel-game?traffic_source=rss",
+      "published": "2026-10-01T21:14:55+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154919-0031",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 909037295,
+      "title": "Most Americans say US-Israel war on Iran not worth fighting: Poll",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/10/1/most-americans-say-us-israel-war-on-iran-not-worth-fighting-poll?traffic_source=rss",
+      "published": "2026-10-01T20:49:45+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154924-0032",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 736220521,
+      "title": "Funeral held for Palestinian man killed in the occupied West Bank",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/funeral-held-for-palestinian-man-killed-in-the-occupied-west-bank?traffic_source=rss",
+      "published": "2026-10-01T20:45:04+00:00",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown",
@@ -132,8 +268,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081305-0031",
-        "incident_type": "airstrike",
+        "event_id": "GW-1790901154929-0033",
+        "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
@@ -145,8 +281,314 @@
       }
     },
     {
-      "id": 863901543,
-      "title": "Too early to say if Iran involved in Dubai-Tel Aviv flight attack, Israeli PM says",
+      "id": 492230430,
+      "title": "ICC ends contract with French insurer amid US sanctions threat",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/economy/2026/10/1/icc-ends-contract-with-french-insurer-amid-us-sanctions-threat?traffic_source=rss",
+      "published": "2026-10-01T20:20:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "Qatar",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154934-0034",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 610427366,
+      "title": "Syria denies officials held \u2018secret\u2019 talks with Hezbollah in Turkiye",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/10/1/syria-denies-officials-held-secret-talks-with-hezbollah-in-turkiye?traffic_source=rss",
+      "published": "2026-10-01T20:02:42+00:00",
+      "type": "security",
+      "status": "confirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Syria",
+        "lat": 34.8021,
+        "lng": 38.9968
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154939-0035",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 180373710,
+      "title": "Netanyahu says Flydubai attacker had 'Islamist radical indoctrination'",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-01T19:59:24+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Dubai",
+        "country": "UAE",
+        "lat": 25.2048,
+        "lng": 55.2708
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154841-0001",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 119821171,
+      "title": "Drone-maker Powerus, backed by Trump brothers, goes public",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/dronemaker-powerus-backed-by-trump-brothers-goes-public/",
+      "published": "2026-10-01T17:05:21+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154987-0042",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 597978991,
+      "title": "Moroccan startup unveils prototye UAV that operates without GPS signal",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/moroccan-startup-unveils-prototye-uav-that-operates-without-gps-signal/",
+      "published": "2026-10-01T16:02:44+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154993-0043",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 383323994,
+      "title": "Who is the 'hero' Indian pilot who was stabbed on Israel-bound flight?",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/cje3r3z7g0zzo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-01T15:04:32+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154842-0004",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 698805571,
+      "title": "Battling sand and wind, Pentagon evaluates counter-drone tech at southern border exercise",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/battling-sand-and-wind-pentagon-evaluates-counter-drone-tech-at-southern-border-exercise/",
+      "published": "2026-10-01T14:29:39+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154999-0044",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 11780254,
+      "title": "What we know about stabbing on Flydubai flight to Israel",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-01T14:22:14+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Dubai",
+        "country": "UAE",
+        "lat": 25.2048,
+        "lng": 55.2708
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154844-0007",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 243768444,
+      "title": "Flydubai passenger describes hugging his children as plane nosedived during attack",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6d949ydnw3po?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-01T13:57:28+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Dubai",
+        "country": "UAE",
+        "lat": 25.2048,
+        "lng": 55.2708
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154842-0003",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 932342689,
+      "title": "Too early to say whether Iran involved in Dubai-Tel Aviv flight attack, Israeli PM says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cqgmrm7xd8wyo?at_medium=RSS&at_campaign=rss",
       "published": "2026-10-01T11:26:46+00:00",
@@ -166,7 +608,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081244-0001",
+        "event_id": "GW-1790901154841-0002",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -179,211 +621,7 @@
       }
     },
     {
-      "id": 203521262,
-      "title": "How will investigation into Flydubai flight attack unfold?",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/how-will-investigation-into-flydubai-flight-attack-unfold?traffic_source=rss",
-      "published": "2026-10-01T10:16:40+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081308-0032",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 464240246,
-      "title": "Iraq\u2019s Kurdish forces look to a new era after US withdrawal",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/1/iraqs-kurdish-forces-look-to-a-new-era-after-us-withdrawal?traffic_source=rss",
-      "published": "2026-10-01T10:14:07+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iraq",
-        "lat": 33.2232,
-        "lng": 43.6793
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081311-0033",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 369920380,
-      "title": "Turkish fans show support for Palestine at friendly fixture",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/01-10-sv-konyaspor-palestine-tifo-tr?traffic_source=rss",
-      "published": "2026-10-01T09:41:16+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Palestine",
-        "lat": 31.9522,
-        "lng": 35.2332
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081315-0034",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 985200767,
-      "title": "Who is the 'hero' Indian pilot who was stabbed on Israel-bound flight?",
-      "source": "BBC Middle East",
-      "source_url": "https://www.bbc.co.uk/news/articles/cje3r3z7g0zzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-01T08:39:28+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 95,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081244-0002",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 120871058,
-      "title": "Will Democrats move beyond rhetoric on Israel\u2019s illegal settlements?",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/opinions/2026/10/1/will-democrats-move-beyond-rhetoric-on-israels-illegal-settlements?traffic_source=rss",
-      "published": "2026-10-01T08:13:15+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081319-0035",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 623562969,
-      "title": "Palestinians to bury remains of 105 people killed in Israeli attack on Gaza",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/1/palestinians-to-bury-remains-of-105-people-killed-in-israeli-attack-on-gaza?traffic_source=rss",
-      "published": "2026-10-01T07:23:18+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 105,
-        "military": 0,
-        "civilian": 105
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081323-0036",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 144355360,
+      "id": 4273722,
       "title": "Plummeting Israel flight like 'rollercoaster', says passenger",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/videos/cwm2r2v42vdeo?at_medium=RSS&at_campaign=rss",
@@ -404,7 +642,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081244-0003",
+        "event_id": "GW-1790901154843-0005",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -417,11 +655,11 @@
       }
     },
     {
-      "id": 240268677,
-      "title": "What we know about stabbing on Flydubai flight to Israel",
-      "source": "BBC Middle East",
-      "source_url": "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-01T02:31:24+00:00",
+      "id": 163409394,
+      "title": "How the stabbing incident unfolded on Israel-bound flydubai plane | Deconstructed",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/video/2026/oct/01/how-stabbing-incident-unfolded-israel-bound-flydubai-plane-deconstructed",
+      "published": "2026-10-01T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
@@ -430,7 +668,7 @@
         "lat": 25.2048,
         "lng": 55.2708
       },
-      "credibility": 95,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -438,20 +676,54 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081245-0005",
+        "event_id": "GW-1790901154851-0012",
         "incident_type": "incident",
         "is_recap": false,
-        "confidence": "PARTIAL"
+        "confidence": "OSINT"
       },
       "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
+        "badge": "UNCONFIRMED",
+        "score": 20,
         "num_sources": 1,
-        "status": "PARTIAL"
+        "status": "UNCONFIRMED"
       }
     },
     {
-      "id": 223526227,
+      "id": 68705615,
+      "title": "NAZA film-makers say they spoke to more than 100 sources about Israeli actions in Gaza",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/film/2026/oct/01/makers-naza-film-spoke-more-than-100-sources-israeli-actions-gaza",
+      "published": "2026-10-01T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1790901154853-0013",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 93531239,
       "title": "From Robert Kraft to Netanyahu, Israel\u2019s supporters keep helping its critics | Peter Beinart",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/commentisfree/2026/oct/01/robert-kraft-netanyahu-israel-supporters",
@@ -472,7 +744,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081252-0012",
+        "event_id": "GW-1790901154855-0014",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -485,8 +757,8 @@
       }
     },
     {
-      "id": 7469730,
-      "title": "Australian couple on plane diverted after flydubai pilot\u2019s alleged attack on co-pilot",
+      "id": 644224390,
+      "title": "Australian couple on plane diverted after flydubai co-pilot\u2019s alleged attack on pilot",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/01/australian-couple-on-flydubai-plane-to-israel-ntwnfb",
       "published": "2026-10-01T00:00:00+00:00",
@@ -506,7 +778,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081253-0013",
+        "event_id": "GW-1790901154858-0015",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -519,7 +791,7 @@
       }
     },
     {
-      "id": 187750857,
+      "id": 312612009,
       "title": "Israelis divided as vote that could oust Netanyahu only weeks away",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/01/israel-election-benjamin-netanyahu-gadi-eisenkot",
@@ -540,7 +812,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081255-0014",
+        "event_id": "GW-1790901154861-0016",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -553,7 +825,7 @@
       }
     },
     {
-      "id": 38931223,
+      "id": 640608368,
       "title": "New Google Maps images reveal massive scale of devastation in Gaza",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/01/new-google-maps-images-reveal-massive-scale-of-devastation-in-gaza",
@@ -574,7 +846,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081257-0015",
+        "event_id": "GW-1790901154863-0017",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -587,7 +859,7 @@
       }
     },
     {
-      "id": 308228034,
+      "id": 98794537,
       "title": "\u2018Hero\u2019 pilot, plumber and dentist among those who saved flydubai flight to Israel",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/01/hero-pilot-stabbed-flydubai-plane-flight-israel",
@@ -608,7 +880,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081259-0016",
+        "event_id": "GW-1790901154866-0018",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -621,7 +893,7 @@
       }
     },
     {
-      "id": 728111001,
+      "id": 692808435,
       "title": "Mid-air panic as pilot attacked on Israel-bound flight - podcast",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/australia-news/audio/2026/oct/01/israel-bound-flight-emergency-landing-after-reported-pilot-stabbing-full-story-podcast",
@@ -642,7 +914,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081261-0017",
+        "event_id": "GW-1790901154870-0019",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -655,20 +927,20 @@
       }
     },
     {
-      "id": 317570958,
-      "title": "From war to life: Syrian underwater museum could turn military equipment into marine habitat",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/arts-culture/2026/10/01/syrian-underwater-museum-latikia-travel-week/",
+      "id": 800734248,
+      "title": "US Navy awards RTX\u2019s Raytheon $24.4B for SM-6 missiles amid stockpile concerns",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/01/us-navy-awards-rtxs-raytheon-244b-for-sm-6-missiles-amid-stockpile-concerns/",
       "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
+      "type": "missile",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "Syria",
-        "lat": 34.8021,
-        "lng": 38.9968
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
       },
-      "credibility": 85,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -676,10 +948,10 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081328-0037",
-        "incident_type": "incident",
+        "event_id": "GW-1790901154945-0036",
+        "incident_type": "missile",
         "is_recap": false,
-        "confidence": "OSINT"
+        "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "UNCONFIRMED",
@@ -689,20 +961,20 @@
       }
     },
     {
-      "id": 849577860,
-      "title": "Egypt says six members of online platform 'run by Muslim Brotherhood' arrested",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/01/egypt-says-six-members-of-online-platform-run-by-muslim-brotherhood-arrested/",
+      "id": 981514432,
+      "title": "Ukraine deploys FP-7 tactical ballistic missile in combat for first time, Zelenskyy says",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/01/ukraine-deploys-fp-7-tactical-ballistic-missile-in-combat-for-first-time-zelenskyy-says/",
       "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
+      "type": "missile",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "Egypt",
-        "lat": 26.8206,
-        "lng": 30.8025
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
       },
-      "credibility": 85,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -710,10 +982,10 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081333-0038",
-        "incident_type": "incident",
+        "event_id": "GW-1790901154951-0037",
+        "incident_type": "missile",
         "is_recap": false,
-        "confidence": "OSINT"
+        "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "UNCONFIRMED",
@@ -723,20 +995,20 @@
       }
     },
     {
-      "id": 891404017,
-      "title": "Anand Gopal's book on Syrian revolution shortlisted for Baillie Gifford Prize",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/arts-culture/books/2026/10/01/anand-gopals-book-on-syrian-revolution-shortlisted-for-baillie-gifford-prize/",
+      "id": 864274825,
+      "title": "Neros, Perennial Autonomy lead in Pentagon\u2019s drone competition",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/unmanned/2026/10/01/neros-perennial-autonomy-lead-in-pentagons-drone-competition/",
       "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
+      "type": "drone",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "Syria",
-        "lat": 34.8021,
-        "lng": 38.9968
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
       },
-      "credibility": 85,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -744,10 +1016,10 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081338-0039",
-        "incident_type": "incident",
+        "event_id": "GW-1790901154958-0038",
+        "incident_type": "drone",
         "is_recap": false,
-        "confidence": "OSINT"
+        "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "UNCONFIRMED",
@@ -757,54 +1029,20 @@
       }
     },
     {
-      "id": 642911082,
-      "title": "Israel claims it warned UK over Iran-backed plot at RAF Fairford",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/01/israel-claims-it-warned-uk-over-iran-backed-plot-at-raf-fairford/",
+      "id": 164943768,
+      "title": "Ukraine has struck Russian factory vital for Moscow\u2019s missiles, private intelligence firm says",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/global/europe/2026/10/01/ukraine-has-struck-russian-factory-vital-for-moscows-missiles-private-intelligence-firm-says/",
       "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
-      "status": "reported",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081343-0040",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 255161245,
-      "title": "'Resistance has won this round:' Kataib Hezbollah denies disarmament deal after US troops leave Iraq",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/01/resistance-has-won-this-round-kataib-hezbollah-denies-disarmament-deal-after-us-troops-leave-iraq/",
-      "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
+      "type": "missile",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "Iraq",
-        "lat": 33.2232,
-        "lng": 43.6793
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
       },
-      "credibility": 85,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -812,10 +1050,10 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081348-0041",
-        "incident_type": "ground",
+        "event_id": "GW-1790901154964-0039",
+        "incident_type": "missile",
         "is_recap": false,
-        "confidence": "OSINT"
+        "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "UNCONFIRMED",
@@ -825,177 +1063,7 @@
       }
     },
     {
-      "id": 230050015,
-      "title": "Patrick Reed set for UAE showdown with Rory McIlroy at DP World Tour Championship",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/sport/2026/10/01/patrick-reed-set-for-uae-showdown-with-rory-mcilroy-at-dp-world-tour-championship/",
-      "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081354-0042",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 460716831,
-      "title": "US 'kicks out' Iran's UN delegation as peace talks stall",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/gulf/2026/10/01/us-kicks-out-irans-un-delegation-as-peace-talks-stall/",
-      "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081360-0043",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 124602808,
-      "title": "Flydubai suspends Israel flights after mid-air security incident",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/01/flydubai-fz-1073-suspends-israel-flights/",
-      "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081365-0044",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 600981091,
-      "title": "UAE win a record six medals including three golds at Asian Games",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/sport/combat-sports/2026/10/01/uae-win-a-record-six-medals-including-three-golds-at-asian-games/",
-      "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081370-0045",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 515107391,
-      "title": "UAE investigation to determine if flydubai incident was linked to 'terrorist activity'",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/01/flydubai-uae-investigation-terrorist-activity/",
-      "published": "2026-10-01T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081377-0046",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 552927868,
+      "id": 38394781,
       "title": "Flydubai passenger describes putting attacker in chokehold after cockpit stabbing",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cmx2z92xx57no?at_medium=RSS&at_campaign=rss",
@@ -1016,7 +1084,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081245-0004",
+        "event_id": "GW-1790901154843-0006",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1029,7 +1097,7 @@
       }
     },
     {
-      "id": 248485263,
+      "id": 914129430,
       "title": "UK believes Iran involved in RAF Fairford incident, Burnham says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cjwyz59k5y75o?at_medium=RSS&at_campaign=rss",
@@ -1050,7 +1118,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081245-0006",
+        "event_id": "GW-1790901154845-0008",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1063,7 +1131,7 @@
       }
     },
     {
-      "id": 121154728,
+      "id": 334252439,
       "title": "Hegseth announces plans for new 4-star drone command, among other initiatives",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/09/hegseth-announces-plans-for-new-4-star-drone-command-further-general-officer-cuts/",
@@ -1084,7 +1152,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081408-0051",
+        "event_id": "GW-1790901155008-0045",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1097,75 +1165,7 @@
       }
     },
     {
-      "id": 697112616,
-      "title": "US withdraws last remaining troops out of Iraq",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/09/us-withdraws-last-remaining-troops-out-of-iraq/",
-      "published": "2026-09-30T14:04:24+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iraq",
-        "lat": 33.2232,
-        "lng": 43.6793
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081415-0052",
-        "incident_type": "ground",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 897152248,
-      "title": "Riyadh gets closer to F-35s, Damascus presses sovereignty and an expert take on Iran",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/09/riyadh-gets-closer-to-f-35s-damascus-presses-sovereignty-and-an-expert-take-on-iran/",
-      "published": "2026-09-30T13:30:16+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Riyadh",
-        "country": "Saudi Arabia",
-        "lat": 24.7136,
-        "lng": 46.6753
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081420-0053",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 820140226,
+      "id": 276897550,
       "title": "Last UK and US troops leave Iraq as anti-Islamic State mission ends",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c65ym1dyn92mo?at_medium=RSS&at_campaign=rss",
@@ -1186,7 +1186,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081246-0007",
+        "event_id": "GW-1790901154846-0009",
         "incident_type": "ground",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1199,7 +1199,7 @@
       }
     },
     {
-      "id": 849760257,
+      "id": 5915749,
       "title": "Girl has multiple surgeries to control infections after strike in Gaza",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/videos/c8n5d0e0n6wdo?at_medium=RSS&at_campaign=rss",
@@ -1220,7 +1220,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081247-0008",
+        "event_id": "GW-1790901154848-0010",
         "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1233,8 +1233,8 @@
       }
     },
     {
-      "id": 676096478,
-      "title": "Pilot who stabbed co-pilot on Israel-bound plane may have tried to crash it, says Netanyahu",
+      "id": 17003466,
+      "title": "Co-pilot who stabbed pilot on Israel-bound plane may have tried to crash it, says Netanyahu",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/sep/30/israel-bound-passenger-plane-emergency-landing-saudi-arabia-pilots-feud",
       "published": "2026-09-30T00:00:00+00:00",
@@ -1254,7 +1254,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081263-0018",
+        "event_id": "GW-1790901154872-0020",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1267,7 +1267,7 @@
       }
     },
     {
-      "id": 502119690,
+      "id": 69067741,
       "title": "Send us your questions about how the Iran war will affect US voters in the midterms",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/us-news/2026/sep/30/send-us-your-questions-us-iran-war-midterms",
@@ -1288,7 +1288,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081266-0019",
+        "event_id": "GW-1790901154876-0021",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1301,7 +1301,7 @@
       }
     },
     {
-      "id": 389258719,
+      "id": 730622434,
       "title": "Israeli forces overwhelmed by violent settlers in \u2018terrorist attack\u2019 on Palestinian family",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/sep/30/israeli-settler-violence-west-bank-attack-jalud-palestinians-icrc",
@@ -1322,7 +1322,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081268-0020",
+        "event_id": "GW-1790901154880-0022",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1335,7 +1335,7 @@
       }
     },
     {
-      "id": 236308874,
+      "id": 187206616,
       "title": "Pentagon says it has formally completed withdrawal of US troops from Iraq",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/us-news/2026/sep/30/pentagon-formal-withdrawal-troops-iraq",
@@ -1356,7 +1356,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081272-0021",
+        "event_id": "GW-1790901154884-0023",
         "incident_type": "ground",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1369,7 +1369,7 @@
       }
     },
     {
-      "id": 376618855,
+      "id": 649965257,
       "title": "Netanyahu says pilot arrested after stabbing fellow pilot and apparently trying to crash Israel-bound plane \u2013 as it happened",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/live/2026/sep/30/dubai-israel-saudi-arabia-flydubai-flight-diversion-pilots-fight-latest-news-updates",
@@ -1390,7 +1390,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081279-0024",
+        "event_id": "GW-1790901154895-0026",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1403,109 +1403,7 @@
       }
     },
     {
-      "id": 65603549,
-      "title": "What we know so far about alleged stabbing of pilot by co-pilot on flight to Israel",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/2026/sep/30/what-we-know-alleged-stabbing-pilot-copilot-flight-israel",
-      "published": "2026-09-30T00:00:00+00:00",
-      "type": "security",
-      "status": "reported",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081283-0025",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 223711956,
-      "title": "Mother of passenger on Israel-bound flight describes incident \u2013 video",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/video/2026/sep/30/mother-of-passenger-on-israel-bound-flight-describes-incident-video",
-      "published": "2026-09-30T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081286-0026",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 631343363,
-      "title": "Iranian singer\u2019s 74 lashes for performing without a hijab \u2018a form of torture\u2019, say rights groups",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/global-development/2026/sep/30/iranian-singer-74-lashes-parastoo-ahmadi-performing-without-hijab-torture",
-      "published": "2026-09-30T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081289-0027",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 262761718,
+      "id": 380046973,
       "title": "UAE turns to Russian shadow airline for missions in Africa: Investigation",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/global/mideast-africa/2026/09/30/uae-turns-to-russian-shadow-airline-for-missions-in-africa-investigation/",
@@ -1526,7 +1424,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081384-0047",
+        "event_id": "GW-1790901154972-0040",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1539,41 +1437,7 @@
       }
     },
     {
-      "id": 13127975,
-      "title": "Army awards up to $7B in sprawling counter-drone IDIQ",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/09/army-awards-up-to-7b-in-sprawling-counter-drone-idiq/",
-      "published": "2026-09-29T18:30:00+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081427-0054",
-        "incident_type": "drone",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 620734375,
+      "id": 518903448,
       "title": "Israeli settlers attack West Bank village and block Palestinian family's return home",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cvlylj41egxgo?at_medium=RSS&at_campaign=rss",
@@ -1594,177 +1458,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1790857081248-0009",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 960157436,
-      "title": "Estonia blames Russia in arson attack on military robotics firm Milrem",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/global/europe/2026/09/29/estonia-blames-russia-in-arson-attack-on-military-robotics-firm-milrem/",
-      "published": "2026-09-29T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081390-0048",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 151500122,
-      "title": "US forces exiting Iraq after 2 decades, leaving opening for Iran",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/news/your-military/2026/09/29/us-forces-exiting-iraq-after-2-decades-leaving-opening-for-iran/",
-      "published": "2026-09-29T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iraq",
-        "lat": 33.2232,
-        "lng": 43.6793
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081396-0049",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 496371216,
-      "title": "French artillery regiment reorganizes guns to survive drone threats",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/global/2026/09/29/french-artillery-regiment-reorganizes-guns-to-survive-drone-threats/",
-      "published": "2026-09-29T00:00:00+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081402-0050",
-        "incident_type": "drone",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 241340272,
-      "title": "Egyptian officials convicted of kidnapping Italian student found dead in 2016",
-      "source": "BBC Middle East",
-      "source_url": "https://www.bbc.co.uk/news/articles/cw7v4ppj9yd6o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-09-28T23:39:15+00:00",
-      "type": "security",
-      "status": "confirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Egypt",
-        "lat": 26.8206,
-        "lng": 30.8025
-      },
-      "credibility": 95,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081249-0010",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 584119883,
-      "title": "Iran court upholds lashes sentence for singer who performed without hijab",
-      "source": "BBC Middle East",
-      "source_url": "https://www.bbc.co.uk/news/articles/crn45ed1kqqgo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-09-28T17:15:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 95,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1790857081250-0011",
+        "event_id": "GW-1790901154849-0011",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
