@@ -7,33 +7,40 @@
       "byCountry": {}
     },
     "missiles": {
-      "launched": 0,
+      "launched": 1,
       "intercepted": 0,
-      "landed": 0,
+      "landed": 1,
       "byCountry": {}
     },
     "airstrikes": {
-      "total": 0,
-      "byCountry": {}
+      "total": 2,
+      "byCountry": {
+        "yemen": 1
+      }
     },
     "drones": {
-      "total": 1,
+      "total": 2,
       "downed": 0,
       "byCountry": {}
     },
     "incidents": {
-      "total": 33,
+      "total": 38,
       "byType": {
-        "general": 32,
-        "drone": 1
+        "general": 33,
+        "drone": 2,
+        "airstrike": 2,
+        "missile": 1
       },
       "byCountry": {
-        "iran": 7,
-        "israel": 5,
-        "uae": 11,
-        "syria": 1,
+        "oman": 1,
+        "yemen": 9,
+        "gaza": 1,
+        "israel": 4,
         "bahrain": 1,
-        "yemen": 1
+        "uae": 5,
+        "saudi": 2,
+        "kuwait": 1,
+        "iran": 3
       }
     }
   },
@@ -60,49 +67,21 @@
       },
       "incidents": [
         {
-          "id": 382254463,
-          "title": "Iran war live: Yemen fighting intensifies; Tehran says ready for US attacks",
+          "id": 654576924,
+          "title": "Iranian flights land in Iraq's Najaf after US sanctions exemption",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 634477744,
-          "title": "US withdraws B-1 bomber aircraft from UK\u2019s Fairford base amid Iran fears",
+          "id": 276479498,
+          "title": "Iran oil minister resigns amid fuel shortages and crude export pressure",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 299320868,
-          "title": "War on Iran: Is escalation more likely than a deal?",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 346042893,
-          "title": "US refuses to rule out further military action against Iran",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 330958658,
-          "title": "Iraq\u2019s PM orders probe after US flag trampled by Iran-backed militias",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 139816993,
-          "title": "Iranian suspects 'planned to use home-made bomb' to attack Jews in Britain",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 73909942,
+          "id": 91388402,
           "title": "Three reasons Middle East oil supply is nearly back to pre-Iran war levels",
           "type": "general",
           "time": "",
@@ -133,36 +112,29 @@
       },
       "incidents": [
         {
-          "id": 727988010,
-          "title": "Israel face spitting allegation as Ireland boss \u2018delighted\u2019 ties after over",
+          "id": 941176912,
+          "title": "The Republican consensus on Israel is starting to fracture",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 608560850,
-          "title": "Ireland refuse handshake with Israel and don armbands in Nations League tie",
+          "id": 788007922,
+          "title": "Can you still fly from the UAE to Israel? Which airlines are operating",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 960839114,
-          "title": "Israel lashes out as UK\u2019s Green Party formally defines Zionism as \u2018racism\u2019",
+          "id": 698103207,
+          "title": "Hundreds of European ex-ministers urge EU sanctions against Israeli E1 settlement",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 993913205,
+          "id": 751351024,
           "title": "As it happened: Israel condemns Green party passing \u2018Zionism is racism\u2019 as a \u2018stain on history of UK",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 507422265,
-          "title": "Who is the 'hero' Indian pilot who was stabbed on Israel-bound flight?",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -213,7 +185,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 444721470,
+          "title": "Gaza mothers seek breastfeeding support amid hunger and siege",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "lebanon": {
@@ -259,15 +239,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 545346600,
-          "title": "Clashes erupt in Christian town in central Syria",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "yemen": {
@@ -284,7 +256,7 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 0
+        "total": 1
       },
       "drones": {
         "total": 0,
@@ -292,7 +264,63 @@
       },
       "incidents": [
         {
-          "id": 823628440,
+          "id": 478492322,
+          "title": "Photos: Yemen\u2019s hospitals struggle to operate amid persistent power outages",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 970179040,
+          "title": "Yemeni forces reclaim Dhubab, key positions near Bab al-Mandeb from Houthis",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 546560813,
+          "title": "Yemen war: What\u2019s the latest, as government forces claim advances?",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 314668481,
+          "title": "Yemen\u2019s Saudi-backed government launches military drive to retake all Houthi-held territory",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 169912474,
+          "title": "Yemen government forces claim Bab Al Mandeb gains as Saudi coalition says 100 jets join Houthi offen",
+          "type": "airstrike",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 898801675,
+          "title": "Middle East latest: Yemeni government forces attack Houthi positions near Bab Al Mandeb",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 247639278,
+          "title": "Yemen begins offensive against Houthis, Egypt seeks Nile dam solution and UAE launches commercial sa",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 854874518,
+          "title": "Yemen's government announces all-out war to reclaim land from Houthis",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 944488755,
           "title": "Yemeni government launches offensive to seize all areas from Iran-backed Houthis",
           "type": "general",
           "time": "",
@@ -321,7 +349,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 905608843,
+          "title": "Joy Awards 2027 set to be cancelled in latest change to Saudi entertainment calendar",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 435603251,
+          "title": "Non-oil sectors in UAE and Saudi Arabia maintain strong growth trajectory despite Iran war",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "uae": {
@@ -346,71 +389,36 @@
       },
       "incidents": [
         {
-          "id": 17301067,
+          "id": 199621257,
+          "title": "Alleged flydubai attacker left Australia without finishing engineering course, university says",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 470752793,
+          "title": "UAE\u2019s golden generation shines as athletes return with record Asian Games haul",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 781794420,
+          "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 875539014,
           "title": "Flydubai co-pilot\u2019s time in Australia being investigated by security agencies after alleged cockpit ",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 379475554,
-          "title": "UAE Football Association charters six flights to fly fans to Gulf Cup final in Jeddah",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 310934921,
-          "title": "Asian Games success shows UAE is rising as a sporting force, says President of the UAE Olympic Commi",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 467614316,
-          "title": "UAE teachers honoured ahead of World Teachers' Day as minister highlights their vital role",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 621814353,
-          "title": "Filipina in UAE to pay off debts after Dh20 million win in Big Ticket draw",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 917946349,
-          "title": "Much-loved UAE theatre veteran and educator Eric Dury dies",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 998098343,
-          "title": "UAE's MBR Explorer probe enters final tests for 2028 mission",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 914752777,
-          "title": "UAE sign off Asian Games campaign with second equestrian medal",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 52349546,
+          "id": 125764681,
           "title": "Flydubai co-pilot used crash axe to attack captain, says UAE",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 958917340,
-          "title": "'I was not going to let others die' - pilot of Flydubai flight describes cockpit attack by co-pilot",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -484,7 +492,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 608402424,
+          "title": "Kuwait revokes citizenship of 415 people in latest crackdown",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "bahrain": {
@@ -509,8 +525,8 @@
       },
       "incidents": [
         {
-          "id": 540047237,
-          "title": "Max Verstappen wins rain-delayed Bahrain GP as Kimi Antonelli takes firm grip on title race",
+          "id": 174674161,
+          "title": "Formula One to probe software bug behind Bahrain GP chaos in Sepang",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -561,13 +577,21 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 685911131,
+          "title": "Growing outrage in Japan after US Marine arrested in woman\u2019s killing",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-10-05T00:34:20.159622",
+  "lastUpdated": "2026-10-05T12:18:24.467866",
   "timeRange": {
-    "from": "2026-09-28T00:34:20.159627",
-    "to": "2026-10-05T00:34:20.159631"
+    "from": "2026-09-28T12:18:24.467871",
+    "to": "2026-10-05T12:18:24.467875"
   }
 }
