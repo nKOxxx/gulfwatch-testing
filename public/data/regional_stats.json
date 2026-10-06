@@ -7,43 +7,44 @@
       "byCountry": {}
     },
     "missiles": {
-      "launched": 2,
-      "intercepted": 0,
+      "launched": 3,
+      "intercepted": 1,
       "landed": 2,
-      "byCountry": {}
+      "byCountry": {
+        "saudi": {
+          "launched": 1,
+          "intercepted": 1,
+          "landed": 0
+        }
+      }
     },
     "airstrikes": {
       "total": 1,
       "byCountry": {}
     },
     "drones": {
-      "total": 6,
+      "total": 5,
       "downed": 0,
-      "byCountry": {
-        "oman": {
-          "total": 1,
-          "downed": 0
-        }
-      }
+      "byCountry": {}
     },
     "incidents": {
-      "total": 41,
+      "total": 53,
       "byType": {
-        "general": 32,
-        "drone": 6,
-        "missile": 2,
+        "general": 44,
+        "missile": 3,
+        "drone": 5,
         "airstrike": 1
       },
       "byCountry": {
-        "yemen": 9,
         "israel": 4,
-        "saudi": 1,
-        "oman": 1,
-        "uae": 6,
-        "iran": 2,
-        "iraq": 1,
-        "jordan": 1,
-        "syria": 2
+        "palestine": 2,
+        "saudi": 4,
+        "gaza": 2,
+        "yemen": 10,
+        "iran": 4,
+        "qatar": 1,
+        "iraq": 2,
+        "uae": 7
       }
     }
   },
@@ -70,15 +71,29 @@
       },
       "incidents": [
         {
-          "id": 991629425,
-          "title": "Iran\u2019s oil minister resigns as country\u2019s economic crisis worsens",
+          "id": 699001647,
+          "title": "\u2018A return to prison is always looming\u2019: Iran nobel laureate recounts torture in jail and hopes for t",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 650873668,
-          "title": "Withdrawal of US bombers from UK base signals 'success' for Iran",
+          "id": 82679070,
+          "title": "Iran politician files impeachment motion against Araghchi over US contacts",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 874147742,
+          "title": "How Iran gets away with it: The struggle to bring 'architects of atrocities' to trial",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 281586266,
+          "title": "Iran\u2019s oil minister resigns as country\u2019s economic crisis worsens",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -108,28 +123,28 @@
       },
       "incidents": [
         {
-          "id": 597709763,
-          "title": "Israeli forces kill one, injure several in occupied West Bank",
+          "id": 998706779,
+          "title": "How Palestinian reporters defied Israel\u2019s genocide to redefine journalism",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 200768610,
+          "id": 915893398,
+          "title": "UEFA to investigate spitting incident at Ireland-Israel football match",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 603282314,
           "title": "UK threatens to expel Israeli diplomats over planned East Jerusalem consulate closure",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 55709061,
-          "title": "Kuwaiti jailed for life in UK after failed Israeli embassy attack",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 837663570,
+          "id": 690864761,
           "title": "As it happened: Israel condemns Green party passing \u2018Zionism is racism\u2019 as a \u2018stain on history of UK",
           "type": "general",
           "time": "",
@@ -158,7 +173,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 951855927,
+          "title": "Pro-Palestine Greens challenge Labour\u2019s grip on Starmer\u2019s former seat",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 538879933,
+          "title": "Palestine weekly: Olive harvest opens under assault",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "gaza": {
@@ -181,7 +211,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 479016897,
+          "title": "Gaza woman rescues books from rubble to keep education alive",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 917945017,
+          "title": "Former UN food agency official claims he was fired for highlighting hunger in Gaza",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "lebanon": {
@@ -227,22 +272,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 259965657,
-          "title": "Israel building military line in occupied Syrian territory, Damascus says",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 60363225,
-          "title": "Abu Dhabi\u2019s Eagle Hills to develop residential and tourism projects in Syria",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "yemen": {
@@ -267,63 +297,70 @@
       },
       "incidents": [
         {
-          "id": 338412598,
-          "title": "Iran war live: Yemen forces reclaim strategic port city Mocha from Houthis",
+          "id": 206345694,
+          "title": "How hunger is devastating Yemen\u2019s children",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 659476129,
-          "title": "Can Yemen retake territory seized by Houthis?",
+          "id": 716064871,
+          "title": "Yemen forces claim key gains near Bab al-Mandeb: What\u2019s the latest?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 345694831,
-          "title": "Yemeni military says it has retaken Mokha and 'secured' Red Sea waterway",
+          "id": 477297204,
+          "title": "Yemeni military says it has 'secured' Red Sea waterway",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 670768833,
+          "id": 335408598,
+          "title": "Children brave snipers and mortars to go to school near Yemen front line",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 763771827,
+          "title": "Saudi airports attacked as Yemen's west coast battle intensifies",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 131017321,
           "title": "Saudi-backed forces recapture key areas around strait from Houthis in Yemen",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 201819960,
+          "id": 730406435,
           "title": "Air campaign against Houthis under way in Yemen, says Saudi-led coalition",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 577681053,
+          "id": 413984519,
           "title": "Yemen\u2019s Saudi-backed government launches military drive to retake all Houthi-held territory",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 955935613,
-          "title": "Saudi Arabia has right to defend itself from Houthis, Marco Rubio says",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 788962796,
+          "id": 834954857,
           "title": "Yemen's government announces all-out war to reclaim land from Houthis",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 314011913,
+          "id": 139539046,
           "title": "Yemeni government launches offensive to seize all areas from Iran-backed Houthis",
           "type": "general",
           "time": "",
@@ -341,7 +378,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -354,8 +391,29 @@
       },
       "incidents": [
         {
-          "id": 6039868,
-          "title": "Turkiye, Pakistan agree to military deployment to Saudi Arabia",
+          "id": 930871370,
+          "title": "Saudi Arabia says three wounded in attacks on airports near Yemen border",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 279706838,
+          "title": "Saudi Arabia restores East-West pipeline flows to 5.8 million bpd, energy minister says",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 927372021,
+          "title": "Saudi Arabia warns against filming or sharing missile and drone interceptions",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 814636660,
+          "title": "Saudi Arabia urged to spare man sentenced to death over Facebook post",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -385,42 +443,49 @@
       },
       "incidents": [
         {
-          "id": 797133046,
+          "id": 781196755,
+          "title": "President Sheikh Mohamed and Jordan's King Abdullah discuss $2.5 billion UAE-Jordan railway project ",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 367571879,
+          "title": "UAE citizens 'most satisfied' globally with digital government services",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 303543256,
+          "title": "UAE becomes first Arab nation to join Scientific Committee on Antarctic Research",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 386050830,
           "title": "Flydubai co-pilot originally planned attack for July, investigators believe",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 5936822,
+          "id": 651583670,
           "title": "Alleged flydubai attacker left Australia without finishing engineering course, university says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 676013085,
-          "title": "UAE among global leaders in AI agent adoption, analysis shows",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 449680496,
-          "title": "UAE aviation authority completes passenger transfers after flydubai Tel Aviv suspension",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 250910741,
+          "id": 371702141,
           "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 861919509,
+          "id": 688061380,
           "title": "Flydubai co-pilot\u2019s time in Australia being investigated by security agencies after alleged cockpit ",
           "type": "general",
           "time": "",
@@ -449,15 +514,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 913870883,
-          "title": "Sheikh Khaled and King Abdullah launch $2.3 billion Jordan rail link",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "iraq": {
@@ -482,8 +539,15 @@
       },
       "incidents": [
         {
-          "id": 17340054,
-          "title": "'I was deceived': French ISIS recruit on trial in Iraq says he regrets joining group",
+          "id": 146190567,
+          "title": "Iraqi businessman denied entry to UK blames US interrogation nearly 20 years ago",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 946110917,
+          "title": "Iraqi police officer killed in ISIS attack near Kirkuk",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -557,7 +621,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 309678255,
+          "title": "Qatar and Turkey in race to host 2036 Olympics",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "oman": {
@@ -577,24 +649,16 @@
         "total": 0
       },
       "drones": {
-        "total": 1,
+        "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 331589981,
-          "title": "Ukraine says Russian drone attack sinks ship in Romanian waters",
-          "type": "drone",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-10-06T00:31:57.218397",
+  "lastUpdated": "2026-10-06T12:16:55.906435",
   "timeRange": {
-    "from": "2026-09-29T00:31:57.218403",
-    "to": "2026-10-06T00:31:57.218407"
+    "from": "2026-09-29T12:16:55.906440",
+    "to": "2026-10-06T12:16:55.906445"
   }
 }
