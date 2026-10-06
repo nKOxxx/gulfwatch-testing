@@ -7,40 +7,43 @@
       "byCountry": {}
     },
     "missiles": {
-      "launched": 1,
+      "launched": 2,
       "intercepted": 0,
-      "landed": 1,
+      "landed": 2,
       "byCountry": {}
     },
     "airstrikes": {
-      "total": 2,
-      "byCountry": {
-        "yemen": 1
-      }
-    },
-    "drones": {
-      "total": 2,
-      "downed": 0,
+      "total": 1,
       "byCountry": {}
     },
+    "drones": {
+      "total": 6,
+      "downed": 0,
+      "byCountry": {
+        "oman": {
+          "total": 1,
+          "downed": 0
+        }
+      }
+    },
     "incidents": {
-      "total": 38,
+      "total": 41,
       "byType": {
-        "general": 33,
-        "drone": 2,
-        "airstrike": 2,
-        "missile": 1
+        "general": 32,
+        "drone": 6,
+        "missile": 2,
+        "airstrike": 1
       },
       "byCountry": {
-        "oman": 1,
         "yemen": 9,
-        "gaza": 1,
         "israel": 4,
-        "bahrain": 1,
-        "uae": 5,
-        "saudi": 2,
-        "kuwait": 1,
-        "iran": 3
+        "saudi": 1,
+        "oman": 1,
+        "uae": 6,
+        "iran": 2,
+        "iraq": 1,
+        "jordan": 1,
+        "syria": 2
       }
     }
   },
@@ -67,22 +70,15 @@
       },
       "incidents": [
         {
-          "id": 654576924,
-          "title": "Iranian flights land in Iraq's Najaf after US sanctions exemption",
+          "id": 991629425,
+          "title": "Iran\u2019s oil minister resigns as country\u2019s economic crisis worsens",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 276479498,
-          "title": "Iran oil minister resigns amid fuel shortages and crude export pressure",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 91388402,
-          "title": "Three reasons Middle East oil supply is nearly back to pre-Iran war levels",
+          "id": 650873668,
+          "title": "Withdrawal of US bombers from UK base signals 'success' for Iran",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -112,28 +108,28 @@
       },
       "incidents": [
         {
-          "id": 941176912,
-          "title": "The Republican consensus on Israel is starting to fracture",
+          "id": 597709763,
+          "title": "Israeli forces kill one, injure several in occupied West Bank",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 788007922,
-          "title": "Can you still fly from the UAE to Israel? Which airlines are operating",
+          "id": 200768610,
+          "title": "UK threatens to expel Israeli diplomats over planned East Jerusalem consulate closure",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 698103207,
-          "title": "Hundreds of European ex-ministers urge EU sanctions against Israeli E1 settlement",
+          "id": 55709061,
+          "title": "Kuwaiti jailed for life in UK after failed Israeli embassy attack",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 751351024,
+          "id": 837663570,
           "title": "As it happened: Israel condemns Green party passing \u2018Zionism is racism\u2019 as a \u2018stain on history of UK",
           "type": "general",
           "time": "",
@@ -185,15 +181,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 444721470,
-          "title": "Gaza mothers seek breastfeeding support amid hunger and siege",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "lebanon": {
@@ -239,7 +227,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 259965657,
+          "title": "Israel building military line in occupied Syrian territory, Damascus says",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 60363225,
+          "title": "Abu Dhabi\u2019s Eagle Hills to develop residential and tourism projects in Syria",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "yemen": {
@@ -256,7 +259,7 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 1
+        "total": 0
       },
       "drones": {
         "total": 0,
@@ -264,63 +267,63 @@
       },
       "incidents": [
         {
-          "id": 478492322,
-          "title": "Photos: Yemen\u2019s hospitals struggle to operate amid persistent power outages",
+          "id": 338412598,
+          "title": "Iran war live: Yemen forces reclaim strategic port city Mocha from Houthis",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 970179040,
-          "title": "Yemeni forces reclaim Dhubab, key positions near Bab al-Mandeb from Houthis",
+          "id": 659476129,
+          "title": "Can Yemen retake territory seized by Houthis?",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 546560813,
-          "title": "Yemen war: What\u2019s the latest, as government forces claim advances?",
+          "id": 345694831,
+          "title": "Yemeni military says it has retaken Mokha and 'secured' Red Sea waterway",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 314668481,
+          "id": 670768833,
+          "title": "Saudi-backed forces recapture key areas around strait from Houthis in Yemen",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 201819960,
+          "title": "Air campaign against Houthis under way in Yemen, says Saudi-led coalition",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 577681053,
           "title": "Yemen\u2019s Saudi-backed government launches military drive to retake all Houthi-held territory",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 169912474,
-          "title": "Yemen government forces claim Bab Al Mandeb gains as Saudi coalition says 100 jets join Houthi offen",
-          "type": "airstrike",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 898801675,
-          "title": "Middle East latest: Yemeni government forces attack Houthi positions near Bab Al Mandeb",
+          "id": 955935613,
+          "title": "Saudi Arabia has right to defend itself from Houthis, Marco Rubio says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 247639278,
-          "title": "Yemen begins offensive against Houthis, Egypt seeks Nile dam solution and UAE launches commercial sa",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 854874518,
+          "id": 788962796,
           "title": "Yemen's government announces all-out war to reclaim land from Houthis",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 944488755,
+          "id": 314011913,
           "title": "Yemeni government launches offensive to seize all areas from Iran-backed Houthis",
           "type": "general",
           "time": "",
@@ -351,15 +354,8 @@
       },
       "incidents": [
         {
-          "id": 905608843,
-          "title": "Joy Awards 2027 set to be cancelled in latest change to Saudi entertainment calendar",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 435603251,
-          "title": "Non-oil sectors in UAE and Saudi Arabia maintain strong growth trajectory despite Iran war",
+          "id": 6039868,
+          "title": "Turkiye, Pakistan agree to military deployment to Saudi Arabia",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -389,36 +385,43 @@
       },
       "incidents": [
         {
-          "id": 199621257,
+          "id": 797133046,
+          "title": "Flydubai co-pilot originally planned attack for July, investigators believe",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 5936822,
           "title": "Alleged flydubai attacker left Australia without finishing engineering course, university says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 470752793,
-          "title": "UAE\u2019s golden generation shines as athletes return with record Asian Games haul",
+          "id": 676013085,
+          "title": "UAE among global leaders in AI agent adoption, analysis shows",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 781794420,
+          "id": 449680496,
+          "title": "UAE aviation authority completes passenger transfers after flydubai Tel Aviv suspension",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 250910741,
           "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 875539014,
+          "id": 861919509,
           "title": "Flydubai co-pilot\u2019s time in Australia being investigated by security agencies after alleged cockpit ",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 125764681,
-          "title": "Flydubai co-pilot used crash axe to attack captain, says UAE",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -446,7 +449,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 913870883,
+          "title": "Sheikh Khaled and King Abdullah launch $2.3 billion Jordan rail link",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "iraq": {
@@ -469,7 +480,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 17340054,
+          "title": "'I was deceived': French ISIS recruit on trial in Iraq says he regrets joining group",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "kuwait": {
@@ -492,15 +511,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 608402424,
-          "title": "Kuwait revokes citizenship of 415 people in latest crackdown",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "bahrain": {
@@ -523,15 +534,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 174674161,
-          "title": "Formula One to probe software bug behind Bahrain GP chaos in Sepang",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "qatar": {
@@ -574,14 +577,14 @@
         "total": 0
       },
       "drones": {
-        "total": 0,
+        "total": 1,
         "downed": 0
       },
       "incidents": [
         {
-          "id": 685911131,
-          "title": "Growing outrage in Japan after US Marine arrested in woman\u2019s killing",
-          "type": "general",
+          "id": 331589981,
+          "title": "Ukraine says Russian drone attack sinks ship in Romanian waters",
+          "type": "drone",
           "time": "",
           "casualties": 0
         }
@@ -589,9 +592,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-10-05T12:18:24.467866",
+  "lastUpdated": "2026-10-06T00:31:57.218397",
   "timeRange": {
-    "from": "2026-09-28T12:18:24.467871",
-    "to": "2026-10-05T12:18:24.467875"
+    "from": "2026-09-29T00:31:57.218403",
+    "to": "2026-10-06T00:31:57.218407"
   }
 }

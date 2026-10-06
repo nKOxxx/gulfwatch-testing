@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-05T12:18:24.665113+00:00",
-  "total_incidents": 38,
+  "generated_at": "2026-10-06T00:31:57.390343+00:00",
+  "total_incidents": 41,
   "circuit_breaker_stats": {
-    "total_processed": 38,
-    "duplicates_filtered": 0,
+    "total_processed": 42,
+    "duplicates_filtered": 1,
     "recaps_blocked": 0,
     "unique_signatures": 23
   },
   "incidents": [
     {
-      "id": 685911131,
-      "title": "Growing outrage in Japan after US Marine arrested in woman\u2019s killing",
+      "id": 338412598,
+      "title": "Iran war live: Yemen forces reclaim strategic port city Mocha from Houthis",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/5/growing-outrage-in-japan-after-us-marine-arrested-in-womans-killing?traffic_source=rss",
-      "published": "2026-10-05T11:25:45+00:00",
+      "source_url": "https://www.aljazeera.com/news/liveblog/2026/10/6/iran-war-live-yemen-forces-reclaim-strategic-port-city-mocha-from-houthis?traffic_source=rss",
+      "published": "2026-10-06T00:00:00+00:00",
       "type": "security",
-      "status": "unconfirmed",
+      "status": "reported",
       "location": {
         "name": "Unknown City",
-        "country": "Oman",
-        "lat": 21.4735,
-        "lng": 55.9754
+        "country": "Yemen",
+        "lat": 15.5527,
+        "lng": 48.5164
       },
       "credibility": 90,
       "is_government": false,
@@ -30,8 +30,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703779-0013",
-        "incident_type": "incident",
+        "event_id": "GW-1791246716575-0018",
+        "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
@@ -43,12 +43,46 @@
       }
     },
     {
-      "id": 833224915,
-      "title": "US abruptly withdraws bombers from UK\u2019s RAF Fairford",
+      "id": 971013369,
+      "title": "Pentagon picks 4 vendors for counter-drone directed energy pilot program",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/pentagon-picks-4-vendors-for-counter-drone-directed-energy-pilot-program/",
+      "published": "2026-10-05T21:51:21+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716652-0039",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 195388290,
+      "title": "Ethiopia\u2019s PM insists on access to Red Sea despite regional conflict threat",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/us-abruptly-withdraws-bombers-from-uks-raf-fairford?traffic_source=rss",
-      "published": "2026-10-05T11:09:57+00:00",
-      "type": "explosion",
+      "source_url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat?traffic_source=rss",
+      "published": "2026-10-05T21:10:43+00:00",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown",
@@ -64,7 +98,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703782-0014",
+        "event_id": "GW-1791246716578-0019",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -77,11 +111,11 @@
       }
     },
     {
-      "id": 478492322,
-      "title": "Photos: Yemen\u2019s hospitals struggle to operate amid persistent power outages",
+      "id": 659476129,
+      "title": "Can Yemen retake territory seized by Houthis?",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/gallery/2026/10/5/photos-yemens-hospitals-struggle-to-operate-amid-persistent-power-outages?traffic_source=rss",
-      "published": "2026-10-05T11:01:07+00:00",
+      "source_url": "https://www.aljazeera.com/video/inside-story/2026/10/5/can-yemen-retake-territory-seized-by-houthis?traffic_source=rss",
+      "published": "2026-10-05T20:52:24+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
@@ -98,8 +132,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703784-0015",
-        "incident_type": "incident",
+        "event_id": "GW-1791246716580-0020",
+        "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
@@ -111,79 +145,11 @@
       }
     },
     {
-      "id": 444721470,
-      "title": "Gaza mothers seek breastfeeding support amid hunger and siege",
+      "id": 597709763,
+      "title": "Israeli forces kill one, injure several in occupied West Bank",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/gaza-mothers-seek-breastfeeding-support-amid-hunger-and-siege?traffic_source=rss",
-      "published": "2026-10-05T10:42:08+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703786-0016",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 724700497,
-      "title": "Libyan teachers\u2019 strike escalates as union demands major education reforms",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/5/libyan-teachers-strike-escalates-as-union-demands-major-education-reforms?traffic_source=rss",
-      "published": "2026-10-05T10:33:30+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "Qatar",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703789-0017",
-        "incident_type": "raid",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 941176912,
-      "title": "The Republican consensus on Israel is starting to fracture",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/opinions/2026/10/5/the-republican-consensus-on-israel-is-starting-to-fracture?traffic_source=rss",
-      "published": "2026-10-05T10:05:47+00:00",
+      "source_url": "https://www.aljazeera.com/news/2026/10/5/israeli-forces-kill-one-injure-several-in-occupied-west-bank?traffic_source=rss",
+      "published": "2026-10-05T20:49:35+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
@@ -200,7 +166,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703792-0018",
+        "event_id": "GW-1791246716582-0021",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -213,86 +179,18 @@
       }
     },
     {
-      "id": 970179040,
-      "title": "Yemeni forces reclaim Dhubab, key positions near Bab al-Mandeb from Houthis",
+      "id": 6039868,
+      "title": "Turkiye, Pakistan agree to military deployment to Saudi Arabia",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss",
-      "published": "2026-10-05T09:40:37+00:00",
-      "type": "security",
-      "status": "reported",
-      "location": {
-        "name": "Unknown City",
-        "country": "Yemen",
-        "lat": 15.5527,
-        "lng": 48.5164
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703795-0019",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 546560813,
-      "title": "Yemen war: What\u2019s the latest, as government forces claim advances?",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/5/yemen-war-escalates-whats-the-latest-on-the-battlefield?traffic_source=rss",
-      "published": "2026-10-05T09:38:26+00:00",
-      "type": "security",
-      "status": "reported",
-      "location": {
-        "name": "Unknown City",
-        "country": "Yemen",
-        "lat": 15.5527,
-        "lng": 48.5164
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703798-0020",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 174674161,
-      "title": "Formula One to probe software bug behind Bahrain GP chaos in Sepang",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/sports/2026/10/5/formula-one-to-probe-software-bug-behind-bahrain-gp-chaos-in-sepang?traffic_source=rss",
-      "published": "2026-10-05T09:02:06+00:00",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/turkiye-pakistan-agree-to-military-deployment-to-saudi-arabia?traffic_source=rss",
+      "published": "2026-10-05T20:17:35+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
-        "country": "Bahrain",
-        "lat": 26.0667,
-        "lng": 50.5577
+        "country": "Saudi Arabia",
+        "lat": 23.8859,
+        "lng": 45.0792
       },
       "credibility": 90,
       "is_government": false,
@@ -302,7 +200,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703802-0021",
+        "event_id": "GW-1791246716585-0022",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -315,18 +213,18 @@
       }
     },
     {
-      "id": 139709945,
-      "title": "Pakistan installs fishing nets at security outposts to block drone attacks",
+      "id": 331589981,
+      "title": "Ukraine says Russian drone attack sinks ship in Romanian waters",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/5/pakistan-installs-fishing-nets-at-security-outposts-to-block-drone-attacks?traffic_source=rss",
-      "published": "2026-10-05T08:20:34+00:00",
+      "source_url": "https://www.aljazeera.com/news/2026/10/5/ukraine-says-russian-drone-attack-sinks-ship-in-romanian-waters?traffic_source=rss",
+      "published": "2026-10-05T20:03:06+00:00",
       "type": "drone",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown",
-        "country": "Qatar",
-        "lat": 25.0,
-        "lng": 45.0
+        "name": "Unknown City",
+        "country": "Oman",
+        "lat": 21.4735,
+        "lng": 55.9754
       },
       "credibility": 90,
       "is_government": false,
@@ -336,7 +234,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703805-0022",
+        "event_id": "GW-1791246716587-0023",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -349,7 +247,347 @@
       }
     },
     {
-      "id": 268720156,
+      "id": 587054164,
+      "title": "US OKs missile guidance kits, Patriot repairs, Javelins for Middle East partners",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/us-oks-missile-guidance-kits-patriot-repairs-javelins-to-middle-east-partners/",
+      "published": "2026-10-05T19:39:32+00:00",
+      "type": "missile",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716657-0040",
+        "incident_type": "missile",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 771813889,
+      "title": "Northrop logs first flight for self-funded drone wingman",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/northrop-logs-first-flight-for-self-funded-drone-wingman/",
+      "published": "2026-10-05T17:52:56+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716663-0041",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 345694831,
+      "title": "Yemeni military says it has retaken Mokha and 'secured' Red Sea waterway",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-05T17:49:59+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Yemen",
+        "lat": 15.5527,
+        "lng": 48.5164
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716555-0001",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 294550737,
+      "title": "Germany pledges $1.1B military aid package to Ukraine flush with drone interceptors",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/germany-pledges-1-1-b-military-aid-package-to-ukraine-flush-with-drone-interceptors/",
+      "published": "2026-10-05T16:22:51+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716667-0042",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 670768833,
+      "title": "Saudi-backed forces recapture key areas around strait from Houthis in Yemen",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/oct/05/saudi-forces-recapture-key-areas-strait-houthis-yemen",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Saudi Arabia",
+        "lat": 23.8859,
+        "lng": 45.0792
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716555-0004",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 797133046,
+      "title": "Flydubai co-pilot originally planned attack for July, investigators believe",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/oct/05/flydubai-co-pilot-originally-planned-attack-for-july-investigators-believe",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Dubai",
+        "country": "UAE",
+        "lat": 25.2048,
+        "lng": 55.2708
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716556-0005",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 200768610,
+      "title": "UK threatens to expel Israeli diplomats over planned East Jerusalem consulate closure",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/oct/05/uk-threatens-to-expel-israeli-diplomats-after-closing-of-east-jerusalem-consulate",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Jerusalem",
+        "country": "Israel",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716556-0006",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 174997172,
+      "title": "Why did the US rush to withdraw bombers from RAF Fairford? - The Latest",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/news/audio/2026/oct/05/why-did-us-withdraw-bombers-from-raf-fairford-the-latest",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "explosion",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716557-0007",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 201819960,
+      "title": "Air campaign against Houthis under way in Yemen, says Saudi-led coalition",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/oct/05/yemen-air-campaign-houthis-saudi-led-coalition",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Saudi Arabia",
+        "lat": 23.8859,
+        "lng": 45.0792
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716558-0008",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 991629425,
+      "title": "Iran\u2019s oil minister resigns as country\u2019s economic crisis worsens",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/oct/05/iran-oil-minister-resigns-economic-crisis",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716559-0010",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 442374111,
       "title": "Guardian readers fund life-changing surgery for Somali boy injured in US airstrike",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/global-development/2026/oct/05/guardian-readers-fundraising-somalian-boy-injured-in-us-strike-surgery-abdiqadir-salah",
@@ -370,7 +608,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703765-0004",
+        "event_id": "GW-1791246716560-0011",
         "incident_type": "airstrike",
         "is_recap": false,
         "confidence": "OSINT"
@@ -383,7 +621,7 @@
       }
     },
     {
-      "id": 199621257,
+      "id": 5936822,
       "title": "Alleged flydubai attacker left Australia without finishing engineering course, university says",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/05/australia-university-engineering-flydubai-co-pilot-rmit-ntwnfb",
@@ -404,7 +642,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703766-0005",
+        "event_id": "GW-1791246716562-0012",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -417,7 +655,7 @@
       }
     },
     {
-      "id": 918907711,
+      "id": 530227346,
       "title": "Skull fractures suggest servants of Egypt\u2019s ancient kings were sacrificed",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/science/2026/oct/05/skull-fractures-suggest-servants-of-egypts-ancient-kings-were-sacrificed",
@@ -438,7 +676,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703766-0006",
+        "event_id": "GW-1791246716564-0013",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -451,7 +689,7 @@
       }
     },
     {
-      "id": 314668481,
+      "id": 577681053,
       "title": "Yemen\u2019s Saudi-backed government launches military drive to retake all Houthi-held territory",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory",
@@ -472,7 +710,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703767-0007",
+        "event_id": "GW-1791246716565-0014",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "OSINT"
@@ -485,10 +723,78 @@
       }
     },
     {
-      "id": 905608843,
-      "title": "Joy Awards 2027 set to be cancelled in latest change to Saudi entertainment calendar",
+      "id": 676013085,
+      "title": "UAE among global leaders in AI agent adoption, analysis shows",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/arts-culture/music-stage/2026/10/05/joy-awards-2027-set-to-be-cancelled-in-latest-change-to-saudi-entertainment-calendar/",
+      "source_url": "https://www.thenationalnews.com/future/technology/2026/10/05/uae-among-global-leaders-in-ai-agent-adoption-analysis-shows/",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "UAE",
+        "lat": 23.4241,
+        "lng": 53.8478
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716590-0024",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 449680496,
+      "title": "UAE aviation authority completes passenger transfers after flydubai Tel Aviv suspension",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/05/uae-aviation-authority-completes-passenger-transfers-after-flydubai-tel-aviv-suspension/",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Dubai",
+        "country": "UAE",
+        "lat": 25.2048,
+        "lng": 55.2708
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716593-0025",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 955935613,
+      "title": "Saudi Arabia has right to defend itself from Houthis, Marco Rubio says",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/us/2026/10/05/saudi-arabia-has-right-to-defend-itself-from-houthis-marco-rubio-says/",
       "published": "2026-10-05T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
@@ -506,75 +812,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703809-0023",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 349210255,
-      "title": "Leaders of Egypt, Sudan, Eritrea and Somalia signal new regional alliance",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/05/leaders-of-egypt-sudan-eritrea-and-somalia-signal-new-regional-alliance/",
-      "published": "2026-10-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Egypt",
-        "lat": 26.8206,
-        "lng": 30.8025
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703814-0024",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 169912474,
-      "title": "Yemen government forces claim Bab Al Mandeb gains as Saudi coalition says 100 jets join Houthi offensive",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/gulf/2026/10/05/yemen-government-forces-claim-bab-al-mandeb-gains-as-saudi-coalition-says-100-jets-join-houthi-offensive/",
-      "published": "2026-10-05T00:00:00+00:00",
-      "type": "security",
-      "status": "reported",
-      "location": {
-        "name": "Unknown City",
-        "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703819-0025",
+        "event_id": "GW-1791246716596-0026",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "OSINT"
@@ -587,78 +825,10 @@
       }
     },
     {
-      "id": 608402424,
-      "title": "Kuwait revokes citizenship of 415 people in latest crackdown",
+      "id": 17340054,
+      "title": "'I was deceived': French ISIS recruit on trial in Iraq says he regrets joining group",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/gulf/2026/10/05/kuwait-revokes-citizenship-of-415-people-in-latest-crackdown/",
-      "published": "2026-10-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Kuwait",
-        "lat": 29.3117,
-        "lng": 47.4818
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703825-0026",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 898801675,
-      "title": "Middle East latest: Yemeni government forces attack Houthi positions near Bab Al Mandeb",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/05/live-iran-war-yemen-houthis-latest/",
-      "published": "2026-10-05T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Yemen",
-        "lat": 15.5527,
-        "lng": 48.5164
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703829-0027",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 654576924,
-      "title": "Iranian flights land in Iraq's Najaf after US sanctions exemption",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/05/iranian-flights-land-in-iraqs-najaf-after-us-sanctions-exemption/",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/05/i-was-deceived-french-isis-recruit-on-trial-in-iraq-says-he-regrets-joining-group/",
       "published": "2026-10-05T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
@@ -676,7 +846,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703835-0028",
+        "event_id": "GW-1791246716600-0027",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -689,18 +859,120 @@
       }
     },
     {
-      "id": 788007922,
-      "title": "Can you still fly from the UAE to Israel? Which airlines are operating",
+      "id": 55709061,
+      "title": "Kuwaiti jailed for life in UK after failed Israeli embassy attack",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/travel/2026/10/05/uae-israel-flights-etihad-flydubai-dubai-tel-aviv/",
+      "source_url": "https://www.thenationalnews.com/news/uk/2026/10/05/kuwaiti-jailed-for-life-in-uk-after-failed-israeli-embassy-attack/",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Kuwait",
+        "lat": 29.3117,
+        "lng": 47.4818
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716604-0028",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 913870883,
+      "title": "Sheikh Khaled and King Abdullah launch $2.3 billion Jordan rail link",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/05/sheikh-khaled-and-king-abdullah-launch-23-billion-jordan-rail-link/",
       "published": "2026-10-05T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
+        "country": "Jordan",
+        "lat": 30.5852,
+        "lng": 36.2384
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716608-0029",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 259965657,
+      "title": "Israel building military line in occupied Syrian territory, Damascus says",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/05/syria-israel-golan/",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Damascus",
+        "country": "Syria",
+        "lat": 33.5138,
+        "lng": 36.2765
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791246716611-0030",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 92581939,
+      "title": "Gulf family businesses face new succession test as women prepare to take on bigger roles",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/business/economy/2026/10/05/gulf-family-businesses-face-new-succession-test-as-women-prepare-to-take-on-bigger-roles/",
+      "published": "2026-10-05T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
         "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
+        "lat": 25.0,
+        "lng": 45.0
       },
       "credibility": 85,
       "is_government": false,
@@ -710,7 +982,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703840-0029",
+        "event_id": "GW-1791246716615-0031",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -723,18 +995,18 @@
       }
     },
     {
-      "id": 698103207,
-      "title": "Hundreds of European ex-ministers urge EU sanctions against Israeli E1 settlement",
+      "id": 60363225,
+      "title": "Abu Dhabi\u2019s Eagle Hills to develop residential and tourism projects in Syria",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/europe/2026/10/05/hundreds-of-european-ex-ministers-urge-eu-sanctions-against-israeli-e1-settlement/",
+      "source_url": "https://www.thenationalnews.com/business/property/2026/10/05/abu-dhabis-eagle-hills-to-develop-residential-and-tourism-projects-in-syria/",
       "published": "2026-10-05T00:00:00+00:00",
       "type": "security",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
+        "name": "Abu Dhabi",
+        "country": "UAE",
+        "lat": 24.4539,
+        "lng": 54.3773
       },
       "credibility": 85,
       "is_government": false,
@@ -744,7 +1016,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703845-0030",
+        "event_id": "GW-1791246716620-0032",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -757,12 +1029,12 @@
       }
     },
     {
-      "id": 276479498,
-      "title": "Iran oil minister resigns amid fuel shortages and crude export pressure",
+      "id": 650873668,
+      "title": "Withdrawal of US bombers from UK base signals 'success' for Iran",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/05/iran-oil-minister-resigns-amid-fuel-shortages-and-crude-export-pressure/",
+      "source_url": "https://www.thenationalnews.com/news/uk/2026/10/05/withdrawal-of-us-bombers-from-uk-base-signals-success-for-iran/",
       "published": "2026-10-05T00:00:00+00:00",
-      "type": "security",
+      "type": "explosion",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
@@ -778,7 +1050,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703851-0031",
+        "event_id": "GW-1791246716625-0033",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -791,20 +1063,20 @@
       }
     },
     {
-      "id": 435603251,
-      "title": "Non-oil sectors in UAE and Saudi Arabia maintain strong growth trajectory despite Iran war",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/business/economy/2026/10/05/non-oil-sectors-in-uae-and-saudi-arabia-maintain-strong-growth-trajectory-despite-iran-war/",
+      "id": 752106344,
+      "title": "US Army tests counter-drone tech at Mexican border as cartel drone use rises",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/news/your-military/2026/10/05/us-army-tests-counter-drone-tech-at-mexican-border-as-cartel-drone-use-rises/",
       "published": "2026-10-05T00:00:00+00:00",
-      "type": "security",
+      "type": "drone",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
       },
-      "credibility": 85,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -812,10 +1084,10 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703857-0032",
-        "incident_type": "incident",
+        "event_id": "GW-1791246716629-0034",
+        "incident_type": "drone",
         "is_recap": false,
-        "confidence": "OSINT"
+        "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "UNCONFIRMED",
@@ -825,20 +1097,20 @@
       }
     },
     {
-      "id": 470752793,
-      "title": "UAE\u2019s golden generation shines as athletes return with record Asian Games haul",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/sport/2026/10/05/uaes-golden-generation-shines-as-athletes-return-with-record-asian-games-haul/",
+      "id": 256350230,
+      "title": "Germany to set up first drone regiment next year, modeled after Ukraine war lessons",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/global/europe/2026/10/05/germany-to-set-up-first-drone-regiment-next-year-modeled-after-ukraine-war-lessons/",
       "published": "2026-10-05T00:00:00+00:00",
-      "type": "security",
+      "type": "drone",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
       },
-      "credibility": 85,
+      "credibility": 90,
       "is_government": false,
       "casualties": {
         "total": 0,
@@ -846,10 +1118,10 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703864-0033",
-        "incident_type": "incident",
+        "event_id": "GW-1791246716633-0035",
+        "incident_type": "drone",
         "is_recap": false,
-        "confidence": "OSINT"
+        "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "UNCONFIRMED",
@@ -859,75 +1131,7 @@
       }
     },
     {
-      "id": 928283151,
-      "title": "Egypt lose South Africa friendly as Mohamed Salah's absence continues",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/sport/football/2026/10/05/egypt-lose-south-africa-friendly-as-mohamed-salahs-absence-continues/",
-      "published": "2026-10-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Egypt",
-        "lat": 26.8206,
-        "lng": 30.8025
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703871-0034",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 247639278,
-      "title": "Yemen begins offensive against Houthis, Egypt seeks Nile dam solution and UAE launches commercial satellite",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/10/05/yemen-begins-offensive-against-houthis-egypt-seeks-nile-dam-solution-and-uae-launches-commercial-satellite/",
-      "published": "2026-10-05T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703877-0035",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 48482820,
+      "id": 412569355,
       "title": "Missiles, satellites and warplanes \u2014 Ukraine, Europe advance key arms projects",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/global/europe/2026/10/05/missiles-satellites-and-warplanes-ukraine-europe-advance-key-arms-projects/",
@@ -948,7 +1152,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703886-0036",
+        "event_id": "GW-1791246716638-0036",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -961,7 +1165,7 @@
       }
     },
     {
-      "id": 831147250,
+      "id": 432691181,
       "title": "US removes B-1 bombers from UK base amid security concerns",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/air/2026/10/05/us-removes-b-1-bombers-from-uk-base-amid-security-concerns/",
@@ -982,7 +1186,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703893-0037",
+        "event_id": "GW-1791246716643-0037",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -995,7 +1199,7 @@
       }
     },
     {
-      "id": 854874518,
+      "id": 788962796,
       "title": "Yemen's government announces all-out war to reclaim land from Houthis",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
@@ -1016,7 +1220,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703764-0001",
+        "event_id": "GW-1791246716555-0002",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1029,7 +1233,7 @@
       }
     },
     {
-      "id": 781794420,
+      "id": 250910741,
       "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&at_campaign=rss",
@@ -1050,7 +1254,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703764-0002",
+        "event_id": "GW-1791246716555-0003",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1063,7 +1267,7 @@
       }
     },
     {
-      "id": 751351024,
+      "id": 837663570,
       "title": "As it happened: Israel condemns Green party passing \u2018Zionism is racism\u2019 as a \u2018stain on history of UK\u2019",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/politics/live/2026/oct/04/conservatives-tories-conference-kemi-badenoch-james-cleverly-labour-jury-trials-green-party-zionism-uk-politics-latest-news-updates",
@@ -1084,7 +1288,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703769-0008",
+        "event_id": "GW-1791246716568-0015",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1097,7 +1301,7 @@
       }
     },
     {
-      "id": 825681334,
+      "id": 931243221,
       "title": "Egyptian journalist faces terrorism charges after entire newsroom detained",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/04/egyptian-journalist-faces-terrorism-charges-entire-newsroom-detained-matsadaash-press-freedom",
@@ -1118,7 +1322,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703771-0009",
+        "event_id": "GW-1791246716570-0016",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1131,7 +1335,7 @@
       }
     },
     {
-      "id": 875539014,
+      "id": 861919509,
       "title": "Flydubai co-pilot\u2019s time in Australia being investigated by security agencies after alleged cockpit attack",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/04/flydubai-co-pilot-time-in-australia-being-investigated-security-agencies-ntwnfb",
@@ -1152,7 +1356,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703773-0010",
+        "event_id": "GW-1791246716573-0017",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -1165,7 +1369,7 @@
       }
     },
     {
-      "id": 944488755,
+      "id": 314011913,
       "title": "Yemeni government launches offensive to seize all areas from Iran-backed Houthis",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/global/mideast-africa/2026/10/04/yemeni-government-launches-offensive-to-seize-all-areas-from-iran-backed-houthis/",
@@ -1186,7 +1390,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791202703899-0038",
+        "event_id": "GW-1791246716647-0038",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1196,108 +1400,6 @@
         "score": 40,
         "num_sources": 1,
         "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 125764681,
-      "title": "Flydubai co-pilot used crash axe to attack captain, says UAE",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/2026/oct/03/flydubai-co-pilot-used-crash-axe-to-attack-captain-says-uae",
-      "published": "2026-10-03T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703775-0011",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 509717978,
-      "title": "Libyan unity talks upended as warlord\u2019s son linked to drone attacks on fuel facilities",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/2026/oct/03/libyan-unity-talks-warlord-son-linked-drone-attack-khalifa-haftar",
-      "published": "2026-10-03T00:00:00+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703777-0012",
-        "incident_type": "drone",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 91388402,
-      "title": "Three reasons Middle East oil supply is nearly back to pre-Iran war levels",
-      "source": "BBC Middle East",
-      "source_url": "https://www.bbc.co.uk/news/articles/cwp8gn13lmygo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-02T15:29:28+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 95,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791202703764-0003",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
       }
     }
   ]
