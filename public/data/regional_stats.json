@@ -8,43 +8,38 @@
     },
     "missiles": {
       "launched": 3,
-      "intercepted": 1,
-      "landed": 2,
-      "byCountry": {
-        "saudi": {
-          "launched": 1,
-          "intercepted": 1,
-          "landed": 0
-        }
-      }
-    },
-    "airstrikes": {
-      "total": 1,
+      "intercepted": 0,
+      "landed": 3,
       "byCountry": {}
     },
+    "airstrikes": {
+      "total": 2,
+      "byCountry": {
+        "israel": 1
+      }
+    },
     "drones": {
-      "total": 5,
+      "total": 6,
       "downed": 0,
       "byCountry": {}
     },
     "incidents": {
-      "total": 53,
+      "total": 47,
       "byType": {
-        "general": 44,
-        "missile": 3,
-        "drone": 5,
-        "airstrike": 1
+        "general": 36,
+        "airstrike": 2,
+        "drone": 6,
+        "missile": 3
       },
       "byCountry": {
-        "israel": 4,
-        "palestine": 2,
+        "iran": 6,
+        "yemen": 7,
+        "israel": 6,
+        "palestine": 1,
+        "gaza": 1,
         "saudi": 4,
-        "gaza": 2,
-        "yemen": 10,
-        "iran": 4,
         "qatar": 1,
-        "iraq": 2,
-        "uae": 7
+        "uae": 6
       }
     }
   },
@@ -71,28 +66,42 @@
       },
       "incidents": [
         {
-          "id": 699001647,
-          "title": "\u2018A return to prison is always looming\u2019: Iran nobel laureate recounts torture in jail and hopes for t",
+          "id": 928558577,
+          "title": "Iran war live: Yemen forces claim control over strategic Taiz mountain peak",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 82679070,
-          "title": "Iran politician files impeachment motion against Araghchi over US contacts",
+          "id": 662210612,
+          "title": "\u2018A return to prison is always looming\u2019: Iran\u2019s Nobel laureate recounts torture in jail and hopes for",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 874147742,
-          "title": "How Iran gets away with it: The struggle to bring 'architects of atrocities' to trial",
+          "id": 524167655,
+          "title": "California Governor Newsom says Trump's remarks on Iran striking Los Angeles and San Diego were 'dis",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 281586266,
+          "id": 387190480,
+          "title": "Energy forum seeks to rescue supply disrupted by US-Iran war",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 365672604,
+          "title": "Three Iranians 'spied on dissident journalists and plotted violent attack' in London",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 885186236,
           "title": "Iran\u2019s oil minister resigns as country\u2019s economic crisis worsens",
           "type": "general",
           "time": "",
@@ -115,7 +124,7 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 0
+        "total": 1
       },
       "drones": {
         "total": 0,
@@ -123,29 +132,43 @@
       },
       "incidents": [
         {
-          "id": 998706779,
-          "title": "How Palestinian reporters defied Israel\u2019s genocide to redefine journalism",
+          "id": 661018658,
+          "title": "US lawmakers call on Israel to release imprisoned doctor Hussam Abu Safia",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 915893398,
-          "title": "UEFA to investigate spitting incident at Ireland-Israel football match",
+          "id": 261847214,
+          "title": "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 603282314,
+          "id": 873528532,
+          "title": "Israeli settlers beat press photographer as soldiers watch in West Bank",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 512907035,
+          "title": "NGOs say Israel bombed a journalist and appeared to attack ambulances trying to aid her \u2013 explainer",
+          "type": "airstrike",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 801240552,
+          "title": "US, Israeli and European far-right figures to gather for conference in Israel",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 984180251,
           "title": "UK threatens to expel Israeli diplomats over planned East Jerusalem consulate closure",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 690864761,
-          "title": "As it happened: Israel condemns Green party passing \u2018Zionism is racism\u2019 as a \u2018stain on history of UK",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -175,15 +198,8 @@
       },
       "incidents": [
         {
-          "id": 951855927,
-          "title": "Pro-Palestine Greens challenge Labour\u2019s grip on Starmer\u2019s former seat",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 538879933,
-          "title": "Palestine weekly: Olive harvest opens under assault",
+          "id": 691350950,
+          "title": "The Guardian view on the Green party and Palestine: rejecting two states is no shortcut to peace | E",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -213,14 +229,7 @@
       },
       "incidents": [
         {
-          "id": 479016897,
-          "title": "Gaza woman rescues books from rubble to keep education alive",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 917945017,
+          "id": 551863754,
           "title": "Former UN food agency official claims he was fired for highlighting hunger in Gaza",
           "type": "general",
           "time": "",
@@ -297,71 +306,50 @@
       },
       "incidents": [
         {
-          "id": 206345694,
-          "title": "How hunger is devastating Yemen\u2019s children",
+          "id": 567211047,
+          "title": "Houthis, Saudi-led forces claim victories as Yemen fighting rages on",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 716064871,
-          "title": "Yemen forces claim key gains near Bab al-Mandeb: What\u2019s the latest?",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 477297204,
+          "id": 493660113,
           "title": "Yemeni military says it has 'secured' Red Sea waterway",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 335408598,
+          "id": 151194779,
           "title": "Children brave snipers and mortars to go to school near Yemen front line",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 763771827,
-          "title": "Saudi airports attacked as Yemen's west coast battle intensifies",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 131017321,
+          "id": 970164053,
           "title": "Saudi-backed forces recapture key areas around strait from Houthis in Yemen",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 730406435,
+          "id": 197791004,
           "title": "Air campaign against Houthis under way in Yemen, says Saudi-led coalition",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 413984519,
+          "id": 223990093,
           "title": "Yemen\u2019s Saudi-backed government launches military drive to retake all Houthi-held territory",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 834954857,
+          "id": 425067123,
           "title": "Yemen's government announces all-out war to reclaim land from Houthis",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 139539046,
-          "title": "Yemeni government launches offensive to seize all areas from Iran-backed Houthis",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -378,7 +366,7 @@
         "total": 0
       },
       "missiles": {
-        "launched": 1,
+        "launched": 0,
         "intercepted": 0,
         "landed": 0
       },
@@ -391,28 +379,28 @@
       },
       "incidents": [
         {
-          "id": 930871370,
-          "title": "Saudi Arabia says three wounded in attacks on airports near Yemen border",
+          "id": 506724346,
+          "title": "UAE fall short as Saudi Arabia win Arabian Gulf Cup final",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 279706838,
-          "title": "Saudi Arabia restores East-West pipeline flows to 5.8 million bpd, energy minister says",
+          "id": 273534992,
+          "title": "Hackers steal 1.5 million files from Saudi construction firm, cybersecurity group says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 927372021,
-          "title": "Saudi Arabia warns against filming or sharing missile and drone interceptions",
-          "type": "missile",
+          "id": 983452182,
+          "title": "How quickly could Turkey send military forces to back Saudi Arabia?",
+          "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 814636660,
+          "id": 39233465,
           "title": "Saudi Arabia urged to spare man sentenced to death over Facebook post",
           "type": "general",
           "time": "",
@@ -443,50 +431,43 @@
       },
       "incidents": [
         {
-          "id": 781196755,
-          "title": "President Sheikh Mohamed and Jordan's King Abdullah discuss $2.5 billion UAE-Jordan railway project ",
+          "id": 642511358,
+          "title": "India condemns strike on oil tanker owned by Dubai company in Strait of Hormuz",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 367571879,
-          "title": "UAE citizens 'most satisfied' globally with digital government services",
+          "id": 257677128,
+          "title": "Rise expected in UAE's inflation figures, S&P Global says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 303543256,
-          "title": "UAE becomes first Arab nation to join Scientific Committee on Antarctic Research",
+          "id": 654777035,
+          "title": "UAE introduces new salt, sugar and fat limits in food products with penalties of up to Dh500,000",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 386050830,
+          "id": 50302199,
           "title": "Flydubai co-pilot originally planned attack for July, investigators believe",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 651583670,
+          "id": 90590233,
           "title": "Alleged flydubai attacker left Australia without finishing engineering course, university says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 371702141,
+          "id": 297974756,
           "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 688061380,
-          "title": "Flydubai co-pilot\u2019s time in Australia being investigated by security agencies after alleged cockpit ",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -537,22 +518,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 146190567,
-          "title": "Iraqi businessman denied entry to UK blames US interrogation nearly 20 years ago",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 946110917,
-          "title": "Iraqi police officer killed in ISIS attack near Kirkuk",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "kuwait": {
@@ -623,8 +589,8 @@
       },
       "incidents": [
         {
-          "id": 309678255,
-          "title": "Qatar and Turkey in race to host 2036 Olympics",
+          "id": 506676414,
+          "title": "US senator accuses Pentagon of blocking Qatar base visit",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -656,9 +622,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-10-06T12:16:55.906435",
+  "lastUpdated": "2026-10-07T00:33:10.323638",
   "timeRange": {
-    "from": "2026-09-29T12:16:55.906440",
-    "to": "2026-10-06T12:16:55.906445"
+    "from": "2026-09-30T00:33:10.323643",
+    "to": "2026-10-07T00:33:10.323647"
   }
 }
