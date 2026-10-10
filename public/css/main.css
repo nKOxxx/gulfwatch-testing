@@ -75,6 +75,24 @@
   color: var(--text-muted);
 }
 
+.last-update.stale-data {
+  color: #f59e0b;
+}
+
+.translated-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+}
+
 .top-actions {
   display: flex;
   align-items: center;
