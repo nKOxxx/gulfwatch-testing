@@ -1,15 +1,117 @@
 {
-  "generated_at": "2026-10-11T12:16:49.726485+00:00",
-  "total_incidents": 44,
+  "generated_at": "2026-10-12T00:36:50.441369+00:00",
+  "total_incidents": 41,
   "circuit_breaker_stats": {
-    "total_processed": 45,
-    "duplicates_filtered": 1,
+    "total_processed": 41,
+    "duplicates_filtered": 0,
     "recaps_blocked": 0,
-    "unique_signatures": 26
+    "unique_signatures": 23
   },
   "incidents": [
     {
-      "id": 996455746,
+      "id": 332863784,
+      "title": "Iran war live: Riyadh airport hit again; Tehran says US reply \u2018inadequate\u2019",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/liveblog/2026/10/12/iran-war-live-riyadh-airport-hit-again-tehran-says-us-reply-inadequate?traffic_source=rss",
+      "published": "2026-10-12T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409531-0014",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 926185835,
+      "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-11T22:45:58+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 11,
+        "military": 0,
+        "civilian": 11
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409514-0001",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 65,
+        "num_sources": 2,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 905092517,
+      "title": "Airport attacks another dangerous moment in already tense conflict",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/cr4g1pwxxlq1o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-11T15:32:32+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409514-0002",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 225344417,
       "title": "Twelve killed and 300 injured in attack on airport in Saudi capital Riyadh",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss",
@@ -30,7 +132,7 @@
         "civilian": 300
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008422-0001",
+        "event_id": "GW-1791765409515-0003",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -43,10 +145,44 @@
       }
     },
     {
-      "id": 834554275,
-      "title": "Middle East crisis live: Houthis warn passengers against using Saudi airport after deadly attack on Riyadh",
+      "id": 506221725,
+      "title": "Riyadh airport hit again after deadly Houthi missile attack, Saudi authorities say",
       "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/live/2026/oct/11/saudi-arabia-riyadh-airport-houthis-yemen-attack-blockade-trump-latest-news-updates",
+      "source_url": "https://www.theguardian.com/world/2026/oct/11/saudi-coalition-retaliation-houthi-attack-riyadh-airport",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "missile",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409516-0006",
+        "incident_type": "missile",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 55,
+        "num_sources": 2,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 515915637,
+      "title": "Canelo \u00c1lvarez \u2018fears nothing\u2019 and will fight in Riyadh despite deadly attacks, Al-Sheikh says",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/sport/2026/oct/11/canelo-alvarez-saudi-arabia-riyadh-fight-houthi-attacks-christian-mbilli",
       "published": "2026-10-11T00:00:00+00:00",
       "type": "attack",
       "status": "unconfirmed",
@@ -64,7 +200,41 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008424-0005",
+        "event_id": "GW-1791765409517-0007",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 772207290,
+      "title": "Middle East crisis: Riyadh airport hit again as Houthis claim attacks, including strike that killed 12 \u2013 as it happened",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/live/2026/oct/11/saudi-arabia-riyadh-airport-houthis-yemen-attack-blockade-trump-latest-news-updates",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "attack",
+      "status": "reported",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 12,
+        "military": 0,
+        "civilian": 12
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409519-0008",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "OSINT"
@@ -77,8 +247,8 @@
       }
     },
     {
-      "id": 200067940,
-      "title": "At least 109 dead including children after migrant boat capsizes off Djibouti",
+      "id": 790738627,
+      "title": "At least 139 dead including children after migrant boat capsizes off Djibouti",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/11/deaths-migrant-boat-capsizes-djibouti",
       "published": "2026-10-11T00:00:00+00:00",
@@ -93,12 +263,12 @@
       "credibility": 90,
       "is_government": false,
       "casualties": {
-        "total": 109,
+        "total": 139,
         "military": 0,
-        "civilian": 109
+        "civilian": 139
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008424-0006",
+        "event_id": "GW-1791765409521-0009",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -111,52 +281,18 @@
       }
     },
     {
-      "id": 130207233,
-      "title": "The scramble to rewrite Biden\u2019s record on Gaza",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/the-listening-post/2026/10/11/the-scramble-to-rewrite-bidens-record-on-gaza?traffic_source=rss",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008434-0015",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 265631682,
-      "title": "Yemen fighting expands as Houthis attack Saudi airport: What to know",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/11/yemen-fighting-expands-as-houthis-attack-saudi-airport-what-to-know?traffic_source=rss",
+      "id": 340686866,
+      "title": "Houthi attack on Riyadh airport forces swift rethink of Trump\u2019s new strategy",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/oct/11/houthi-attack-riyadh-airport-donald-trump-strategy",
       "published": "2026-10-11T00:00:00+00:00",
       "type": "attack",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
+        "name": "Riyadh",
         "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
+        "lat": 24.7136,
+        "lng": 46.6753
       },
       "credibility": 90,
       "is_government": false,
@@ -166,59 +302,59 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008435-0016",
+        "event_id": "GW-1791765409523-0010",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 602587975,
+      "title": "Pakistani national killed in second Houthi strike on Riyadh airport",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/pakistani-national-killed-second-houthi-strike-riyadh-airport?traffic_source=rss",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409534-0015",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
       "verification": {
         "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
+        "score": 65,
+        "num_sources": 2,
         "status": "PARTIAL"
       }
     },
     {
-      "id": 573909682,
-      "title": "Fear and uncertainty for civilians as Yemen\u2019s capital comes under attack",
+      "id": 772971585,
+      "title": "Footage shows moment Russian strike hits Ukrainian grocery store",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news-analysis/2026/10/11/fear-and-uncertainty-for-civilians-as-yemens-capital-comes-under-attack?traffic_source=rss",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/footage-shows-moment-russian-strike-hits-ukrainian-grocery-store?traffic_source=rss",
       "published": "2026-10-11T00:00:00+00:00",
       "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Yemen",
-        "lat": 15.5527,
-        "lng": 48.5164
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008437-0017",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 539356202,
-      "title": "Russia\u2019s Yandex says data centre in Vladimir shut down after drone attack",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack?traffic_source=rss",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "drone",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown",
@@ -234,8 +370,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008438-0018",
-        "incident_type": "drone",
+        "event_id": "GW-1791765409536-0016",
+        "incident_type": "raid",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
@@ -247,18 +383,18 @@
       }
     },
     {
-      "id": 397283471,
-      "title": "What the Iran war has done to the world\u2019s energy supply, in charts",
+      "id": 632852068,
+      "title": "CCTV shows moment of deadly Houthi strike on Riyadh airport",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/11/what-the-iran-war-has-done-to-the-worlds-energy-supply-in-charts?traffic_source=rss",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/houthi-strike-riyadh-international-airport-cctv-footage?traffic_source=rss",
       "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
+      "type": "attack",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
       },
       "credibility": 90,
       "is_government": false,
@@ -268,41 +404,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008440-0019",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 784052373,
-      "title": "US bombs cargo vessel in Gulf of Oman \u2018trying to run Iran blockade\u2019",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/us-bombs-cargo-vessel-in-gulf-of-oman-trying-to-run-iran-blockade?traffic_source=rss",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "explosion",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Oman",
-        "lat": 21.4735,
-        "lng": 55.9754
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008442-0020",
+        "event_id": "GW-1791765409538-0017",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -315,7 +417,449 @@
       }
     },
     {
-      "id": 537111499,
+      "id": 169825301,
+      "title": "Two killed near Israeli-occupied area in south Lebanon",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/10/11/two-killed-near-israeli-occupied-area-in-south-lebanon?traffic_source=rss",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409541-0018",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 541497347,
+      "title": "Deadly air strike kills dozens at Sudan gold mine near Egypt border",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/deadly-air-strike-kills-dozens-at-sudan-gold-mine-near-egypt-border?traffic_source=rss",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Egypt",
+        "lat": 26.8206,
+        "lng": 30.8025
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409543-0019",
+        "incident_type": "airstrike",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 655746683,
+      "title": "Syrian families demand release of detainees held by Israel",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/syrian-families-demand-release-of-detainees-held-by-israel?traffic_source=rss",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409547-0020",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 849081504,
+      "title": "Saudi health minister visits survivors of deadly Riyadh airport attack",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/saudi-health-minister-visits-survivors-of-deadly-riyadh-airport-attack?traffic_source=rss",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409550-0021",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 704458023,
+      "title": "Mexican president urges residents to shelter as Hurricane Simon approaches",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/10/11/mexican-president-urges-residents-to-shelter-as-hurricane-simon-approaches?traffic_source=rss",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "Qatar",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409553-0022",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 567745374,
+      "title": "Jerusalem Daily: Panicked Palestinians flee Israeli attacks on Gaza",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/jerusalem-daily-panicked-palestinians-flee-israeli-attacks-on-gaza?traffic_source=rss",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Jerusalem",
+        "country": "Israel",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409557-0023",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 945055792,
+      "title": "Lebanon\u2019s first electric train hopes to revive railway system",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/lebanons-first-electric-train-hopes-to-revive-railway-system?traffic_source=rss",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Lebanon",
+        "lat": 33.8547,
+        "lng": 35.8623
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409561-0024",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 82337399,
+      "title": "Iran says US response to proposal to reopen Strait of Hormuz is insufficient",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/11/iran-says-us-response-to-proposal-to-reopen-strait-of-hormuz-is-insufficient/",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409565-0025",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 604726908,
+      "title": "Riyadh airport attacked again after Houthi missile strike that killed 13 and injured hundreds",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/gulf/2026/10/11/riyadh-airport-attacked-again-after-houthi-missile-strike-that-killed-12-and-injured-hundreds/",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "missile",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 13,
+        "military": 0,
+        "civilian": 13
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409570-0026",
+        "incident_type": "missile",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 55,
+        "num_sources": 2,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 164145626,
+      "title": "Trump revokes decades-old restrictions on US-Lebanon flights",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/11/trump-revokes-decades-old-restrictions-on-us-lebanon-flights/",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Lebanon",
+        "lat": 33.8547,
+        "lng": 35.8623
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409575-0027",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 878541481,
+      "title": "Middle East latest: Countries condemn Riyadh airport attacks as death toll rises to 13",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/11/live-houthis-riyadh-airport-saudi-houthis/",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 13,
+        "military": 0,
+        "civilian": 13
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409579-0028",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 895331124,
+      "title": "Boat capsizes off Djibouti leaving 139 dead and scores missing",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/11/boat-capsizes-off-djibouti-leaving-109-dead-and-scores-missing/",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "UAE",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 139,
+        "military": 0,
+        "civilian": 139
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409585-0029",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 705292756,
+      "title": "Riyadh airport closure: UAE flight cancellations extend into Tuesday",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/travel/2026/10/11/riyadh-airport-closure-emirates-etihad-cancel-flights-sunday-monday/",
+      "published": "2026-10-11T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1791765409589-0030",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 797066123,
       "title": "Riyadh attack: Iran cannot distance itself from outsourced Houthi violence",
       "source": "The National UAE",
       "source_url": "https://www.thenationalnews.com/opinion/editorial/2026/10/11/riyadh-airport-saudi-arabia-houthis-iran-middle-east/",
@@ -336,7 +880,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008443-0021",
+        "event_id": "GW-1791765409594-0031",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "OSINT"
@@ -349,41 +893,7 @@
       }
     },
     {
-      "id": 818902870,
-      "title": "Middle East latest: UAE among countries to strongly condemn Riyadh airport attack",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/11/live-houthis-riyadh-airport-saudi-houthis/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Riyadh",
-        "country": "Saudi Arabia",
-        "lat": 24.7136,
-        "lng": 46.6753
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008445-0022",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 755697737,
+      "id": 910697763,
       "title": "Fujairah shows why resilience is the Gulf\u2019s greatest energy asset",
       "source": "The National UAE",
       "source_url": "https://www.thenationalnews.com/business/energy/2026/10/11/fujairah-shows-why-resilience-is-the-gulfs-greatest-energy-asset/",
@@ -404,7 +914,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008447-0023",
+        "event_id": "GW-1791765409600-0032",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -417,313 +927,7 @@
       }
     },
     {
-      "id": 314265238,
-      "title": "UAE student inventors and people with disabilities to be offered free IP registration under new rules",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/11/uae-student-inventors-and-people-with-disabilities-to-be-offered-free-ip-registration-under-new-rules/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008449-0024",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 377028202,
-      "title": "Palestinian factions to meet in Egypt for reconciliation talks after election postponed",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/11/palestinian-factions-to-meet-in-egypt-for-reconciliation-talks-after-election-postponed/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Egypt",
-        "lat": 26.8206,
-        "lng": 30.8025
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008452-0025",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 977049360,
-      "title": "US warplane knocks out ship breaching Iran blockade as tankers burn in Hormuz",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/gulf/2026/10/11/us-warplane-knocks-out-ship-breaching-iran-blockade-as-tankers-burn-in-hormuz/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008455-0026",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 405956229,
-      "title": "Diplomats or Quds Force? Zarif's blunt question rattles Iran's old guard",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/11/diplomats-or-quds-force-zarifs-blunt-question-rattles-irans-old-guard/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008458-0027",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 330794628,
-      "title": "Saudi Arabia presses on with global energy summit after deadly Riyadh airport attack",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/business/energy/2026/10/11/saudi-arabia-presses-on-with-global-energy-summit-after-deadly-riyadh-airport-attack/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Riyadh",
-        "country": "Saudi Arabia",
-        "lat": 24.7136,
-        "lng": 46.6753
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008460-0028",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 440802599,
-      "title": "Saudi-led coalition vows to \u2018respond decisively\u2019 to deadly Riyadh airport attack",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/gulf/2026/10/11/saudi-led-coalition-vows-to-respond-decisively-to-deadly-riyadh-airport-attack/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Riyadh",
-        "country": "Saudi Arabia",
-        "lat": 24.7136,
-        "lng": 46.6753
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008463-0029",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 144984851,
-      "title": "Riyadh airport closure: Emirates, Etihad and other UAE airlines cancel flights",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/travel/2026/10/11/riyadh-airport-closure-emirates-etihad-cancel-flights-sunday-monday/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Riyadh",
-        "country": "Saudi Arabia",
-        "lat": 24.7136,
-        "lng": 46.6753
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008466-0030",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 685358406,
-      "title": "Saudi Clasico: Watkins, Martinelli and Summerville all fire as Al Hilal go top",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/sport/football/2026/10/11/martinelli-watkins-and-summerville-all-fire-as-al-hilal-go-top-of-saudi-pro-league/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008469-0031",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 913202650,
-      "title": "UAE IPOs and credit markets primed for growth once war ends, Morgan Stanley executive says",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/business/markets/2026/10/11/uae-ipos-and-credit-markets-primed-for-growth-once-war-ends-morgan-stanley-executive-says/",
-      "published": "2026-10-11T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008472-0032",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 545406692,
+      "id": 447229874,
       "title": "Flydubai attacker began a 'drift towards extremism and terrorism' in Australia, UAE says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cw3dj5n538jpo?at_medium=RSS&at_campaign=rss",
@@ -744,7 +948,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008423-0002",
+        "event_id": "GW-1791765409515-0004",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -757,7 +961,7 @@
       }
     },
     {
-      "id": 632563557,
+      "id": 349820806,
       "title": "Twelve killed and hundreds injured in Houthi attack at Riyadh airport",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/10/yemen-government-allied-forces-recapture-bab-al-mandab-strait-houthis-taiz",
@@ -778,7 +982,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008425-0007",
+        "event_id": "GW-1791765409524-0011",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "OSINT"
@@ -791,7 +995,7 @@
       }
     },
     {
-      "id": 277165751,
+      "id": 410925385,
       "title": "In three years, Israel's war on Gaza hasn't just changed the Middle East, it's changed the world | Steve Bloomfield",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/commentisfree/2026/oct/10/israel-war-gaza-middle-east-world-violence",
@@ -812,7 +1016,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008426-0008",
+        "event_id": "GW-1791765409526-0012",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -825,7 +1029,7 @@
       }
     },
     {
-      "id": 357257577,
+      "id": 264902760,
       "title": "Flydubai co-pilot began radicalisation in Australia, UAE prosecutors say",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/10/flydubai-co-pilot-radicalisation-australia-uae-prosecutors-ntwnfb",
@@ -846,7 +1050,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008428-0009",
+        "event_id": "GW-1791765409529-0013",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -859,7 +1063,7 @@
       }
     },
     {
-      "id": 378124235,
+      "id": 805230975,
       "title": "Lockheed Martin unveils PAC-3 Edge interceptor designed to counter hypersonic threats",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/10/lockheed-martin-unveils-pac-3-edge-interceptor-designed-to-counter-hypersonic-threats/",
@@ -880,7 +1084,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008476-0033",
+        "event_id": "GW-1791765409605-0033",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -893,7 +1097,7 @@
       }
     },
     {
-      "id": 723949777,
+      "id": 515901228,
       "title": "Coast Guard places $248 million order for first MQ-9B drones",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/coast-guard-places-248-million-order-for-first-mq-9b-drones/",
@@ -914,7 +1118,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008489-0037",
+        "event_id": "GW-1791765409612-0034",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -927,7 +1131,7 @@
       }
     },
     {
-      "id": 356269588,
+      "id": 353070200,
       "title": "Lockheed unveils PAC-3 Edge, its next-gen Patriot interceptor",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/lockheed-unveils-pac-3-edge-its-next-gen-patriot-interceptor/",
@@ -948,7 +1152,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008491-0038",
+        "event_id": "GW-1791765409617-0035",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -961,7 +1165,7 @@
       }
     },
     {
-      "id": 647267883,
+      "id": 780086165,
       "title": "Drones and autonomous warfare: \u2018One-way attack\u2019 and reshaping ISR",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/drones-and-autonomous-warfare-one-way-attack-and-reshaping-isr/",
@@ -982,7 +1186,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008494-0039",
+        "event_id": "GW-1791765409622-0036",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -995,7 +1199,7 @@
       }
     },
     {
-      "id": 71483909,
+      "id": 912665607,
       "title": "Ideal Aerosmith debuts \u2018Troublemaker\u2019 for one-way attack",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/ideal-aerosmith-debuts-troublemaker-for-one-way-attack/",
@@ -1016,7 +1220,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008497-0040",
+        "event_id": "GW-1791765409628-0037",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1029,7 +1233,7 @@
       }
     },
     {
-      "id": 572614229,
+      "id": 860951335,
       "title": "Thales looks to export new C2 platform to Gulf nations, says executive",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/thales-looks-to-export-new-c2-platform-to-gulf-nations-says-executive/",
@@ -1050,7 +1254,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008500-0041",
+        "event_id": "GW-1791765409633-0038",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1063,7 +1267,7 @@
       }
     },
     {
-      "id": 888300796,
+      "id": 826837979,
       "title": "New leaders, new drone command: What we expect from AUSA 2026",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/new-leaders-new-drone-command-what-we-expect-from-ausa-2026/",
@@ -1084,7 +1288,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008504-0042",
+        "event_id": "GW-1791765409639-0039",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1097,7 +1301,7 @@
       }
     },
     {
-      "id": 123894777,
+      "id": 252860772,
       "title": "A leap in drone range and payloads come from a battery with different chemistry",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/a-leap-in-drone-range-and-payloads-come-from-a-battery-with-different-chemistry/",
@@ -1118,7 +1322,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008507-0043",
+        "event_id": "GW-1791765409644-0040",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1131,7 +1335,7 @@
       }
     },
     {
-      "id": 38764116,
+      "id": 998330685,
       "title": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss",
@@ -1152,7 +1356,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008423-0003",
+        "event_id": "GW-1791765409516-0005",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1165,7 +1369,7 @@
       }
     },
     {
-      "id": 905358584,
+      "id": 150278168,
       "title": "Bringing real autonomy to battlefield drone swarms",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/bringing-real-autonomy-to-battlefield-drone-swarms/",
@@ -1186,7 +1390,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1791721008511-0044",
+        "event_id": "GW-1791765409652-0041",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1196,312 +1400,6 @@
         "score": 20,
         "num_sources": 1,
         "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 305212861,
-      "title": "Flydubai co-pilot planned suicide attack on Israeli airport, UAE prosecutors say",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/2026/oct/09/flydubai-co-pilot-planned-suicide-attack-on-israeli-airport-uae-prosecutors-say",
-      "published": "2026-10-09T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008429-0010",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 695773930,
-      "title": "Three Saudis killed in Riyadh airport attack claimed by Houthis",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/2026/oct/09/riyadh-airport-flights-suspended-houthis-claim-attack",
-      "published": "2026-10-09T00:00:00+00:00",
-      "type": "attack",
-      "status": "reported",
-      "location": {
-        "name": "Riyadh",
-        "country": "Saudi Arabia",
-        "lat": 24.7136,
-        "lng": 46.6753
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008430-0011",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 403978486,
-      "title": "\u2018Self-imposed irrelevance\u2019: why the EU is failing to act on growing public criticism of Israel",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/2026/oct/09/why-eu-failing-act-growing-public-criticism-israel-gaza-west-bank",
-      "published": "2026-10-09T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008431-0012",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 969692203,
-      "title": "Egyptian journalists plan weekend protest over detention of six colleagues",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/global-development/2026/oct/09/egypt-six-journalists-matsadaash-protest-over-detentions",
-      "published": "2026-10-09T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Egypt",
-        "lat": 26.8206,
-        "lng": 30.8025
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008433-0013",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 427390202,
-      "title": "Pentagon, Raytheon sign $6.3B deal to replenish US missile interceptor supply",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/missile-defense/2026/10/09/pentagon-raytheon-sign-63b-deal-to-replenish-us-missile-interceptor-supply/",
-      "published": "2026-10-09T00:00:00+00:00",
-      "type": "missile",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008479-0034",
-        "incident_type": "missile",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 791607977,
-      "title": "Official poster depicts the US Army\u2019s newest threat: The Iranian soldier",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/news/your-military/2026/10/09/official-poster-depicts-the-us-armys-newest-threat-the-iranian-soldier/",
-      "published": "2026-10-09T00:00:00+00:00",
-      "type": "security",
-      "status": "confirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008482-0035",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 506140731,
-      "title": "Estonia\u2019s KrattWorks crafting Shahed-like dummy drone for target practice",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/global/europe/2026/10/09/estonias-krattworks-crafting-shahed-like-dummy-drone-for-target-practice/",
-      "published": "2026-10-09T00:00:00+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008485-0036",
-        "incident_type": "drone",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 345924888,
-      "title": "Pentagon, Raytheon ink up to $6.3 billion multi-year contract for SM-3 IB missiles",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/10/pentagon-raytheon-ink-up-to-6-3-billion-multi-year-contract-for-sm-3-ib-missiles/",
-      "published": "2026-10-08T22:07:21+00:00",
-      "type": "missile",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008514-0045",
-        "incident_type": "missile",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 88494657,
-      "title": "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-      "source": "BBC Middle East",
-      "source_url": "https://www.bbc.co.uk/news/articles/cw33xd6vegnno?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-08T15:21:46+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Jerusalem",
-        "country": "Israel",
-        "lat": 31.7683,
-        "lng": 35.2137
-      },
-      "credibility": 95,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1791721008423-0004",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
       }
     }
   ]

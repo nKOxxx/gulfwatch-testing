@@ -2,42 +2,55 @@
   "regional": {
     "casualties": {
       "military": 0,
-      "civilian": 409,
-      "total": 409,
+      "civilian": 614,
+      "total": 614,
       "byCountry": {
+        "yemen": 36,
         "saudi": 300
       }
     },
     "missiles": {
       "launched": 3,
-      "intercepted": 2,
-      "landed": 1,
-      "byCountry": {}
+      "intercepted": 1,
+      "landed": 2,
+      "byCountry": {
+        "saudi": {
+          "launched": 1,
+          "intercepted": 0,
+          "landed": 1
+        },
+        "yemen": {
+          "launched": 1,
+          "intercepted": 0,
+          "landed": 1
+        }
+      }
     },
     "airstrikes": {
-      "total": 0,
+      "total": 1,
       "byCountry": {}
     },
     "drones": {
-      "total": 7,
+      "total": 5,
       "downed": 0,
       "byCountry": {}
     },
     "incidents": {
-      "total": 44,
+      "total": 41,
       "byType": {
-        "general": 34,
-        "drone": 7,
-        "missile": 3
+        "general": 32,
+        "missile": 3,
+        "airstrike": 1,
+        "drone": 5
       },
       "byCountry": {
-        "saudi": 6,
-        "yemen": 5,
-        "gaza": 1,
-        "iran": 6,
-        "uae": 5,
-        "palestine": 1,
-        "israel": 4
+        "iran": 3,
+        "yemen": 7,
+        "saudi": 7,
+        "israel": 3,
+        "syria": 1,
+        "lebanon": 2,
+        "uae": 2
       }
     }
   },
@@ -64,43 +77,22 @@
       },
       "incidents": [
         {
-          "id": 397283471,
-          "title": "What the Iran war has done to the world\u2019s energy supply, in charts",
+          "id": 332863784,
+          "title": "Iran war live: Riyadh airport hit again; Tehran says US reply \u2018inadequate\u2019",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 784052373,
-          "title": "US bombs cargo vessel in Gulf of Oman \u2018trying to run Iran blockade\u2019",
+          "id": 82337399,
+          "title": "Iran says US response to proposal to reopen Strait of Hormuz is insufficient",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 537111499,
+          "id": 797066123,
           "title": "Riyadh attack: Iran cannot distance itself from outsourced Houthi violence",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 977049360,
-          "title": "US warplane knocks out ship breaching Iran blockade as tankers burn in Hormuz",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 405956229,
-          "title": "Diplomats or Quds Force? Zarif's blunt question rattles Iran's old guard",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 791607977,
-          "title": "Official poster depicts the US Army\u2019s newest threat: The Iranian soldier",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -130,29 +122,22 @@
       },
       "incidents": [
         {
-          "id": 277165751,
+          "id": 169825301,
+          "title": "Two killed near Israeli-occupied area in south Lebanon",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 567745374,
+          "title": "Jerusalem Daily: Panicked Palestinians flee Israeli attacks on Gaza",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 410925385,
           "title": "In three years, Israel's war on Gaza hasn't just changed the Middle East, it's changed the world | S",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 305212861,
-          "title": "Flydubai co-pilot planned suicide attack on Israeli airport, UAE prosecutors say",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 403978486,
-          "title": "\u2018Self-imposed irrelevance\u2019: why the EU is failing to act on growing public criticism of Israel",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 88494657,
-          "title": "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' ",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -180,15 +165,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 377028202,
-          "title": "Palestinian factions to meet in Egypt for reconciliation talks after election postponed",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "gaza": {
@@ -211,15 +188,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 130207233,
-          "title": "The scramble to rewrite Biden\u2019s record on Gaza",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "lebanon": {
@@ -242,7 +211,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 945055792,
+          "title": "Lebanon\u2019s first electric train hopes to revive railway system",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 164145626,
+          "title": "Trump revokes decades-old restrictions on US-Lebanon flights",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "syria": {
@@ -265,7 +249,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 655746683,
+          "title": "Syrian families demand release of detainees held by Israel",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "yemen": {
@@ -273,11 +265,11 @@
       "flag": "\ud83c\uddfe\ud83c\uddea",
       "casualties": {
         "military": 0,
-        "civilian": 0,
-        "total": 0
+        "civilian": 36,
+        "total": 36
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -290,42 +282,56 @@
       },
       "incidents": [
         {
-          "id": 834554275,
-          "title": "Middle East crisis live: Houthis warn passengers against using Saudi airport after deadly attack on ",
+          "id": 926185835,
+          "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
+          "type": "general",
+          "time": "",
+          "casualties": 11
+        },
+        {
+          "id": 772207290,
+          "title": "Middle East crisis: Riyadh airport hit again as Houthis claim attacks, including strike that killed ",
+          "type": "general",
+          "time": "",
+          "casualties": 12
+        },
+        {
+          "id": 340686866,
+          "title": "Houthi attack on Riyadh airport forces swift rethink of Trump\u2019s new strategy",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 265631682,
-          "title": "Yemen fighting expands as Houthis attack Saudi airport: What to know",
+          "id": 602587975,
+          "title": "Pakistani national killed in second Houthi strike on Riyadh airport",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 573909682,
-          "title": "Fear and uncertainty for civilians as Yemen\u2019s capital comes under attack",
+          "id": 632852068,
+          "title": "CCTV shows moment of deadly Houthi strike on Riyadh airport",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 632563557,
+          "id": 604726908,
+          "title": "Riyadh airport attacked again after Houthi missile strike that killed 13 and injured hundreds",
+          "type": "missile",
+          "time": "",
+          "casualties": 13
+        },
+        {
+          "id": 349820806,
           "title": "Twelve killed and hundreds injured in Houthi attack at Riyadh airport",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 695773930,
-          "title": "Three Saudis killed in Riyadh airport attack claimed by Houthis",
           "type": "general",
           "time": "",
           "casualties": 0
         }
       ],
-      "trend": "stable"
+      "trend": "decreasing"
     },
     "saudi": {
       "name": "Saudi Arabia",
@@ -336,7 +342,7 @@
         "total": 300
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -349,42 +355,49 @@
       },
       "incidents": [
         {
-          "id": 996455746,
+          "id": 225344417,
           "title": "Twelve killed and 300 injured in attack on airport in Saudi capital Riyadh",
           "type": "general",
           "time": "",
           "casualties": 300
         },
         {
-          "id": 818902870,
-          "title": "Middle East latest: UAE among countries to strongly condemn Riyadh airport attack",
+          "id": 506221725,
+          "title": "Riyadh airport hit again after deadly Houthi missile attack, Saudi authorities say",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 515915637,
+          "title": "Canelo \u00c1lvarez \u2018fears nothing\u2019 and will fight in Riyadh despite deadly attacks, Al-Sheikh says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 330794628,
-          "title": "Saudi Arabia presses on with global energy summit after deadly Riyadh airport attack",
+          "id": 849081504,
+          "title": "Saudi health minister visits survivors of deadly Riyadh airport attack",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 440802599,
-          "title": "Saudi-led coalition vows to \u2018respond decisively\u2019 to deadly Riyadh airport attack",
+          "id": 878541481,
+          "title": "Middle East latest: Countries condemn Riyadh airport attacks as death toll rises to 13",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 685358406,
-          "title": "Saudi Clasico: Watkins, Martinelli and Summerville all fire as Al Hilal go top",
+          "id": 705292756,
+          "title": "Riyadh airport closure: UAE flight cancellations extend into Tuesday",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 38764116,
+          "id": 998330685,
           "title": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
           "type": "general",
           "time": "",
@@ -415,35 +428,14 @@
       },
       "incidents": [
         {
-          "id": 314265238,
-          "title": "UAE student inventors and people with disabilities to be offered free IP registration under new rule",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 144984851,
-          "title": "Riyadh airport closure: Emirates, Etihad and other UAE airlines cancel flights",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 913202650,
-          "title": "UAE IPOs and credit markets primed for growth once war ends, Morgan Stanley executive says",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 545406692,
+          "id": 447229874,
           "title": "Flydubai attacker began a 'drift towards extremism and terrorism' in Australia, UAE says",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 357257577,
+          "id": 264902760,
           "title": "Flydubai co-pilot began radicalisation in Australia, UAE prosecutors say",
           "type": "general",
           "time": "",
@@ -591,9 +583,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-10-11T12:16:49.600632",
+  "lastUpdated": "2026-10-12T00:36:50.248363",
   "timeRange": {
-    "from": "2026-10-04T12:16:49.600636",
-    "to": "2026-10-11T12:16:49.600640"
+    "from": "2026-10-05T00:36:50.248368",
+    "to": "2026-10-12T00:36:50.248372"
   }
 }
