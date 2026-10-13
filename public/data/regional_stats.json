@@ -10,14 +10,19 @@
       }
     },
     "missiles": {
-      "launched": 3,
+      "launched": 7,
       "intercepted": 2,
-      "landed": 1,
+      "landed": 5,
       "byCountry": {
-        "saudi": {
+        "yemen": {
           "launched": 1,
           "intercepted": 0,
           "landed": 1
+        },
+        "saudi": {
+          "launched": 3,
+          "intercepted": 0,
+          "landed": 3
         }
       }
     },
@@ -28,26 +33,26 @@
       }
     },
     "drones": {
-      "total": 6,
+      "total": 5,
       "downed": 0,
       "byCountry": {}
     },
     "incidents": {
-      "total": 52,
+      "total": 46,
       "byType": {
-        "general": 42,
-        "missile": 3,
-        "airstrike": 1,
-        "drone": 6
+        "general": 33,
+        "drone": 5,
+        "missile": 7,
+        "airstrike": 1
       },
       "byCountry": {
-        "yemen": 7,
+        "yemen": 8,
         "israel": 3,
-        "saudi": 12,
-        "gaza": 2,
-        "uae": 9,
-        "syria": 1,
-        "oman": 1
+        "saudi": 9,
+        "lebanon": 3,
+        "iran": 4,
+        "iraq": 2,
+        "uae": 1
       }
     }
   },
@@ -72,7 +77,36 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 115347752,
+          "title": "Why do Iran\u2019s oil \u2018intermediaries\u2019 owe the government billions?",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 61265444,
+          "title": "UK blames Iran for airbase plot, sanctions two Iranian nationals",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 229184135,
+          "title": "UK PM says RAF base incidents \u2018likely coordinated\u2019 by Iran",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 124098865,
+          "title": "\u2018Iran smells weakness\u2019: Burnham challenged over IRGC after airbase plot",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "israel": {
@@ -97,22 +131,22 @@
       },
       "incidents": [
         {
-          "id": 18278070,
+          "id": 445995272,
           "title": "Three years of war, 100,000 targets struck: IDF releases new conflict data",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 858891914,
-          "title": "Maps show how Israel\u2019s \u2018Yellow Line\u2019 keeps squeezing Palestinians in Gaza",
+          "id": 145973920,
+          "title": "Israel demolitions in Negev displace 400 Palestinians",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 210800850,
-          "title": "In three years, Israel's war on Gaza hasn't just changed the Middle East, it's changed the world | S",
+          "id": 65785518,
+          "title": "Israeli strike on tent in Gaza\u2019s Khan Younis kills three",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -163,22 +197,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 541579533,
-          "title": "Gaza: Still Reporting",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 811756391,
-          "title": "Photos: Gaza mothers endure endless lines as famine fears persist",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "lebanon": {
@@ -201,7 +220,29 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 924358987,
+          "title": "Lebanon\u2019s only church-bell maker on keeping a 300-year family tradition alive",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 583403537,
+          "title": "EU launches support mission for Lebanese army as Unifil deadline looms",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 761612921,
+          "title": "Lebanon's dark history of assassinations raised after half tonne of explosives seized",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "syria": {
@@ -224,15 +265,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 602539338,
-          "title": "Veteran politician calls for Kurdish rights to be enshrined in Syria\u2019s constitution to prevent tensi",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "yemen": {
@@ -244,7 +277,7 @@
         "total": 162
       },
       "missiles": {
-        "launched": 0,
+        "launched": 1,
         "intercepted": 0,
         "landed": 0
       },
@@ -257,50 +290,57 @@
       },
       "incidents": [
         {
-          "id": 996091598,
+          "id": 694781603,
           "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 891432394,
-          "title": "Giants Brigades lead southern Yemen fightback against the Houthis",
+          "id": 195378008,
+          "title": "On Yemen's desert battlefield, a war with global consequences is being waged",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 269083436,
+          "id": 927497264,
+          "title": "Why are the Houthis attacking Saudi airports and how are the missiles getting through?",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 603352884,
+          "title": "Fighting intensifies in Yemen as Houthis fire on Saudi Arabia",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 342432363,
           "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
           "type": "general",
           "time": "",
           "casualties": 11
         },
         {
-          "id": 47270350,
+          "id": 559074674,
           "title": "Children among 139 dead after Yemen-bound boat capsizes off Djibouti, UN says",
           "type": "general",
           "time": "",
           "casualties": 139
         },
         {
-          "id": 297297205,
+          "id": 709774193,
           "title": "Middle East crisis: Riyadh airport hit again as Houthis claim attacks, including strike that killed ",
           "type": "general",
           "time": "",
           "casualties": 12
         },
         {
-          "id": 175027279,
+          "id": 590319212,
           "title": "Houthi attack on Riyadh airport forces swift rethink of Trump\u2019s new strategy",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 184163785,
-          "title": "Twelve killed and hundreds injured in Houthi attack at Riyadh airport",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -317,7 +357,7 @@
         "total": 300
       },
       "missiles": {
-        "launched": 1,
+        "launched": 3,
         "intercepted": 0,
         "landed": 0
       },
@@ -330,71 +370,64 @@
       },
       "incidents": [
         {
-          "id": 248285189,
-          "title": "Saudi Arabia vows resilience as Houthi strikes hit Riyadh airport",
+          "id": 8342764,
+          "title": "Saudi Arabia further suspends flights after latest deadly Houthi attack on airport",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 585297683,
-          "title": "Alvarez vs M\u2019billi boxing bout to go ahead despite Saudi airport attacks",
+          "id": 977170035,
+          "title": "CCTV from inside Riyadh airport shows moment of deadly airstrike \u2013 video",
+          "type": "airstrike",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 392697342,
+          "title": "Houthi missile attack targets Saudi capital Riyadh for third day in a row",
+          "type": "missile",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 659223355,
+          "title": "UAE teacher injured in Riyadh airport attack assured she can complete Umrah",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 856355984,
-          "title": "Pilot, flight attendant and widowed mother among victims of Houthi attacks in Saudi Arabia",
+          "id": 681881000,
+          "title": "Saudi Arabia faces challenge of repeated and simultaneous attacks",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 853852199,
-          "title": "US says Hormuz oil flows recover to 14 million bpd despite Saudi attacks",
-          "type": "general",
+          "id": 746676248,
+          "title": "3 US soldiers awarded Purple Hearts after March missile attack on Saudi Arabia base",
+          "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 811107860,
-          "title": "Saudi Arabia says oil supply to continue to flow despite Riyadh attacks",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 962095628,
-          "title": "Saudi Arabia extends suspension of operations at Riyadh airport",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 527995000,
+          "id": 345635346,
           "title": "Twelve killed and 300 injured in attack on airport in Saudi capital Riyadh",
           "type": "general",
           "time": "",
           "casualties": 300
         },
         {
-          "id": 277396374,
+          "id": 467920174,
           "title": "Riyadh airport hit again after deadly Houthi missile attack, Saudi authorities say",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 769956978,
+          "id": 657572507,
           "title": "Canelo \u00c1lvarez \u2018fears nothing\u2019 and will fight in Riyadh despite deadly attacks, Al-Sheikh says",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 44911788,
-          "title": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -424,64 +457,8 @@
       },
       "incidents": [
         {
-          "id": 270415859,
-          "title": "Melbourne man \u2018strongly rejects\u2019 links to flydubai attack suspect",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 574471868,
-          "title": "From missing pets to new homes, Microchipped\u2019s mission to help UAE cats",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 666050906,
-          "title": "Boehringer Ingelheim premieres short film to raise awareness of pulmonary fibrosis in the UAE",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 458095733,
-          "title": "UAE wealth set to hit $6 trillion in 2030 despite short-term war volatility",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 60448936,
-          "title": "'Being allowed to leave does not erase injustice': Former Dubai resident leaves Iraq after years of ",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 291968515,
-          "title": "UAE approves 2027-2029 budget with Dh292.5bn in spending",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 737918059,
-          "title": "UAE teenager Mariam Kareem\u2019s stunning rise from school runner to Asian Games champion",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 444487841,
+          "id": 879887812,
           "title": "Flydubai attacker began a 'drift towards extremism and terrorism' in Australia, UAE says",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 490104072,
-          "title": "Flydubai co-pilot began radicalisation in Australia, UAE prosecutors say",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -532,7 +509,22 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 884856691,
+          "title": "Iraq should not pose threat to Gulf states, President of Kurdistan region says",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 178569970,
+          "title": "PKK withdraws from Turkish border area in Iraqi Kurdistan",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "kuwait": {
@@ -624,21 +616,13 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 86308112,
-          "title": "Oman aims to launch new international financial centre by 2027",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-10-12T12:24:00.180586",
+  "lastUpdated": "2026-10-13T00:34:31.744264",
   "timeRange": {
-    "from": "2026-10-05T12:24:00.180591",
-    "to": "2026-10-12T12:24:00.180595"
+    "from": "2026-10-06T00:34:31.744268",
+    "to": "2026-10-13T00:34:31.744271"
   }
 }
