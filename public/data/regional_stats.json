@@ -2,11 +2,10 @@
   "regional": {
     "casualties": {
       "military": 0,
-      "civilian": 450,
-      "total": 450,
+      "civilian": 150,
+      "total": 150,
       "byCountry": {
-        "yemen": 150,
-        "saudi": 300
+        "yemen": 150
       }
     },
     "missiles": {
@@ -14,46 +13,48 @@
       "intercepted": 2,
       "landed": 6,
       "byCountry": {
-        "saudi": {
-          "launched": 2,
-          "intercepted": 1,
-          "landed": 1
-        },
         "yemen": {
           "launched": 2,
           "intercepted": 0,
           "landed": 2
+        },
+        "saudi": {
+          "launched": 2,
+          "intercepted": 1,
+          "landed": 1
         }
       }
     },
     "airstrikes": {
-      "total": 1,
+      "total": 2,
       "byCountry": {
+        "israel": 1,
         "saudi": 1
       }
     },
     "drones": {
-      "total": 5,
+      "total": 4,
       "downed": 0,
       "byCountry": {}
     },
     "incidents": {
-      "total": 42,
+      "total": 49,
       "byType": {
-        "general": 28,
+        "general": 35,
         "missile": 8,
-        "drone": 5,
-        "airstrike": 1
+        "airstrike": 2,
+        "drone": 4
       },
       "byCountry": {
-        "iran": 2,
-        "saudi": 6,
-        "israel": 1,
-        "yemen": 10,
-        "iraq": 1,
-        "uae": 1,
-        "jordan": 1,
-        "lebanon": 1
+        "yemen": 6,
+        "saudi": 7,
+        "iran": 4,
+        "israel": 9,
+        "palestine": 1,
+        "lebanon": 2,
+        "uae": 3,
+        "gaza": 1,
+        "iraq": 1
       }
     }
   },
@@ -80,15 +81,29 @@
       },
       "incidents": [
         {
-          "id": 336219625,
-          "title": "Iran war live: Saudi coalition hits Houthi sites; Aramco office hit in east",
+          "id": 557810765,
+          "title": "Iranian woman handed death sentence for \u2018blasphemy\u2019 in social media post",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 419021404,
-          "title": "UK intelligence chief warns of 'major shift' after Iran attacks military bases",
+          "id": 12977972,
+          "title": "Iran steps up Hormuz surveillance: Attacks soar, oil flows crash again",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 931872659,
+          "title": "How do Iranians move money abroad to avoid US sanctions?",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 61036193,
+          "title": "Trump threatens renewed military action against Iran",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -110,7 +125,7 @@
         "landed": 0
       },
       "airstrikes": {
-        "total": 0
+        "total": 1
       },
       "drones": {
         "total": 0,
@@ -118,7 +133,63 @@
       },
       "incidents": [
         {
-          "id": 843883940,
+          "id": 390917347,
+          "title": "Do any of these Israeli candidates support a Palestinian state?",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 592254738,
+          "title": "Settlers set fire to mosque in West Bank as Israeli forces raid villages",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 946848512,
+          "title": "Israeli plan to reopen settler \u2018Route 463\u2019 threatens to isolate Ramallah",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 305682692,
+          "title": "Israeli air strike kills Palestinian woman in Gaza City",
+          "type": "airstrike",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 489783275,
+          "title": "Girl rescued from flaming apartment after Israeli attack on Gaza",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 741358379,
+          "title": "Palestinians say Israel\u2019s democracy \u2018is a joke\u2019",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 624729385,
+          "title": "How Israel\u2019s \u2018Yellow Line\u2019 is reshaping southern Lebanon",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 772828107,
+          "title": "US decries 'embarrassing' case against Lebanese envoy over contact with Israel",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 635613557,
           "title": "Israel\u2019s IAI unveils 3 new air defense systems at AUSA",
           "type": "general",
           "time": "",
@@ -147,7 +218,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 460410625,
+          "title": "Jerry Seinfeld dances as pro-Palestine protesters interrupt show",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "gaza": {
@@ -170,7 +249,15 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [],
+      "incidents": [
+        {
+          "id": 214009662,
+          "title": "Gaza committee signs recovery assistance deal with Germany\u2019s GIZ in Cairo",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        }
+      ],
       "trend": "stable"
     },
     "lebanon": {
@@ -195,7 +282,14 @@
       },
       "incidents": [
         {
-          "id": 353521811,
+          "id": 449287394,
+          "title": "Lebanon's power failure: Diesel generators, $300-a-month bills - and a corrupt system milking the pr",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 611585961,
           "title": "Lebanon\u2019s only church-bell maker on keeping a 300-year family tradition alive",
           "type": "general",
           "time": "",
@@ -249,70 +343,42 @@
       },
       "incidents": [
         {
-          "id": 409913822,
-          "title": "Who are the Houthis and what do they want?",
-          "type": "general",
+          "id": 423289467,
+          "title": "Houthi missile hits Aramco building after Saudi-led coalition strike on Yemen fuel depot",
+          "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 25985060,
+          "id": 993886844,
           "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 993120717,
-          "title": "Food shortages in Yemen\u2019s Taiz as Houthi siege hits supplies",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 245795329,
-          "title": "Funeral for Egyptian flight attendant killed in Houthi attack on Riyadh",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 910835488,
-          "title": "Saudi-led coalition and Houthis trade threats over oil installations",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 320093004,
-          "title": "Saudi-led coalition strikes fuel facilities used by Houthis to support drone and missile attacks",
-          "type": "missile",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 789204736,
+          "id": 817885513,
           "title": "On Yemen's desert battlefield, a war with global consequences is being waged",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 443348440,
+          "id": 705716260,
           "title": "Why are the Houthis attacking Saudi airports and how are the missiles getting through?",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 786027922,
+          "id": 279681129,
           "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
           "type": "general",
           "time": "",
           "casualties": 11
         },
         {
-          "id": 302074338,
+          "id": 946098564,
           "title": "Children among 139 dead after Yemen-bound boat capsizes off Djibouti, UN says",
           "type": "general",
           "time": "",
@@ -326,8 +392,8 @@
       "flag": "\ud83c\uddf8\ud83c\udde6",
       "casualties": {
         "military": 0,
-        "civilian": 300,
-        "total": 300
+        "civilian": 0,
+        "total": 0
       },
       "missiles": {
         "launched": 2,
@@ -343,49 +409,56 @@
       },
       "incidents": [
         {
-          "id": 250221217,
-          "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
+          "id": 579104927,
+          "title": "Saudi Arabia overturns death sentence for man over Facebook comment, Sri Lanka says",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 169003015,
+          "title": "Saudi-led coalition intercepts Houthi missile launched towards Riyadh",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 352516543,
+          "id": 664077555,
+          "title": "OpenAI says Saudi citizen arrested over hidden recording device in office",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 280101273,
+          "title": "Saudi employee charged with planting recording device in OpenAI office",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 707760485,
           "title": "Saudi Arabia strikes oil depots in Yemen and says missiles launched toward location of Saudi Aramco ",
           "type": "missile",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 31098100,
-          "title": "Riyadh keeps moving after deadly strikes, but schools go online and travellers reroute",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        },
-        {
-          "id": 606977379,
+          "id": 663662606,
           "title": "Saudi Arabia further suspends flights after latest deadly Houthi attack on airport",
           "type": "general",
           "time": "",
           "casualties": 0
         },
         {
-          "id": 699622458,
+          "id": 295279242,
           "title": "CCTV from inside Riyadh airport shows moment of deadly airstrike \u2013 video",
           "type": "airstrike",
           "time": "",
           "casualties": 0
-        },
-        {
-          "id": 51795932,
-          "title": "Twelve killed and 300 injured in attack on airport in Saudi capital Riyadh",
-          "type": "general",
-          "time": "",
-          "casualties": 300
         }
       ],
-      "trend": "increasing"
+      "trend": "stable"
     },
     "uae": {
       "name": "UAE",
@@ -409,8 +482,22 @@
       },
       "incidents": [
         {
-          "id": 566493858,
-          "title": "UAE universities must change to equip students in AI age, say leaders and students",
+          "id": 49819733,
+          "title": "Keanu Al Azhari to represent UAE with 'immense pride' after landing F3 contract for 2027",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 301725562,
+          "title": "UAE orders recall of face mask batch over possible contamination",
+          "type": "general",
+          "time": "",
+          "casualties": 0
+        },
+        {
+          "id": 614981363,
+          "title": "UAE offers $1 million prize for winners of global AI challenge",
           "type": "general",
           "time": "",
           "casualties": 0
@@ -438,15 +525,7 @@
         "total": 0,
         "downed": 0
       },
-      "incidents": [
-        {
-          "id": 288339599,
-          "title": "Housekeeper cleared of stealing Jordanian princess\u2019s jewels",
-          "type": "general",
-          "time": "",
-          "casualties": 0
-        }
-      ],
+      "incidents": [],
       "trend": "stable"
     },
     "iraq": {
@@ -471,7 +550,7 @@
       },
       "incidents": [
         {
-          "id": 450684571,
+          "id": 472854094,
           "title": "Death threats and isolation - the cost of fighting sexual violence in Iraq",
           "type": "general",
           "time": "",
@@ -573,9 +652,9 @@
       "trend": "stable"
     }
   },
-  "lastUpdated": "2026-10-14T00:27:06.665984",
+  "lastUpdated": "2026-10-14T12:16:36.560738",
   "timeRange": {
-    "from": "2026-10-07T00:27:06.665988",
-    "to": "2026-10-14T00:27:06.665991"
+    "from": "2026-10-07T12:16:36.560744",
+    "to": "2026-10-14T12:16:36.560750"
   }
 }
