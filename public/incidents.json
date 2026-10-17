@@ -1,15 +1,151 @@
 {
-  "generated_at": "2026-10-16T12:16:15.342715+00:00",
-  "total_incidents": 43,
+  "generated_at": "2026-10-17T00:27:08.847972+00:00",
+  "total_incidents": 44,
   "circuit_breaker_stats": {
-    "total_processed": 43,
+    "total_processed": 44,
     "duplicates_filtered": 0,
     "recaps_blocked": 0,
-    "unique_signatures": 25
+    "unique_signatures": 26
   },
   "incidents": [
     {
-      "id": 606137630,
+      "id": 625980152,
+      "title": "Iran war live: Trump claims US Navy blockade stops Iranian ships in Hormuz",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2?traffic_source=rss",
+      "published": "2026-10-17T00:00:00+00:00",
+      "type": "security",
+      "status": "reported",
+      "location": {
+        "name": "Unknown City",
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827384-0020",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 241643538,
+      "title": "Zone 5 \u2018found a spot\u2019 in drone interceptor market with new Eclipse: CEO",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/zone-5-found-a-spot-in-drone-interceptor-market-with-new-eclipse-ceo/",
+      "published": "2026-10-16T16:28:00+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827480-0039",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 644517262,
+      "title": "Germany changes course on plans to buy MQ-28 drone wingman: Boeing official",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/10/germany-changes-course-on-plans-to-buy-mq-28-drone-wingman-boeing-official/",
+      "published": "2026-10-16T15:19:30+00:00",
+      "type": "drone",
+      "status": "confirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827486-0040",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 454912189,
+      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+      "source": "BBC Middle East",
+      "source_url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-16T14:31:04+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 95,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827342-0001",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 875054648,
       "title": "Turkish Aerospace expands Anka 3 production with new line for upgraded drone",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/turkish-aerospace-expands-anka-3-production-with-new-line-for-upgraded-drone/",
@@ -30,7 +166,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974126-0039",
+        "event_id": "GW-1792196827493-0041",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -43,7 +179,7 @@
       }
     },
     {
-      "id": 672265022,
+      "id": 292898138,
       "title": "China tells Israel to stop 'forced establishment' of West Bank settlements",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cq1j3wdxy48ro?at_medium=RSS&at_campaign=rss",
@@ -64,7 +200,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974021-0002",
+        "event_id": "GW-1792196827343-0003",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -77,7 +213,7 @@
       }
     },
     {
-      "id": 195416122,
+      "id": 132688828,
       "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
@@ -98,7 +234,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974021-0001",
+        "event_id": "GW-1792196827343-0002",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -111,7 +247,75 @@
       }
     },
     {
-      "id": 882233425,
+      "id": 245087996,
+      "title": "Israeli settlers attack olive farmers and Washington Post journalist in West Bank",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827352-0009",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 579305160,
+      "title": "American photojournalist recounts Israeli settler attack in the occupied West Bank \u2013\u00a0video",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "attack",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827355-0010",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 20,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 443109341,
       "title": "I\u2019ve debated with Israel\u2019s most fervent defenders \u2013 NAZA debunks their talking points | Mehdi Hasan",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/commentisfree/2026/oct/16/naza-israel-film",
@@ -132,7 +336,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974026-0009",
+        "event_id": "GW-1792196827358-0011",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -145,7 +349,7 @@
       }
     },
     {
-      "id": 557210651,
+      "id": 522958417,
       "title": "NAZA: the film Israel does not want you to see - video",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/film/video/2026/oct/16/naza-the-film-israel-does-not-want-you-to-see-video",
@@ -166,7 +370,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974028-0010",
+        "event_id": "GW-1792196827361-0012",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -179,7 +383,7 @@
       }
     },
     {
-      "id": 911380597,
+      "id": 966451276,
       "title": "Jonathan Glazer says Israel\u2019s retaliation over NAZA \u2018more venal\u2019 than anticipated",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/film/2026/oct/16/jonathan-glazer-says-israels-retaliation-over-naza-more-venal-than-anticipated",
@@ -200,7 +404,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974029-0011",
+        "event_id": "GW-1792196827363-0013",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -213,7 +417,7 @@
       }
     },
     {
-      "id": 536531338,
+      "id": 618306603,
       "title": "Saudi Arabia to execute man for being at protests and funerals when he was 15",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/global-development/2026/oct/16/saudi-arabia-to-execute-man-for-being-at-protests-and-funerals-when-he-was-15",
@@ -234,7 +438,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974031-0012",
+        "event_id": "GW-1792196827365-0014",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -247,7 +451,7 @@
       }
     },
     {
-      "id": 460228084,
+      "id": 559780799,
       "title": "Future of western security is at stake in Yemen civil war, says country\u2019s former PM",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/16/future-western-security-at-stake-yemen-civil-war-former-pm",
@@ -268,7 +472,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974033-0013",
+        "event_id": "GW-1792196827368-0015",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -281,18 +485,18 @@
       }
     },
     {
-      "id": 401006766,
-      "title": "Poland scrambles fighter jets as Russia strikes western Ukraine",
+      "id": 456101528,
+      "title": "Italy probes Israel\u2019s Katz over abuse, sexual assault of flotilla activists",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/16/poland-scrambles-fighter-jets-as-russia-strikes-western-ukraine?traffic_source=rss",
+      "source_url": "https://www.aljazeera.com/news/2026/10/16/italy-probes-israels-katz-over-abuse-sexual-assault-of-flotilla-activists?traffic_source=rss",
       "published": "2026-10-16T00:00:00+00:00",
-      "type": "attack",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
-        "name": "Unknown",
-        "country": "Qatar",
-        "lat": 25.0,
-        "lng": 45.0
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
       },
       "credibility": 90,
       "is_government": false,
@@ -302,8 +506,8 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974055-0022",
-        "incident_type": "raid",
+        "event_id": "GW-1792196827388-0021",
+        "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
       },
@@ -315,12 +519,148 @@
       }
     },
     {
-      "id": 767783553,
-      "title": "Trump rules out using a nuclear bomb on Iran: Why that matters",
+      "id": 189204477,
+      "title": "Yemen\u2019s government says Houthis fired two missiles at Aden airport",
       "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/16/trump-rules-out-using-a-nuclear-bomb-on-iran-why-that-matters?traffic_source=rss",
+      "source_url": "https://www.aljazeera.com/news/2026/10/16/yemens-government-says-houthis-fired-two-missiles-at-aden-airport?traffic_source=rss",
       "published": "2026-10-16T00:00:00+00:00",
-      "type": "explosion",
+      "type": "missile",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Aden",
+        "country": "Yemen",
+        "lat": 12.7855,
+        "lng": 45.0215
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827392-0022",
+        "incident_type": "missile",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 740015542,
+      "title": "How Israeli spyware used \u2018zero click\u2019 hack on Al Jazeera staff",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/how-israeli-spyware-used-zero-click-hack-on-al-jazeera-staff?traffic_source=rss",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827395-0023",
+        "incident_type": "cyber",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 435329308,
+      "title": "Food affordability fears plague Gaza as Israel halts commercial goods",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/food-affordability-fears-plague-gaza-as-israel-halts-commercial-goods?traffic_source=rss",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Gaza",
+        "country": "Palestine",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827399-0024",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 186410762,
+      "title": "UK PM adviser\u2019s wife expresses \u2018support\u2019 for Palestine Action",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/10/16/uk-pm-advisers-wife-expresses-support-for-palestine-action?traffic_source=rss",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Palestine",
+        "lat": 31.9522,
+        "lng": 35.2332
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827403-0025",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "PARTIAL",
+        "score": 50,
+        "num_sources": 1,
+        "status": "PARTIAL"
+      }
+    },
+    {
+      "id": 356873478,
+      "title": "How Iran messaging highlights cost of war ahead of US midterm elections",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/10/16/how-iran-messaging-highlights-cost-of-war-ahead-of-us-midterm-elections?traffic_source=rss",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
@@ -336,7 +676,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974058-0023",
+        "event_id": "GW-1792196827407-0026",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -349,188 +689,18 @@
       }
     },
     {
-      "id": 730008344,
-      "title": "UN warns nearly 1 million in Gaza face flood risks as winter approaches",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/un-warns-nearly-1-million-in-gaza-face-flood-risks-as-winter-approaches?traffic_source=rss",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974061-0024",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 67586414,
-      "title": "Asian Cup in Saudi Arabia still on, organisers say, but golf tour postponed",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/sports/2026/10/16/asian-cup-in-saudi-arabia-still-on-say-organisers-but-golf-tour-postponed?traffic_source=rss",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974064-0025",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 423890022,
-      "title": "Norway wealth fund urged to ease nuclear arms ban after Gaza investment row",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/16/norway-wealth-fund-urged-to-ease-nuclear-arms-ban-after-gaza-investment-row?traffic_source=rss",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974068-0026",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 531036903,
-      "title": "How Israel\u2019s elections will affect Palestinians",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/how-israels-elections-will-affect-palestinians?traffic_source=rss",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974072-0027",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 628986118,
-      "title": "In Israel, Netanyahu\u2019s ultimate legacy is the opposition he has forged",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/10/16/in-israel-netanyahus-ultimate-legacy-is-the-opposition-he-has-forged?traffic_source=rss",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974074-0028",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 294859094,
-      "title": "Indian embassy in UAE issues warning over fake job offers and visa scams",
+      "id": 211691680,
+      "title": "Iran\u2019s shadow war in Britain demands more than tough words",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/16/indian-embassy-in-uae-issues-warning-over-fake-job-offers-and-visa-scams/",
+      "source_url": "https://www.thenationalnews.com/opinion/comment/2026/10/16/iran-uk-terrorism-security/",
       "published": "2026-10-16T00:00:00+00:00",
-      "type": "alert",
+      "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
+        "country": "Iran",
+        "lat": 32.4279,
+        "lng": 53.688
       },
       "credibility": 85,
       "is_government": false,
@@ -540,7 +710,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974078-0029",
+        "event_id": "GW-1792196827412-0027",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -553,148 +723,12 @@
       }
     },
     {
-      "id": 203970550,
-      "title": "'I was innocent': Former Dubai resident gives first interview after five-year detention in Iraq",
+      "id": 92911594,
+      "title": "Deadly air strike on goldminers lays bare a Sudan deeply mired in economic deprivation caused by war",
       "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/16/robert-pether-detained-in-iraq-former-dubai-resident/",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Dubai",
-        "country": "UAE",
-        "lat": 25.2048,
-        "lng": 55.2708
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974082-0030",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 761459814,
-      "title": "Yemen government will remain in Aden despite Houthi attack, says official",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/16/yemen-government-will-remain-in-aden-despite-houthi-attack-says-official/",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/16/deadly-air-strike-on-goldminers-lays-bare-a-sudan-deeply-mired-in-economic-deprivation-caused-by-war/",
       "published": "2026-10-16T00:00:00+00:00",
       "type": "attack",
-      "status": "confirmed",
-      "location": {
-        "name": "Aden",
-        "country": "Yemen",
-        "lat": 12.7855,
-        "lng": 45.0215
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974087-0031",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 301571436,
-      "title": "How the UAE kept trade flowing and struck new deals during the Iran conflict",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/podcasts/business-extra/2026/10/16/how-the-uae-kept-trade-flowing-and-struck-new-deals-during-the-iran-conflict/",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "UAE",
-        "lat": 23.4241,
-        "lng": 53.8478
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974091-0032",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 100314651,
-      "title": "Houthis strike Aden presidential palace, Iraq approves cabinet and Sharjah dismantles cyber crime network",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/10/16/houthis-strike-aden-presidential-palace-iraq-approves-cabinet-and-sharjah-dismantles-cyber-crime-network/",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Aden",
-        "country": "Yemen",
-        "lat": 12.7855,
-        "lng": 45.0215
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974096-0033",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 63472949,
-      "title": "Three children and one teacher killed in Oregon school shooting",
-      "source": "The National UAE",
-      "source_url": "https://www.thenationalnews.com/news/us/2026/10/16/three-children-and-one-teacher-killed-in-oregon-school-shooting/",
-      "published": "2026-10-16T00:00:00+00:00",
-      "type": "security",
       "status": "unconfirmed",
       "location": {
         "name": "Unknown",
@@ -710,7 +744,41 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974102-0034",
+        "event_id": "GW-1792196827416-0028",
+        "incident_type": "airstrike",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 84444916,
+      "title": "Israeli expansion across Golan Heights frontier takes toll on Syrian farmers",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/16/syria-israel-golan-sufa-53/",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827423-0029",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -723,7 +791,177 @@
       }
     },
     {
-      "id": 217133421,
+      "id": 146914683,
+      "title": "UN demands immediate end to drone attacks in Sudan as civilian deaths mount",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/us/2026/10/16/un-demands-immediate-end-to-drone-attacks-in-sudan-as-civilian-deaths-mount/",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "UAE",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827428-0030",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 25779866,
+      "title": "Qatar pledges to help modernise Lebanon's energy sector with electricity project",
+      "source": "The National UAE",
+      "source_url": "https://www.thenationalnews.com/news/mena/2026/10/16/qatar-pledges-to-help-modernise-lebanons-energy-sector-with-electricity-project/",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Qatar",
+        "lat": 25.3548,
+        "lng": 51.1839
+      },
+      "credibility": 85,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827434-0031",
+        "incident_type": "incident",
+        "is_recap": false,
+        "confidence": "OSINT"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 673951811,
+      "title": "South Korean lasers down three drones in Army demo, Hanwha says",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/16/south-korean-lasers-down-three-drones-in-army-demo-hanwha-says/",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827444-0033",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 574136076,
+      "title": "Bulgaria seeks NATO anti-drone systems, defense minister says",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/global/europe/2026/10/16/bulgaria-seeks-nato-anti-drone-systems-defense-minister-says/",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827450-0034",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 402343928,
+      "title": "Israel secures procurement of 12 Apache gunships in last-minute maneuver",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/global/mideast-africa/2026/10/16/israel-secures-procurement-of-12-apache-gunships-in-last-minute-maneuver/",
+      "published": "2026-10-16T00:00:00+00:00",
+      "type": "security",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown City",
+        "country": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827455-0035",
+        "incident_type": "naval",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 618087400,
       "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
@@ -744,7 +982,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974021-0003",
+        "event_id": "GW-1792196827343-0004",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -757,7 +995,7 @@
       }
     },
     {
-      "id": 758487048,
+      "id": 772574502,
       "title": "As critical mineral deadline looms, Army expects to feel \u2018some impact\u2019",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/as-critical-mineral-deadline-looms-army-expects-to-feel-some-impact/",
@@ -778,7 +1016,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974132-0040",
+        "event_id": "GW-1792196827501-0042",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -791,7 +1029,7 @@
       }
     },
     {
-      "id": 186846475,
+      "id": 743811499,
       "title": "Hundreds of IDF investigations into killings still have no public outcome, BBC Verify finds",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c574e228vlygo?at_medium=RSS&at_campaign=rss",
@@ -812,7 +1050,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974021-0004",
+        "event_id": "GW-1792196827344-0005",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -825,7 +1063,7 @@
       }
     },
     {
-      "id": 678832097,
+      "id": 255312027,
       "title": "Houthi missiles strike Yemen presidential palace, killing five",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/15/houthi-missiles-strike-aden-yemen",
@@ -846,7 +1084,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974035-0014",
+        "event_id": "GW-1792196827372-0016",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "OSINT"
@@ -859,7 +1097,7 @@
       }
     },
     {
-      "id": 454147381,
+      "id": 319859723,
       "title": "Sally Rooney\u2019s stand on Palestine is brave and humane",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/books/2026/oct/15/sally-rooneys-stand-on-palestine-is-brave-and-humane",
@@ -880,7 +1118,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974036-0015",
+        "event_id": "GW-1792196827374-0017",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -893,7 +1131,7 @@
       }
     },
     {
-      "id": 418754703,
+      "id": 756688540,
       "title": "Food and fuel run low as besieged Yemeni city braces for Houthi breakthrough",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/15/yemen-stockpile-supplies-houthis-advance-taiz",
@@ -914,7 +1152,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974038-0016",
+        "event_id": "GW-1792196827376-0018",
         "incident_type": "naval",
         "is_recap": false,
         "confidence": "OSINT"
@@ -927,7 +1165,7 @@
       }
     },
     {
-      "id": 861018210,
+      "id": 89872238,
       "title": "Unpolished, anti-Bibi, but evasive on peace: who is the Israeli opposition candidate Gadi Eisenkot?",
       "source": "The Guardian",
       "source_url": "https://www.theguardian.com/world/2026/oct/15/israel-gadi-eisenkot-profile-netanyahu-election",
@@ -948,7 +1186,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974040-0017",
+        "event_id": "GW-1792196827379-0019",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "OSINT"
@@ -961,7 +1199,75 @@
       }
     },
     {
-      "id": 943839564,
+      "id": 281393320,
+      "title": "Arizona Guard first to field Gray Eagle 25M drone",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/15/arizona-guard-first-to-field-gray-eagle-25m-drone/",
+      "published": "2026-10-15T00:00:00+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827440-0032",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 716069078,
+      "title": "\u2018Weaponized light\u2019: KBR\u2019s new base defense technology pits lasers against drones",
+      "source": "Defense News",
+      "source_url": "https://www.defensenews.com/news/your-military/2026/10/15/weaponized-light-kbrs-new-base-defense-technology-pits-lasers-against-drones/",
+      "published": "2026-10-15T00:00:00+00:00",
+      "type": "drone",
+      "status": "unconfirmed",
+      "location": {
+        "name": "Unknown",
+        "country": "International",
+        "lat": 25.0,
+        "lng": 45.0
+      },
+      "credibility": 90,
+      "is_government": false,
+      "casualties": {
+        "total": 0,
+        "military": 0,
+        "civilian": 0
+      },
+      "circuit_breaker": {
+        "event_id": "GW-1792196827462-0036",
+        "incident_type": "drone",
+        "is_recap": false,
+        "confidence": "PARTIAL"
+      },
+      "verification": {
+        "badge": "UNCONFIRMED",
+        "score": 40,
+        "num_sources": 1,
+        "status": "UNCONFIRMED"
+      }
+    },
+    {
+      "id": 403816586,
       "title": "Lockheed invests $300M in Texas plant to feed missile surge",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/15/lockheed-invests-300m-in-texas-plant-to-feed-missile-surge/",
@@ -982,7 +1288,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974106-0035",
+        "event_id": "GW-1792196827469-0037",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -995,7 +1301,7 @@
       }
     },
     {
-      "id": 8929607,
+      "id": 791140667,
       "title": "US Army eyes developing soldier-worn drone detection gear",
       "source": "Defense News",
       "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/15/us-army-eyes-developing-soldier-worn-drone-detection-gear/",
@@ -1016,7 +1322,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974110-0036",
+        "event_id": "GW-1792196827474-0038",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1029,75 +1335,7 @@
       }
     },
     {
-      "id": 8345858,
-      "title": "Kratos combat drone completes first Euro flight, advances turbojet engine production",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/15/kratos-combat-drone-completes-first-euro-flight-advances-turbojet-engine-production/",
-      "published": "2026-10-15T00:00:00+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974114-0037",
-        "incident_type": "drone",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 785285980,
-      "title": "Honeywell Aerospace\u2019s counter-drone software unites data from multiple sensors into one",
-      "source": "Defense News",
-      "source_url": "https://www.defensenews.com/industry/techwatch/2026/10/15/honeywell-aerospaces-counter-drone-software-unites-data-from-multiple-sensors-into-one/",
-      "published": "2026-10-15T00:00:00+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974120-0038",
-        "incident_type": "drone",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 40,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 536238383,
+      "id": 823877886,
       "title": "Global charity withholds report into its role in Syria's 'disappeared' children",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/cm62y89dpd4lo?at_medium=RSS&at_campaign=rss",
@@ -1118,7 +1356,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974022-0005",
+        "event_id": "GW-1792196827345-0006",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1131,7 +1369,7 @@
       }
     },
     {
-      "id": 418802212,
+      "id": 784329877,
       "title": "Missiles, drones and air-defense weapons galore: Images from AUSA\u2019s final day",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/missiles-drones-and-air-defense-weapons-galore-images-from-ausas-final-day/",
@@ -1152,7 +1390,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974137-0041",
+        "event_id": "GW-1792196827508-0043",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1165,7 +1403,7 @@
       }
     },
     {
-      "id": 98388399,
+      "id": 654994952,
       "title": "How Poland\u2019s air force is responding to Russian drones in the skies",
       "source": "Breaking Defense",
       "source_url": "https://breakingdefense.com/2026/10/how-polands-air-force-is-responding-to-russian-drones-in-the-skies/",
@@ -1186,7 +1424,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974143-0042",
+        "event_id": "GW-1792196827516-0044",
         "incident_type": "drone",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1199,41 +1437,7 @@
       }
     },
     {
-      "id": 490741782,
-      "title": "We need to make industry crash 100,000 drones next year",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/10/we-need-to-make-industry-crash-100000-drones-next-year/",
-      "published": "2026-10-14T14:00:00+00:00",
-      "type": "drone",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown",
-        "country": "International",
-        "lat": 25.0,
-        "lng": 45.0
-      },
-      "credibility": 85,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974149-0043",
-        "incident_type": "drone",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 418257950,
+      "id": 553647917,
       "title": "Houthi missile hits Aramco building after Saudi-led coalition strike on Yemen fuel depot",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss",
@@ -1254,7 +1458,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974023-0006",
+        "event_id": "GW-1792196827346-0007",
         "incident_type": "missile",
         "is_recap": false,
         "confidence": "PARTIAL"
@@ -1267,7 +1471,7 @@
       }
     },
     {
-      "id": 227588506,
+      "id": 613514954,
       "title": "Saudi Arabia overturns death sentence for man over Facebook comment, Sri Lanka says",
       "source": "BBC Middle East",
       "source_url": "https://www.bbc.co.uk/news/articles/c6x2v0vn7r1do?at_medium=RSS&at_campaign=rss",
@@ -1288,177 +1492,7 @@
         "civilian": 0
       },
       "circuit_breaker": {
-        "event_id": "GW-1792152974024-0007",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "PARTIAL"
-      },
-      "verification": {
-        "badge": "PARTIAL",
-        "score": 50,
-        "num_sources": 1,
-        "status": "PARTIAL"
-      }
-    },
-    {
-      "id": 795672110,
-      "title": "Israel blocks construction of key Gaza base created by Trump peace board",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/us-news/2026/oct/14/israel-trump-peace-board-gaza-base",
-      "published": "2026-10-14T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Gaza",
-        "country": "Palestine",
-        "lat": 31.5017,
-        "lng": 34.4668
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974043-0018",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 713701859,
-      "title": "Two container ships sink near strait of Hormuz amid surge in Iranian attacks",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/world/2026/oct/14/container-ship-sinks-strait-of-hormuz-surge-iranian-attacks-iran-us-midterm-elections",
-      "published": "2026-10-14T00:00:00+00:00",
-      "type": "attack",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Iran",
-        "lat": 32.4279,
-        "lng": 53.688
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974046-0019",
-        "incident_type": "naval",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 711840328,
-      "title": "New UK sanctions powers will enable action against supporters of illegal Israeli settlements",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/politics/2026/oct/14/uk-sanctions-powers-action-supporters-israeli-settlements",
-      "published": "2026-10-14T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974049-0020",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 304438903,
-      "title": "Iranian woman handed death sentence for \u2018blasphemy\u2019 in social media post",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/global-development/2026/oct/14/najmeh-amini-blasphemy-death-sentence-insulting-prophet",
-      "published": "2026-10-14T00:00:00+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Oman",
-        "lat": 21.4735,
-        "lng": 55.9754
-      },
-      "credibility": 90,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974052-0021",
-        "incident_type": "incident",
-        "is_recap": false,
-        "confidence": "OSINT"
-      },
-      "verification": {
-        "badge": "UNCONFIRMED",
-        "score": 20,
-        "num_sources": 1,
-        "status": "UNCONFIRMED"
-      }
-    },
-    {
-      "id": 856049100,
-      "title": "Saudi employee charged with planting recording device in OpenAI office",
-      "source": "BBC Middle East",
-      "source_url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-13T21:42:49+00:00",
-      "type": "security",
-      "status": "unconfirmed",
-      "location": {
-        "name": "Unknown City",
-        "country": "Saudi Arabia",
-        "lat": 23.8859,
-        "lng": 45.0792
-      },
-      "credibility": 95,
-      "is_government": false,
-      "casualties": {
-        "total": 0,
-        "military": 0,
-        "civilian": 0
-      },
-      "circuit_breaker": {
-        "event_id": "GW-1792152974025-0008",
+        "event_id": "GW-1792196827349-0008",
         "incident_type": "incident",
         "is_recap": false,
         "confidence": "PARTIAL"
